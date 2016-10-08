@@ -1,2 +1,2 @@
 # ligene
-scripts for genome analysis
+Tools for genome analysis
