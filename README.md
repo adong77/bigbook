@@ -1,2 +1,2 @@
 # ligene
-Tools for genome analysis
+Bioinformatics and genome analysis
