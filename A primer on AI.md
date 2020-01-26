@@ -74,6 +74,4 @@ The benefits of machine learning will be numerous and significant. Many will be 
 As with any paradigm shift, at times inflated expectations will exceed short-term potential. We expect a period of disillusionment regarding AI at some point in the future, to be followed by a longer and lasting recognition of its value as machine learning is used to improve and then reimagine existing systems.
 Historically, industrial revolutions transformed production and communication through new sources of power and transmission. The first industrial revolution used steam power to mechanise production in the 1780s. The second used electricity to drive mass production in the 1870s. The third used electronics and software to automate production and communication from the 1970s. Today, as software eats the world, our primary source of value creation is the processing of information. By enabling us to do so more intelligently, machine learning will yield benefits both humble and historic.
 
-本文节选自英国MMC Ventures公司David Kelnar写的AI综述[1]。
-
-[1]: https://zhuanlan.zhihu.com/p/24435190
+本文节选自英国MMC Ventures公司David Kelnar写的AI综述。[阅读原文](https://zhuanlan.zhihu.com/p/24435190)
