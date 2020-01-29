@@ -1,4 +1,6 @@
 # ligene
 Bioinformatics and genome analysis
-imageBed
-drafts
+* imageBed
+* Notes
+* Scripts
+
