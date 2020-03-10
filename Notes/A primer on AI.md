@@ -9,7 +9,7 @@ Coined in 1956 by Dartmouth Assistant Professor John McCarthy, ‘Artificial Int
 Basic ‘AI’ has existed for decades, via rules-based programs that deliver rudimentary displays of ‘intelligence’ in specific contexts. Progress, however, has been limited — because algorithms to tackle many real-world problems are too complex for people to program by hand.
 Complicated activities including making medical diagnoses, predicting when machines will fail or gauging the market value of certain assets, involve thousands of data sets and non-linear relationships between variables. In these cases, it’s difficult to use the data we have to best effect — to ‘optimise’our predictions. In other cases, including recognising objects in images and translating languages, we can’t even develop rules to describe the featureswe’re looking for. How can we write a set of rules, to work in all situations, that describe the appearance of a dog?
 What if we could transfer the difficulty of making complex predictions — the **data optimisation** and **feature specification** — from the programmer to the program? This is the promise of modern artificial intelligence.
-![Figure 1](/imageBed/AI-1.png)
+![AI-1.png](http://blog.ligene.cn/imageBed/AI-1.png)
 
 ### Machine Learning: offloading optimisation
 
@@ -17,7 +17,7 @@ What if we could transfer the difficulty of making complex predictions — t
 Machine learning lets us tackle problems that are too complex for humans to solve by shifting some of the burden to the algorithm. As AI pioneer Arthur Samuel wrote in 1959, machine learning is the ‘field of study that gives computers the ability to learn without being explicitly programmed.’
 The goal of most machine learning is to develop a prediction engine for a particular use case. An algorithm will receive information about a domain (say, the films a person has watched in the past) and weigh the inputs to make a useful prediction (the probability of the person enjoying a different film in the future). By giving ‘computers the ability to learn’, we mean passing the task of optimisation — of weighing the variables in the available data to make accurate predictions about the future — to the algorithm . Sometimes we can go further, offloading to the program the task of specifying the features to consider in the first place.
 Machine learning algorithms learn through training. An algorithm initially receives examples whose outputs are known, notes the difference between its predictions and the correct outputs, and tunes the weightings of the inputs to improve the accuracy of its predictions until they are optimised. The defining characteristic of machine learning algorithms, therefore, is that **the quality of their predictions improve with experience**. The more data we provide (usually up to a point), the better the prediction engines we can create (Figures 2 and 3, below. Note that the size of data sets required are highly context dependent — we cannot generalise from the examples below.)
-![Figure 2](/imageBed/AI-2.png)
+![AI-2.png](http://blog.ligene.cn/imageBed/AI-2.png)
 
 There are more than 15 approaches to machine learning, each of which uses a different algorithmic structure to optimise predictions based on the data received. One approach — ‘**deep learning**’ — is delivering breakthrough results in new domains and we explore this below. But there are many others which, although they receive less attention, are valuable because of their applicability to a broad range of usage cases. Some of the most effective machine learning algorithms beyond deep learning include:
 * ‘**random forests**’ that create multitudes of decision trees to optimise a prediction;
@@ -52,13 +52,14 @@ An artificial neuron has one or more inputs. It performs a mathematical calculat
 * a **sigmoid unit** (the output varies continuously, but not linearly as the input changes).
 
 A neural network is created when neurons are connected to one another; the output of one neuron becomes an input for another (Figure 6, below).
-![Figure 6](/imageBed/AI-6.png)
+![AI-6.png](http://blog.ligene.cn/imageBed/AI-6.png)
 
 Neural networks are organised into multiple layers of neurons (hence ‘deep’ learning). The ‘input layer’ receives information the network will process — for example, a set of pictures. The ‘output layer’ provides the results. Between the input and output layers are ‘hidden layers’ where most activity occurs. Typically, the outputs of each neuron on one level of the neural network serve as one of the inputs for each of the neurons in the next layer (Figure 7, below).
-![Figure 7](/imageBed/AI-7.png)
+![AI-7.png](http://blog.ligene.cn/imageBed/AI-7.png)
 
 Let’s consider the example of an image recognition algorithm — say, to recognise human faces in pictures. When data are fed into the neural network, the first layers identify patterns of local contrast — ‘low level’ features such as edges. As the image traverses the network, progressively ‘higher level’ features are extracted — from edges to noses, from noses to faces (Fig. 8, below)
-![Figure 8](/imageBed/AI-8.png)
+![AI-8.png](http://blog.ligene.cn/imageBed/AI-8.png)
+
 
 At its output layer, based on its training the neural network will deliver a probability that the picture is of the specified type (human face: 97%; balloon 2%; leaf 1%).
 
