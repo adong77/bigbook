@@ -1,6 +1,6 @@
 # ligene
 Bioinformatics and genome analysis
-* imageBed
+* BIGBOOK
 * Notes
 * Scripts
 
