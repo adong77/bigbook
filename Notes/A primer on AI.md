@@ -11,6 +11,7 @@ Complicated activities including making medical diagnoses, predicting when machi
 What if we could transfer the difficulty of making complex predictions — the **data optimisation** and **feature specification** — from the programmer to the program? This is the promise of modern artificial intelligence.
 ![AI-1.png](http://blog.ligene.cn/imageBed/AI-1.png)
 
+
 ### Machine Learning: offloading optimisation
 
 **Machine learning (ML)** is a sub-set of AI. All machine learning is AI, but not all AI is machine learning (Figure 1, above). Interest in ‘AI’ today reflects enthusiasm for machine learning, where advances are rapid and significant.
