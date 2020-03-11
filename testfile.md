@@ -10,4 +10,5 @@ PicGo setting:
 
 test in surface pro
 
-![amp_bla.jpg](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBedamp_bla.jpg)
+![cancer-celll-T-cella.png](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/cancer-celll-T-cella.png)
+
