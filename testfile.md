@@ -7,3 +7,7 @@ PicGo setting:
 
 
 ![AI-1.png](https://raw.githubusercontent.com/adong77/ligene/master/imageBed/AI-1.png)
+
+test in surface pro
+
+![amp_bla.jpg](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBedamp_bla.jpg)
