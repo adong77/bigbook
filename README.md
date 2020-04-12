@@ -1,5 +1,5 @@
-# ligene
-Bioinformatics and genome analysis
+# Bioinformatics and genome analysis
+* bigbook
 * imageBed
 * Notes
 * Scripts
