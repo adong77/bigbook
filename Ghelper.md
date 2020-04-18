@@ -7,14 +7,14 @@
 
 ## 2. 下载并安装浏览器插件Ghelper:
 
-谷歌上网助手(Ghelper)专门为科研、外贸、跨境电商、海淘人员、开发人员服务的上网加速工具，同时可以访问谷歌google搜索，gmail邮箱。
-可直接从以下网址安装插件：https://microsoftedge.microsoft.com/addons/detail/eoboojokdmamahfilfmamjjkcmkmddgk?hl=zh-CN
+谷歌上网助手(Ghelper)专门为科研、外贸、跨境电商、海淘人员、开发人员服务的上网加速工具，同时可以访问谷歌google搜索，gmail邮箱。官网为：http://googlehelper.net/。
+Edge可直接从以下网址安装插件：https://microsoftedge.microsoft.com/addons/detail/eoboojokdmamahfilfmamjjkcmkmddgk?hl=zh-CN
 > 也可从微软商店上搜索安装:点击Edge浏览器右上方的三个点图标，选择"Extensions"->"extensions from Microsoft Store"。
 
 ## 3. 登录Ghelper
 
 安装完后，导航栏就会出现Ghelper图标。点击导航栏的ghelper图标进入到登录页面，如下图所示：
 第一次使用Ghelper要先注册一个ghelper账号，可以通过上图的新用户注册(Signup)，用任意一个邮箱注册后就可以登陆(Login)。
->这个Ghelper账户不是谷歌账户或微软账户，需要用任一个邮箱注册。
+>这个Ghelper账户不是谷歌账户或微软账户，不可用原来的谷歌/微软用户登录，需要用一个邮箱注册后才能登录使用。
 
 ## 4. 登录成功后，就可以输入scholar.google.com打开谷歌学术搜索的页面了。
