@@ -27,7 +27,13 @@ $ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
 $ npm install hexo-renderer-pug --save
 $ npm install hexo-renderer-sass --save
 
-#github
+# github
 ssh -T git@github.com
 git config --global user.name "adong77"
 git config --global user.email "youdng@hotmail.com"
+
+# gitbook
+$ sudo npm config set registry https://registry.npm.taobao.org/
+$ npm install gitbook-cli -g
+$ gitbook build ./gitbook/ docs/
+
