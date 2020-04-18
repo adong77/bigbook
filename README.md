@@ -1,5 +1,5 @@
-# Bioinformatics and genome analysis
-* bigbook (docs)
+# Bioinformatics and Genomics (BiG)
+* gitbook (docs)
 * imageBed
 * Notes
 * Scripts
