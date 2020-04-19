@@ -35,5 +35,5 @@ git config --global user.email "youdng@hotmail.com"
 # gitbook
 $ sudo npm config set registry https://registry.npm.taobao.org/
 $ npm install gitbook-cli -g
-$ gitbook build ./gitbook/ docs/
+$ gitbook build ./gitbook ./docs
 
