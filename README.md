@@ -1,6 +1,9 @@
 # Bioinformatics and Genomics (BiG)
-* gitbook (docs)
-* imageBed
-* Notes
-* Scripts
+* ❤️gitbook (docs)
+* 🤪imageBed
+* 📝Notes
+* 🙏Scripts
+
+
+
 
