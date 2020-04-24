@@ -8,7 +8,7 @@
 
 ### 💻计算机科学(Computer Science)
 * [计算机技能](ComputerSkills.md)
-  * [谷歌上网助手](Ghelper.md)
+  * [谷歌上网助手](CompSci/Ghelper.md)
 
 
 ### 📊统计学(Statistics)
@@ -22,3 +22,4 @@
 
 ----
 * [词汇表](GLOSSARY.md)
+* [参考文献](References.md)

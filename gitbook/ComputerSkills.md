@@ -1,5 +1,5 @@
 # 计算机技能
 
-* Linux/Bash
+* Linux (Bash)
 * Python/Perl
-* R
+* R (ggplots)
