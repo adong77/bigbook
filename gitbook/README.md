@@ -1,4 +1,4 @@
-# Bioinformatics and Genomics
+# Concepts and Approaches in Bioinformatics and Genomics
 
 🐘TO-DO🐘
 
