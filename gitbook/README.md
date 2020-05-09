@@ -1,4 +1,4 @@
-# Concepts and Approaches in Bioinformatics and Genomics
+# Fundamentals of BioInformatics and Genomics (BIG)
 
 🐘TO-DO🐘
 

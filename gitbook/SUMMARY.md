@@ -2,17 +2,19 @@
 
 * [前言](README.md)
 
-### 🧪生物学(Biology)
+### 🧬生物学(Biology)
 * [生物学基础](BiologyBasics.md)
+* 组学(Omics)
 
 
 ### 💻计算机科学(Computer Science)
 * [计算机技能](ComputerSkills.md)
-  * [谷歌上网助手](CompSci/Ghelper.md)
+* [谷歌上网助手](CompSci/Ghelper.md)
 
 
 ### 📊统计学(Statistics)
 * [数据分析入门](DataAnalytics.md)
+* Deep Learning
 
 
 
