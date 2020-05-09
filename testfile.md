@@ -12,5 +12,5 @@ insert a picture:
 
 ![cancer-celll-T-cella.png](https://raw.githubusercontent.com/adong77/LIGENE/master/imageBed/cancer-celll-T-cella.png)
 
-🦠🧬🌲🔮🤦‍♂️ 
-🦠🧬🌲🔮🤦‍♂‍👇👍noises 🔈 
+
+🦠🧬🌲🔮🤦‍♂‍👇👍noises 🔈 ♦
