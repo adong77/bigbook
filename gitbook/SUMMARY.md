@@ -4,7 +4,7 @@
 
 ### 🧬生物学(Biology)
 * [生物学基础](BiologyBasics.md)
-* 组学(Omics)
+* [生命组学(Omics)](Omics.md)
 
 
 ### 💻计算机科学(Computer Science)
