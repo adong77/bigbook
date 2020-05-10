@@ -1,4 +1,4 @@
-# Fundamentals of BioInformatics and Genomics (BIG)
+# Fundamentals of Bioinformatics and Genomics
 
 🐘TO-DO🐘
 
