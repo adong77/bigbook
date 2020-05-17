@@ -12,24 +12,28 @@ notifications:
     on_success: change
     on_failure: always
 
+before_install:
+  - export TZ='Asia/Shanghai' # 更改时区
+
 install:
   - npm install -g gitbook-cli
-  - gitbook install
+  - gitbook install   # 安装 gitbook 插件
 
 script:
   - gitbook build ./gitbook ./docs  # 自定义输出目录 gitbook build src dest
 
 after_script:
-  - cd _book
+  - cd ./gitbook/_book
   - git init
   - git remote add origin https://${REF}
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
-  - git push --force --quiet "https://${TOKEN}@${REF}" master:master
+  - git push --quiet "https://${TOKEN}@${REF}" master:master
 
 branches:
   only:
     - master
+
 
 env:
   global:
