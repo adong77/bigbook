@@ -1,0 +1,36 @@
+language: node_js
+node_js: stable
+
+cache: npm
+  directories:
+    - node_modules
+
+notifications:
+  email:
+    recipients:
+      - youdng@hotmail.com # 设置通知邮件
+    on_success: change
+    on_failure: always
+
+install:
+  - npm install -g gitbook-cli
+  - gitbook install
+
+script:
+  - gitbook build ./gitbook ./docs  # 自定义输出目录 gitbook build src dest
+
+after_script:
+  - cd _book
+  - git init
+  - git remote add origin https://${REF}
+  - git add .
+  - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
+  - git push --force --quiet "https://${TOKEN}@${REF}" master:master
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - REF=github.com/adong77/bigbook.git # 设置 github 地址
