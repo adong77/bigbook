@@ -1,9 +1,10 @@
 language: node_js
 node_js: stable
-
-cache: npm
+# 缓存依赖
+cache:  
   directories:
     - node_modules
+    - $HOME/.npm
 
 notifications:
   email:
@@ -14,7 +15,7 @@ notifications:
 
 before_install:
   - export TZ='Asia/Shanghai' # 更改时区
-
+# 依赖安装
 install:
   - npm install -g gitbook-cli
   - gitbook install   # 安装 gitbook 插件
@@ -22,19 +23,20 @@ install:
 script:
   - gitbook build ./gitbook ./docs  # 自定义输出目录 gitbook build src dest
 
-after_script:
-  - cd ./gitbook/_book
-  - git init
-  - git remote add origin https://${REF}
-  - git add .
-  - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
-  - git push --quiet "https://${TOKEN}@${REF}" master:master
-
 branches:
   only:
-    - master
+    - master  #只监测master分支
 
-
-env:
-  global:
-    - REF=github.com/adong77/bigbook.git # 设置 github 地址
+# GitHub Pages 部署
+deploy:
+  provider: pages
+  skip_cleanup: true
+    # 在项目仪表盘的 Settings -> Environment Variables 中配置
+  github_token: $GITHUB_TOKEN
+    # 将 build 目录下的内容推送到默认的 gh-pages 分支上，并不会连带 build 目录一起
+  local_dir: docs
+    #fqdn: $CUSTOM_DOMAIN
+  name: $GIT_NAME
+  email: $GIT_EMAIL
+  on:
+    branch: master
