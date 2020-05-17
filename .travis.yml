@@ -34,8 +34,7 @@ deploy:
     # 在项目仪表盘的 Settings -> Environment Variables 中配置
   github_token: $GITHUB_TOKEN
     # 将 build 目录下的内容推送到默认的 gh-pages 分支上，并不会连带 build 目录一起
-  local_dir: docs
-    #fqdn: $CUSTOM_DOMAIN
+  local_dir: docs # or remove this line to upload from root of repo
   name: $GIT_NAME
   email: $GIT_EMAIL
   on:
