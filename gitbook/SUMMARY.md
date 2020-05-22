@@ -9,13 +9,14 @@
 
 ### 💻计算机科学(Computer Science)
 * [计算机技能](ComputerSkills.md)
-    * [谷歌上网助手](CompSci/Ghelper.md)
 * Linux系统
 * Python编程
+* Perl编程
 
 
 ### 📊统计学(Statistics)
 * [数据分析入门](DataAnalytics.md)
+* R统计软件
 * [机器学习](Statistics/MachineLearning.md)
 
 
