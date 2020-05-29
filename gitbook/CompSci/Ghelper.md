@@ -17,7 +17,7 @@
 ## 3. 登录Ghelper
 
 安装完成后，导航栏就会出现Ghelper图标。点击导航栏的Ghelper图标进入到登录页面，如下图所示：
-![20200418090637](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/20200418090637.png)
+![20200418090637](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/ghelper-1.png)
 
 第一次使用Ghelper要先注册一个ghelper账号，可以通过上图的新用户注册(Signup)，用任意一个邮箱注册后就可以登陆(Login)。
 >注意：这个Ghelper账户不是谷歌或微软账户，不要尝试用原来的谷歌/微软用户登录:)

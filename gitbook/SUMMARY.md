@@ -12,8 +12,8 @@
 * 编程语言Perl
 
 ### 📊统计学(Statistics)
-* 概率基础(Basic Probability)
-* R统计软件
+* 概率(Probability)
+* [R统计](Statistics/R-intro.md)
 * [机器学习(统计学习)](Statistics/MachineLearning.md)
 
 ### 📖BiG教程(Tutorials)
@@ -24,7 +24,6 @@
 * 第5章 BLAST数据库搜索
 * 第6章 分子进化 (Molecular Evolution)
 * 第7章 系统发育树 (Phylogenetic Tree)
-    * [新冠病毒的进化树与起源分析](Tutorials/nCoV-tree.md)
 * 第8章 蛋白质结构预测
 * 第9章 RNA分析
 * 第10章 PCR引物设计 (Primer Design)
@@ -37,5 +36,5 @@
 * 第17章 宏基因组学(Metagenomics)
 * [第18章 组学数据分析入门](DataAnalytics.md)
 ----
+* [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
-* [参考文献](References.md)
