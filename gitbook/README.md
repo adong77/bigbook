@@ -11,6 +11,6 @@
 
 
 参考文献：
-1. Dan Krane & Michael Raymer著，孙啸等译，Fundamental Concepts of Bioinformatics (生物信息学概论) ，2004，清华大学出版社
-2. Jamil Momand and Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford university press
-3. Dan Graur and Wen-Hsiung Li, Fundamentals of Molecular Evolution (2nd edn), 2000, Sinauer Associates Inc. 
+1. Dan Krane & Michael Raymer著(孙啸等译)，Fundamental Concepts of Bioinformatics (生物信息学概论) ，2004，清华大学出版社
+2. Jamil Momand & Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford university press
+3. Dan Graur & Wen-Hsiung Li, Fundamentals of Molecular Evolution (2nd edn), 2000, Sinauer Associates Inc. 
