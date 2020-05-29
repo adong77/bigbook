@@ -22,7 +22,7 @@
 * 第4章 序列比对 (Sequence Alignment)
 * 第5章 BLAST数据库搜索
 * 第6章 分子进化 (Molecular Evolution)
-* 第7章 系统发育树 (Phylogenetic Tree)
+* [第7章 系统发育树 (Phylogenetic Tree)](Tutorials/07phylogeny.md)
 * 第8章 蛋白质结构预测
 * 第9章 RNA分析
 * 第10章 PCR引物设计 (Primer Design)
