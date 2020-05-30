@@ -7,7 +7,7 @@
 
 ### 💻计算机科学(Computer Science)
 * Linux系统
-* [编程语言Python](CompSci/Python-learn.md) / [Perl](CompSci/Perl-learn.md)
+* 编程语言[Python](CompSci/Python-learn.md)/[Perl](CompSci/Perl-learn.md)
 
 ### 📊统计学(Statistics)
 * 概率(Probability)
