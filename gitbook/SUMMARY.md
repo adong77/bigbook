@@ -12,7 +12,7 @@
 
 ### 📊统计学(Statistics)
 * 概率(Probability)
-* [R统计软件](Statistics/R-intro.md)
+* [R统计作图](Statistics/R-intro.md)
 * [机器学习(统计学习)](Statistics/MachineLearning.md)
 
 ### 📖BiG教程(Tutorials)
