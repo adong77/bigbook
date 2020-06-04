@@ -28,7 +28,7 @@
 * 第10章 PCR引物设计(Primer Design)
 * 第11章 DNA测序(DNA Sequencing)
 * 第12章 基因组学(Genomics)
-* 第13章 NGS导论
+* [第13章 NGS导论](Tutorials/13NGS.md)
 * 第14章 全基因组重测序(Whole Genome Resequencing)
 * 第15章 基因组组装(Genome Assembly)
 * 第16章 转录组测序(RNA-Seq)
