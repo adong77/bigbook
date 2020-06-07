@@ -7,7 +7,7 @@
 
 ### 💻计算机科学(Computer Science)
 * Linux系统
-* [编程语言Python](CompSci/Python-learn.md)
+* [Python语言](CompSci/Python-learn.md)
 * [Perl语言](CompSci/Perl-learn.md)
 
 ### 📊统计学(Statistics)
@@ -32,7 +32,7 @@
 * 第14章 全基因组重测序(Whole Genome Resequencing)
 * 第15章 基因组组装(Genome Assembly)
 * 第16章 转录组测序(RNA-Seq)
-* 第17章 宏基因组学(Metagenomics)
+* [第17章 宏基因组学(Metagenomics)](Tutorials/17metagenome.md)
 * [第18章 组学数据分析入门](DataAnalytics.md)
 ----
 * [附录](Appendix.md)

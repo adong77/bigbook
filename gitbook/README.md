@@ -7,6 +7,8 @@
 
 ![Venn-diagram-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Venn-diagram-bioinformatics.png)
 
+If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
+
 
 参考教材：
 1. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社
