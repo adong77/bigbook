@@ -1,4 +1,4 @@
-# Fundamentals of Bioinformatics and Genomics
+# Bioinformatics and Genomics (BiG)
 
 🐘TO-DO🐘
 
@@ -7,7 +7,7 @@
 
 ![Venn-diagram-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Venn-diagram-bioinformatics.png)
 
-If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
+If you have questions, or find something can be improved, please <a href="mailto:youdng@gmail.com">send me an email.</a> Thanks!
 
 
 参考教材：
