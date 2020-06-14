@@ -7,10 +7,12 @@
 
 ![Venn-diagram-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Venn-diagram-bioinformatics.png)
 
-If you have questions, or find something can be improved, please <a href="mailto:youdng@gmail.com">send me an email.</a> Thanks!
+本书[3]是我在近几年给生物、食品专业本科生或研究生上的生信教学内容基础上整理编撰而成。本书共有18章，每章内容对应一个教学课时，可根据课程的教学课时数(如15/16周)选讲部分内容。另外，生物信息学注重理论知识与实践操作相结合，因此一般课堂讲授11-12个课时，上机练习3-4课时。下图是我推荐的教学安排：
+![Teaching-Plan](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Teaching-plan-bioinformatics.png)
 
+If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
 
-参考教材：
-1. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社
+参考书：
+1. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.
 2. Jamil Momand & Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford University Press.
-3. 李余动编著，生物信息学与基因组分析入门，2020，浙江大学出版社.
+3. 李余动编著，生物信息学与基因组分析入门，202X，浙江大学出版社.
