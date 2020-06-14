@@ -7,8 +7,8 @@
 
 ![Venn-diagram-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Venn-diagram-bioinformatics.png)
 
-本书[3]是我在近几年给生物、食品专业本科生或研究生上的生信教学内容基础上整理编撰而成。本书共有18章，每章内容对应一个教学课时，可根据课程的教学课时数(如15/16周)选讲部分内容。另外，生物信息学注重理论知识与实践操作相结合，因此一般课堂讲授11-12个课时，上机练习3-4课时。下图是我推荐的教学安排：
-![Teaching-Plan](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Teaching-plan-bioinformatics.png)
+本书[3]是我在近几年给生物、食品专业本科生或研究生上的生信课程内容基础上整理编撰而成，共有18章，其中第1章、第2章与第18章分别对应生物学、计算机科学与统计学的基础知识，第13-17章对应新一代测序数据分析内容。每章内容适用于一个教学课时，可根据课程的教学课时数(如15/16周)选讲部分内容，其它章节供学生自学。另外，生物信息学注重理论知识与实践操作相结合，因此一般课堂讲授11-12个课时，上机练习3-4课时。下图是我推荐的教学安排：
+![Teaching-Plan-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Teaching-plan-bioinformatics.png)
 
 If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
 
