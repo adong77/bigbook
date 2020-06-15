@@ -3,18 +3,15 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* 实验技术
 * [生命组学(Life Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
 * Linux系统
-* [Python编程](Computer/Python-learn.md)
-* [Perl语言](Computer/Perl-learn.md)
+* [编程语言](Computer/Python-learn.md)
 
 ### 📊统计学(Statistics)
 * 概率(Probability)
 * [R统计绘图](Statistics/R-intro.md)
-* [统计学习(机器学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 生物学基础](BiologyBasics.md)

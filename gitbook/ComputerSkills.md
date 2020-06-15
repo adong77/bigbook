@@ -5,3 +5,4 @@
 * R (ggplots)
 
 * [谷歌上网助手](http://blog.ligene.cn/2020/04/08/ghelper/)
+* [Perl语言](Computer/Perl-learn.md)
