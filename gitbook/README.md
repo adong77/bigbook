@@ -12,7 +12,7 @@
 * 第3-12章为生物信息学的基本理论与方法；
 * 第13-17章内容则介绍新一代基因组测序技术及其应用。
 
-每章内容适用于一次(周)教学课时，可根据不同教学课时数(如15/16周)选讲部分章节内容，其它内容供学生自学。另外，生物信息学是一门实践性很强的课程，因此一般课堂讲授11-12个课时，上机实践练习3-4个课时。我推荐的教学安排如下图所示：
+每章内容适用于一次教学课时(1.5h)，可根据不同教学周数(如15/16周)选讲部分章节内容，其它内容供学生自学。另外，生物信息学是一门实践性很强的课程，因此一般课堂讲授11-12个课时，上机实践练习3-4个课时。我推荐的教学安排如下图所示：
 ![Teaching-Plan-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Teaching-plan-bioinformatics.png)
 
 If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
