@@ -1,0 +1,92 @@
+{
+  "title": "生物信息学与基因组分析入门",
+  "author": "adong",
+  "description": "BiGbook使用介绍",
+  "keywords": "生物信息学,基因组学,教材,",
+  "introduction": {
+    "path": "README.md",
+    "title": "bigbook前言"
+  },
+  "plugins": [
+    "editlink",
+    "image-captions",
+    "splitter",
+    "expandable-chapters-small",
+    "-mathjax",
+    "ga",
+    "disqus",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "sitemap",
+    "localized-footer"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "editlink": {
+      "base": "https://github.com/adong77/bigbook",
+      "label": "编辑本页",
+      "multilingual": false
+    },
+    "image-captions": {
+      "caption": "Image - _CAPTION_",
+      "align": "center"
+    },
+    "expandable-chapters-small": {},
+    "fontSettings": {
+      "theme": "white",
+      "family": "serif",
+      "size": 2
+    },
+    "ga": {
+      "token": "UA-60753376-1"
+    },
+    "disqus": {
+      "shortName": "bigbook-tutorial"
+    },
+    "search-pro": {
+      "cutWordLib": "nodejieba"
+    },
+    "sitemap": {
+      "hostname": "https://adong77.github.io/"
+    },
+    "localized-footer": {
+      "hline": true,
+      "filename": "./FOOTER.md"
+    }
+  },
+  "links": {
+    "home": false,
+    "about": false,
+    "issues": false,
+    "contribute": false,
+    "sidebar": {
+      "博客地址": "https://blog.ligene.cn/"
+    },
+    "tail": {
+      "BiGbook使用入门": "http://adong77.github.io/bigbook"
+    },
+    "gitbook": false,
+    "sharing": {
+      "google": true,
+      "facebook": true,
+      "twitter": true,
+      "weibo": true,
+      "qrcode": true
+    }
+  },
+  "pdf": {
+    "toc": true,
+    "pageNumbers": true,
+    "fontSize": 12,
+    "paperSize": "a4",
+    "margin": {
+      "right": 62,
+      "left": 62,
+      "top": 36,
+      "bottom": 36
+    }
+  }
+}
