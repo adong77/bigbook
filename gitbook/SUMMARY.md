@@ -13,7 +13,6 @@
 ## 📊统计学(Statistics)
 * [概率基础(Basic Probability)](Statistics/BasicProbability.md)
 * [R统计绘图](Statistics/R-intro.md)
-* [统计学习(机器学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 生物学基础](BiologyBasics.md)

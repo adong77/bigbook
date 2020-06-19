@@ -2,7 +2,7 @@
 
 🐘TO-DO🐘
 
-生物信息学结合生物学、计算机科学和统计学等学科的方法，以实现对海量生物医学数据的分析与解读，从而揭示生命的奥秘。随着DNA测序技术的快速发展，以及大数据和人工智能技术的广泛应用，生物信息技术在疾病诊断、药物开发、肿瘤防治、病原体检测及农作物育种等方面都有重要的应用价值。
+生物信息学结合生物学、计算机科学和统计学等学科的方法，以实现对海量生物医学数据的分析与解读，从而揭示生命的奥秘。随着基因组测序技术的快速发展，以及大数据和人工智能技术的广泛应用，生物信息技术在疾病防治、药物开发、肿瘤诊断(cancer diagnostics)、病原体检测(pathogen detection)及农作物育种等方面都有重要的应用价值。
 * 生物信息学(bioinformatics) = 生物学(biology) + 计算机科学(computer science) + 统计学(statistics)
 
 ![Venn-diagram-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Venn-diagram-bioinformatics.png)
