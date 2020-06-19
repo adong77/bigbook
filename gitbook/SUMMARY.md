@@ -11,7 +11,7 @@
 * [Perl语言](Computer/Perl.md)
 
 ## 📊统计学(Statistics)
-* 概率基础(Basic Probability)
+* [概率基础(Basic Probability)](Statistics/BasicProbability.md)
 * [R统计绘图](Statistics/R-intro.md)
 * [统计学习(机器学习)](Statistics/StatLearning.md)
 
