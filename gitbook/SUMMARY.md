@@ -3,11 +3,11 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* [生物实验(Experiments)](Biology/wet-lab.md)
+* [生物实验技术(wet-lab)](Biology/wet-lab.md)
 * [生命组学(Life Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
-* [Linux系统](Computer/Linux.md)
+* [Linux操作系统(OS)](Computer/Linux.md)
 * [Python编程(Programming)](Computer/Python.md)
 * [Perl语言](Computer/Perl.md)
 
