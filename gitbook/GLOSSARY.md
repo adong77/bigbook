@@ -1,15 +1,18 @@
 ## 词汇表
 
 * 5-mC
+
 5-甲基胞嘧啶(5-methylcytosine)，表观遗传DNA修饰的常见形式，由胞嘧啶的第五位碳原子上加上一个甲基产生。
 
 * ASCII
+
 美国信息交换标准代码，ASCII码是计算机中字符的数字表示形式。
 
 * cDNA
 互补DNA序列，mRNA逆转录后形成的双链DNA，与mRNA互补。
 
 * CDS
+
 编码序列(Coding Sequence)，能翻译成蛋白质的DNA区域。
 
 * contig
