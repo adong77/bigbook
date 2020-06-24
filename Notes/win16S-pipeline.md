@@ -3,7 +3,7 @@
 * Please note that QIIME1 and the 97% OTU-based workflow has been superseded by ASVs (100% OTUs) and the QIIME2 workflow! 
 
 ### 1. 流程相关软件安装
-本分析流程需要安装QIIME、VSEARCH等软件，测试系统为Ubuntu Linux 20.04LTS。
+本分析流程需要安装QIIME、VSEARCH等软件，测试Linux系统为Ubuntu 16.04LTS。
 * 安装Linux常用工具
 ```
 $sudo apt-get install build-essential	#Linux基础开发工具
@@ -11,7 +11,6 @@ $sudo apt-get install python-minimal python-dev python-tk
 $sudo apt-get install python-pip  #可用pip安装python包
 $python --version
 #如果python不是python2.7，请设置python2为默认版本：alias python=’/usr/bin/python2’(可把此命令写入~/.bashrc文件中)。
-$sudo apt install default-jre #安装Java运行环境(JRE)
 ```
 
 * 安装QIIME
@@ -39,21 +38,25 @@ $sudo make install  #默认安装在/usr/local/bin/目录
 $sudo cp /usr/local/bin/vsearch /usr/local/bin/usearch61 #让qiime的参数usearch61使用vsearch程序
 ```
 
-* 安装ClustalW
+* 安装ClustalW或Muscle
 `$sudo apt-get install clustalw`
+`$sudo apt-get install muscle`
 
 * 安装RDP classifier
+先下载RDP Classifier v2.2(只有此版本能用)，下载网址：https://sourceforge.net/projects/rdp-classifier/files/rdp-classifier/，
+再将其解压到windows系统的D盘根目录，并复制到Ubuntu系统的用户home目录：
 ```
-#1.下载RDP Classifier v2.2(只有此版本能用)，下载网址：https://sourceforge.net/projects/rdp-classifier/files/rdp-classifier/
-#2.解压到windows系统的D盘根目录，并复制到Ubuntu系统的用户home目录：
 $mv /mnt/d/rdp_classifier_2.2/  ~/
 $echo "export RDP_JAR_PATH=~/rdp_classifier_2.2/rdp_classifier-2.2.jar" >> ~/.bashrc
 $source ~/.bashrc
 ```
+RDP classifier是一个Java程序，还需要安装JRE：
+`$sudo apt install default-jre #安装Java运行环境(JRE)`
 
 * 安装Xming可运行X-windows图形程序
+下载安装包Xming-setup.exe（版本6.9.0.31），Xming官网：http://sourceforge.net/projects/xming/。
+安装完后，再ubuntu内设置显示参数：
 ```
-#下载安装包Xming-setup.exe（最新版本6.9.0.31），Xming官网：http://sourceforge.net/projects/xming/
 $echo "export DISPLAY=:0.0" >> ~/.bashrc #设置X图形显示端口
 $source ~/.bashrc
 ```
