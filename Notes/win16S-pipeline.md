@@ -26,6 +26,9 @@ $sudo pip install qiime -i http://mirrors.aliyun.com/pypi/simple --trusted-host 
 测序QIIME安装是否成功:
 `$print_qiime_config.py -t`
 注：在WSL下能运行并打印QIIME相关配置信息，但会报错，不影响QIIME正常使用
+* 安装qiime时停止不动，可试一下或反复运行几次这条安装命令:
+`sudo pip install qiime -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com  --extra-index-url http://mirrors.aliyun.com/pypi/simple`
+
 
 ### (3) 安装VSEARCH
 ```
@@ -37,6 +40,8 @@ $make
 $sudo make install  #默认安装在/usr/local/bin/目录
 $sudo cp /usr/local/bin/vsearch /usr/local/bin/usearch61 #让qiime的参数usearch61使用vsearch程序
 ```
+#安装VSEARCH遇到问题：./autogen.sh:autoreconf: Not found
+`sudo apt-get install autoconf` 
 
 ### (4) 安装ClustalW或Muscle
 ```
