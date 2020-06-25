@@ -8,7 +8,7 @@
 
   根据在生物信息学中学到的构建进化树知识，一般在不知道物种的进化亲缘关系时，进化树最好以无根(unrooted)树形式显示。目前500多株已测序的新冠病毒序列的无根树如下图所示。这个图可以预测不同病毒之间的亲缘关系，但不说明哪个病毒出现更早或更晚，即不推断祖先序列。从图2中可以看出，我国分离到的病毒序列（蓝色）都集中在上面几个分枝，而下面一大分枝并没有出现我国的病毒株；而有趣的是，分离自美国的病毒(红色)却在所有进化分枝中都存在。这说明从目前已测序的病毒序列来看，美国的病毒序列的多样性比中国的病毒更高。而多样性高一般可以作为物种起源的一个证据。例如现在科学界都认为人类起源于非洲，其中一个原因是人类基因组序列研究表明，非洲人的基因序列多样性比较高。而美国的冠状病毒的多样性高是不是可以说明新冠病毒起源于美国呢？ 当然，这是基于现在已测序的基因序列信息，随着各国病毒序列的增加，可能会有变化。
 ![ncov-tree2.png](https://raw.githubusercontent.com/adong77/ligene/master/imageBed/ncov_tree2.png)
-图2新冠病毒进化无根树 (来源https://www.gisaid.org/epiflu-applications/next-hcov-19-app/)
+图2 新冠病毒进化无根树 (来源https://www.gisaid.org/epiflu-applications/next-hcov-19-app/)
 
   学习生物信息学时，老师一般会说要确定一个进化树的根部，要利用一个与所分析物种亲缘关系比较远的物种作为外群(outgroup)来确定树根。我们知道蝙蝠病毒RaTG13是目前已知与新冠病毒最接近的序列，那么我们是不是可以以RaTG13为外群来确定新冠病毒的进化关系？通过网络查找，我没有发现以RaTG13为外群的进化树。从网站virological.org看到有一个人已经专门做了新冠病毒的进化树分析Phylogenetic analysis of nCoV-2019 genomes(http://virological.org/t/phylogenetic-analysis-of-23-ncov-2019-genomes-2020-01-23/335)，但可惜他没有以RaTG13为外群构建进化树，而是以武汉病毒为根（图3）。但他在进化树的图注中说明树根选武汉病毒是任意的(arbitrary)，原话是“The tree is rooted using the oldest sequence but this is an arbitrary choice”。这里的最老的(oldest)序列是指最早被检测并测序的意思。
 ![nCoV_phyml_tree_20200125.png](https://raw.githubusercontent.com/adong77/ligene/master/imageBed/nCoV_phyml_tree.png)
