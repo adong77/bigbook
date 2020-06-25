@@ -171,7 +171,8 @@ $biom add-metadata -i otus_table.biom -o otus_table_tax.biom --observation-metad
 运行可视化命令前，电脑要先运行Xming软件。
 Plot relative abundance for all samples:
 `$summarize_taxa_through_plots.py -i otus_table_tax.biom -m mapping.txt -o taxa_summary`
-输出文件存放在目录taxa_summary，其中图形信息放在目录taxa_summary_plots，可打开bar_charts.html文件查看各个分类水平的菌株分布信息。
+输出文件存放在目录taxa_summary，其中图形信息放在目录taxa_summary_plots，可用浏览器打开bar_charts.html文件查看各个样本自门水平(L2)到属水平(L6)分类水平的菌株组成分布信息。
+从上到下分别列出5个分类水平门到属的柱状图，每个柱状图下面是对应的数据表，表中分类(Taxonomy)的字母分别代表不同分类水平：k=kingdom, p=phylum, c=class, o=order, f=family, g=genus.
 
 
 #### (13) Align sequences on QIIME using the ClustalW or muscle method
