@@ -3,7 +3,7 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* [实验技术(wet-lab)](Biology/wet-lab.md)
+* [实验技术(Wet-Lab)](Biology/wet-lab.md)
 * [生命组学(Life Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
