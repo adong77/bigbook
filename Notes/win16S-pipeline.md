@@ -20,7 +20,8 @@ $sudo pip install numpy==1.10.0 -i http://mirrors.aliyun.com/pypi/simple --trust
 $sudo pip install matplotlib==1.5.3 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 $sudo pip install scipy==1.0.0 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 $sudo pip install ipython==5.5.0 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
-sudo pip install pandas==0.21.1 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+$sudo pip install pandas==0.21.1 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+$sudo pip install biom-format==2.1.4 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 $sudo pip install qiime -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
 ```
 测序QIIME安装是否成功:
