@@ -8,7 +8,7 @@
 
 ### 💻计算机科学(Computer Science)
 * [Linux操作系统](Computer/Linux.md)
-* [计算机编程(Programming)](Computer/Programming.md)
+* [Python编程(Programming)](Computer/Python.md)
 * [Perl语言](Computer/Perl.md)
 
 ### 📊统计学(Statistics)
