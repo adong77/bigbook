@@ -1,5 +1,6 @@
 language: node_js
-node_js: stable
+node_js: 
+  - "v10.19.0"
 
 # 缓存依赖
 cache:  
@@ -20,6 +21,7 @@ before_install:
   # 依赖安装
 install:
   - npm install -g gitbook-cli
+  - gitbook install
 
 script:
   - gitbook build ./gitbook ./docs  # 自定义输出目录 gitbook build src dest
