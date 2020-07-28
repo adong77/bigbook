@@ -20,7 +20,6 @@ before_install:
   # 依赖安装
 install:
   - npm install -g gitbook-cli
-  - gitbook install   # 安装 gitbook 插件
 
 script:
   - gitbook build ./gitbook ./docs  # 自定义输出目录 gitbook build src dest
@@ -37,6 +36,7 @@ deploy:
   github_token: $GITHUB_TOKEN
     # 将 build 目录下的内容推送到默认的 gh-pages 分支上，并不会连带 build 目录一起
   local_dir: docs # or remove this line to upload from root of repo
+  target-branch: gh-pages
   name: $GIT_NAME
   email: $GIT_EMAIL
   on:
