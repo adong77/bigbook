@@ -34,7 +34,7 @@
 * 第15章 全基因组重测序(Whole Genome Resequencing)
 * 第16章 转录组测序(RNA-Seq)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17metagenome.md)
-* [第18章 数据分析入门](DataAnalytics.md)
+* [第18章 组学数据分析入门](DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
