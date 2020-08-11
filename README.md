@@ -5,7 +5,7 @@
 * ⭐️Scripts
 
 test picbed:
-![PicBed](http://mail.zjgsu.edu.cn/coremail/XT3/nf/doGetFile.jsp?mid=2%3a1tbiAgEPCV4ByyJ8igACsH&sid=CAxhvyWWuAEqepQBrfWWtMecyvCptMex)
+![PicBed](http://mail.zjgsu.edu.cn/coremail/s/preview/~_~/2:1tbiAgEPCV4ByyJ8igACsH/OrHx/_00001.png)
 
 
 
