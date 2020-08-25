@@ -3,7 +3,6 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* [实验技术(Wet-Lab)](Biology/wet-lab.md)
 * [生命组学(Life Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
@@ -12,8 +11,8 @@
 * [Perl语言](Computer/Perl.md)
 
 ### 📊统计学(Statistics)
-* [Basic Probability(概率)](Statistics/BasicProbability.md)
-* [R统计绘图](Statistics/R-intro.md)
+* [概率论(Probability)](Statistics/BasicProbability.md)
+* [R统计软件](Statistics/R.md)
 * [统计学习(机器学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
