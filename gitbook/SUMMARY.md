@@ -4,7 +4,7 @@
 
 ### 🧬生物学(Biology)
 * [生命组学(Omics)](Biology/Omics.md)
-* [实验方法(Protocols)(Biology/Protocols.md)]
+* [实验原理与方法(Protocols)(Biology/Protocols.md)]
 
 ### 💻计算机科学(Computer Science)
 * [Linux操作系统](Computer/Linux.md)
@@ -14,7 +14,7 @@
 ### 📊统计学(Statistics)
 * [概率论(Probability)](Statistics/BasicProbability.md)
 * [R统计与作图](Statistics/R.md)
-* [统计学习(机器学习)](Statistics/StatLearning.md)
+* [机器学习(统计学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 生物学基础](BiologyBasics.md)
