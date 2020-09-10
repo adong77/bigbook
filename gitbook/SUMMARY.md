@@ -3,8 +3,8 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
+* [生化与分子生物学](Biology/MolBio.md)
 * [生命组学(Omics)](Biology/Omics.md)
-* [实验原理与方法(Protocols)](Biology/Protocols.md)
 
 ### 💻计算机科学(Computer Science)
 * [Linux操作系统](Computer/Linux.md)
@@ -12,7 +12,7 @@
 * [Perl语言](Computer/Perl.md)
 
 ### 📊统计学(Statistics)
-* [概率论(Probability)](Statistics/BasicProbability.md)
+* [概率论(Probability)](Statistics/Probability.md)
 * [R统计与作图](Statistics/R.md)
 * [机器学习(统计学习)](Statistics/StatLearning.md)
 
