@@ -4,7 +4,7 @@
 
 ### 🧬生物学(Biology)
 * [生命组学(Omics)](Biology/Omics.md)
-* [实验原理与方法(Protocols)(Biology/Protocols.md)]
+* [实验原理与方法(Protocols)](Biology/Protocols.md)
 
 ### 💻计算机科学(Computer Science)
 * [Linux操作系统](Computer/Linux.md)
