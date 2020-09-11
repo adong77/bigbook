@@ -3,7 +3,7 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* [生化与分子生物学](Biology/MolBio.md)
+* [生物学基础](Biology/BiologyBasics.md)
 * [生命组学(Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
@@ -17,8 +17,8 @@
 * [机器学习(统计学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
-* [第1章 生物学基础](BiologyBasics.md)
-* [第2章 计算机技能](ComputerSkills.md)
+* [第1章 分子生物学基础](Tutorials/01MolBio.md)
+* [第2章 计算机技能基础](Tutorials/02ComputerSkills.md)
 * 第3章 生物数据库(Biological Database)
 * 第4章 序列比对(Sequence Alignment)
 * 第5章 BLAST数据库搜索
@@ -34,7 +34,7 @@
 * 第15章 全基因组重测序(Whole Genome Resequencing)
 * 第16章 转录组测序(RNA-Seq)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17metagenome.md)
-* [第18章 组学数据分析入门](DataAnalytics.md)
+* [第18章 组学数据分析入门](Tutorials/18DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
