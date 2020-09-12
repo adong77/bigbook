@@ -12,11 +12,11 @@
 
 ### 📊统计学(Statistics)
 * [概率论(Probability)](Statistics/Probability.md)
-* [R语言与统计绘图](Statistics/R.md)
+* [R语言统计与绘图](Statistics/R.md)
 * [机器学习(统计学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
-* [第1章 生物学基础](Tutorials/01BioogyBasics.md)
+* [第1章 生物学基础](Tutorials/01BiologyBasics.md)
 * [第2章 计算机技能](Tutorials/02ComputerSkills.md)
 * 第3章 生物数据库(Biological Database)
 * 第4章 序列比对(Sequence Alignment)
