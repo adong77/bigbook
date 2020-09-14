@@ -3,7 +3,6 @@
 * [前言](README.md)
 
 ### 🧬生物学(Biology)
-* [生化与分子生物学](Biology/MolBio.md)
 * [生命组学(Omics)](Biology/Omics.md)
 
 ### 💻计算机科学(Computer Science)
@@ -13,7 +12,7 @@
 
 ### 📊统计学(Statistics)
 * [概率论(Probability)](Statistics/Probability.md)
-* [R语言统计与绘图](Statistics/R.md)
+* [R统计软件](Statistics/R.md)
 * [机器学习(统计学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
