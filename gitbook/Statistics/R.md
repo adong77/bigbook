@@ -1,5 +1,7 @@
 ## Inroduction to R
 
+R is a free software environment for statistical computing and graphics.
+
 * 做生物信息分析是避免不了使用R语言的，特别是R的bioconductor社区，在基因组学，尤其在单细胞测序数据分析上，已经是独步江湖了。
 
 

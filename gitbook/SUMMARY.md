@@ -13,7 +13,7 @@
 ### 📊统计学(Statistics)
 * [概率论(Probability)](Statistics/Probability.md)
 * [R统计软件](Statistics/R.md)
-* [机器学习(统计学习)](Statistics/StatLearning.md)
+* [统计学习(机器学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 生物学基础](Tutorials/01BiologyBasics.md)
