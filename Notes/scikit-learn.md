@@ -33,9 +33,16 @@ print("y_train shape:", y_train.shape)
 X_train shape:(112, 4)
 y_train shape:(112,)
 
-### 选择和训练模型
 在构建机器学习模型之前，首先应检查数据，以确定数据集的特征属性是否完整。检查数据的最佳方法之一就是将其可视化。
-这里选择使用K近邻分类算法。
+```
+iris_dataframe = pd.DataFrame(X_train, columns= iris_dataset.feature_names)
+pd.DataFrame.hist(iris_dataframe, figsize=(6, 6))
+pd.plotting.scatter_matrix(iris_dataframe, figsize=(16, 12))
+```
+
+### 选择和训练模型
+不同的机器学习模型针对某一特定问题有不同的执行效率和准确度，因此针对特定问题选择合适的模型非常重要。这里选择使用K近邻分类算法。
+机器学习模型的构建主要分两大部分：模型训练和模型测试。模型训练是在数据集上训练机器学习模型的参数及拓扑结构，模型测试是对已训练模型的精度、准确度等进行测试。通常将数据集分为训练数据集与测试数据集两部分。训练数据集用来训练模型，模型训练好后，在测试集上测试模型的性能，以判断模型的泛化能力(generalization ability)。泛化能力的强弱是选择机器学习模型的重要依据。
 ```
 from sklearn.neighbors import KNeighborsClassifier
 knn = KNeighborsClassifier(n_neighbors=1)
@@ -65,7 +72,7 @@ Predicted target name:['setosa']
 经过模型预测，此鸢尾花的品种属于setosa。
 
 ### 评估模型
-使用训练好的模型，对测试集进行预测，预测结果与测试集的数据标签进行比较，通过计算准确率（鸢尾花品种预测正确所占的比例）来衡量模型。
+使用训练好的模型，对测试集进行预测，预测结果与测试集的数据标签进行比较，通过计算准确率（鸢尾花品种预测正确所占的比例）来衡量模型的好坏。为了更好地评估模型在新数据集上的错误率，一般使用更复杂的方法-交叉验证(cross validation)。评估模型可以确定模型在数据集上的泛化能力，而模型优化可以提升模型的泛化能力。
 ```
  y_pred = knn.predict(X_test)
  print("Test set predictions:\n", y_pred)

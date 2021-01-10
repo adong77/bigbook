@@ -1,6 +1,7 @@
 ## 16S rDNA扩增子数据分析实践
 本16S rRNA基因扩增子测序数据分析流程包括：首先对样本测序数据进行质控与预处理；然后得到样本的OTU聚类与物种分类信息；在查看样品的细菌种类后，统计每个样品的差异菌种。
 * Please note that QIIME1 and the 97% OTU-based workflow has been superseded by ASVs (100% OTUs) and the QIIME2 workflow! 
+* Example marker-gene workflow: https://astrobiomike.github.io/amplicon/workflow_ex
 
 ### 1. 流程相关软件安装
 本分析流程需要安装QIIME、VSEARCH等软件，测试Linux系统为Ubuntu 16.04LTS。
