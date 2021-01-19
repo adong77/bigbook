@@ -33,7 +33,6 @@
     "favicon",
     "todo",
     "edit-link",
-    "3-ba",
     "chart",
     "disqus",
     "github"
@@ -44,7 +43,7 @@
       "label": "编辑此页"
     },
     "theme-default": {
-      "showLevel": false
+      "showLevel": true
     },
     "prism": {
       "css": [
@@ -79,10 +78,8 @@
         "google",
         "twitter",
         "weibo",
-        "instapaper",
         "linkedin",
         "pocket",
-        "stumbleupon",
         "qq",
         "qzone"
       ]
