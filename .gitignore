@@ -2,7 +2,7 @@
 .vscode
 # gitbook
 #gitbook/_book
-docs/gitbook
+docs/
 
 # Compiled source #
 ###################
