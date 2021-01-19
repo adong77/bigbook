@@ -2,7 +2,8 @@
 .vscode
 # gitbook
 #gitbook/_book
-docs/
+docs
+node_modules
 
 # Compiled source #
 ###################

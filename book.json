@@ -9,33 +9,7 @@
     "readme": "README.md"
   },
   "plugins": [
-    "-lunr",
-    "-search",
-    "anchors",
-    "search-plus",
-    "-livereload",
-    "simple-page-toc",
-    "prism",
-    "prism-themes",
-    "-highlight",
-    "advanced-emoji",
-    "include-codeblock",
-    "-sharing",
-    "sharing-plus",
-    "ace",
-    "emphasize",
-    "splitter",
-    "page-footer-ex",
-    "expandable-chapters-small",
-    "sectionx",
-    "local-video",
-    "anchor-navigation-ex",
-    "favicon",
-    "todo",
-    "edit-link",
-    "chart",
-    "disqus",
-    "github"
+    "expandable-chapters-small"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -43,46 +17,7 @@
       "label": "编辑此页"
     },
     "theme-default": {
-      "showLevel": true
-    },
-    "prism": {
-      "css": [
-        "prismjs/themes/prism-okaidia.css"
-      ]
-    },
-    "include-codeblock": {
-      "template": "ace",
-      "unindent": true,
-      "edit": true
-    },
-    "sharing": {
-      "douban": true,
-      "facebook": false,
-      "google": false,
-      "hatenaBookmark": false,
-      "instapaper": false,
-      "line": false,
-      "linkedin": true,
-      "messenger": false,
-      "pocket": false,
-      "qq": false,
-      "qzone": false,
-      "stumbleupon": false,
-      "twitter": false,
-      "viber": false,
-      "vk": false,
-      "weibo": true,
-      "whatsapp": false,
-      "all": [
-        "facebook",
-        "google",
-        "twitter",
-        "weibo",
-        "linkedin",
-        "pocket",
-        "qq",
-        "qzone"
-      ]
+      "showLevel": false
     },
     "page-footer-ex": {
       "copyright": "Copyright ©2019 [adong](https://github.com/adong77) <br/>   [![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/) 本书采用 [知识共享署名-非商业性使用 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/) 进行许可。<br/>    本书仍在勘误阶段，请勿以任何形式私自传播，我们保留对本书的版权",
