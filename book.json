@@ -40,7 +40,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/lavas-project/pwa-book/edit/master",
+      "base": "https://github.com/adong77/bigbook/edit/master",
       "label": "编辑此页"
     },
     "theme-default": {
