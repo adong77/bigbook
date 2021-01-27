@@ -7,10 +7,10 @@
 
 * 💻计算机科学(Computer Science) 
     * [Linux操作系统](Computer/Linux.md)
-    * [Perl语言编程(Programming)](Computer/Perl.md)
+    * [Perl语言编程](Computer/Perl.md)
 
 * 📊统计学(Statistics)
-    * [概率论(Probability)](Statistics/Probability.md)
+    * [概率基础(Probability)](Statistics/Probability.md)
     * [R统计软件](Statistics/R.md)
 
 ### 📖BiG教程(Tutorials)
