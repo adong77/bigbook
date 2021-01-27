@@ -7,13 +7,11 @@
 
 * 💻计算机科学(Computer Science) 
     * [Linux操作系统](Computer/Linux.md)
-    * [Python编程(Programming)](Computer/Python.md)
-    * [Perl语言](Computer/Perl.md)
+    * [Perl语言编程(Programming)](Computer/Perl.md)
 
 * 📊统计学(Statistics)
     * [概率论(Probability)](Statistics/Probability.md)
     * [R统计软件](Statistics/R.md)
-    * [统计学习(机器学习)](Statistics/StatLearning.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 生物学基础](Tutorials/01BiologyBasics.md)
@@ -33,7 +31,7 @@
 * [第15章 全基因组重测序(Whole Genome Resequencing)](Tutorials/15WGR.md)
 * [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 数据分析入门](Tutorials/18DataAnalytics.md)
+* [第18章 组学数据分析入门](Tutorials/18DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
