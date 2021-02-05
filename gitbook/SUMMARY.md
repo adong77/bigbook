@@ -2,14 +2,14 @@
 
 * [前言](README.md)
 
-* 🧬生物学(Biology)
+* [🧬生物学(Biology)](Biology/MolBio.md)
     * [生命组学(Omics)](Biology/Omics.md)
 
-* 💻计算机科学(Computer Science) 
+* [💻计算机科学(Computer Science)] (Computer/Python.md)
     * [Linux操作系统](Computer/Linux.md)
     * [Perl语言编程](Computer/Perl.md)
 
-* 📊统计学(Statistics)
+* [📊统计学(Statistics)](Statistics/StatLearning.md)
     * [概率基础](Statistics/Probability.md)
     * [R统计软件](Statistics/R.md)
 
