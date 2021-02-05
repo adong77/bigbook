@@ -10,7 +10,7 @@
     * [Perl语言编程](Computer/Perl.md)
 
 * 📊统计学(Statistics)
-    * [概率基础(Probability)](Statistics/Probability.md)
+    * [概率基础](Statistics/Probability.md)
     * [R统计软件](Statistics/R.md)
 
 ### 📖BiG教程(Tutorials)
