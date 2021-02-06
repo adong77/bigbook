@@ -19,7 +19,7 @@
 * [第4章 序列比对(Sequence Alignment)](Tutorials/04SequenceAlignment.md)
 * [第5章 BLAST数据库搜索](Tutorials/05BLAST.md)
 * [第6章 分子进化(Molecular Evolution)](Tutorials/06MolecularEvolution.md)
-* [第7章 系统发育树(Phylogenetic Tree)](Tutorials/07Phylogeny.md)
+* [第7章 系统发育树(Phylogenetic Tree)](Tutorials/07Phylogenetics.md)
 * [第8章 蛋白质结构预测](Tutorials/08ProteinStructure.md)
 * [第9章 RNA分析](Tutorials/09RNA.md)
 * [第10章 PCR引物设计(Primer Design)](Tutorials/10PCR.md)
