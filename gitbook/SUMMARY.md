@@ -10,7 +10,7 @@
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/Stats.md)
-    * [R统计入门](Statistics/R.md)
+    * [R统计软件](Statistics/R.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 分子生物学(Molecular Biology)](Tutorials/01BiologyBasics.md)
