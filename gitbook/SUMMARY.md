@@ -13,8 +13,8 @@
     * [R统计软件](Statistics/R.md)
 
 ### 📖BiG教程(Tutorials)
-* [第1章 分子生物学(Molecular Biology)](Tutorials/01MolecularBiology.md)
-* [第2章 计算机技能(Computer Skills)](Tutorials/02ComputerSkills.md)
+* [第1章 分子生物学基础(Molecular Biology)](Tutorials/01MolecularBiology.md)
+* [第2章 计算机技能基础(Computer Skills)](Tutorials/02ComputerSkills.md)
 * [第3章 生物数据库(Biological Database)](Tutorials/03BiologicalDatabase.md)
 * [第4章 序列比对(Sequence Alignment)](Tutorials/04SequenceAlignment.md)
 * [第5章 BLAST数据库搜索](Tutorials/05BLAST.md)
@@ -30,7 +30,7 @@
 * [第15章 全基因组重测序(Whole Genome Resequencing)](Tutorials/15Resequencing.md)
 * [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 数据分析(Data Analytics)](Tutorials/18DataAnalytics.md)
+* [第18章 数据分析入门(Data Analytics)](Tutorials/18DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
