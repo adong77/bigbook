@@ -25,7 +25,7 @@ Perl程序的基本执行单位是语句，一条语句以分号(;)结尾。有�
 在Linux终端通过以下命令来运行脚本：
 `$perl hello.pl`
 该程序的运行结果是在屏幕上显示:”Hello World!”。正确运行的结果如图1所示。
-![运行窗口]((https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Perl-fig1.png)
+![运行窗口](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Perl-fig1.png)
 注意：Perl解释器有一个参数(-c)可以只检查语法错误，不运行脚本。
 另外，还有一个参数(-e)可以快速运行脚本：
 `$perl –e 'print "hello world!\n";' `
@@ -67,6 +67,7 @@ $var1 += 2;
 ```
 上面两行Perl代码的结果是完全一样的，运算符“+=”可使得从一个变量加上一个数的运算变得简单。
 表1 常用的Perl运算符
+
 |运算符|作用|
 |:----|:----|
 |*, /, +, -|加、减、乘、除|
@@ -99,6 +100,7 @@ print("Done!\n”);
 在这个例子中，第一行检验$x里存储的值是否比2大，如果是的话，第一个程序块被执行，并输出"x is large.”，然后程序跳到else块的结尾，并执行最后一个print语句，输出"Done!”。而如果$x比2小的话，则对第一个elsif进行判断，如果$x大于0，那么执行紧跟下面程序块，并输出"x is positive.”。 然后和前面一样，跳到else块的结尾，并执行最后一个print语句。如果$x不比0大，则执行最后的else语句块，输出“x is negative.”。if/else结构保证了可以根据$x值有且仅有一个条件程序块被执行。不管执行了哪个程序块，程序都会执行最后的print语句，并输出“Done!”。
 这个例子只使用了简单的关系运算符”>”来判断变量的值是不是大于一个特定的数。Perl还有很多可以用于条件检验的关系与逻辑运算符（表2）。
 表2 Perl常用的关系和逻辑运算符
+
 |运算符|作用|
 |:----|:----|
 |<, >, <=, >=|数字比较大小|
