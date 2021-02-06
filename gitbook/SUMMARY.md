@@ -2,20 +2,19 @@
 
 * [前言](README.md)
 
-* [🧬生物学(Biology)](Biology/MolBio.md)
-    * [生命组学(Omics)](Biology/Omics.md)
+* [🧬生物学(Biology)](Biology/BiologyBasics.md)
+    * [组学(Omics)](Biology/Omics.md)
 
 * [💻计算机科学(Computer Science)](Computer/Python.md)
     * [Linux操作系统](Computer/Linux.md)
     * [Perl编程语言](Computer/Perl.md)
 
-* [📊统计学(Statistics)](Statistics/StatLearning.md)
-    * [概率基础](Statistics/Probability.md)
-    * [R统计软件](Statistics/R.md)
+* [📊统计学(Statistics)](Statistics/Stats.md)
+    * [R统计入门](Statistics/R.md)
 
 ### 📖BiG教程(Tutorials)
-* [第1章 生物学基础](Tutorials/01BiologyBasics.md)
-* [第2章 计算机技能](Tutorials/02ComputerSkills.md)
+* [第1章 分子生物学(Molecular Biology)](Tutorials/01BiologyBasics.md)
+* [第2章 计算机技能(Computer Skills)](Tutorials/02ComputerSkills.md)
 * [第3章 生物数据库(Biological Database)](Tutorials/03BiologicalDatabase.md)
 * [第4章 序列比对(Sequence Alignment)](Tutorials/04SequenceAlignment.md)
 * [第5章 BLAST数据库搜索](Tutorials/05BLAST.md)
@@ -31,7 +30,7 @@
 * [第15章 全基因组重测序(Whole Genome Resequencing)](Tutorials/15WGR.md)
 * [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 数据分析入门](Tutorials/18DataAnalytics.md)
+* [第18章 数据分析(Data Analytics)](Tutorials/18DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
