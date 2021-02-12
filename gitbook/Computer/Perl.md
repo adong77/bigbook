@@ -47,7 +47,7 @@ Perl语言中一个变量可以是整数，如7，或一个实数，如3.14159�
 ```
 $my_variable = 3.14159;
 print (“my variable contains the value: $my_variable\n”);
-#printf格式化字符串
+#printf格式化数字
 printf (“my variable contains the value: %.3f\n”, $my_variable);
 printf (“my variable contains the value: %.2e\n”, $my_variable);
 
@@ -58,6 +58,15 @@ print (“my variable contains the value: $my_variable\n”);
 ```
 将上面的代码输入到一个文本文件，并在Perl里执行，就会看到变量$my_variable先包含一个实数(3.14159)，然后用printf命令格式化数字，只保留小数点后3位（%.3f）,或以科学计数法表示，且只保留2位小数(%.2e)。
 最后，变量被赋予一个字符串(“Hello World”)，再使用字符串连接运算符将感叹号添加到现有文本字符串的末尾(“Hello World!”)。
+
+有时候需要对字符串和变量进行操作，例如想把字符“y”附加到一个字符串变量后面，可以用下面的代码：
+```
+$name = "Mike";
+$nickname = "${name}y"
+```
+在美元符号后面用大括号把变量名包含起来，这样${name}就和$name一样，但让变量名在哪里开始和结束更清楚，不然Perl将寻找不到变量$namey。
+
+
 
 #### 基本运算
 Perl包含大部分数学与字符串的运算符。表1是Perl的常见运算符及其作用。为了方便编写程序，Perl还有一些运算符的组合，如下面这个例子：
@@ -116,7 +125,7 @@ $var1 = “0012.0”;
 $var2 = “12”;
 ```
 这两个变量在数字上是相等的，因此检验($var1 == $var2)为TRUE，但这两个变量是不同的字符，所以检验($var1 eq $var2)为FALSE。
-注意数字比较是要用两个等号(==)，而不是一个等号，初学者容易犯这样的错误，写出下面的代码：
+**注意数字比较是要用两个等号(==)，而不是一个等号**，初学者容易犯这样的错误，写出下面的代码：
 ```
 if ($var1 = $var2){
 	print (“the two variables are equal.\n”);
