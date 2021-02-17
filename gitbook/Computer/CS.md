@@ -1,9 +1,9 @@
 ## Computer Science
 
 
+
 * Linux (Bash)
 * Python/Perl
-* R (ggplots)
 
 ### Python
 ## References:
