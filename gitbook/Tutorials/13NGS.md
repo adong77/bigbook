@@ -1,5 +1,9 @@
 ##第13章 NGS数据分析基础
 
+
+![NGS一般流程](https://raw.githubusercontent.com/adong77/ligene/master/imageBed/book/fig13-1.png)
+图 13 1 NGS一般流程
+
 ###FastQC结果解读
 FastQC结果报告基本内容有11个方面，包括基本统计，碱基含量分布统计，质量分布统计，GC含量，N碱基，插入片长度分布，adapter接头情况，kmer频率分布情况等。其中绿色表示通过(PASS)，黄色表示警告(WARN)，红色表示有问题(FAIL)。 
 下面我们分别看一下各部分结果，以及 FastQC 判断各部分结果通过、警告和不合格的阈值。我们应关注结果中未通过的部分，仔细思考为什么我们的数据会得到这样的结果，可能存在哪些问题？
