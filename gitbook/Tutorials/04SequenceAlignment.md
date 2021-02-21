@@ -1,6 +1,14 @@
 ## Sequence Alignment
 
-1.1 双序列比对实践
+### 点阵图
+
+### 空位罚分
+
+### 局部比对
+![全局比对与局部比对算法](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig4-6.png)
+图 4 6全局比对与局部比对算法
+
+### 1.1 双序列比对实践
 
 我们可以利用Needleman-Wunsch算法来比较流感病毒HA片段。 首先，让我们看看2009年美国流行的H1N1病毒 - 参考毒株被指定为A/California/07/2009(H1N1)与另一个中国流行的人类季节性H5N1病毒A/goose/Guangdong/1/1996(H5N1)的序列比对。 
 1.1.1 序列查找
