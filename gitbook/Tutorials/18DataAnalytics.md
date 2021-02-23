@@ -7,3 +7,9 @@
 
 Reference:
 1. Grolemund G, Wickham H. R for Data Science (R数据科学). Available from: https://r4ds.had.co.nz/
+
+![机器学习发展](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig18-1.png)
+图 18 1 机器学习发展
+
+![分类混淆矩阵](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig18-6.png)
+图 18-6 分类混淆矩阵和相关指标计算公式
