@@ -42,6 +42,9 @@
 * MAF
 种群中最小等位基因变异频率(minor allele frequency)。
 
+* mTOR
+哺乳动物雷帕霉素靶点（mammalian target of rapamycin， mTOR）
+
 * N50
 基因组组装的加权平均重叠群大小。所有重叠群根据其长度排序并相加，当总长度等于或大于组装大小的50%时，那个重叠群的长度即为N50。
 
