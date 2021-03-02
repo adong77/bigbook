@@ -351,3 +351,4 @@ printf(“There are $Ucount uracil in the the sequence\n”);
 ### 参考文献
 1. Randal L. Schwartz, Learning Perl (Perl编程入门), O’Reilly press, 2016 
 2. Tore Samuelsson, Genomics and bioinformatics: an introduction to programming tools for life scientists. Cambridge University Press, 2012.
+3. Perl 程序员应该知道的事: http://perl.linuxtoy.org/
