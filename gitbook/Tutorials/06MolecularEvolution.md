@@ -1,4 +1,4 @@
-## Molecular Evolution
+# Molecular Evolution
 
 ### 检测选择压力
 中性理论的一个关键预测是种群间的每个核苷酸的替换率(substitution rate, d)应该等于种群内个体的突变率(mutation rate, u)。在一个基因组区域，假设突变都是严格中性的，我们可以期望观察到d ~ u。与中性突变相比，如果某个给定区域的替换率显著降低(序列保守)，说明它受到一定的负选择（negative selection）或净化选择（purifying selection），因为有些突变被清除(净化)出种群了。相反，如果我们观察到一个区域的替换速率显著升高，则预示这个区域受到正选择(positive selection)，因为突变被固定到种群的概率增加。因此通过比较一个基因区域的突变速率与替换速率的估计值，可以推测这个区域是否受正选择或负选择。

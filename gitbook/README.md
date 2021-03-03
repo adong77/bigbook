@@ -15,7 +15,7 @@
 每章内容适用于一次教学课时(1.5h)，可根据不同教学课时(如15/16周)选讲部分章节内容，其它内容供学生自学。另外，生物信息学是一门实践性很强的课程，因此一般课堂讲授11-12个课时，上机实践练习3-4个课时。本教材的推荐教学安排如下图所示：
 ![Teaching-Plan-bioinformatics](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Teaching-plan-bioinformatics.png)
 
-If you have questions, or find something can be improved, please <a href="mailto:youdng@hotmail.com">send me an email.</a> Thanks!
+If you have questions, or find something can be improved, please send me an email(<a href="mailto:youdng@hotmail.com">youdng@hotmail.com</a>). Thanks!
 
 参考书：
 1. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.

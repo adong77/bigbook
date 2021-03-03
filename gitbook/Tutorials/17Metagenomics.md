@@ -1,4 +1,4 @@
-## Metagenomics
+# Metagenomics
 
 ### QIIME
 

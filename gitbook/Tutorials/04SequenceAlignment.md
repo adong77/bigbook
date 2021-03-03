@@ -1,4 +1,4 @@
-## Sequence Alignment
+# Sequence Alignment
 
 ### 点阵图
 

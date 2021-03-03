@@ -1,4 +1,4 @@
-## Genomics
+# Genomics
 
 
 ### 1.1 模式生物基因组
