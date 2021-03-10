@@ -1,0 +1,644 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第4章 序列比对(Sequence Alignment) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05BLAST.html" />
+    
+    
+    <link rel="prev" href="03BiologicalDatabase.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Biology/BiologyBasics.html">
+            
+                <a href="../Biology/BiologyBasics.html">
+            
+                    
+                    🧬生物学(Biology)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Biology/Omics.html">
+            
+                <a href="../Biology/Omics.html">
+            
+                    
+                    组学(Omics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Computer/CS.html">
+            
+                <a href="../Computer/CS.html">
+            
+                    
+                    💻计算机科学(Computer Science)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Computer/Linux.html">
+            
+                <a href="../Computer/Linux.html">
+            
+                    
+                    Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Computer/Perl.html">
+            
+                <a href="../Computer/Perl.html">
+            
+                    
+                    Perl编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Statistics/Stats.html">
+            
+                <a href="../Statistics/Stats.html">
+            
+                    
+                    📊统计学(Statistics)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Statistics/R.html">
+            
+                <a href="../Statistics/R.html">
+            
+                    
+                    R统计软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">📖BiG教程(Tutorials)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01MolecularBiology.html">
+            
+                <a href="01MolecularBiology.html">
+            
+                    
+                    第1章 分子生物学基础(Molecular Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02ComputerSkills.html">
+            
+                <a href="02ComputerSkills.html">
+            
+                    
+                    第2章 计算机技能基础(Computer Skills)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03BiologicalDatabase.html">
+            
+                <a href="03BiologicalDatabase.html">
+            
+                    
+                    第3章 生物数据库(Biological Database)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="04SequenceAlignment.html">
+            
+                <a href="04SequenceAlignment.html">
+            
+                    
+                    第4章 序列比对(Sequence Alignment)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05BLAST.html">
+            
+                <a href="05BLAST.html">
+            
+                    
+                    第5章 序列数据库搜索(BLAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06MolecularEvolution.html">
+            
+                <a href="06MolecularEvolution.html">
+            
+                    
+                    第6章 分子进化(Molecular Evolution)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07Phylogenetics.html">
+            
+                <a href="07Phylogenetics.html">
+            
+                    
+                    第7章 系统发育树(Phylogenetic Tree)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08ProteinStructure.html">
+            
+                <a href="08ProteinStructure.html">
+            
+                    
+                    第8章 蛋白质结构预测(Protein Structure)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09RNA.html">
+            
+                <a href="09RNA.html">
+            
+                    
+                    第9章 RNA分析(RNA analysis)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10PCR.html">
+            
+                <a href="10PCR.html">
+            
+                    
+                    第10章 PCR引物设计(Primer Design)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11DNAsequencing.html">
+            
+                <a href="11DNAsequencing.html">
+            
+                    
+                    第11章 DNA测序(DNA Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12Genomics.html">
+            
+                <a href="12Genomics.html">
+            
+                    
+                    第12章 基因组学(Genomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13NGS.html">
+            
+                <a href="13NGS.html">
+            
+                    
+                    第13章 NGS基础(Next-Generation Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14Resequencing.html">
+            
+                <a href="14Resequencing.html">
+            
+                    
+                    第14章 基因组重测序(Whole Genome Resequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15Assembly.html">
+            
+                <a href="15Assembly.html">
+            
+                    
+                    第15章 基因组组装(Genome Assembly)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="16RNAseq.html">
+            
+                <a href="16RNAseq.html">
+            
+                    
+                    第16章 转录组测序(RNA-Seq)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="17Metagenomics.html">
+            
+                <a href="17Metagenomics.html">
+            
+                    
+                    第17章 宏基因组学(Metagenomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="18DataAnalytics.html">
+            
+                <a href="18DataAnalytics.html">
+            
+                    
+                    第18章 数据分析入门(Data Analytics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Appendix.html">
+            
+                <a href="../Appendix.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第4章 序列比对(Sequence Alignment)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sequence-alignment">Sequence Alignment</h1>
+<h3 id="&#x70B9;&#x9635;&#x56FE;">&#x70B9;&#x9635;&#x56FE;</h3>
+<h3 id="&#x7A7A;&#x4F4D;&#x7F5A;&#x5206;">&#x7A7A;&#x4F4D;&#x7F5A;&#x5206;</h3>
+<h3 id="&#x5C40;&#x90E8;&#x6BD4;&#x5BF9;">&#x5C40;&#x90E8;&#x6BD4;&#x5BF9;</h3>
+<p><img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig4-6.png" alt="&#x5168;&#x5C40;&#x6BD4;&#x5BF9;&#x4E0E;&#x5C40;&#x90E8;&#x6BD4;&#x5BF9;&#x7B97;&#x6CD5;">
+&#x56FE; 4 6&#x5168;&#x5C40;&#x6BD4;&#x5BF9;&#x4E0E;&#x5C40;&#x90E8;&#x6BD4;&#x5BF9;&#x7B97;&#x6CD5;</p>
+<h3 id="11-&#x53CC;&#x5E8F;&#x5217;&#x6BD4;&#x5BF9;&#x5B9E;&#x8DF5;">1.1 &#x53CC;&#x5E8F;&#x5217;&#x6BD4;&#x5BF9;&#x5B9E;&#x8DF5;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;Needleman-Wunsch&#x7B97;&#x6CD5;&#x6765;&#x6BD4;&#x8F83;&#x6D41;&#x611F;&#x75C5;&#x6BD2;HA&#x7247;&#x6BB5;&#x3002; &#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x770B;2009&#x5E74;&#x7F8E;&#x56FD;&#x6D41;&#x884C;&#x7684;H1N1&#x75C5;&#x6BD2; - &#x53C2;&#x8003;&#x6BD2;&#x682A;&#x88AB;&#x6307;&#x5B9A;&#x4E3A;A/California/07/2009(H1N1)&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x4E2D;&#x56FD;&#x6D41;&#x884C;&#x7684;&#x4EBA;&#x7C7B;&#x5B63;&#x8282;&#x6027;H5N1&#x75C5;&#x6BD2;A/goose/Guangdong/1/1996(H5N1)&#x7684;&#x5E8F;&#x5217;&#x6BD4;&#x5BF9;&#x3002; 
+1.1.1 &#x5E8F;&#x5217;&#x67E5;&#x627E;
+&#xFF08;1&#xFF09;&#x6253;&#x5F00;NCBI&#x7F51;&#x7AD9;&#xFF1A;<a href="https://www.ncbi.nlm.nih.gov&#xFF1B;" target="_blank">https://www.ncbi.nlm.nih.gov&#xFF1B;</a>
+&#xFF08;2&#xFF09;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x65B9;&#x641C;&#x7D22;&#x680F;&#x4E2D;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x7C7B;&#x578B;&#x4ECE;&#x201C;All Datebases&#x201D;&#x6539;&#x4E3A;&#x201C;Nucleotide&#x201D;&#xFF0C;&#x5E76;&#x5728;&#x8F93;&#x5165;&#x680F;&#x91CC;&#x952E;&#x5165;&#x6240;&#x9700;&#x75C5;&#x6BD2;&#x540D;&#x79F0;&#xFF0C;&#x5982;A/California/07/2009(H1N1)&#xFF0C;&#x70B9;&#x51FB;search&#x6309;&#x94AE;&#xFF1B;
+&#xFF08;3&#xFF09;&#x70B9;&#x51FB;&#x7ED3;&#x679C;&#x9875;&#x9762;&#x7684;&#x5DE6;&#x8FB9;&#x680F;&#x201C;Source databases&#x201D;&#x7684;RefSeq&#xFF0C;&#x9650;&#x5B9A;&#x53EA;&#x663E;&#x793A;RefSeq&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x53EF;&#x5728;&#x7ED3;&#x679C;&#x4E2D;&#x627E;&#x5230;&#x542B;&#xFF08;HA&#xFF09;&#x7684;&#x7ED3;&#x679C;&#xFF1A;Influenza A virus (A/California/07/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds&#xFF08;Accession:NC_026433.1&#xFF09;&#x3002;
+&#xFF08;4&#xFF09;&#x70B9;&#x51FB;&#x4E0A;&#x9762;HA&#x57FA;&#x56E0;&#x94FE;&#x63A5;&#xFF0C;&#x5728;&#x51FA;&#x73B0;&#x7684;&#x9875;&#x9762;&#x4E2D;FEATURES&#x90E8;&#x5206;&#x627E;&#x5230;CDS&#xFF0C;&#x70B9;&#x51FB;CDS&#x94FE;&#x63A5;&#xFF0C;&#x9875;&#x9762;&#x4E0B;&#x65B9;&#x51FA;&#x73B0;&#x5E8F;&#x5217;&#x663E;&#x793A;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x9009;&#x62E9;Display:FASTA&#xFF0C;&#x5373;&#x53EF;&#x5F97;&#x5230;CDS&#x5E8F;&#x5217;&#x3002;&#x590D;&#x5236;&#x6B64;CDS&#x5E8F;&#x5217;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x9009;&#x62E9;&#x53F3;&#x4E0A;&#x89D2;&#x201D;Send to&#x201D;&#xFF0C;&#x518D;&#x9009;&#x62E9;&#x201D;File&#x201D;&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;
+&#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x65F6;&#x8BF7;&#x52FF;&#x5173;&#x95ED;&#x7F51;&#x9875;&#x3002;
+&#xFF08;5&#xFF09;&#x518D;&#x56DE;&#x9000;&#x5230;&#x524D;&#x9762;&#x7ED3;&#x679C;&#x9875;&#x9762;&#xFF0C;&#x627E;&#x5230;CDS&#x5173;&#x952E;&#x8BCD;&#x540E;&#x9762;&#x7684;HA&#x86CB;&#x767D;&#x8D28;&#x6CE8;&#x91CA;(/protein_id=&quot;YP_009118626.1&quot;)&#xFF0C;&#x5E76;&#x70B9;&#x51FB;&#x201C;protein id=&#x201D;&#x540E;&#x94FE;&#x63A5;&#xFF1B;&#x5728;&#x65B0;&#x51FA;&#x73B0;&#x7684;&#x7ED3;&#x679C;&#x9875;&#x9762;&#x4E2D;&#x9009;&#x62E9;&#x53F3;&#x4E0A;&#x89D2;&#x201D;Send to&#x201D;,&#x518D;&#x9009;&#x62E9;&#x201D;File&#x201D;&#xFF0C;&#x5E76;&#x9009;&#x62E9;&quot;FASTA&quot;&#x683C;&#x5F0F;&#xFF0C;&#x5373;&#x53EF;&#x4FDD;&#x5B58;&#x6C28;&#x57FA;&#x9178;&#x5E8F;&#x5217;&#xFF08;&#x56FE; 4-8&#xFF09;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig4-8.png" alt="&#x6D41;&#x611F;&#x75C5;&#x6BD2;HA&#x86CB;&#x767D;&#x8D28;&#x7684;&#x68C0;&#x7D22;&#x7ED3;&#x679C;">
+&#x56FE; 4-8 &#x6D41;&#x611F;&#x75C5;&#x6BD2;HA&#x86CB;&#x767D;&#x8D28;&#x7684;&#x68C0;&#x7D22;&#x7ED3;&#x679C;</p>
+<p>&#xFF08;6&#xFF09;&#x540C;&#x4E0A;&#x65B9;&#x6CD5;&#x67E5;&#x627E;H5N1&#x75C5;&#x6BD2;A/goose/Guangdong/1/1996(H5N1)&#x53CA;&#x5176;&#x5B83;&#x6D41;&#x611F;&#x75C5;&#x6BD2;&#x7684;&#x57FA;&#x56E0;&#x4E0E;&#x86CB;&#x767D;&#x8D28;&#x5E8F;&#x5217;&#x3002;</p>
+<p>1.1.2 &#x5E8F;&#x5217;&#x6BD4;&#x5BF9;</p>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6B27;&#x6D32;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x7814;&#x7A76;&#x6240;&#xFF08;European Bioinformatics Institute&#xFF09;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x5957;&#x6BD4;&#x5BF9;&#x5DE5;&#x5177;CLUSTAL&#x5BF9;&#x9F50;&#x5E8F;&#x5217;&#x3002;
+&#xFF08;1&#xFF09;&#x9996;&#x5148;&#x6253;&#x5F00;&#x7F51;&#x5740;&#xFF1A;<a href="https://www.ebi.ac.uk/Tools/msa&#xFF1B;" target="_blank">https://www.ebi.ac.uk/Tools/msa&#xFF1B;</a>
+&#xFF08;2&#xFF09;&#x8FD9;&#x91CC;&#x9009;&#x62E9;Clustal Omega&#x7A0B;&#x5E8F;&#xFF0C;&#x70B9;&#x51FB;Launch Clustal Omega&#x94FE;&#x63A5;&#xFF1B;
+&#xFF08;3&#xFF09;&#x590D;&#x5236;&#x524D;&#x9762;&#x4E0B;&#x8F7D;&#x7684;&#x4E24;&#x6761;&#x86CB;&#x767D;&#x8D28;&#x5E8F;&#x5217;&#x5230;&#x5E8F;&#x5217;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x9ED8;&#x8BA4;&#x662F;Protein(&#x5982;&#x662F;DNA&#x8981;&#x9009;&#x62E9;DNA&#xFF09;&#xFF1B;
+&#xFF08;4&#xFF09;&#x5176;&#x5B83;&#x53C2;&#x6570;&#x90FD;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF0C;&#x70B9;&#x51FB;Submit&#x8FD0;&#x884C;&#x6BD4;&#x5BF9;&#x5E8F;&#x5217;&#xFF1B;
+&#x6BD4;&#x5BF9;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x56FE; 4-9&#x6240;&#x793A;&#xFF0C;&#x9876;&#x90E8;&#x663E;&#x793A;&#x6BD4;&#x5BF9;&#x6240;&#x7528;&#x7684;&#x7A0B;&#x5E8F;clustalo&#xFF0C;&#x540E;&#x9762;&#x663E;&#x793A;&#x5E8F;&#x5217;&#x6BD4;&#x5BF9;&#x7ED3;&#x679C;&#xFF0C;&#x5339;&#x914D;&#x7684;&#x6C28;&#x57FA;&#x9178;&#x7531;&#x201C;<em>&#x201D;&#x5B57;&#x7B26;&#x8868;&#x793A;&#xFF0C;&#x70B9;&#xFF08;. &#x6216; :&#xFF09;&#x4EE3;&#x8868;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x4F46;&#x6C28;&#x57FA;&#x9178;&#x7684;&#x7406;&#x5316;&#x6027;&#x8D28;&#x76F8;&#x4F3C;&#xFF0C;&#x77ED;&#x5212;&#x7EBF;&#xFF08;-&#xFF09;&#x586B;&#x8865;&#x7A7A;&#x4F4D;(gap)&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig4-9.png" alt="clustal&#x683C;&#x5F0F;">
+&#x56FE; 4-9 clustal&#x683C;&#x5F0F;
+Clustal&#x683C;&#x5F0F;&#x7684;&#x5E8F;&#x5217;&#x6BD4;&#x5BF9;&#x4E0B;&#x65B9;&#x6709;3&#x79CD;&#x7B26;&#x53F7;&#xFF1A;
+&#x201C;</em>&#x201D;&#xFF1A;&#x4EE3;&#x8868;&#x8BE5;&#x5217;&#x6C28;&#x57FA;&#x9178;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF1B;
+&#x201C;&#xFF1A;&#x201D;&#xFF1A;&#x4EE3;&#x8868;&#x8BE5;&#x5217;&#x6C28;&#x57FA;&#x9178;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x4F46;&#x6709;&#x8F83;&#x9AD8;&#x5EA6;&#x4FDD;&#x5B88;&#x7684;&#x6C28;&#x57FA;&#x9178;&#xFF1B;
+&#x201C;.&#x201D;&#xFF1A;&#x4EE3;&#x8868;&#x8BE5;&#x5217;&#x6C28;&#x57FA;&#x9178;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x4F46;&#x542B;&#x6709;&#x4E00;&#x822C;&#x4FDD;&#x5B88;&#x7684;&#x6C28;&#x57FA;&#x9178;&#x3002;
+&#x800C;&#x6CA1;&#x6709;&#x4E0A;&#x8FF0;&#x7B26;&#x53F7;&#x6807;&#x5FD7;&#x7684;&#x6C28;&#x57FA;&#x9178;&#x4F4D;&#x70B9;&#x5DEE;&#x5F02;&#x8F83;&#x5927;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03BiologicalDatabase.html" class="navigation navigation-prev " aria-label="Previous page: 第3章 生物数据库(Biological Database)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05BLAST.html" class="navigation navigation-next " aria-label="Next page: 第5章 序列数据库搜索(BLAST)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第4章 序列比对(Sequence Alignment)","level":"2.4","depth":1,"next":{"title":"第5章 序列数据库搜索(BLAST)","level":"2.5","depth":1,"path":"Tutorials/05BLAST.md","ref":"Tutorials/05BLAST.md","articles":[]},"previous":{"title":"第3章 生物数据库(Biological Database)","level":"2.3","depth":1,"path":"Tutorials/03BiologicalDatabase.md","ref":"Tutorials/03BiologicalDatabase.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tutorials/04SequenceAlignment.md","mtime":"2021-03-10T08:06:49.705Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-10T08:07:35.076Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
