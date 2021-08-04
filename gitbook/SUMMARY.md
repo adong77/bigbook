@@ -3,7 +3,6 @@
 * [前言](README.md)
 
 * [🧬生物学(Biology)](Biology/BiologyBasics.md)
-    * [组学(Omics)](Biology/Omics.md)
 
 * [💻计算机科学(Computer Science)](Computer/CS.md)
     * [Linux操作系统](Computer/Linux.md)
@@ -19,16 +18,16 @@
 * [第4章 序列比对(Sequence Alignment)](Tutorials/04SequenceAlignment.md)
 * [第5章 序列数据库搜索(BLAST)](Tutorials/05BLAST.md)
 * [第6章 分子进化(Molecular Evolution)](Tutorials/06MolecularEvolution.md)
-* [第7章 系统发育树(Phylogenetic Tree)](Tutorials/07Phylogenetics.md)
+* [第7章 系统发育树(Phylogenetics)](Tutorials/07Phylogenetics.md)
 * [第8章 蛋白质结构预测(Protein Structure)](Tutorials/08ProteinStructure.md)
 * [第9章 RNA分析(RNA analysis)](Tutorials/09RNA.md)
 * [第10章 PCR引物设计(Primer Design)](Tutorials/10PCR.md)
 * [第11章 DNA测序(DNA Sequencing)](Tutorials/11DNAsequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 NGS基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
-* [第14章 基因组重测序(Whole Genome Resequencing)](Tutorials/14Resequencing.md)
+* [第14章 全基因组重测序(Whole Genome Resequencing)](Tutorials/14Resequencing.md)
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
-* [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
+* [第16章 转录组分析(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
 * [第18章 数据分析入门(Data Analytics)](Tutorials/18DataAnalytics.md)
 ----
