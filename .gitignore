@@ -1,7 +1,7 @@
 # vscode
 .vscode
 # gitbook
-#gitbook/_book
+gitbook/_book
 docs
 node_modules
 
