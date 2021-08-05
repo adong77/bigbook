@@ -1,11 +1,12 @@
 # 计算机技能基础
 
 
-## Computational Tools
-* Notepad2
+## Tools
+* [Notepad2代替Windows记事本](http://blog.ligene.cn/2017/07/04/notepad2/)
 * BioEdit
 * [谷歌上网助手](http://blog.ligene.cn/2020/04/08/ghelper/)
 
+### WSL
 （6） 为方便在Linux系统下直接访问Windows系统分区下的文件夹，可以通过ln (link)命令把Windows下的目录链接到Linux系统的用户目录下面：
 `$ ln -s /mnt/c/bigbook   ~/bigbook`
 `$ ls`

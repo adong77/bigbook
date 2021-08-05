@@ -1,19 +1,18 @@
 # Metagenomics
 
-### QIIME
 
+* [物种分类数据文件准备](https://docs.qq.com/doc/DVlZ6bW9pUVluZHFa)
 * [Windows下16S rDNA扩增子测序分析流程](http://blog.ligene.cn/2019/06/08/win16s-pipeline/)
-
 * While the alpha diversity analysis acts like a summary statistics of a single population, the beta diversity measure acts like a similarity score between populations. 
 
-1.1 WGS宏基因组数据分析
+## WGS宏基因组数据分析
 WGS宏基因组的分析流程如图1所示，从测序数据获得物种分类或功能信息有两种方法：短读段直接定位(mapping)与先从头(de novo)组装。这两个方法都依赖序列同源搜索，以reads或组装的contigs在各种基因数据库中搜索序列信息。这个分析过程受已知基因序列信息的限制，但随着测序微生物基因组的快速增加将逐渐缓解。
 
-1.1.1 宏基因组组装
+### 宏基因组组装
 虽然宏基因组学的最终目标是能组装或拼接出一个微生物群落中的所有微生物基因组，但目前受测序技术的限制还远不能达到这个目标。宏基因组测序样本中的微生物数量未知，它们的相对丰度也差异很大，导致其测序的深度也是各不相同。特别是来自复杂微生物群落的样本，其中大多数物种都是低深度的测序，使其组装基本不可能完成。另外相近物种之间的序列可能比较相似，经常导致不同OTUs的序列形成嵌合(chimeric)组装。尽管有这些挑战，宏基因组reads组装是非常重要的分析步骤，特别对复杂度比较低的样品。通过组装能发现未知的微生物基因组(如从Yellowstone lake发现3个新的病毒)，或能从新组装的基因组中预测新的基因或功能元件(如细菌的视紫红质(rhodopsin)，基因编辑CRISPR片段等)。
 目前已开发一些针对宏基因组的专用组装软件，如用于Illumina测序的短reads的组装软件MetaVelvet, metaSPAdes等。这些软件与单基因组组装软件类似都是采用de Bruijn graph算法，具体组装原理可以参见本书第15章相关内容。组装结果经常得到许多小的contigs, 可通过MetaQUAST来评价宏基因组组装质量，像N50及一些汇总统计值，如contigs总数，contig长度的最大，最小与中位值等。检测嵌合组装是质量评价的重要内容，目前还没有合适的工具，但可以通过一些嵌合信号，如覆盖度、GC含量，密码子偏好的变化等来检测嵌合组装。使用paired-end reads与较高的序列相似度域值可以减少嵌合组装。Contig组装后，可以通过将paired-end reads比对回contigs，利用reads之间的连接关系和插入片段大小信息，将contigs拼接成scaffolds，如软件Bambus2可以用各种测序平台的reads来做scaffolding。
 
-1.1.2 微生物群落结构分析
+### 微生物群落结构分析
 宏基因组研究中最关键的一个目标是揭示样本中微生物群落的结构，并根据物种（或其它分类单元）丰度对其进行量化。理论上宏基因组测序可以获得样本中所有基因组的信息，其中自然包括16S rRNA基因等标记基因的片段。
 
 （1）基于标记基因的分类分析 
@@ -32,7 +31,7 @@ WGS宏基因组的分析流程如图1所示，从测序数据获得物种分类�
 与RNA-Seq数据分析类似，宏基因组比较分析前也需要进行数据标准化处理。目前宏基因组还没有统一的标准化方法，一种方法是total-sum scaling(TSS)，把指派到某个OTUs的原始reads数量除以样本的reads总数，等同于RNA-Seq的总计数方法。另一个方法是cumulative-sum scaling(CSS)，与RNA-Seq中的upper quartile方法类似，把指派到某个OTUs的原始reads数量除以达到某个百分比的累积总数。目前的研究表明CSS比其它标准化方法更有效。
 目前有许多工具可以用来比较不同生境或条件的微生物的丰度，包括metagenomeSeq, LEfSe，MEGAN和MG-RAST等。除了用于微生物群落的相对量比较，MEGAN和MG-RAST也可以进行GENE ONTOLOGY(GO)和KEGG途径比较分析不同条件的功能概况。
 
-1.1.3 微生物群落功能注释
+### 微生物群落功能注释
 宏基因组的功能注释最主要的任务是在大量序列中找出编码蛋白质的序列，并确定其功能。简单来说就是基因预测(gene prediction)与基因注释(gene annotation)两个过程，两者也可合称为功能注释(function annotation)。再下游的代谢通路、比较功能分析等都是在功能注释基础上进行的。
 
 （1）基因预测
