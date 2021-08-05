@@ -10,6 +10,7 @@ UCSC基因组浏览器为用户提供方便查询各个物种基因组序列的�
 
 #### UCSC基因组浏览器界面简介
 在网页浏览器打开UCSC主页(http://genome.ucsc.edu/)，并点击菜单栏的Genome Brower就可以看到下面界面（图1）：
+
 ![UCSC Genome Browser](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/UCSC-1.png)
 图1. UCSC基因组浏览器界面
 

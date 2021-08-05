@@ -1,9 +1,9 @@
 # PCR Primer Design
 
 
-1.1 Primer-BLAST 设计qPCR引物
+## Primer-BLAST 设计qPCR引物
 Primer-BLAST为NCBI开发的一款引物设计工具，它将Primer与BLAST合二为一，即能同时完成引物设计与序列同源性比对，从而快速设计合适的PCR引物。现以酵母菌的基因表达研究为例，我们设计引物来做实时荧光定量PCR。注意，对真核生物设计qPCR引物，为避免基因组的扩增，qPCR引物设计最好能跨两个外显子，片段长度以150-200bp为宜。
-1.1.1 目的基因序列下载
+### 目的基因序列下载
 首先，我们通过NCBI查找酿酒酵母(Saccharomyces cerevisiae)的基因CAR2序列，并下载基因序列来设计引物。
 （1）打开NCBI 主页，在左上角的数据库选择框中选择“gene”，然后在右边输入框中输入“CAR2 saccharomyces cerevisiae”，会出现如下页面(图 10 11)，第一个就是酿酒酵母的基因CAR2 (ID:851158)。
 ![基因数据库搜索结果](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-11.png)
@@ -15,7 +15,7 @@ Primer-BLAST为NCBI开发的一款引物设计工具，它将Primer与BLAST合�
 
 （3）点击CAR2基因的mRNA序列的登录号（NM_001182326.1）链接，在新打开的网页中，再点击“send to”选择“Coding Sequences”、“FASTA Nucleotide”下载序列到指定文件（CAR2_gene.fasta）。
 
-1.1.2 引物设计(Primer-BLAST)
+### 引物设计(Primer-BLAST)
 （1）打开NCBI LAST页面https://blast.ncbi.nlm.nih.gov/，点击页面下方的Primer-BLAST(Design primers specific to your PCR template)，进入引物设计页面，如下图 10 13所示。
 ![引物设计页面](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-13.png)
 图 10 13引物设计页面
@@ -29,7 +29,7 @@ Primer-BLAST为NCBI开发的一款引物设计工具，它将Primer与BLAST合�
 ![引物设计结果](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-15.png)
 图 10 15引物设计结果
 
-1.1.3 引物验证(Primer Premier5.0)
+### 引物验证(Primer Premier5.0)
 （1）打开Primer Premier 5.0软件，在通过菜单“filenewDNA sequence ”中导入前面下载的CAR2的基因序列，
 （2）点击菜单“ Primer ”，选择正向引物序列“S”，再点击“ Edit Primers ”进入下图，在标记处输入上步设计好的正向引物，点击按钮“ OKAnalyzeprime ”进行验证（图 10 16）。
 ![Primer Premier5引物编辑窗口](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-16.png)
