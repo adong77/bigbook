@@ -2,6 +2,7 @@
 .vscode
 # gitbook
 gitbook/_book
+_book
 docs
 node_modules
 
