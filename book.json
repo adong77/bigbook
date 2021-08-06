@@ -10,7 +10,9 @@
   },
   "plugins": [
     "github",
-    "expandable-chapters-small"
+    "expandable-chapters-small",
+    "back-to-top-button",
+    "navigator"
   ],
   "pluginsConfig": {
     "github": {
