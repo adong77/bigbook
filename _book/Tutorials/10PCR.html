@@ -1,0 +1,650 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第10章 PCR引物设计(Primer Design) · BiGbook教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="adong <youdng@hotmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11DNAsequencing.html" />
+    
+    
+    <link rel="prev" href="09RNA.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Biology/BiologyBasics.html">
+            
+                <a href="../Biology/BiologyBasics.html">
+            
+                    
+                    🧬生物学(Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Computer/CS.html">
+            
+                <a href="../Computer/CS.html">
+            
+                    
+                    💻计算机科学(Computer Science)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Computer/Linux.html">
+            
+                <a href="../Computer/Linux.html">
+            
+                    
+                    Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Computer/Perl.html">
+            
+                <a href="../Computer/Perl.html">
+            
+                    
+                    Perl编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Statistics/Stats.html">
+            
+                <a href="../Statistics/Stats.html">
+            
+                    
+                    📊统计学(Statistics)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Statistics/R.html">
+            
+                <a href="../Statistics/R.html">
+            
+                    
+                    R统计软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">📖BiG教程(Tutorials)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01MolecularBiology.html">
+            
+                <a href="01MolecularBiology.html">
+            
+                    
+                    第1章 分子生物学基础(Molecular Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02ComputerSkills.html">
+            
+                <a href="02ComputerSkills.html">
+            
+                    
+                    第2章 计算机技能基础(Computer Skills)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03BiologicalDatabase.html">
+            
+                <a href="03BiologicalDatabase.html">
+            
+                    
+                    第3章 生物数据库(Biological Database)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04SequenceAlignment.html">
+            
+                <a href="04SequenceAlignment.html">
+            
+                    
+                    第4章 序列比对(Sequence Alignment)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05BLAST.html">
+            
+                <a href="05BLAST.html">
+            
+                    
+                    第5章 序列数据库搜索(BLAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06MolecularEvolution.html">
+            
+                <a href="06MolecularEvolution.html">
+            
+                    
+                    第6章 分子进化(Molecular Evolution)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07Phylogenetics.html">
+            
+                <a href="07Phylogenetics.html">
+            
+                    
+                    第7章 系统发育树(Phylogenetics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08ProteinStructure.html">
+            
+                <a href="08ProteinStructure.html">
+            
+                    
+                    第8章 蛋白质结构预测(Protein Structure)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09RNA.html">
+            
+                <a href="09RNA.html">
+            
+                    
+                    第9章 RNA分析(RNA analysis)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.10" data-path="10PCR.html">
+            
+                <a href="10PCR.html">
+            
+                    
+                    第10章 PCR引物设计(Primer Design)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11DNAsequencing.html">
+            
+                <a href="11DNAsequencing.html">
+            
+                    
+                    第11章 DNA测序(DNA Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12Genomics.html">
+            
+                <a href="12Genomics.html">
+            
+                    
+                    第12章 基因组学(Genomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13NGS.html">
+            
+                <a href="13NGS.html">
+            
+                    
+                    第13章 NGS基础(Next-Generation Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14Resequencing.html">
+            
+                <a href="14Resequencing.html">
+            
+                    
+                    第14章 全基因组重测序(Whole Genome Resequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15Assembly.html">
+            
+                <a href="15Assembly.html">
+            
+                    
+                    第15章 基因组组装(Genome Assembly)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="16RNAseq.html">
+            
+                <a href="16RNAseq.html">
+            
+                    
+                    第16章 转录组测序(RNA-Seq)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="17Metagenomics.html">
+            
+                <a href="17Metagenomics.html">
+            
+                    
+                    第17章 宏基因组学(Metagenomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="18DataAnalytics.html">
+            
+                <a href="18DataAnalytics.html">
+            
+                    
+                    第18章 组学数据分析(Data Analytics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Appendix.html">
+            
+                <a href="../Appendix.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第10章 PCR引物设计(Primer Design)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="PCR_Primer_Design">PCR Primer Design</h1>
+<h2 id="Primer-BLAST_&#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;">1. Primer-BLAST &#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;</h2>
+<p>Primer-BLAST&#x4E3A;NCBI&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x6B3E;&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x5C06;Primer&#x4E0E;BLAST&#x5408;&#x4E8C;&#x4E3A;&#x4E00;&#xFF0C;&#x5373;&#x80FD;&#x540C;&#x65F6;&#x5B8C;&#x6210;&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x4E0E;&#x5E8F;&#x5217;&#x540C;&#x6E90;&#x6027;&#x6BD4;&#x5BF9;&#xFF0C;&#x4ECE;&#x800C;&#x5FEB;&#x901F;&#x8BBE;&#x8BA1;&#x5408;&#x9002;&#x7684;PCR&#x5F15;&#x7269;&#x3002;&#x73B0;&#x4EE5;&#x9175;&#x6BCD;&#x83CC;&#x7684;&#x57FA;&#x56E0;&#x8868;&#x8FBE;&#x7814;&#x7A76;&#x4E3A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x8BA1;&#x5F15;&#x7269;&#x6765;&#x505A;&#x5B9E;&#x65F6;&#x8367;&#x5149;&#x5B9A;&#x91CF;PCR&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5BF9;&#x771F;&#x6838;&#x751F;&#x7269;&#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;&#xFF0C;&#x4E3A;&#x907F;&#x514D;&#x57FA;&#x56E0;&#x7EC4;&#x7684;&#x6269;&#x589E;&#xFF0C;qPCR&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x6700;&#x597D;&#x80FD;&#x8DE8;&#x4E24;&#x4E2A;&#x5916;&#x663E;&#x5B50;&#xFF0C;&#x7247;&#x6BB5;&#x957F;&#x5EA6;&#x4EE5;150-200bp&#x4E3A;&#x5B9C;&#x3002;</p>
+<h3 id="&#x76EE;&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x4E0B;&#x8F7D;">1.1. &#x76EE;&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x4E0B;&#x8F7D;</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;NCBI&#x67E5;&#x627E;&#x917F;&#x9152;&#x9175;&#x6BCD;(Saccharomyces cerevisiae)&#x7684;&#x57FA;&#x56E0;CAR2&#x5E8F;&#x5217;&#xFF0C;&#x5E76;&#x4E0B;&#x8F7D;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x6765;&#x8BBE;&#x8BA1;&#x5F15;&#x7269;&#x3002;
+&#xFF08;1&#xFF09;&#x6253;&#x5F00;NCBI &#x4E3B;&#x9875;&#xFF0C;&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;&#x6570;&#x636E;&#x5E93;&#x9009;&#x62E9;&#x6846;&#x4E2D;&#x9009;&#x62E9;&#x201C;gene&#x201D;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x53F3;&#x8FB9;&#x8F93;&#x5165;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x201C;CAR2 saccharomyces cerevisiae&#x201D;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x9875;&#x9762;(&#x56FE; 10 11)&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5C31;&#x662F;&#x917F;&#x9152;&#x9175;&#x6BCD;&#x7684;&#x57FA;&#x56E0;CAR2 (ID:851158)&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-11.png" alt="&#x57FA;&#x56E0;&#x6570;&#x636E;&#x5E93;&#x641C;&#x7D22;&#x7ED3;&#x679C;">
+&#x56FE; 10 11&#x57FA;&#x56E0;&#x6570;&#x636E;&#x5E93;&#x641C;&#x7D22;&#x7ED3;&#x679C;</p>
+<p>&#xFF08;2&#xFF09;&#x70B9;&#x51FB;CAR2&#x94FE;&#x63A5;&#xFF0C;&#x6253;&#x5F00;&#x65B0;&#x7684;&#x57FA;&#x56E0;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x540E;&#xFF0C;&#x9F20;&#x6807;&#x79FB;&#x52A8;&#x9875;&#x9762;&#x5230;mRNA and Protein&#x6CE8;&#x91CA;&#x90E8;&#x5206;(&#x56FE; 10 12)&#xFF0C;&#x5176;&#x4E2D;NM_001182326.1&#x662F;mRNA&#x5E8F;&#x5217;&#x7684;&#x767B;&#x5F55;&#x53F7;; NP_013542.1&#x4E3A;&#x86CB;&#x767D;&#x8D28;&#x5E8F;&#x5217;&#x7684;&#x767B;&#x5F55;&#x53F7;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-12.png" alt="CAR2&#x57FA;&#x56E0;&#x4FE1;&#x606F;">
+&#x56FE; 10 12 CAR2&#x57FA;&#x56E0;&#x4FE1;&#x606F;</p>
+<p>&#xFF08;3&#xFF09;&#x70B9;&#x51FB;CAR2&#x57FA;&#x56E0;&#x7684;mRNA&#x5E8F;&#x5217;&#x7684;&#x767B;&#x5F55;&#x53F7;&#xFF08;NM_001182326.1&#xFF09;&#x94FE;&#x63A5;&#xFF0C;&#x5728;&#x65B0;&#x6253;&#x5F00;&#x7684;&#x7F51;&#x9875;&#x4E2D;&#xFF0C;&#x518D;&#x70B9;&#x51FB;&#x201C;send to&#x201D;&#x9009;&#x62E9;&#x201C;Coding Sequences&#x201D;&#x3001;&#x201C;FASTA Nucleotide&#x201D;&#x4E0B;&#x8F7D;&#x5E8F;&#x5217;&#x5230;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF08;CAR2_gene.fasta&#xFF09;&#x3002;</p>
+<h3 id="&#x5F15;&#x7269;&#x8BBE;&#x8BA1;(Primer-BLAST)">1.2. &#x5F15;&#x7269;&#x8BBE;&#x8BA1;(Primer-BLAST)</h3>
+<p>&#xFF08;1&#xFF09;&#x6253;&#x5F00;NCBI LAST&#x9875;&#x9762;<a href="https://blast.ncbi.nlm.nih.gov/&#xFF0C;&#x70B9;&#x51FB;&#x9875;&#x9762;&#x4E0B;&#x65B9;&#x7684;Primer-BLAST(Design" target="_blank">https://blast.ncbi.nlm.nih.gov/&#xFF0C;&#x70B9;&#x51FB;&#x9875;&#x9762;&#x4E0B;&#x65B9;&#x7684;Primer-BLAST(Design</a> primers specific to your PCR template)&#xFF0C;&#x8FDB;&#x5165;&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x9875;&#x9762;&#xFF0C;&#x5982;&#x4E0B;&#x56FE; 10 13&#x6240;&#x793A;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-13.png" alt="&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x9875;&#x9762;">
+&#x56FE; 10 13&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x9875;&#x9762;</p>
+<p>&#xFF08;2&#xFF09;&#x5728;&#x8F93;&#x5165;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x4E0B;&#x8F7D;&#x7684;&#x76EE;&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x4E0B;&#x65B9;&#x7684;&#x201C;&#x6D4F;&#x89C8;&#x201D;&#x6309;&#x94AE;&#x5C06;&#x7535;&#x8111;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x6A21;&#x677F;&#x5E8F;&#x5217;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#xFF1A;PCR&#x4EA7;&#x7269;&#x5927;&#x5C0F;&#x4E3A;80~200bp&#xFF0C;&#x5728;&#x201C;PCR melting temperatures&#x201D;&#x4E2D;&#x8BBE;&#x7F6E;Tm&#x503C;&#x5728;57~63 &#xB0;C&#x4E4B;&#x95F4;&#x3002;&#x5728;&#x201C;PCR  Pair Specificity Checking Parameters&#x201D;&#x4E2D;&#x6570;&#x636E;&#x5E93;(Database)&#x4E0B;&#x62C9;&#x6846;&#x9009;&#x62E9;&#x201C;Refseq mRNA&#x201D;&#xFF0C;&#x5E76;&#x586B;&#x5199;&#x57FA;&#x56E0;&#x6765;&#x81EA;&#x7269;&#x79CD;(Organism)&#x4E3A;&#x201C;Saccharomyces cerevisiae&#x201D;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x6700;&#x4E0B;&#x9762;&#x9009;&#x62E9;&#x663E;&#x793A;&#x5728;&#x65B0;&#x7684;&#x7A97;&#x53E3;, &#x5982;&#x4E0B;&#x56FE; 10 14&#x6240;&#x793A;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-14.png" alt="Primer-BLAST&#x53C2;&#x6570;&#x8BBE;&#x7F6E;"><br>&#x56FE; 10 14 Primer-BLAST&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x70B9;&#x51FB;&#x4E0B;&#x9762;&#x7684;&#x201C;Advanced parameters&#x201D;&#xFF0C;&#x53EF;&#x5BF9;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x8BBE;&#x7F6E;&#xFF0C;&#x5728;&#x6253;&#x5F00;&#x7684;&#x7A97;&#x53E3;&#x4E2D;&#xFF0C;&#x6309;&#x7167;&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x5F15;&#x7269;&#x957F;&#x5EA6;&#xFF0C;GC&#x542B;&#x91CF;&#x7B49;&#x3002;
+&#xFF08;3&#xFF09;&#x70B9;&#x51FB;&#x9875;&#x9762;&#x6700;&#x4E0B;&#x65B9;&#x7684;&#x201C;Get Primers&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x8FDB;&#x5165;&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x7ED3;&#x679C;&#x9875;&#x9762;&#xFF08;&#x56FE; 10 15&#xFF09;&#xFF0C;&#x4ECE;&#x56FE;&#x4E2D;&#x770B;&#x5230;&#x7ED3;&#x679C;&#x4E2D;&#x4F1A;&#x6709;&#x5341;&#x5BF9;&#x5F15;&#x7269;&#xFF0C;&#x6211;&#x4EEC;&#x5BF9;&#x6BCF;&#x5BF9;&#x5F15;&#x7269;&#x8FDB;&#x884C;&#x5206;&#x6790;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9A8C;&#x9700;&#x8981;&#x4ECE;&#x4E2D;&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x5F15;&#x7269;&#x7528;&#x4E8E;PCR&#x5B9E;&#x9A8C;&#x3002;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x524D;&#x9762;&#x51E0;&#x4E2A;&#x5F15;&#x7269;&#xFF0C;&#x590D;&#x5236;&#x5E8F;&#x5217;&#x548C;&#x4EA7;&#x7269;&#x957F;&#x5EA6;&#x5230;&#x8BB0;&#x4E8B;&#x672C;&#xFF0C;&#x7528;&#x4E8E;&#x4E0B;&#x4E00;&#x6B65;&#x9A8C;&#x8BC1;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-15.png" alt="&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x7ED3;&#x679C;">
+&#x56FE; 10 15&#x5F15;&#x7269;&#x8BBE;&#x8BA1;&#x7ED3;&#x679C;</p>
+<h3 id="&#x5F15;&#x7269;&#x9A8C;&#x8BC1;(Primer_Premier5_0)">1.3. &#x5F15;&#x7269;&#x9A8C;&#x8BC1;(Primer Premier5.0)</h3>
+<p>&#xFF08;1&#xFF09;&#x6253;&#x5F00;Primer Premier 5.0&#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x901A;&#x8FC7;&#x83DC;&#x5355;&#x201C;file&#xF0E0;new&#xF0E0;DNA sequence &#x201D;&#x4E2D;&#x5BFC;&#x5165;&#x524D;&#x9762;&#x4E0B;&#x8F7D;&#x7684;CAR2&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#xFF0C;
+&#xFF08;2&#xFF09;&#x70B9;&#x51FB;&#x83DC;&#x5355;&#x201C; Primer &#x201D;&#xFF0C;&#x9009;&#x62E9;&#x6B63;&#x5411;&#x5F15;&#x7269;&#x5E8F;&#x5217;&#x201C;S&#x201D;&#xFF0C;&#x518D;&#x70B9;&#x51FB;&#x201C; Edit Primers &#x201D;&#x8FDB;&#x5165;&#x4E0B;&#x56FE;&#xFF0C;&#x5728;&#x6807;&#x8BB0;&#x5904;&#x8F93;&#x5165;&#x4E0A;&#x6B65;&#x8BBE;&#x8BA1;&#x597D;&#x7684;&#x6B63;&#x5411;&#x5F15;&#x7269;&#xFF0C;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x201C; OK&#xF0E0;Analyze&#xF0E0;prime &#x201D;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF08;&#x56FE; 10 16&#xFF09;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig10-16.png" alt="Primer Premier5&#x5F15;&#x7269;&#x7F16;&#x8F91;&#x7A97;&#x53E3;">
+&#x56FE; 10 16 Primer Premier5&#x5F15;&#x7269;&#x7F16;&#x8F91;&#x7A97;&#x53E3;</p>
+<p>&#xFF08;3&#xFF09;&#x540C;&#x7406;&#xFF0C;&#x53CD;&#x5411;&#x5F15;&#x7269;&#x5E8F;&#x5217;&#x7684;&#x9A8C;&#x8BC1;&#x628A;&#x524D;&#x9762;&#x7684;&#x201C;S&#x201D;&#x6539;&#x4E3A;&#x201C;A&#x201D;&#xFF0C;&#x518D;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#xFF0C;&#x8F93;&#x5165;&#x53CD;&#x5411;&#x5F15;&#x7269;&#x65F6;&#x9009;&#x62E9;&#x201C;Reversed&#x201D;&#xFF0C;&#x518D;&#x70B9;&#x51FB;&#x6309;&#x94AE;OK&#xF0E0;Analyze&#xF0E0;prime&#x8FDB;&#x884C;&#x5206;&#x6790;&#x3002;
+&#xFF08;4&#xFF09;&#x5728;&#x9A8C;&#x8BC1;&#x7ED3;&#x679C;&#x4E2D;&#x6B63;&#x53CD;&#x5F15;&#x7269;&#x4E0D;&#x51FA;&#x73B0;&#x6216;&#x51FA;&#x73B0;&#x8F83;&#x5C11;&#x7684;&#x201C;found&#x201D;&#x4E3A;&#x8F83;&#x597D;&#x7684;&#x5F15;&#x7269;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x51FA;&#x5F15;&#x7269;&#x9001;&#x516C;&#x53F8;&#x5408;&#x6210;&#x3002;</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#PCR_Primer_Design">PCR Primer Design</a></p><li><a href="#Primer-BLAST_&#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;">1. Primer-BLAST &#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;</a></li><ul><li><a href="#&#x76EE;&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x4E0B;&#x8F7D;">1.1. &#x76EE;&#x7684;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x4E0B;&#x8F7D;</a></li><li><a href="#&#x5F15;&#x7269;&#x8BBE;&#x8BA1;(Primer-BLAST)">1.2. &#x5F15;&#x7269;&#x8BBE;&#x8BA1;(Primer-BLAST)</a></li><li><a href="#&#x5F15;&#x7269;&#x9A8C;&#x8BC1;(Primer_Premier5_0)">1.3. &#x5F15;&#x7269;&#x9A8C;&#x8BC1;(Primer Premier5.0)</a></li></ul></ul></div><a href="#Primer-BLAST_&#x8BBE;&#x8BA1;qPCR&#x5F15;&#x7269;" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09RNA.html" class="navigation navigation-prev " aria-label="Previous page: 第9章 RNA分析(RNA analysis)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11DNAsequencing.html" class="navigation navigation-next " aria-label="Next page: 第11章 DNA测序(DNA Sequencing)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第10章 PCR引物设计(Primer Design)","level":"2.10","depth":1,"next":{"title":"第11章 DNA测序(DNA Sequencing)","level":"2.11","depth":1,"path":"Tutorials/11DNAsequencing.md","ref":"Tutorials/11DNAsequencing.md","articles":[]},"previous":{"title":"第9章 RNA分析(RNA analysis)","level":"2.9","depth":1,"path":"Tutorials/09RNA.md","ref":"Tutorials/09RNA.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small","back-to-top-button","navigator","livereload"],"root":"./gitbook","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/adong77/bigbook.git"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"navigator":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"adong <youdng@hotmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BiGbook教程","language":"zh-hans","gitbook":"3.2.3","description":"生物信息学与基因组分析入门"},"file":{"path":"Tutorials/10PCR.md","mtime":"2021-08-05T18:03:00.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-06T03:23:32.471Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

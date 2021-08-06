@@ -1,0 +1,970 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Perl编程语言 · BiGbook教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="adong <youdng@hotmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Statistics/Stats.html" />
+    
+    
+    <link rel="prev" href="Linux.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Biology/BiologyBasics.html">
+            
+                <a href="../Biology/BiologyBasics.html">
+            
+                    
+                    🧬生物学(Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="CS.html">
+            
+                <a href="CS.html">
+            
+                    
+                    💻计算机科学(Computer Science)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="Perl.html">
+            
+                <a href="Perl.html">
+            
+                    
+                    Perl编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Statistics/Stats.html">
+            
+                <a href="../Statistics/Stats.html">
+            
+                    
+                    📊统计学(Statistics)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Statistics/R.html">
+            
+                <a href="../Statistics/R.html">
+            
+                    
+                    R统计软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">📖BiG教程(Tutorials)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Tutorials/01MolecularBiology.html">
+            
+                <a href="../Tutorials/01MolecularBiology.html">
+            
+                    
+                    第1章 分子生物学基础(Molecular Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Tutorials/02ComputerSkills.html">
+            
+                <a href="../Tutorials/02ComputerSkills.html">
+            
+                    
+                    第2章 计算机技能基础(Computer Skills)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Tutorials/03BiologicalDatabase.html">
+            
+                <a href="../Tutorials/03BiologicalDatabase.html">
+            
+                    
+                    第3章 生物数据库(Biological Database)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Tutorials/04SequenceAlignment.html">
+            
+                <a href="../Tutorials/04SequenceAlignment.html">
+            
+                    
+                    第4章 序列比对(Sequence Alignment)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Tutorials/05BLAST.html">
+            
+                <a href="../Tutorials/05BLAST.html">
+            
+                    
+                    第5章 序列数据库搜索(BLAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Tutorials/06MolecularEvolution.html">
+            
+                <a href="../Tutorials/06MolecularEvolution.html">
+            
+                    
+                    第6章 分子进化(Molecular Evolution)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../Tutorials/07Phylogenetics.html">
+            
+                <a href="../Tutorials/07Phylogenetics.html">
+            
+                    
+                    第7章 系统发育树(Phylogenetics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../Tutorials/08ProteinStructure.html">
+            
+                <a href="../Tutorials/08ProteinStructure.html">
+            
+                    
+                    第8章 蛋白质结构预测(Protein Structure)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../Tutorials/09RNA.html">
+            
+                <a href="../Tutorials/09RNA.html">
+            
+                    
+                    第9章 RNA分析(RNA analysis)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../Tutorials/10PCR.html">
+            
+                <a href="../Tutorials/10PCR.html">
+            
+                    
+                    第10章 PCR引物设计(Primer Design)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../Tutorials/11DNAsequencing.html">
+            
+                <a href="../Tutorials/11DNAsequencing.html">
+            
+                    
+                    第11章 DNA测序(DNA Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../Tutorials/12Genomics.html">
+            
+                <a href="../Tutorials/12Genomics.html">
+            
+                    
+                    第12章 基因组学(Genomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../Tutorials/13NGS.html">
+            
+                <a href="../Tutorials/13NGS.html">
+            
+                    
+                    第13章 NGS基础(Next-Generation Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../Tutorials/14Resequencing.html">
+            
+                <a href="../Tutorials/14Resequencing.html">
+            
+                    
+                    第14章 全基因组重测序(Whole Genome Resequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../Tutorials/15Assembly.html">
+            
+                <a href="../Tutorials/15Assembly.html">
+            
+                    
+                    第15章 基因组组装(Genome Assembly)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="../Tutorials/16RNAseq.html">
+            
+                <a href="../Tutorials/16RNAseq.html">
+            
+                    
+                    第16章 转录组测序(RNA-Seq)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="../Tutorials/17Metagenomics.html">
+            
+                <a href="../Tutorials/17Metagenomics.html">
+            
+                    
+                    第17章 宏基因组学(Metagenomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="../Tutorials/18DataAnalytics.html">
+            
+                <a href="../Tutorials/18DataAnalytics.html">
+            
+                    
+                    第18章 组学数据分析(Data Analytics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Appendix.html">
+            
+                <a href="../Appendix.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Perl编程语言</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="PERL&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x5165;&#x95E8;">1. PERL&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x5165;&#x95E8;</h2>
+<blockquote>
+<p>&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;Perl&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x65B9;&#x6CD5;&#xFF0C;&#x5E0C;&#x671B;&#x8BFB;&#x8005;&#x80FD;&#x638C;&#x63E1;&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#xFF0C;&#x5E76;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5206;&#x6790;&#x5B9E;&#x8DF5;&#x4E2D;&#x63D0;&#x9AD8;&#x7F16;&#x7A0B;&#x6280;&#x80FD;&#x3002;</p>
+</blockquote>
+<p>&#x7F16;&#x7A0B;(Programming)&#x662F;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x7684;&#x7B80;&#x79F0;&#xFF0C;&#x5C31;&#x662F;&#x7F16;&#x5199;&#x4E00;&#x7CFB;&#x5217;&#x6307;&#x4EE4;&#xFF08;&#x4EE3;&#x7801;&#xFF09;&#xFF0C;&#x6307;&#x793A;&#x8BA1;&#x7B97;&#x673A;&#x6267;&#x884C;&#x6307;&#x4EE4;&#x4EE5;&#x89E3;&#x51B3;&#x7279;&#x5B9A;&#x95EE;&#x9898;&#x3002;&#x7F16;&#x7A0B;&#x9996;&#x5148;&#x8981;&#x8BBE;&#x8BA1;&#x4E00;&#x5957;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x903B;&#x8F91;&#x6B65;&#x9AA4;&#xFF08;&#x7B97;&#x6CD5;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7B97;&#x6CD5;&#x201C;&#x8F6C;&#x6362;&#x201D;&#x4E3A;&#x7279;&#x5B9A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF08;&#x5982;Java&#xFF0C;C&#xFF0C;Perl&#x6216;Python&#xFF09;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x6BCF;&#x79CD;&#x8BED;&#x8A00;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7279;&#x5B9A;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;&#x5FC5;&#x987B;&#x9075;&#x5FAA;&#x82F1;&#x8BED;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x6765;&#x5199;&#x53E5;&#x5B50;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x6709;&#x9075;&#x5FAA;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#xFF0C;&#x8BA1;&#x7B97;&#x673A;&#x624D;&#x80FD;&#x6B63;&#x786E;&#x5730;&#x89E3;&#x91CA;&#x7F16;&#x7A0B;&#x8BED;&#x53E5;&#x3002;&#x6240;&#x8C13;&#x7A0B;&#x5E8F;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x4EFB;&#x52A1;&#x7684;&#x8BED;&#x53E5;&#xFF08;&#x5373;&#x6E90;&#x4EE3;&#x7801;&#xFF09;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x6E90;&#x4EE3;&#x7801;&#x6700;&#x7EC8;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x8BA1;&#x7B97;&#x673A;&#x80FD;&#x8BC6;&#x522B;&#x7684;&#x673A;&#x5668;&#x8BED;&#x8A00;&#xFF08;machine language&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x6267;&#x884C;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x3002;&#x5B66;&#x4E60;&#x7F16;&#x7A0B;&#x4E0D;&#x4EC5;&#x8981;&#x5B66;&#x4E60;&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x80FD;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x8BED;&#x53E5;&#xFF0C;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8981;&#x57F9;&#x517B;&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x8BA1;&#x7B97;&#x95EE;&#x9898;&#x7684;&#x903B;&#x8F91;&#x601D;&#x7EF4;&#x80FD;&#x529B;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x80FD;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x771F;&#x6B63;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x9AD8;&#x6548;&#x7B97;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x518D;&#x591A;&#x7684;&#x8BED;&#x6CD5;&#x77E5;&#x8BC6;&#x4E5F;&#x4E0D;&#x80FD;&#x591F;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;
+&#x867D;&#x7136;&#x7F16;&#x7A0B;&#x4E0D;&#x662F;&#x5B66;&#x4E60;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x6240;&#x5FC5;&#x9700;&#x7684;&#x6280;&#x80FD;&#xFF0C;&#x4F46;&#x5B66;&#x4E60;&#x7F16;&#x7A0B;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x63D0;&#x9AD8;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x5206;&#x6790;&#x6548;&#x7387;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5404;&#x79CD;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x683C;&#x5F0F;&#x4E94;&#x82B1;&#x516B;&#x95E8;&#xFF0C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x540E;&#x624D;&#x80FD;&#x7528;&#x4E8E;&#x76F8;&#x5173;&#x8F6F;&#x4EF6;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x624B;&#x5DE5;&#x4FEE;&#x6539;&#x683C;&#x5F0F;&#x4F1A;&#x975E;&#x5E38;&#x7E41;&#x7410;&#xFF0C;&#x800C;&#x7F16;&#x7A0B;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x8F6C;&#x6362;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x3002;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x6709;&#x4E9B;&#x7279;&#x522B;&#x7684;&#x6570;&#x636E;&#x5206;&#x6790;&#x9700;&#x6C42;&#xFF0C;&#x6CA1;&#x6709;&#x73B0;&#x6210;&#x7684;&#x8F6F;&#x4EF6;&#x53EF;&#x7528;&#xFF0C;&#x53EA;&#x80FD;&#x81EA;&#x5DF1;&#x7F16;&#x7A0B;&#x6765;&#x5904;&#x7406;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5B66;&#x4E60;&#x7F16;&#x7A0B;&#x5E76;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x590D;&#x6742;&#xFF0C;&#x6240;&#x4EE5;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x751F;&#x7269;&#x5B66;&#x5BB6;&#x4E5F;&#x8981;&#x5B66;&#x4E60;&#x4E00;&#x4E9B;&#x7F16;&#x7A0B;&#x77E5;&#x8BC6;&#x3002;
+&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x5E94;&#x7528;&#x4E2D;&#x6700;&#x5E38;&#x89C1;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x662F;Perl&#x6216;Python&#x3002;Perl&#x662F;&#x4E00;&#x79CD;&#x52A8;&#x6001;&#x7684;&#x3001;&#x76F4;&#x8BD1;&#x5F0F;&#x7F16;&#x7A0B;&#x811A;&#x672C;&#x8BED;&#x8A00;&#x3002;Perl&#x7531;Larry Wall&#x4E8E;1987&#x5E74;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x6587;&#x672C;&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x6B64;&#x975E;&#x5E38;&#x9002;&#x5408;&#x7528;&#x4E8E;&#x57FA;&#x56E0;&#x5E8F;&#x5217;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x8001;&#x4E00;&#x8F88;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x5BB6;&#x6700;&#x5E38;&#x7528;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;Perl&#x8BED;&#x8A00;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x8BBE;&#x8BA1;&#x54F2;&#x5B66;&#x662F;&quot;there&apos;s more than one way to do it&quot;&#x3002;Perl&#x7684;&#x7075;&#x6D3B;&#x6027;&#x53CA;&#x201C;&#x8FC7;&#x5EA6;&#x201D;&#x7684;&#x5197;&#x4F59;&#x8BED;&#x6CD5;&#x5BFC;&#x81F4;&#x4EE3;&#x7801;&#x96BE;&#x4EE5;&#x9605;&#x8BFB;&#xFF0C;&#x4E0D;&#x5229;&#x4E8E;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x3002;&#x800C;&#x53E6;&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;Python&#x5177;&#x6709;&#x975E;&#x5E38;&#x7B80;&#x6377;&#x800C;&#x6E05;&#x6670;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x867D;&#x7136;&#x6CA1;&#x6709;Perl&#x7075;&#x6D3B;&#xFF0C;&#x4F46;&#x4FBF;&#x4E8E;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x4E0E;&#x7EF4;&#x62A4;&#x3002;Python&#x662F;Guido van Rossum&#x5728;1989&#x5E74;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x79CD;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x3001;&#x76F4;&#x8BD1;&#x5F0F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x811A;&#x672C;&#x8BED;&#x8A00;&#x3002;&#x7531;&#x4E8E;&#x5176;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x800C;&#x5B8C;&#x5584;&#xFF0C;&#x7528;&#x6237;&#x6570;&#x91CF;&#x6025;&#x5267;&#x589E;&#x52A0;&#xFF0C;&#x73B0;&#x5DF2;&#x6210;&#x4E3A;&#x4F7F;&#x7528;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x901A;&#x7528;&#x578B;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;
+&#x672C;&#x4E66;&#x4EE5;Perl&#x8BED;&#x8A00;&#x4E3A;&#x4F8B;&#xFF0C;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x65B9;&#x6CD5;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x5185;&#x5BB9;&#x8BF7;&#x53C2;&#x9605;&#x7ECF;&#x5178;&#x6559;&#x6750;Learning Perl (&#x4FD7;&#x79F0;&#x5C0F;&#x9A86;&#x9A7C;&#x4E66;)&#x3002;&#x5F53;&#x638C;&#x63E1;Perl&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5B66;&#x4E60;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x4E5F;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x4E86;&#xFF0C;&#x5982;Python, C/C++, Java&#x7B49;&#x3002;</p>
+<h3 id="&#x7B2C;&#x4E00;&#x4E2A;Perl&#x7A0B;&#x5E8F;">1.1. &#x7B2C;&#x4E00;&#x4E2A;Perl&#x7A0B;&#x5E8F;</h3>
+<p>Perl&#x7A0B;&#x5E8F;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;Perl&#x8BED;&#x8A00;&#x547D;&#x4EE4;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;Perl&#x811A;&#x672C;(Script)&#x3002;&#x56E0;&#x4E3A;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x4E0E;&#x7535;&#x5F71;&#x811A;&#x672C;&#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x89C4;&#x5212;&#x6BCF;&#x4E00;&#x6B65;&#x8981;&#x505A;&#x4EC0;&#x4E48;&#x3002;Perl&#x662F;&#x4E00;&#x79CD;&#x4E0D;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#xFF0C;&#x4F46;&#x4E00;&#x4E2A;Perl&#x811A;&#x672C;&#x4E5F;&#x8981;&#x7528;Perl&#x89E3;&#x8BD1;&#x5668;(Perl interpreter)&#x6765;&#x8FD0;&#x884C;&#x3002;Perl&#x89E3;&#x91CA;&#x5668;&#x7684;&#x547D;&#x4EE4;&#x4E3A;&#x201C;perl&#x201D; (&#x6CE8;&#x610F;&#x5168;&#x662F;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x800C;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;Perl&#x4EE3;&#x8868;Perl&#x8BED;&#x8A00;&#x672C;&#x8EAB;)&#xFF0C;Perl&#x8BED;&#x8A00;&#x7248;&#x672C;&#x53EF;&#x4EE5;&#x7528;&#x547D;&#x4EE4;&#x201D;perl -v&#x201D;&#x6765;&#x67E5;&#x770B;&#x3002;
+&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x7F16;&#x5199;&#x4E00;&#x4E2A;Perl&#x7A0B;&#x5E8F;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li>&#x9996;&#x5148;&#xFF0C;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x4E00;&#x822C;Perl&#x811A;&#x672C;&#x4EE5;&#x201D;.pl&#x201D;&#x4F5C;&#x4E3A;&#x6587;&#x4EF6;&#x540D;&#x540E;&#x7F00;&#xFF0C;&#x5982;&#x201D;hello.pl&#x201D;;</li>
+<li>&#x7136;&#x540E;&#xFF0C;&#x8FD0;&#x884C;&#x89E3;&#x91CA;&#x5668;&#x6765;&#x6267;&#x884C;Perl&#x811A;&#x672C;&#x3002;&#x542F;&#x52A8;Perl&#x89E3;&#x91CA;&#x5668;&#x7684;&#x65B9;&#x5F0F;&#x4E3A;&#x5728;Linux&#x6216;Windows&#x7684;&#x547D;&#x4EE4;&#x7A97;&#x53E3;&#x8F93;&#x5165;&#x201C;perl hello.pl&#x201D;&#x8FD0;&#x884C;&#x811A;&#x672C;&#xFF0C;&#x8FD9;&#x91CC;hello.pl&#x4E3A;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x540D;&#x3002;
+&#x6211;&#x4EEC;&#x4EE5;&#x4E00;&#x5904;&#x7B80;&#x5355;&#x7684;Perl&#x811A;&#x672C;&#x4F53;&#x9A8C;&#x4E00;&#x4E0B;Perl&#x8BED;&#x8A00;&#x7684;&#x9B45;&#x529B;&#x3002;&#x5148;&#x770B;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#xFF1A;<pre><code>#!/usr/bin/perl &#x2013;w    #&quot;-w&quot;&#x8868;&#x793A;&#x53D1;&#x73B0;&#x9519;&#x8BEF;&#x5C31;&#x62A5;&#x8B66;
+#First Perl Script
+print &quot;Hello World!\n&quot;;    #&quot;\n&quot;&#x662F;&#x6362;&#x884C;&#x7B26;
+</code></pre>Perl&#x811A;&#x672C;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#xFF08;&#x201D;#!&#x201D;&#x5F00;&#x59CB;&#xFF09;&#x7528;&#x4E8E;&#x6307;&#x5B9A;Perl&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#x3002;&#x5176;&#x5B83;&#x4EE5;&#x7B26;&#x53F7;&#x201C;#&#x201D;&#x5F00;&#x59CB;&#x7684;&#x53E5;&#x5B50;&#x88AB;&#x8BA4;&#x4E3A;&#x6CE8;&#x91CA;&#xFF0C;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&#x6709;&#x52A9;&#x4E8E;&#x4E86;&#x89E3;&#x7A0B;&#x5E8F;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5982;&#x679C;&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#x4E00;&#x884C;&#x5199;&#x4E0D;&#x5B8C;&#xFF0C;&#x53EF;&#x5728;&#x4E0B;&#x4E00;&#x884C;&#x5F00;&#x5934;&#x52A0;&#x5165;&#x201C;#&#x201D;&#xFF0C;&#x518D;&#x7EE7;&#x7EED;&#x5199;&#x3002;
+Perl&#x7A0B;&#x5E8F;&#x7684;&#x57FA;&#x672C;&#x6267;&#x884C;&#x5355;&#x4F4D;&#x662F;&#x8BED;&#x53E5;&#xFF0C;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x4EE5;&#x5206;&#x53F7;(;)&#x7ED3;&#x5C3E;&#x3002;&#x6709;&#x65F6;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x4F1A;&#x8D85;&#x51FA;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x7531;&#x4E8E;Perl&#x89E3;&#x91CA;&#x5668;&#x4F1A;&#x901A;&#x8FC7;&#x67E5;&#x627E;&#x5206;&#x53F7;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x96BE;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x5728;&#x54EA;&#x91CC;&#x7ED3;&#x675F;&#x3002;&#x7A0B;&#x5E8F;&#x5757;(block)&#x662F;&#x4E00;&#x7EC4;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4EE5;&#x5F00;&#x62EC;&#x53F7;({)&#x5F00;&#x59CB;&#xFF0C;&#x5E76;&#x4EE5;&#x95ED;&#x62EC;&#x53F7;(})&#x7ED3;&#x675F;&#x3002;<h4 id="&#x7F16;&#x7A0B;&#x5B9E;&#x8DF5;">1.1.1. &#x7F16;&#x7A0B;&#x5B9E;&#x8DF5;</h4>
+&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;(Notepad2)&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x4E3A;hello.pl&#x6587;&#x4EF6;&#x3002;
+&#x5728;Linux&#x7EC8;&#x7AEF;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x8FD0;&#x884C;&#x811A;&#x672C;&#xFF1A;
+<code>$perl hello.pl</code>
+&#x8BE5;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x662F;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;:&#x201D;Hello World!&#x201D;&#x3002;&#x6B63;&#x786E;&#x8FD0;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x56FE;1&#x6240;&#x793A;&#x3002;
+<img src="https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Perl-fig1.png" alt="&#x8FD0;&#x884C;&#x7A97;&#x53E3;">
+&#x6CE8;&#x610F;&#xFF1A;Perl&#x89E3;&#x91CA;&#x5668;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;(-c)&#x53EF;&#x4EE5;&#x53EA;&#x68C0;&#x67E5;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x8FD0;&#x884C;&#x811A;&#x672C;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;(-e)&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x8FD0;&#x884C;&#x811A;&#x672C;&#xFF1A;
+<code>$perl &#x2013;e &apos;print &quot;hello world!\n&quot;;&apos;</code>
+&#x5229;&#x7528;&#x597D;Perl&#x7684;&#x4E00;&#x884C;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x8FD0;&#x884C;Perl&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x6548;&#x7387;&#x3002;</li>
+</ul>
+<h3 id="&#x53D8;&#x91CF;&#x4E0E;&#x503C;">1.2. &#x53D8;&#x91CF;&#x4E0E;&#x503C;</h3>
+<p>&#x53D8;&#x91CF;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x7F16;&#x7A0B;&#x7684;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#x4E4B;&#x4E00;&#x3002;&#x8981;&#x7406;&#x89E3;&#x53D8;&#x91CF;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x6570;&#x636E;&#x662F;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x5185;&#x5B58;&#x4E2D;&#x3002;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x6570;&#x5B57;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x4E00;&#x7EC4;&#x5B57;&#x6BCD;&#x6216;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#xFF09;&#xFF0C;&#x5FC5;&#x987B;&#x5B58;&#x50A8;&#x5728;&#x5B58;&#x50A8;&#x5668;&#x5185;&#x7684;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF08;&#x6216;&#x201C;&#x5730;&#x5740;&#x201D;&#xFF09;&#xFF1B;&#x8981;&#x8BBF;&#x95EE;&#x5B83;&#xFF0C;&#x5FC5;&#x987B;&#x4EE5;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x8BC6;&#x522B;&#x5B83;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;&#x3002;&#x53D8;&#x91CF;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x3002;&#x53D8;&#x91CF;&#x4E00;&#x822C;&#x7528;&#x6765;&#x5B57;&#x6BCD;&#x547D;&#x540D;&#xFF0C;&#x5408;&#x6CD5;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x53EF;&#x7531;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x548C;&#x4E0B;&#x5212;&#x7EBF;(_)&#x7B49;&#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x3002;&#x5BF9;&#x4E8E;Perl&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x4E4B;&#x524D;&#x8FD8;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E13;&#x95E8;&#x7684;&#x7B26;&#x53F7;&#x6307;&#x660E;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x3002;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x8868;&#x660E;&#x6B64;&#x53D8;&#x91CF;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x91CF;(scalar variable)&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x6B64;&#x5904;&#x5148;&#x53EA;&#x4ECB;&#x7ECD;&#x6807;&#x91CF;&#xFF0C;&#x672C;&#x7AE0;&#x540E;&#x9762;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x90E8;&#x5206;&#x8FD8;&#x4F1A;&#x4ECB;&#x7ECD;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x503C;&#x3002;
+&#x5B58;&#x50A8;&#x5728;&#x53D8;&#x91CF;&#x91CC;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x6765;&#x5F97;&#x5230;&#x6216;&#x6539;&#x53D8;&#x3002;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x7684;&#x4E00;&#x822C;&#x8BED;&#x6CD5;&#xFF1A;variable = expression&#x3002;&#x53F3;&#x4FA7;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3001;&#x5E38;&#x91CF;&#x3001;&#x7B97;&#x672F;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7B49;&#x3002;&#x5C3D;&#x7BA1;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x7684;&#x53F3;&#x4FA7;&#xFF08;=&#x7B26;&#x53F7;&#x53F3;&#x4FA7;&#x7684;&#x90E8;&#x5206;&#xFF09;&#x53EF;&#x80FD;&#x975E;&#x5E38;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x5DE6;&#x4FA7;&#x59CB;&#x7EC8;&#x662F;&#x53D8;&#x91CF;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x66F4;&#x6539;&#x53D8;&#x91CF;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>$x = 3;    
+$y = 7;
+$sum = $x + $y;     #&#x53D8;&#x91CF;$sum&#x7684;&#x503C;&#x662F;10
+$remainder = $y % $x;  #7&#x9664;&#x4EE5;3&#x7684;&#x4F59;&#x6570;&#x662F;1
+</code></pre><h4 id="&#x6570;&#x636E;&#x7C7B;&#x578B;">1.2.1. &#x6570;&#x636E;&#x7C7B;&#x578B;</h4>
+<p>Perl&#x8BED;&#x8A00;&#x4E2D;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x662F;&#x6574;&#x6570;&#xFF0C;&#x5982;7&#xFF0C;&#x6216;&#x4E00;&#x4E2A;&#x5B9E;&#x6570;&#xFF0C;&#x5982;3.14159&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;(string)&#xFF0C;&#x5982;&#x201C;Hello World&#x201D;&#xFF0C;&#x53CA;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x3002;&#x8BB8;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x8981;&#x6C42;&#x5728;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x524D;&#x8981;&#x5148;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x80FD;&#x5305;&#x542B;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x503C;&#xFF0C;&#x5373;&#x6307;&#x5B9A;&#x4E0E;&#x53D8;&#x91CF;&#x5173;&#x8054;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6574;&#x6570;&#xFF0C;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x7B49;&#x3002;&#x4F46;Perl&#x8BED;&#x8A00;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x3002;Perl&#x521B;&#x5EFA;&#x53D8;&#x91CF;&#x65F6;&#x552F;&#x4E00;&#x8981;&#x505A;&#x7684;&#x51B3;&#x5B9A;&#x662F;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x662F;&#x652F;&#x6301;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x6807;&#x91CF;&#x7528;&#x7F8E;&#x5143;&#x7B26;&#x53F7;($)&#xFF0C;&#x8FD8;&#x662F;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x503C;&#x7684;&#x6570;&#x7EC4;(@)&#x6216;&#x54C8;&#x5E0C;&#x8868;(%)&#x7B49;&#x3002;
+&#x53D8;&#x91CF;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x3002;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$my_variable = 3.14159;
+print (&#x201C;my variable contains the value: $my_variable\n&#x201D;);
+#printf&#x683C;&#x5F0F;&#x5316;&#x6570;&#x5B57;
+printf (&#x201C;my variable contains the value: %.3f\n&#x201D;, $my_variable);
+printf (&#x201C;my variable contains the value: %.2e\n&#x201D;, $my_variable);
+
+$my_variable = &#x201C;Hello World&#x201D;;
+print (&#x201C;my variable contains the value: $my_variable\n&#x201D;);
+$my_variable .= &#x201C;!&#x201D;;
+print (&#x201C;my variable contains the value: $my_variable\n&#x201D;);
+</code></pre><p>&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x8F93;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5728;Perl&#x91CC;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x4F1A;&#x770B;&#x5230;&#x53D8;&#x91CF;$my_variable&#x5148;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5B9E;&#x6570;(3.14159)&#xFF0C;&#x7136;&#x540E;&#x7528;printf&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#x5316;&#x6570;&#x5B57;&#xFF0C;&#x53EA;&#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x70B9;&#x540E;3&#x4F4D;&#xFF08;%.3f&#xFF09;,&#x6216;&#x4EE5;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x8868;&#x793A;&#xFF0C;&#x4E14;&#x53EA;&#x4FDD;&#x7559;2&#x4F4D;&#x5C0F;&#x6570;(%.2e)&#x3002;
+&#x6700;&#x540E;&#xFF0C;&#x53D8;&#x91CF;&#x88AB;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;(&#x201C;Hello World&#x201D;)&#xFF0C;&#x518D;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x8FD0;&#x7B97;&#x7B26;&#x5C06;&#x611F;&#x53F9;&#x53F7;&#x6DFB;&#x52A0;&#x5230;&#x73B0;&#x6709;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x672B;&#x5C3E;(&#x201C;Hello World!&#x201D;)&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x60F3;&#x628A;&#x5B57;&#x7B26;&#x201C;y&#x201D;&#x9644;&#x52A0;&#x5230;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53D8;&#x91CF;&#x540E;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>$name = &quot;Mike&quot;;
+$nickname = &quot;${name}y&quot;
+</code></pre><p>&#x5728;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x540E;&#x9762;&#x7528;&#x5927;&#x62EC;&#x53F7;&#x628A;&#x53D8;&#x91CF;&#x540D;&#x5305;&#x542B;&#x8D77;&#x6765;&#xFF0C;&#x8FD9;&#x6837;${name}&#x5C31;&#x548C;$name&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x8BA9;&#x53D8;&#x91CF;&#x540D;&#x5728;&#x54EA;&#x91CC;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x66F4;&#x6E05;&#x695A;&#xFF0C;&#x4E0D;&#x7136;Perl&#x5C06;&#x5BFB;&#x627E;&#x4E0D;&#x5230;&#x53D8;&#x91CF;$namey&#x3002;</p>
+<h4 id="&#x57FA;&#x672C;&#x8FD0;&#x7B97;">1.2.2. &#x57FA;&#x672C;&#x8FD0;&#x7B97;</h4>
+<p>Perl&#x5305;&#x542B;&#x5927;&#x90E8;&#x5206;&#x6570;&#x5B66;&#x4E0E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x8868;1&#x662F;Perl&#x7684;&#x5E38;&#x89C1;&#x8FD0;&#x7B97;&#x7B26;&#x53CA;&#x5176;&#x4F5C;&#x7528;&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;Perl&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>$var1 = $var1 + 2;
+$var1 += 2;
+</code></pre><p>&#x4E0A;&#x9762;&#x4E24;&#x884C;Perl&#x4EE3;&#x7801;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x8FD0;&#x7B97;&#x7B26;&#x201C;+=&#x201D;&#x53EF;&#x4F7F;&#x5F97;&#x4ECE;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x8FD0;&#x7B97;&#x53D8;&#x5F97;&#x7B80;&#x5355;&#x3002;
+&#x8868;1 &#x5E38;&#x7528;&#x7684;Perl&#x8FD0;&#x7B97;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x7B26;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">*, /, +, -</td>
+<td style="text-align:left">&#x52A0;&#x3001;&#x51CF;&#x3001;&#x4E58;&#x3001;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:left">%</td>
+<td style="text-align:left">&#x53D6;&#x4F59;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">++, --</td>
+<td style="text-align:left">&#x589E;&#x91CF;&#x6216;&#x51CF;&#x91CF;,&#x5982;$a++&#x8868;&#x793A;$a&#x6570;&#x503C;&#x52A0;&#x4E0A;1</td>
+</tr>
+<tr>
+<td style="text-align:left">+=, -=, *=, /=</td>
+<td style="text-align:left">&#x5408;&#x5E76;&#x8FD0;&#x7B97;,&#x5982;$a += 8&#x76F8;&#x5F53;&#x4E8E;$a = $a + 8</td>
+</tr>
+<tr>
+<td style="text-align:left">**</td>
+<td style="text-align:left">&#x6C42;&#x5E42;,&#x5982; $a **3&#x662F;$a&#x6C42;&#x7ACB;&#x65B9;</td>
+</tr>
+<tr>
+<td style="text-align:left">.</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;$a=&quot;hi&quot;, $b=&quot;there&quot;, &#x5219;$a . $b = &quot;hithere&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">x</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x91CD;&#x590D;&#xFF0C;&#x5982; $string=&quot;hi&quot;x3,&#x5B57;&#x7B26;&#x4E32; $string&#x4E3A;&#x201C;hihihi&#x201D;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x7A0B;&#x5E8F;&#x63A7;&#x5236;">1.3. &#x7A0B;&#x5E8F;&#x63A7;&#x5236;</h3>
+<p>&#x7A0B;&#x5E8F;&#x7684;&#x8BED;&#x53E5;&#x662F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x5373;&#x5728;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x4E4B;&#x524D;&#xFF0C;&#x524D;&#x9762;&#x7684;&#x6BCF;&#x4E2A;&#x8BED;&#x53E5;&#x90FD;&#x4F1A;&#x88AB;&#x5B8C;&#x6574;&#x6267;&#x884C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6709;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x66F4;&#x6539;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF0C;&#x5982;&#x4F60;&#x5E0C;&#x671B;&#x7A0B;&#x5E8F;&#x5728;&#x53D1;&#x751F;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x65F6;&#x9009;&#x62E9;&#x4E00;&#x5957;&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x4E14;&#x54CD;&#x5E94;&#x4E0D;&#x540C;&#x4E8B;&#x4EF6;&#x65F6;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x4E3A;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x80FD;&#x529B;&#xFF0C;&#x6240;&#x6709;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x90FD;&#x63D0;&#x4F9B;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x7684;&#x673A;&#x5236;&#x3002;Perl&#x8BED;&#x8A00;&#x7684;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x4E00;&#x822C;&#x662F;&#x901A;&#x8FC7;&#x6761;&#x4EF6;(conditional)&#x8BED;&#x53E5;&#x548C;&#x5FAA;&#x73AF;(loop)&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x9009;&#x62E9;&#x3002;</p>
+<h4 id="&#x6761;&#x4EF6;&#x6267;&#x884C;">1.3.1. &#x6761;&#x4EF6;&#x6267;&#x884C;</h4>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x5728;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x4E0B;&#x624D;&#x80FD;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E0D;&#x7B26;&#x5408;&#xFF0C;&#x5C31;&#x8DF3;&#x8FC7;&#x4EE3;&#x7801;&#x3002;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x8BED;&#x8A00;&#x90FD;&#x4F7F;&#x7528;if&#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x51B3;&#x7B56;&#xFF1B;&#x51B3;&#x7B56;&#x5305;&#x62EC;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x3001;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x4E3A;&#x771F;&#x65F6;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x4EE5;&#x53CA;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x4E3A;&#x5047;&#x65F6;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x56E0;&#x6B64;&#xFF0C;if&#x8BED;&#x53E5;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x4F2A;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF1A;
+if conditional expression
+    statement or block
+else
+statement or block
+&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x8981;&#x8BA1;&#x7B97;&#x7684;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;x&gt; 2&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x540E;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x6216;&#x8BED;&#x53E5;&#x5757;&#x3002; &#x4E0E;if&#x8BED;&#x53E5;&#x5173;&#x8054;&#x7684;&#x8BED;&#x53E5;&#x603B;&#x662F;&#x7F29;&#x8FDB;&#x4EE5;&#x663E;&#x793A;&#x5B83;&#x4EEC;&#x5BF9;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#x3002;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E0D;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x6267;&#x884C;&#x5907;&#x7528;&#x8BED;&#x53E5;&#xFF0C;&#x6CE8;&#x610F;else&#x5757;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002; Perl&#x8BED;&#x8A00;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;elsif&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x5176;&#x5B83;&#x6761;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;elsif&#x6765;&#x6D4B;&#x8BD5;x&#x662F;&#x5426;&#x5927;&#x4E8E;0&#x5E76;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x8BED;&#x53E5;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;if&#x8BED;&#x53E5;&#xFF0C;&#x5373;&#x5728;&#x4E00;&#x4E2A;if&#x8BED;&#x53E5;&#x4E2D;&#x5305;&#x542B;&#x53E6;&#x4E00;&#x4E2A;if&#x8BED;&#x53E5;&#x3002; &#x5982;&#x4EE5;&#x4E0B;Perl&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>if ($x &gt; 2){
+print(&quot;x is large.\n&#x201D;);
+}elsif ($x &gt; 0){
+    print(&quot;x is positive.\n&#x201D;);
+}else{
+    print(&quot;x is negative.\n&#x201D;);
+}
+print(&quot;Done!\n&#x201D;);
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x68C0;&#x9A8C;$x&#x91CC;&#x5B58;&#x50A8;&#x7684;&#x503C;&#x662F;&#x5426;&#x6BD4;2&#x5927;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7684;&#x8BDD;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5757;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&quot;x is large.&#x201D;&#xFF0C;&#x7136;&#x540E;&#x7A0B;&#x5E8F;&#x8DF3;&#x5230;else&#x5757;&#x7684;&#x7ED3;&#x5C3E;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x6700;&#x540E;&#x4E00;&#x4E2A;print&#x8BED;&#x53E5;&#xFF0C;&#x8F93;&#x51FA;&quot;Done!&#x201D;&#x3002;&#x800C;&#x5982;&#x679C;$x&#x6BD4;2&#x5C0F;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;elsif&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;$x&#x5927;&#x4E8E;0&#xFF0C;&#x90A3;&#x4E48;&#x6267;&#x884C;&#x7D27;&#x8DDF;&#x4E0B;&#x9762;&#x7A0B;&#x5E8F;&#x5757;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&quot;x is positive.&#x201D;&#x3002; &#x7136;&#x540E;&#x548C;&#x524D;&#x9762;&#x4E00;&#x6837;&#xFF0C;&#x8DF3;&#x5230;else&#x5757;&#x7684;&#x7ED3;&#x5C3E;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x6700;&#x540E;&#x4E00;&#x4E2A;print&#x8BED;&#x53E5;&#x3002;&#x5982;&#x679C;$x&#x4E0D;&#x6BD4;0&#x5927;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x6700;&#x540E;&#x7684;else&#x8BED;&#x53E5;&#x5757;&#xFF0C;&#x8F93;&#x51FA;&#x201C;x is negative.&#x201D;&#x3002;if/else&#x7ED3;&#x6784;&#x4FDD;&#x8BC1;&#x4E86;&#x53EF;&#x4EE5;&#x6839;&#x636E;$x&#x503C;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7A0B;&#x5E8F;&#x5757;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4E0D;&#x7BA1;&#x6267;&#x884C;&#x4E86;&#x54EA;&#x4E2A;&#x7A0B;&#x5E8F;&#x5757;&#xFF0C;&#x7A0B;&#x5E8F;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x6700;&#x540E;&#x7684;print&#x8BED;&#x53E5;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&#x201C;Done!&#x201D;&#x3002;
+&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EA;&#x4F7F;&#x7528;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x201D;&gt;&#x201D;&#x6765;&#x5224;&#x65AD;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x662F;&#x4E0D;&#x662F;&#x5927;&#x4E8E;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x6570;&#x3002;Perl&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6761;&#x4EF6;&#x68C0;&#x9A8C;&#x7684;&#x5173;&#x7CFB;&#x4E0E;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;&#x8868;2&#xFF09;&#x3002;
+&#x8868;2 Perl&#x5E38;&#x7528;&#x7684;&#x5173;&#x7CFB;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x7B26;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&lt;, &gt;, &lt;=, &gt;=</td>
+<td style="text-align:left">&#x6570;&#x5B57;&#x6BD4;&#x8F83;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">lt, gt, le, ge</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x6309;&#x5B57;&#x6BCD;&#x8868;&#x987A;&#x5E8F;&#x6BD4;&#x8F83;</td>
+</tr>
+<tr>
+<td style="text-align:left">==, !=</td>
+<td style="text-align:left">&#x6570;&#x5B57;&#x7B49;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">eq, ne</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x7B49;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">&amp;&amp;, \</td>
+<td style="text-align:left">\</td>
+<td></td>
+<td>&#x8054;&#x5408;&#x8FD0;&#x7B97;&#x7B26;,&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x90FD;&#x4E3A;&#x771F;&#x6216;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x4E3A;&#x771F;&#x65F6;&#x8FD4;&#x56DE;&#x771F;</td>
+</tr>
+<tr>
+<td style="text-align:left">!</td>
+<td style="text-align:left">&#x903B;&#x8F91;&#x201C;&#x975E;&#x201D;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6CE8;&#x610F;&#x6BCF;&#x4E2A;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x6709;&#x6570;&#x5B57;&#x4E0E;&#x5B57;&#x7B26;&#x4E32;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x3002;&#x5B83;&#x4EEC;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x3002;&#x5047;&#x8BBE;&#x7ED9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF1A;</p>
+<pre><code>$var1 = &#x201C;0012.0&#x201D;;
+$var2 = &#x201C;12&#x201D;;
+</code></pre><p>&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x5728;&#x6570;&#x5B57;&#x4E0A;&#x662F;&#x76F8;&#x7B49;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x68C0;&#x9A8C;($var1 == $var2)&#x4E3A;TRUE&#xFF0C;&#x4F46;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x6240;&#x4EE5;&#x68C0;&#x9A8C;($var1 eq $var2)&#x4E3A;FALSE&#x3002;
+<strong>&#x6CE8;&#x610F;&#x6570;&#x5B57;&#x6BD4;&#x8F83;&#x662F;&#x8981;&#x7528;&#x4E24;&#x4E2A;&#x7B49;&#x53F7;(==)&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7B49;&#x53F7;</strong>&#xFF0C;&#x521D;&#x5B66;&#x8005;&#x5BB9;&#x6613;&#x72AF;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5199;&#x51FA;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>if ($var1 = $var2){
+    print (&#x201C;the two variables are equal.\n&#x201D;);
+}
+</code></pre><p>&#x7531;&#x4E8E;&#x8D4B;&#x503C;&#x8BED;&#x53E5;$var1 = $var2&#x662F;&#x5C06;$var2&#x590D;&#x5236;&#x7ED9;$var1&#x5E76;&#x8FD4;&#x56DE;TRUE&#xFF08;&#x4EE3;&#x8868;&#x8D4B;&#x503C;&#x6210;&#x529F;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x4E0D;&#x4F46;$var1&#x7684;&#x503C;&#x88AB;&#x610F;&#x5916;&#x4E5F;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x6761;&#x4EF6;&#x4EE3;&#x7801;&#x4F1A;&#x6C38;&#x8FDC;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x9519;&#x8BEF;&#x53EF;&#x80FD;&#x5F88;&#x96BE;&#x88AB;&#x53D1;&#x73B0;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x3002;</p>
+<h4 id="&#x5FAA;&#x73AF;">1.3.2. &#x5FAA;&#x73AF;</h4>
+<p>&#x5F53;&#x6EE1;&#x8DB3;&#x67D0;&#x4E9B;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x590D;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x3002; &#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x65F6;&#x6709;&#x4E09;&#x4E2A;&#x8981;&#x6C42;&#xFF1A;&#xFF08;1&#xFF09;&#x5FC5;&#x987B;&#x6709;&#x6700;&#x7EC8;&#x5931;&#x8D25;&#x7684;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#xFF08;&#x7ED3;&#x675F;&#x5FAA;&#x73AF;&#xFF09;&#xFF0C;&#xFF08;2&#xFF09;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#xFF0C;&#xFF08;3&#xFF09;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#x5FC5;&#x987B;&#x6539;&#x53D8;&#x3002; &#x8FD9;&#x4E09;&#x4E2A;&#x8981;&#x6C42;&#x57FA;&#x4E8E;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x5FAA;&#x73AF;&#x7C7B;&#x578B;&#x5728;&#x4E0D;&#x540C;&#x4F4D;&#x7F6E;&#x53D1;&#x751F;&#x3002; Perl&#x8BED;&#x8A00;&#x652F;&#x6301;&#x4E09;&#x79CD;&#x4E3B;&#x8981;&#x7684;&#x5FAA;&#x73AF;&#x7C7B;&#x578B;&#xFF1A;for&#xFF0C;while&#x548C;foreach&#x3002;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7531;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x548C;&#x5FAA;&#x73AF;&#x4F53;&#x7EC4;&#x6210;&#x3002; &#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5148;&#x8BC4;&#x4F30;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#xFF0C;&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x5219;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x3002; &#x91CD;&#x590D;&#x6B64;&#x8FC7;&#x7A0B;&#x76F4;&#x5230;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x5931;&#x8D25;&#x3002; 
+&#x4E00;&#x4E2A;while&#x8BED;&#x53E5;&#x548C;if&#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x6784;&#x7C7B;&#x4F3C;&#xFF1A;</p>
+<pre><code>$x = 0;
+while ($x &lt; 3) {
+  print (&quot;The vale of x is: $x\n&quot;);
+  $x++;
+}
+</code></pre><p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;while&#x8BED;&#x53E5;&#x540E;&#x9762;&#x7684;&#x7A0B;&#x5E8F;&#x5757;&#x88AB;&#x6267;&#x884C;3&#x6B21;&#xFF0C;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x540E;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x4EE5;&#x4E0B;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;
+The vale of x is: 0
+The vale of x is: 1
+The vale of x is: 2
+for&#x5FAA;&#x73AF;&#x4E0E;while&#x5FAA;&#x73AF;&#x5F88;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;for&#x5FAA;&#x73AF;&#x7528;&#x4E8E;&#x5BF9;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5757;&#x6267;&#x884C;&#x56FA;&#x5B9A;&#x7684;&#x6B21;&#x6570;&#x3002;for&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x901A;&#x5E38;&#x5305;&#x62EC;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x8DF3;&#x8F6C;&#x65F6;&#x81EA;&#x52A8;&#x9012;&#x589E;&#xFF08;&#x6216;&#x9012;&#x51CF;&#xFF09;&#xFF0C;&#x4F46;while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x663E;&#x5F0F;&#x66F4;&#x6539;&#x5176;&#x53D8;&#x91CF;&#x3002;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x6539;&#x6210;for&#x5FAA;&#x73AF;&#xFF1A;</p>
+<pre><code>for ($x = 0; $x &lt; 3; $x++) {
+  print (&quot;The vale of x is: $x\n&quot;);
+}
+</code></pre><p>&#x6CE8;&#x610F;for&#x8BED;&#x53E5;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7531;3&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x5E76;&#x7528;&#x5206;&#x53F7;&#x76F8;&#x9694;&#x3002;&#x5BF9;&#x4E8E;for&#x548C;while&#x5FAA;&#x73AF;&#xFF0C;for&#x548C;while&#x5FAA;&#x73AF;&#x9996;&#x5148;&#x6267;&#x884C;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x53EF;&#x80FD;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x3002;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x884C;&#x8BB2;&#x5230;&#x201D;$x=4&#x201D;&#x7684;&#x8BDD;&#xFF0C;while&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x81F3;&#x5C11;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;do-while&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;do-while&#x5FAA;&#x73AF;&#x662F;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x540E;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x3002;
+Perl&#x63D0;&#x4F9B;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x5FAA;&#x73AF;&#x662F;foreach&#x8BED;&#x53E5;&#x3002;&#x5B83;&#x7684;&#x529F;&#x80FD;&#x4E0E;for&#x5FAA;&#x73AF;&#x5F88;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x5B83;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x503C;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x4E0B;&#x9762;&#x662F;foreach&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>foreach $x (7, 3, -3, 5, 2){
+  print (&quot;The value is: $x\n&quot;);
+}
+</code></pre><p>&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4F1A;&#x6267;&#x884C;5&#x6B21;&#xFF0C;&#x62EC;&#x53F7;&#x5217;&#x8868;&#x91CC;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x503C;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x3002;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x503C;&#x4F1A;&#x88AB;&#x6307;&#x5B9A;&#x7ED9;&#x53D8;&#x91CF;$x&#x3002;</p>
+<h3 id="&#x6570;&#x636E;&#x7ED3;&#x6784;">1.4. &#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>&#x524D;&#x9762;&#x63D0;&#x5230;&#xFF0C;&#x53D8;&#x91CF;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x800C;&#x6807;&#x91CF;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x5B58;&#x50A8;&#x4E00;&#x6761;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x540D;&#x79F0;&#xFF0C;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#xFF0C;DNA&#x5E8F;&#x5217;&#x7B49;&#x3002;&#x4F46;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x5904;&#x7406;&#x4E00;&#x7EC4;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#x8981;&#x5B58;&#x50A8;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#x6570;&#x636E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4E3A;&#x77E9;&#x9635;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6807;&#x91CF;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x592A;&#x9EBB;&#x70E6;&#xFF0C;&#x5982;&#x80FD;&#x8BA9;&#x5355;&#x4E2A;&#x53D8;&#x91CF;&#x4EE3;&#x8868;&#x6574;&#x4E2A;&#x77E9;&#x9635;&#x5C31;&#x8981;&#x5BB9;&#x6613;&#x5F97;&#x591A;&#x3002; &#x6570;&#x636E;&#x7ED3;&#x6784;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x6570;&#x636E;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x6B63;&#x786E;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x7F16;&#x5199;&#x6548;&#x7387;&#x9AD8;&#x3001;&#x5BB9;&#x6613;&#x9605;&#x8BFB;&#x7684;&#x4EE3;&#x7801;&#x7684;&#x5173;&#x952E;&#x3002;
+&#x4EE5;&#x4E0B;&#x90E8;&#x5206;&#x53EA;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x5728;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x7684;&#x4E24;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;&#x6570;&#x7EC4;(array)&#x548C;&#x54C8;&#x5E0C;&#x8868;(hash)&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x540D;&#x79F0;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x5982;&#x5728;Python&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x6570;&#x7EC4;&#x79F0;&#x4E3A;&#x5217;&#x8868;(list)&#xFF0C;&#x800C;&#x54C8;&#x5E0C;&#x8868;&#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x5B57;&#x5178;(dict)&#x3002;</p>
+<h4 id="&#x6570;&#x7EC4;">1.4.1. &#x6570;&#x7EC4;</h4>
+<p>&#x6570;&#x7EC4;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x591A;&#x6761;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;Perl&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x53D8;&#x91CF;&#x5FC5;&#x9700;&#x4EE5;&#x7B26;&#x53F7;@&#x5F00;&#x5934;&#xFF0C; &#x5982;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;firstNames&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x540D;&#x5B57;&#x201C;Jim&#x201D;&#xFF0C;&#x201C;Sue&#x201D;&#xFF0C;&#x201C;Bob&#x201D;&#x548C;&#x201C;Alice&#x201D;&#xFF0C;&#x53EF;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#xFF1A;
+<code>@firstNames = [&#x201C;Jim&#x201D;&#xFF0C;&#x201C;Sue&#x201D;&#xFF0C;&#x201C;Bob&#x201D;&#x548C;&#x201C;Alice&#x201D;];</code>
+&#x5982;&#x679C;&#x8981;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7279;&#x5B9A;&#x5355;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4E2D;&#x62EC;&#x53F7;&#x6765;&#x8BBF;&#x95EE;&#xFF1A;$firstNames[0], &#x4E0B;&#x6807;&#x7B26;&#x53F7;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7279;&#x5B9A;&#x5143;&#x7D20;&#xFF0C;&#x800C;&#x5143;&#x7D20;&#x4EE5;&#x7B26;&#x53F7;$&#x8D77;&#x59CB;&#x662F;&#x56E0;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x6807;&#x91CF;&#x3002; &#x8981;&#x6CE8;&#x610F;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x603B;&#x662F;&#x7F16;&#x53F7;&#x4E3A;0&#xFF0C;&#x800C;&#x4E0D;&#x662F;1&#xFF1A;$firstNames[0]&#x8868;&#x793A;&#x540D;&#x4E3A;firstNames&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x800C;$firstNames[2]&#x8868;&#x793A;&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7F16;&#x53F7;&#x53EF;&#x7528;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&quot;$#&quot;&#x8868;&#x793A;&#xFF0C;&#x56E0;&#x6B64;$firstNames[$#firstNames]&#x8868;&#x793A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;
+&#x5176;&#x5B83;&#x6784;&#x5EFA;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>@numbers = (1 .. 20);
+@fruits = qw (apple orange bananna);
+</code></pre><p>&#x8FD9;&#x91CC;&quot;qw&quot;&#x610F;&#x601D;&#x662F;&#x201C;quoted word&#x201D;&#xFF0C;&#x53E6;&#x5916;&#x754C;&#x5B9A;&#x7B26;&#x53F7;&#x62EC;&#x53F7;()&#x53EF;&#x4EE5;&#x66F4;&#x6362;&#xFF0C;&#x5982;&#x6362;&#x6210;!!&#xFF0C;//&#xFF0C;{}&#xFF0C;&lt;&gt; &#x90FD;&#x53EF;&#x4EE5;&#x3002;
+Perl&#x811A;&#x672C;&#x4E0D;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x58F0;&#x660E;&#x6570;&#x7EC4;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x65F6;&#xFF08;&#x5982;$numbers[0] = 20;&#xFF09;&#xFF0C;&#x6570;&#x7EC4;@numbers&#x5C31;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;&#x4E86;&#x3002;&#x6CE8;&#x610F;&#x8981;&#x533A;&#x522B;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x76F8;&#x4F3C;&#x7684;&#x53D8;&#x91CF;&#x540D;&#xFF1A;</p>
+<ol>
+<li>$numbers &#x2013; &#x5305;&#x542B;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x6807;&#x91CF;&#x53D8;&#x91CF;</li>
+<li>@numbers &#x2013; &#x5305;&#x542B;&#x591A;&#x4E2A;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x53D8;&#x91CF;numbers</li>
+<li>$numbers[2] &#x2013; &#x6570;&#x7EC4;&#x53D8;&#x91CF;numbers&#x91CC;&#x7684;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+</ol>
+<p>&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x7EF4;&#xFF08;&#x53EA;&#x6709;&#x5355;&#x884C;&#xFF09;&#x6216;&#x4E8C;&#x7EF4;&#xFF08;&#x5177;&#x6709;&#x884C;&#x548C;&#x5217;&#xFF09;&#x7684;&#x3002;&#x5982;&#x679C;&#x6570;&#x7EC4;&#x662F;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x4E0B;&#x6807;&#x503C;&#x6307;&#x793A;&#x884C;&#x548C;&#x5217;&#xFF0C;&#x56E0;&#x6B64;$matrix[2,4]&#x8868;&#x793A;&#x7B2C;&#x4E09;&#x884C;&#x548C;&#x7B2C;&#x4E94;&#x5217;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x540C;&#x6837;&#xFF0C;&#x4E0B;&#x6807;&#x4ECE;0&#x5F00;&#x59CB;&#xFF09;&#x3002;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x53EF;&#x4EE5;&#x7528;scalar&#x51FD;&#x6570;&#x6216;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7F16;&#x53F7;&#x83B7;&#x5F97;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>my $n = scalar (@firstNames);
+my $n = $#firstNames + 1;
+</code></pre><p>&#x6B64;&#x65F6;$n&#x7684;&#x503C;&#x4E3A;4&#xFF0C;&#x5373;&#x6570;&#x7EC4;&#x4E2D;&#x6709;4&#x4E2A;&#x5143;&#x7D20;&#x3002;
+&#x4E0E;&#x6570;&#x7EC4;&#x76F8;&#x5173;&#x7684;&#x4E00;&#x4E9B;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>shift: &#x4ECE;&#x6570;&#x7EC4;&#x6700;&#x5DE6;&#x8FB9;&#x53BB;&#x6389;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+<li>unshift: &#x4ECE;&#x6570;&#x7EC4;&#x6700;&#x5DE6;&#x8FB9;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+<li>pop: &#x4ECE;&#x6570;&#x7EC4;&#x6700;&#x53F3;&#x8FB9;&#x53BB;&#x6389;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+<li>push: &#x4ECE;&#x6570;&#x7EC4;&#x6700;&#x53F3;&#x8FB9;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+<li>splice: &#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x53BB;&#x6389;&#x5143;&#x7D20;&#xFF0C;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#x4E3A;splice @array, n1, n2&#xFF0C;&#x4EE3;&#x8868;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x7F16;&#x53F7;n1&#x7684;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#xFF0C;&#x5411;&#x540E;&#x53BB;&#x6389;n2&#x4E2A;&#x5143;&#x7D20;&#x3002;
+<code>splice @numbers, 2, 3&#xFF1B;#&#x4ECE;&#x6570;&#x7EC4;&#x7684;&#x7B2C;3&#x4E2A;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#xFF0C;&#x53BB;&#x6389;3&#x4E2A;&#x5143;&#x7D20;</code></li>
+</ol>
+<h4 id="&#x54C8;&#x5E0C;&#x8868;">1.4.2. &#x54C8;&#x5E0C;&#x8868;</h4>
+<p>&#x4E0E;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#xFF0C;&#x54C8;&#x5E0C;&#x8868;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x53D8;&#x91CF;&#x540D;&#x5B58;&#x50A8;&#x591A;&#x4E2A;&#x503C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x79F0;&#x800C;&#x4E0D;&#x662F;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x5B57;&#x6765;&#x8BBF;&#x95EE;&#x503C;&#xFF0C;&#x8FD9;&#x5BF9;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5E94;&#x7528;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x5982;&#x54C8;&#x5E0C;&#x8868;&#x7528;&#x4E8E;&#x5B58;&#x50A8;64&#x79CD;&#x5BC6;&#x7801;&#x5B50;&#x53CA;&#x5176;&#x7F16;&#x7801;&#x7684;&#x6C28;&#x57FA;&#x9178;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;&#x5B50;&#x5E76;&#x83B7;&#x5F97;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x6C28;&#x57FA;&#x9178;&#x3002;Perl&#x7684;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x53D8;&#x91CF;&#x5FC5;&#x9700;&#x4EE5;&#x7B26;&#x53F7;%&#x5F00;&#x5934;&#xFF0C;&#x5982;&#x54C8;&#x5E0C;%aminoAcid&#x7684;&#x8D4B;&#x503C;&#x5982;&#x4E0B;&#xFF1A;
+<code>%aminoAcid = ( &#x2018;UGG&#x2019; =&gt; &#x2018;Trp&#x2019;, &#x2018;AUG&#x2019; =&gt; &#x2018;Met&#x2019; );</code>
+&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x7684;&#x6761;&#x76EE;&#x7531;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#x7EC4;&#x6210;&#xFF1A;&#x952E;(key)&#x548C;&#x6570;&#x636E;&#x503C;(value)&#x3002;&#x952E;&#x662F;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#xFF08;&#x6216;&#x67E5;&#x627E;&#xFF09;&#x6570;&#x636E;&#x503C;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x6709;&#x5728;&#x4E24;&#x7EC4;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x660E;&#x786E;&#x5173;&#x7CFB;&#x65F6;&#x624D;&#x4F7F;&#x7528;&#x6B64;&#x7ED3;&#x6784;&#x3002;&#x5982;&#x8FD9;&#x91CC;&#x7684;&#x6C28;&#x57FA;&#x9178;&#x54C8;&#x5E0C;&#x8868;%aminoAcid&#x4E2D;&#xFF0C;&#x952E;&#x201C;AUG&#x201D;&#x5C06;&#x4E0E;&#x503C;&#x201C;Met&#x201D;&#x76F8;&#x5173;&#x8054;&#xFF08;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x6C28;&#x57FA;&#x9178;&#x7684;&#x5355;&#x5B57;&#x6BCD;&#x4EE3;&#x7801;&#x201C;M&#x201D;&#xFF09;&#x3002;&#x54C8;&#x5E0C;&#x4E2D;&#x7684;&#x952E;&#x503C;&#x6CA1;&#x6709;&#x987A;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x952E;&#x5728;&#x524D;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x5728;&#x540E;&#xFF0C;&#x4E3A;&#x4FBF;&#x4E8E;&#x663E;&#x793A;&#x952E;&#x503C;&#x7684;&#x914D;&#x5BF9;&#x5173;&#x7CFB;&#xFF0C;Perl&#x7528;&#x80D6;&#x7BAD;&#x5934;&#xFF08;=&gt;&#xFF09;&#x8FDE;&#x63A5;&#x952E;&#x503C;&#x3002;
+&#x6211;&#x4EEC;&#x53EF;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x5C06;&#x7CBE;&#x6C28;&#x9178;(&#x201C;Arg&#x201D;)&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x5BC6;&#x7801;&#x5B50;&#x201C;CGU&#x201D;&#x6DFB;&#x52A0;&#x5230;%aminoAcid&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#xFF1A;
+<code>$aminoAcid{&apos;CGU&apos;} = &apos;Arg&apos;;</code>
+&#x6CE8;&#x610F;&#x54C8;&#x5E0C;&#x8868;&#x91CC;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4E5F;&#x662F;&#x666E;&#x901A;&#x7684;&#x6807;&#x91CF;&#x53D8;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x7528;&#x540D;&#x5B57;&#x524D;&#x8981;&#x52A0;&#x4E2A;$&#x7B26;&#x53F7;&#xFF0C;&#x4F46;&#x6CE8;&#x610F;&#x54C8;&#x5E0C;&#x8868;&#x7684;&#x7D22;&#x5F15;&#x662F;&#x7528;&#x5927;&#x62EC;&#x53F7;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x50CF;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#x7528;&#x65B9;&#x62EC;&#x53F7;&#x3002;
+&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x5C06;&#x6C28;&#x57FA;&#x9178;&#x201C;Trp&#x201D;&#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x5BC6;&#x7801;&#x5B50;&#x201C;UGG&#x201D;&#x4ECE;%aminoAcid&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x8BFB;&#x53D6;&#x51FA;&#x6765;&#xFF1A;
+<code>print $aminoAcid{&apos;UGG&apos;};</code></p>
+<p>&#x4F7F;&#x7528;&#x54C8;&#x5E0C;&#x8868;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x662F;&#x7528;&#x4E8E;&#x86CB;&#x767D;&#x8D28;&#x6BD4;&#x5BF9;&#x7684;&#x66FF;&#x6362;&#x77E9;&#x9635;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x540C;&#x65F6;&#x67E5;&#x627E;&#x4E24;&#x4E2A;&#x6C28;&#x57FA;&#x9178;&#x6765;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x5206;&#x6570;&#xFF0C;&#x5982;&#x5F53;Ala&#x88AB;&#x66FF;&#x6362;&#x4E3A;Phe&#xFF0C;&#x4E0E;Ala&#x88AB;Gly&#x66FF;&#x4EE3;&#x7684;&#x5F97;&#x5206;&#x4E0D;&#x540C;&#x3002; &#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x5D4C;&#x5957;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x952E;&#x201C;Ala&#x201D;&#x7684;&#x503C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3;Ala&#x7684;&#x5404;&#x79CD;&#x6C28;&#x57FA;&#x9178;&#x503C;&#x7684;&#x6574;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x3002;&#x8FD9;&#x4F7F;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x8BBF;&#x95EE;&#x4E00;&#x5BF9;&#x6C28;&#x57FA;&#x9178;&#x7684;&#x66FF;&#x6362;&#x503C;&#x3002; &#x5728;&#x5D4C;&#x5957;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x5B58;&#x50A8;&#x503C;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>$a1 = &#x201C;Phe&#x201D;;
+$a2 = &#x201C;Gly&#x201D;;
+$scoreTable[$a1, $a2] = 9;
+</code></pre><p>&#x4E0E;&#x54C8;&#x5E0C;&#x76F8;&#x5173;&#x7684;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x6709;&#xFF1A;</p>
+<ol>
+<li><p>keys: &#x53D6;&#x51FA;&#x54C8;&#x5E0C;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x201C;&#x952E;&#x201D;&#x3002;
+<code>my @key = keys %hash;</code></p>
+</li>
+<li><p>values: &#x53D6;&#x51FA;&#x54C8;&#x5E0C;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x201C;&#x503C;&#x201D;&#x3002;
+<code>my @value = values %hash;</code></p>
+</li>
+<li><p>each: &#x53D6;&#x51FA;&#x54C8;&#x5E0C;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x201C;&#x952E;&#x201D;&#x4E0E;&#x5176;&#x201C;&#x503C;&#x201D;&#x3002;</p>
+<pre><code>while (my ($key,$value) = each %hash) {
+ print &quot;$key\n$value\n&quot;;
+}
+</code></pre></li>
+<li>exists: &#x68C0;&#x6D4B;&#x54C8;&#x5E0C;&#x4E2D;&#x67D0;&#x4E2A;&#x952E;&#x662F;&#x5426;&#x5B58;&#x5728;<pre><code>if (exists %hash{key}) {
+ print &quot;$hash{key}\n&quot;;
+}
+</code></pre></li>
+<li>delete: &#x5220;&#x9664;&#x54C8;&#x5E0C;&#x5143;&#x7D20;
+<code>delete($hash{key});</code></li>
+</ol>
+<h3 id="&#x51FD;&#x6570;(&#x5B50;&#x7A0B;&#x5E8F;)">1.5. &#x51FD;&#x6570;(&#x5B50;&#x7A0B;&#x5E8F;)</h3>
+<p>&#x5F53;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x5F80;&#x5F80;&#x8981;&#x5148;&#x5C06;&#x95EE;&#x9898;&#x5206;&#x89E3;&#x4E3A;&#x5C0F;&#x95EE;&#x9898;&#x4F1A;&#x6709;&#x52A9;&#x4E8E;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x91CD;&#x590D;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x7684;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x5C06;DNA&#x5E8F;&#x5217;&#x8F6C;&#x6362;&#x6210;&#x4E92;&#x8865;&#x5E8F;&#x5217;&#x3002; &#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x51FD;&#x6570; (function)&#x3002;&#x51FD;&#x6570;&#x662F;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x4E3B;&#x6D41;&#x7A0B;&#x4E4B;&#x5916;&#x7684;&#x4E00;&#x7EC4;&#x8BED;&#x53E5;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x4ECE;&#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x8C03;&#x7528;&#xFF0C;&#x6267;&#x884C;&#x5176;&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E8E;&#x4E3B;&#x7A0B;&#x5E8F;&#xFF08;&#x901A;&#x5E38;&#x8FD4;&#x56DE;&#x4E00;&#x4E9B;&#x66F4;&#x6539;&#x540E;&#x7684;&#x53D8;&#x91CF;&#xFF09;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x7F16;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x67E5;&#x627E;DNA&#x94FE;&#x7684;&#x4E92;&#x8865;&#x5E8F;&#x5217;&#xFF0C;&#x53EF;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x5C06;&#x7ED9;&#x5B83;&#x4F20;&#x9012;&#x4E0D;&#x540C;&#x7684;&#x6838;&#x82F7;&#x9178;&#x5E8F;&#x5217;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x8BE5;&#x6BB5;&#x4EE3;&#x7801;&#x590D;&#x5236;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x53EF;&#x4F7F;&#x4EE3;&#x7801;&#x6A21;&#x5757;&#x5316;&#x3002; &#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x7A0B;&#x5E8F;&#x89C6;&#x4E3A;&#x7531;&#x5FC5;&#x9700;&#x7684;&#x4E3B;&#x4EE3;&#x7801;&#x5757;&#x548C;&#x53EF;&#x9009;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x7684;&#x6A21;&#x5757;&#x3002;&#x5F53;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x6267;&#x884C;&#x4E3B;&#x4EE3;&#x7801;&#x5757;&#x5E76;&#x8C03;&#x7528;&#x5404;&#x4E2A;&#x9700;&#x8981;&#x7684;&#x53EF;&#x9009;&#x51FD;&#x6570;&#x3002;
+&#x51FD;&#x6570;&#x7531;&#x540D;&#x5B57;&#x548C;&#x6307;&#x5B9A;&#x4E3A;&#x51FD;&#x6570;&#x4F53;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x7EC4;&#x6210;&#x3002;&#x51FD;&#x6570;&#x6807;&#x9898;&#x7531;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x548C;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x4F8B;&#x7A0B;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x7684;&#x4FE1;&#x606F;&#xFF09;&#x7EC4;&#x6210;&#x3002; &#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5728;&#x67D0;&#x4E9B;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x8FD8;&#x5FC5;&#x987B;&#x8981;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002; &#x51FD;&#x6570;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x56E0;&#x6B64;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7528;&#x4E8E;&#x5728;&#x51FD;&#x6570;&#x53CA;&#x5176;&#x8C03;&#x7528;&#x4F8B;&#x7A0B;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x4FE1;&#x606F;&#x3002;
+&#x5728;Perl&#x8BED;&#x8A00;&#x4E2D;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x79F0;&#x4E3A;&#x5B50;&#x7A0B;&#x5E8F;(subroutine)&#x3002;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x5B9A;&#x4E49;&#x4EE5;sub&#x5F00;&#x59CB;&#xFF0C;&#x4F2A;&#x4EE3;&#x7801;&#x7684;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;
+sub &#x51FD;&#x6570;&#x540D;(&#x53C2;&#x6570;1, &#x53C2;&#x6570;2, . . .){
+&#x51FD;&#x6570;&#x4F53;&#x7684;&#x4EE3;&#x7801;&#xFF1B;
+}</p>
+<p>&#x4E0B;&#x9762;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5B50;&#x7A0B;&#x5E8F;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>#!/usr/bin/perl
+use strict;
+
+#&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5305;&#x542B;5&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;
+my @value1 = (7, 5, 9, 12, -3);
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+Average(@value1);
+#&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5305;&#x542B;6&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;
+my @value2 = (3, 9, 12, 3, -3, 5);
+#&#x8C03;&#x7528;&#x51FD;&#x6570;
+my $mean = Average(@value2);
+print (&#x201C;The mean value is : $mean\n&#x201D;);
+#===============================
+# &#x5B9A;&#x4E49;&#x6C42;&#x5E73;&#x5747;&#x503C;&#x51FD;&#x6570;
+sub Average {
+   my $n = scalar(@_);#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;
+   my $sum = 0;
+
+   foreach my $item (@_){  #&#x6C42;&#x548C;
+      $sum += $item;
+   }
+   my $average = $sum / $n;
+   print (&quot;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x4E3A; : @_\n&quot;);           # &#x6253;&#x5370;&#x6574;&#x4E2A;&#x6570;&#x7EC4;
+   print (&quot;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x4E3A; : $_[0]\n&quot;);         # &#x6253;&#x5370;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
+   print (&quot;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7684;&#x5E73;&#x5747;&#x503C;&#x4E3A; : $average\n&quot;);  # &#x6253;&#x5370;&#x5E73;&#x5747;&#x503C;
+    return $average;
+}
+</code></pre><p>&#x672C;&#x4F8B;&#x4E2D;sub Average&#x8FD9;&#x4E00;&#x884C;&#x5B9A;&#x4E49;&#x4E86;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x5B57;&#x4E3A;Average&#xFF0C;&#x5176;&#x540E;&#x662F;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5305;&#x62EC;&#x5728;&#x4E00;&#x5BF9;&#x5927;&#x62EC;&#x53F7;&#x5185;&#x3002;&#x5B50;&#x7A0B;&#x5E8F;&#x5185;&#x7684;&#x5F00;&#x5934;&#x51E0;&#x884C;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5C40;&#x90E8;&#x53D8;&#x91CF;(local variables)&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x5E76;&#x7528;&#x5173;&#x952E;&#x5B57;&#x201C;my&#x201D;&#x58F0;&#x660E;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF08;&#x5982;$n&#xFF09;&#x5728;&#x4E3B;&#x7A0B;&#x5E8F;&#x6216;&#x5176;&#x5B83;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E5F;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x4E0E;Average&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x53D8;&#x91CF;$n&#x4E0D;&#x540C;&#x3002;&#x6362;&#x8A00;&#x4E4B;&#xFF0C;Average&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x53D8;&#x91CF;$n&#x7684;&#x53D8;&#x5316;&#x4E0D;&#x4F1A;&#x5F15;&#x8D77;&#x5176;&#x5B83;&#x5730;&#x65B9;&#x53D8;&#x91CF;$n&#x7684;&#x6539;&#x53D8;&#x3002;&#x5982;&#x679C;&#x5728;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x521B;&#x5EFA;&#x53D8;&#x91CF;&#x65F6;&#x4E0D;&#x4F7F;&#x7528;my&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;(global variables)&#x3002;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5728;&#x7A0B;&#x5E8F;&#x7684;&#x5404;&#x4E2A;&#x5730;&#x65B9;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#xFF0C;&#x5728;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x5BF9;&#x5176;&#x505A;&#x7684;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x5176;&#x5B83;&#x5730;&#x65B9;&#x540C;&#x6837;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x53D8;&#x91CF;&#x7684;&#x610F;&#x5916;&#x6539;&#x53D8;&#xFF0C;&#x5E94;&#x8BE5;&#x5728;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x5373;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x65F6;&#x4F7F;&#x7528;my&#xFF0C;&#x8FD9;&#x662F;&#x5E94;&#x8BE5;&#x9075;&#x5B88;&#x7684;&#x5F88;&#x597D;&#x7684;&#x7F16;&#x7A0B;&#x4E60;&#x60EF;&#x3002;Perl&#x811A;&#x672C;&#x524D;&#x4F7F;&#x7528;&quot;use strict;&quot;&#x5BF9;&#x6CA1;&#x6709;&#x4F7F;&#x7528;my&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x53D1;&#x51FA;&#x8B66;&#x544A;&#x3002;
+&#x8C03;&#x7528;&#x5B50;&#x7A0B;&#x5E8F;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5E76;&#x628A;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x53C2;&#x6570;&#x653E;&#x5728;&#x62EC;&#x53F7;&#x91CC;&#x3002;&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x3002;Perl&#x5B50;&#x7A0B;&#x5E8F;&#x7684;&#x53C2;&#x6570;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6570;&#x7EC4;&#x91CC;(@<em>)&#xFF0C;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x662F;&#x7B80;&#x5355;&#x7684;&#x4E0B;&#x5212;&#x7EBF;(</em>)&#x7B26;&#x53F7;&#x3002;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x548C;&#x8C03;&#x7528;&#x5B50;&#x7A0B;&#x5E8F;&#x65F6;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x4E00;&#x6837;&#x591A;&#x3002;&#x56E0;&#x4E3A;Perl&#x91CC;&#x7684;&#x6570;&#x7EC4;&#x662F;&#x4ECE;0&#x5F00;&#x59CB;&#x7F16;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E3A;$<em>[0]&#xFF0C;&#x800C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7D22;&#x5F15;&#x4E5F;&#x53EF;&#x7528;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x7B26;&#x53F7;($#</em>)&#x8868;&#x793A;&#xFF0C;&#x56E0;&#x6B64;&#x6240;&#x6709;&#x53C2;&#x6570;&#x7684;&#x4E2A;&#x6570;&#x5E94;&#x8BE5;&#x4E3A;$#<em> + 1&#xFF0C;&#x6216;scalar(@</em>)&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x5982;&#x679C;&#x628A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;Perl&#x5C06;&#x4F20;&#x9012;&#x6570;&#x7EC4;&#x91CC;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x5728;&#x5B50;&#x7A0B;&#x5E8F;&#x540E;&#x7684;&#x62EC;&#x53F7;&#x91CC;&#x5217;&#x51FA;&#x6765;&#x4E00;&#x6837;&#x3002;&#x4E0D;&#x7BA1;&#x6709;&#x591A;&#x5C11;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x5B50;&#x7A0B;&#x5E8F;&#xFF0C;&#x672C;&#x4F8B;&#x7684;foreach&#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5904;&#x7406;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5B50;&#x7A0B;&#x5E8F;&#x4F59;&#x4E0B;&#x7684;&#x90E8;&#x5206;&#x5C31;&#x662F;&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x5E76;&#x6253;&#x5370;&#x76F8;&#x5173;&#x7ED3;&#x679C;&#x3002;Perl&#x5B50;&#x7A0B;&#x5E8F;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#x7ED9;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x4E3B;&#x7A0B;&#x5E8F;&#x3002;&#x8FD9;&#x6837;&#x5F53;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x8FD4;&#x56DE;&#x503C;&#x6307;&#x6D3E;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x628A;&#x5B50;&#x7A0B;&#x5E8F;&#x8BA1;&#x7B97;&#x7684;&#x5E73;&#x5747;&#x503C;&#x8D4B;&#x503C;&#x7ED9;$mean&#x53D8;&#x91CF;&#xFF1A;</p>
+<p><code>my $mean = Average(@value2)&#xFF1B;</code></p>
+<h3 id="&#x6587;&#x4EF6;&#x5904;&#x7406;">1.6. &#x6587;&#x4EF6;&#x5904;&#x7406;</h3>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x662F;&#x6307;&#x7A0B;&#x5E8F;&#x4E0E;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;&#x3002;&#x8F93;&#x5165;(&#x6216;&#x8BFB;&#x6570;&#x636E;)&#x6307;&#x5C06;&#x6570;&#x636E;&#x4ECE;&#x952E;&#x76D8;&#x6216;&#x5916;&#x90E8;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#xFF08;&#x5982;&#x5B58;&#x50A8;&#x5728;&#x786C;&#x76D8;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x4EEA;&#x5668;&#x6536;&#x96C6;&#x7684;&#x6570;&#x636E;&#xFF09;&#x8BFB;&#x53D6;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x952E;&#x76D8;&#x662F;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8BBE;&#x5907;&#x3002; &#x76F8;&#x53CD;&#xFF0C;&#x8F93;&#x51FA;(&#x6216;&#x5199;&#x6570;&#x636E;)&#x6307;&#x5C06;&#x6570;&#x636E;&#x4ECE;&#x4E3B;&#x5B58;&#x50A8;&#x5668;&#x79FB;&#x52A8;&#x5230;&#x5C4F;&#x5E55;&#xFF0C;&#x6587;&#x4EF6;&#x6216;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#xFF0C;&#x5176;&#x4E2D;&#x5C4F;&#x5E55;&#x662F;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x8BBE;&#x5907;&#x3002;&#x4F20;&#x7EDF;&#x8BA1;&#x7B97;&#x673A;&#x662F;&#x6CA1;&#x6709;&#x5C4F;&#x5E55;&#x7684;&#xFF0C;&#x8F93;&#x51FA;&#x8BBE;&#x5907;&#x4E3B;&#x8981;&#x662F;&#x6253;&#x5370;&#x673A;&#x3002;&#x56E0;&#x6B64;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x4E5F;&#x4E60;&#x60EF;&#x79F0;&#x4E3A;&#x6253;&#x5370;(print)&#x6570;&#x636E;&#x3002;
+&#x4ECE;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x8BED;&#x6CD5;&#x7C7B;&#x4F3C;&#x4E8E;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;&#xFF0C;&#x8BFB;&#x5165;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x4E5F;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4E0B;&#x9762;&#x5148;&#x770B;&#x4E00;&#x4E2A;Perl&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>#!/usr/bin/perl
+use strict;
+use warnings;
+
+#&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x5E76;&#x6253;&#x5370;&#x6587;&#x4EF6;&#x5185;&#x5BB9;
+open (FILENAME, &quot;&lt;test.txt&quot;);
+open (FILEOUT, &quot;&gt;fileout.txt&quot;);
+
+$row = 0;    #&#x7EDF;&#x8BA1;&#x6587;&#x4EF6;&#x7684;&#x884C;&#x6570;
+while(&lt;FILENAME&gt;){     #&#x6BCF;&#x884C;&#x8BFB;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x5B58;&#x50A8;&#x5728;&#x4E86;$_&#x4E2D;
+  print ($_);    #&#x8F93;&#x51FA;&#x5230;&#x5C4F;&#x5E55;
+chomp;  #&#x5220;&#x6389;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x9ED8;&#x8BA4;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x662F;$_
+  print FO &quot;$_\n&quot;;   #&#x8F93;&#x51FA;&#x5230;fileout.txt&#x6587;&#x4EF6;
+    $row++;
+}
+print $row;    #&#x8F93;&#x51FA;&#x884C;&#x6570;
+close(FILENAME);
+close(FILEOUT);
+</code></pre><p>&#x5728;Perl&#x91CC;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x8BFB;&#x6216;&#x5199;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x8981;&#x5148;&#x88AB;&#x6253;&#x5F00;&#xFF08;open&#x51FD;&#x6570;&#x7528;&#x6765;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF09;&#x3002;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#x5C31;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x548C;&#x6587;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x901A;&#x8FC7;&#x8BFB;&#x6216;&#x5199;&#x64CD;&#x4F5C;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x3002;Perl&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x79F0;&#x4E3A;&#x6587;&#x4EF6;&#x53E5;&#x67C4;(file handle)&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x5373;&#x4E0D;&#x662F;&#x6807;&#x91CF;&#x3001;&#x54C8;&#x5E0C;&#x6216;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x8981;&#x7528;&#x8FD9;&#x4E9B;Perl&#x53D8;&#x91CF;&#x5173;&#x8054;&#x7684;&#x7279;&#x6B8A;&#x7B26;&#x53F7;($, %, @)&#x4F5C;&#x4E3A;&#x8D77;&#x59CB;&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x8BC6;&#x522B;&#xFF0C;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x53D8;&#x91CF;&#x901A;&#x5E38;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x5982;FILENAME&#xFF09;&#x3002;Perl&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x4E09;&#x79CD;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#xFF1A;STDIN&#xFF0C;STDOUT&#xFF0C;STDERR&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x3001;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x3002;</p>
+<p>open&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x8981;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x5728;&#x6587;&#x4EF6;&#x540D;&#x524D;&#x52A0;&#x4E0A;&#x201C;&#x53EA;&#x8BFB;&#x201D;&#x7B26;&#x53F7;(&lt;)&#xFF0C;&#x8868;&#x793A;&#x53EA;&#x5E0C;&#x671B;&#x5BF9;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8BFB;&#x64CD;&#x4F5C;&#x3002;&#x540C;&#x7406;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x524D;&#x8FD8;&#x53EF;&#x52A0;&#x5165;&#x201C;&#x53EA;&#x5199;&#x201D;&#x7B26;&#x53F7;&#xFF08;&gt;&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x628A;&#x6587;&#x4EF6;&#x7684;&#x5DF2;&#x6709;&#x5185;&#x5BB9;&#x6E05;&#x7A7A;&#xFF0C;&#x5E76;&#x4ECE;&#x6587;&#x4EF6;&#x5F00;&#x5934;&#x8FDB;&#x884C;&#x5199;&#xFF1B;&#x800C;&#x52A0;&#x5165;&#x201C;&#x6DFB;&#x52A0;&#x201D;&#x7B26;&#x53F7;&#xFF08;&gt;&gt;&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x4FDD;&#x6301;&#x6587;&#x4EF6;&#x7684;&#x5DF2;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x4ECE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x8FDB;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x539F;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x201C;&gt;&gt;&#x201D;&#x5C31;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#xFF0C;&#x548C;Linux&#x91CD;&#x5B9A;&#x5411;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#x3002;
+&#x4ECE;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x8BFB;&#x53D6;&#x4FE1;&#x606F;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#x662F; <filehandle> &#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x8239;&#x7B26;&lt;&gt;&#x8868;&#x793A;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x6267;&#x884C;<filename>&#x90FD;&#x4ECE;&#x6587;&#x4EF6;&#x91CC;&#x5F97;&#x5230;&#x4E0B;&#x4E00;&#x884C;&#x7684;&#x5185;&#x5BB9;&#x3002;Perl&#x9ED8;&#x8BA4;&#x662F;&#x5F53;&#x4E00;&#x884C;&#x88AB;&#x8BFB;&#x53D6;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x88AB;&#x653E;&#x5230;&#x7279;&#x6B8A;&#x7684;&#x53D8;&#x91CF;($_)&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;while&#x5FAA;&#x73AF;&#x5185;&#x7684;print&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x628A;&#x6BCF;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#x8F93;&#x51FA;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;
+chomp&#x51FD;&#x6570;&#x53EA;&#x53BB;&#x6389;&#x7ED3;&#x5C3E;&#x7684;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x6CA1;&#x6709;&#x6362;&#x884C;&#x7B26;&#x5C31;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x6CE8;&#x610F;&#x6587;&#x672C;&#x6362;&#x884C;&#x7B26;&#x5728;&#x4E0D;&#x540C;&#x7CFB;&#x7EDF;&#x4E2D;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;Linux&#x4E2D;&#x662F;&#x6362;&#x884C;&#x201C;\n&#x201D;; macOS&#x4E2D;&#x662F;&#x56DE;&#x8F66;&#x201C;\r&#x201D;&#xFF1B;Windows&#x662F;&#x56DE;&#x8F66;&#x52A0;&#x6362;&#x884C;&#x201C;\r\n&#x201D;&#x3002;&#x5982;&#x679C;&#x628A;windows&#x7CFB;&#x7EDF;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;Linux&#x7CFB;&#x7EDF;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x8F6C;&#x6362;&#x6210;Linux&#x6362;&#x884C;&#x7B26;&#x518D;&#x4F7F;&#x7528;chomp&#x547D;&#x4EE4;&#xFF0C;&#x4E0D;&#x7136;&#x4F7F;&#x7528;chomp&#x540E;&#x8FD8;&#x5269;&#x4E0B;&#x7B26;&#x53F7;&quot;\r&quot;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x6BCF;&#x5F53;&#x6267;&#x884C;<filehandle>&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x679C;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x5373;&#x6587;&#x4EF6;&#x8FD8;&#x6709;&#x6CA1;&#x6709;&#x88AB;&#x8BFB;&#x53D6;&#x7684;&#x884C;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8FD4;&#x56DE;TRUE&#xFF0C;&#x800C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5230;&#x672B;&#x884C;&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;FALSE&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x628A;<filename>&#x547D;&#x4EE4;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7528;&#x4E8E;while&#x5FAA;&#x73AF;&#x7684;&#x6761;&#x4EF6;&#x68C0;&#x9A8C;&#x3002;
+&#x6700;&#x540E;&#x7684;close()&#x51FD;&#x6570;&#x8868;&#x793A;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#x3002;</filename></filehandle></filename></filehandle></p>
+<h3 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">1.7. &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h3>
+<p>Perl&#x8BED;&#x8A00;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#xFF0C;&#x662F;&#x6587;&#x672C;&#x5904;&#x7406;&#x7684;&#x5229;&#x5668;&#x3002;&#x7531;&#x4E8E;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x7684;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x662F;&#x5E8F;&#x5217;&#x5206;&#x6790;&#xFF0C;&#x6240;&#x4EE5;Perl&#x8BED;&#x8A00;&#x5F97;&#x5230;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x3002;&#x672C;&#x90E8;&#x5206;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;Perl&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x5185;&#x5BB9;&#xFF0C;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5185;&#x5BB9;&#x8BF7;&#x518D;&#x53C2;&#x8003;&#x5176;&#x5B83;&#x5B66;&#x4E60;&#x8D44;&#x6599;[2]&#x3002;
+&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;(regular expression)&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;&#x7684;&#x6A21;&#x5F0F;(pattern)&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x542B;&#x6709;&#x67D0;&#x5B50;&#x4E32;&#x6216;&#x5C06;&#x5339;&#x914D;&#x7684;&#x5B50;&#x4E32;&#x66FF;&#x6362;&#x7B49;&#x3002;&#x6A21;&#x5F0F;&#x4E00;&#x822C;&#x7528;&#x6210;&#x5BF9;&#x7684;&#x7B26;&#x53F7;&#x8868;&#x793A;&#xFF0C;&#x5E38;&#x7528;&#x7B26;&#x53F7;//&#xFF0C;&#x5982;&#x201C;/pattern/&#x201D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x5B83;&#x7B26;&#x53F7;##, (), ^^&#x7B49;&#x3002;&#x6A21;&#x5F0F;&#x4E00;&#x822C;&#x8981;&#x548C;&#x7ED1;&#x5B9A;&#x8FD0;&#x7B97;&#x7B26;=~ &#x6216; !~&#x642D;&#x914D;&#x4F7F;&#x7528;&#xFF08;=~ &#x8868;&#x793A;&#x76F8;&#x5339;&#x914D;&#xFF0C;!~ &#x8868;&#x793A;&#x4E0D;&#x5339;&#x914D;&#xFF09;&#x3002;=~&#x540E;&#x9762;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5982;&#xFF1A;
+<code>$string =~ /abc/;</code>
+Perl&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6709;&#x4E09;&#x79CD;&#x5F62;&#x5F0F;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x5339;&#x914D;&#xFF0C;&#x66FF;&#x6362;&#x548C;&#x8F6C;&#x6362;:</p>
+<h4 id="&#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF1A;m__">1.7.1. &#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF1A;m//</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD0;&#x7B97;&#x7B26;m//&#xFF08;&#x53EF;&#x4EE5;&#x7565;&#x53BB;m&#xFF0C;&#x7B80;&#x5199;&#x4E3A;//&#xFF09;&#x5C1D;&#x8BD5;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x5F0F;&#x548C;$_&#x4E2D;&#x7684;&#x6587;&#x672C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;=~&#x8FD0;&#x7B97;&#x7B26;&#x6307;&#x5B9A;&#x67E5;&#x627E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code>$sequence = &#x201C;acgtabcgt&#x201D;;
+$sequence =~ /abc/&#xFF1B;    #&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;abc
+</code></pre><p>&#x5982;&#x679C;&#x67E5;&#x627E;&#x5339;&#x914D;&#x5185;&#x5BB9;&#x4E2D;&#x5305;&#x542B;&#x201C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5185;&#x5BB9;&#x201D;&#xFF0C;&#x5219;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;1&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;0&#x3002;
+&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4E00;&#x4E9B;&#x5B57;&#x7B26;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x610F;&#x4E49;&#xFF0C; &#x6709;&#x7684;&#x662F;&#x6570;&#x91CF;&#x5173;&#x7CFB;&#xFF0C;&#x5982;&#x201D;?&#x201D;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF1B;&#x201D;+&#x201D;&#x53EF;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x5B57;&#x7B26;&#xFF1B;&#x800C;&#x201D;<em>&#x201D;&#x53EF;&#x5339;&#x914D;0&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x8981;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x80AF;&#x5B9A;&#x51FA;&#x73B0;&#xFF0C;&#x53EF;&#x5199;&#x7528;[0-9]+&#xFF0C;&#x5982;&#x8981;&#x8868;&#x660E;&#x4E0D;&#x80FD;&#x4EE5;0&#x5F00;&#x59CB;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;[1-9][0-9]</em>&#x3002;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x901A;&#x914D;&#x7B26;&#x4E3A;&#x53E5;&#x70B9;(.)&#xFF0C;&#x4EE3;&#x8868;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x5B57;&#x7B26;(&#x9664;&#x6362;&#x884C;&#x7B26;&apos;\n&apos;&#x5916;)&#xFF0C;&#x5982;&#x8981;&#x627E;alpha&#x4E0E;beta&#x4E24;&#x4E2A;&#x8BCD;&#x4E4B;&#x95F4;&#x7684;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;/alpha.*beta/&#x3002;
+&#x6709;&#x7684;&#x6709;&#x4F4D;&#x7F6E;&#x5173;&#x7CFB;&#xFF0C;&#x5982;^&#x4E0E;$&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x7ED9;&#x5B9A;&#x7684;&#x6A21;&#x5F0F;&#x5FC5;&#x987B;&#x5728;&#x5F00;&#x59CB;&#x4E0E;&#x7ED3;&#x5C3E;&#x51FA;&#x73B0;&#x3002;/^alpha/&#x53EA;&#x6709;&#x5F53;alpha&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5934;&#x90E8;&#x51FA;&#x73B0;&#x624D;&#x5339;&#x914D;&#xFF0C;&#x800C;/alpha$/&#x53EA;&#x6709;alpha&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5C3E;&#x90E8;&#x624D;&#x5339;&#x914D;&#x3002;
+&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4E2D;&#x62EC;&#x53F7;[]&#x4EE3;&#x8868;&#x5339;&#x914D;&#x5176;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5339;&#x914D;&#x7684;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4E0D;&#x540C;&#x53D8;&#x5F62;&#xFF0C;&#x5982;CAU&#x6216;CAC&#xFF0C;&#x53EF;&#x4EE5;&#x7528;/CA[CU]/&#xFF0C;&#x4EE3;&#x8868;&#x5148;&#x5339;&#x914D;CA&#xFF0C;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;C&#x6216;U&#x3002;&#x4E2D;&#x62EC;&#x53F7;[]&#x4E2D;&#x8FDE;&#x7EED;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x7528;&#x8FDE;&#x5B57;&#x7B26;&#x8868;&#x793A;&#xFF0C;&#x5982;&#x5B57;&#x7B26;&#x4E32;[ABCDEabcdef]&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;[A-Ea-F]&#x3002;
+&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x53CD;&#x659C;&#x6760;(&quot;\&quot;)&#x5C06;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x6807;&#x8BB0;&#x4E3A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x5982;&apos;d&apos;&#x5339;&#x914D;&#x5B57;&#x7B26;&apos;d&apos;&#xFF0C;&#x800C;&apos;\d&apos;&#x5339;&#x914D;&#x4EFB;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;[0-9]&#x3002;&#x76F8;&#x53CD;&#xFF0C;&apos;\D&apos;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x975E;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x3002;&#x5176;&#x5B83;&#x5E38;&#x89C1;&#x7684;&#x6709;&#xFF1A;(1) &apos;\s&apos;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&apos;\S&apos;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x975E;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF1B;(2) &apos;\w&apos;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&apos;\S&apos;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x975E;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#xFF1B;(3) &apos;\t&apos;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5236;&#x8868;&#x7B26;&#xFF0C;&apos;\n&apos;&#x4E3A;&#x6362;&#x884C;&#x7B26;&#x7B49;&#x3002;</p>
+<h4 id="&#x6A21;&#x5F0F;&#x66FF;&#x6362;&#xFF1A;s___">1.7.2. &#x6A21;&#x5F0F;&#x66FF;&#x6362;&#xFF1A;s///</h4>
+<p>&#x8FD0;&#x7B97;&#x7B26;s///&#x7528;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code>$sequence = &#x201C;acgtabcgt&#x201D;;
+$sequence =~ s/acgt/ACGT/;    #&#x5C06;$sequence&#x53D8;&#x4E3A;&#x201C;ACGTabcgt&#x201D;
+</code></pre><p>&#x67E5;&#x627E;&#x5339;&#x914D;&#x5185;&#x5BB9;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x201C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5185;&#x5BB9;&#x201D;&#xFF0C;&#x5982;&#x679C;&#x5305;&#x542B;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x201C;&#x66FF;&#x6362;&#x5185;&#x5BB9;&#x201D;&#x66FF;&#x6362;&#xFF0C;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;1&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;0&#x3002;&#x4E0A;&#x53E5;&#x5C06;&#x201D;acgt&#x201D;&#x66FF;&#x6362;&#x4E3A;&#x201D;ACGT&#x201D;&#xFF0C;&#x7ED3;&#x679C;$sequence&#x53D8;&#x4E3A;&#x201C;ACGTabcgt&#x201D;&#x3002;</p>
+<h4 id="&#x6A21;&#x5F0F;&#x8F6C;&#x6362;&#xFF1A;tr___">1.7.3. &#x6A21;&#x5F0F;&#x8F6C;&#x6362;&#xFF1A;tr///</h4>
+<p>&#x8F6C;&#x6362;&#x7B26;tr///&#x53EF;&#x7528;&#x6765;&#x6362;&#x5B57;(transliteration)&#xFF0C;&#x5373;&#x628A;&#x5339;&#x914D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x6362;&#x6210;&#x5176;&#x5B83;&#x5B57;&#x7B26;&#xFF0C;&#x5982;&#x5C06;T&#x6362;&#x6210;U&#x3002;
+<code>$sequence =~ tr/Tt/Uu/;        #&#x5C06;&#x5B57;&#x6BCD;T&#x6216;t&#x8F6C;&#x6362;&#x6210;U&#x6216;u&#x3002;</code>
+&#x9996;&#x5148;&#xFF0C;&#x201C;&#x5339;&#x914D;&#x5185;&#x5BB9;&#x96C6;&#x5408;&#x201D;&#x4E2D;&#x5143;&#x7D20;&#x4F1A;&#x548C;&#x201C;&#x66FF;&#x6362;&#x5185;&#x5BB9;&#x96C6;&#x5408;&#x201D;&#x4E2D;&#x5143;&#x7D20;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x8D77;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x5339;&#x914D;&#x64CD;&#x4F5C;&#xFF0C;&#x5339;&#x914D;&#x4E0A;&#x7684;&#x5185;&#x5BB9;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x66FF;&#x6362;&#x96C6;&#x5408;&#x4E2D;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x3002;&#x6CE8;&#xFF1A;&#x529F;&#x80FD;&#x540C;Linux&#x547D;&#x4EE4;tr&#x3002;
+&#x53E6;&#x5916;tr&#x8F6C;&#x6362;&#x7B26;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x88AB;&#x8F6C;&#x6362;&#x5B57;&#x7B26;&#x7684;&#x4E2A;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x8BA1;&#x7B97;&#x6539;&#x53D8;&#x5B57;&#x7B26;&#x7684;&#x6B21;&#x6570;&#x3002;&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#x4E5F;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x6B21;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x4E0D;&#x8981;&#x58F0;&#x660E;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x5C06;&#x8981;&#x6539;&#x6210;&#x4EC0;&#x4E48;&#x5C31;&#x884C;&#x4E86;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x4E2D;&#x542B;&#x6709;&#x591A;&#x5C11;&#x4E2A;U&#xFF1A;</p>
+<pre><code>$Ucount = ($sequence =~ tr/Uu//);
+printf(&#x201C;There are $Ucount uracil in the the sequence\n&#x201D;);
+</code></pre><h3 id="&#x53C2;&#x8003;&#x6587;&#x732E;">1.8. &#x53C2;&#x8003;&#x6587;&#x732E;</h3>
+<ol>
+<li>Randal L. Schwartz, Learning Perl (Perl&#x7F16;&#x7A0B;&#x5165;&#x95E8;), O&#x2019;Reilly press, 2016 </li>
+<li>Tore Samuelsson, Genomics and bioinformatics: an introduction to programming tools for life scientists. Cambridge University Press, 2012.</li>
+<li>Perl &#x7A0B;&#x5E8F;&#x5458;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x7684;&#x4E8B;: <a href="http://perl.linuxtoy.org/" target="_blank">http://perl.linuxtoy.org/</a></li>
+</ol>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#"></a></p><li><a href="#PERL&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x5165;&#x95E8;">1. PERL&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x5165;&#x95E8;</a></li><ul><li><a href="#&#x7B2C;&#x4E00;&#x4E2A;Perl&#x7A0B;&#x5E8F;">1.1. &#x7B2C;&#x4E00;&#x4E2A;Perl&#x7A0B;&#x5E8F;</a></li><ul><li><a href="#&#x7F16;&#x7A0B;&#x5B9E;&#x8DF5;">1.1.1. &#x7F16;&#x7A0B;&#x5B9E;&#x8DF5;</a></li></ul><li><a href="#&#x53D8;&#x91CF;&#x4E0E;&#x503C;">1.2. &#x53D8;&#x91CF;&#x4E0E;&#x503C;</a></li><ul><li><a href="#&#x6570;&#x636E;&#x7C7B;&#x578B;">1.2.1. &#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><li><a href="#&#x57FA;&#x672C;&#x8FD0;&#x7B97;">1.2.2. &#x57FA;&#x672C;&#x8FD0;&#x7B97;</a></li></ul><li><a href="#&#x7A0B;&#x5E8F;&#x63A7;&#x5236;">1.3. &#x7A0B;&#x5E8F;&#x63A7;&#x5236;</a></li><ul><li><a href="#&#x6761;&#x4EF6;&#x6267;&#x884C;">1.3.1. &#x6761;&#x4EF6;&#x6267;&#x884C;</a></li><li><a href="#&#x5FAA;&#x73AF;">1.3.2. &#x5FAA;&#x73AF;</a></li></ul><li><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;">1.4. &#x6570;&#x636E;&#x7ED3;&#x6784;</a></li><ul><li><a href="#&#x6570;&#x7EC4;">1.4.1. &#x6570;&#x7EC4;</a></li><li><a href="#&#x54C8;&#x5E0C;&#x8868;">1.4.2. &#x54C8;&#x5E0C;&#x8868;</a></li></ul><li><a href="#&#x51FD;&#x6570;(&#x5B50;&#x7A0B;&#x5E8F;)">1.5. &#x51FD;&#x6570;(&#x5B50;&#x7A0B;&#x5E8F;)</a></li><li><a href="#&#x6587;&#x4EF6;&#x5904;&#x7406;">1.6. &#x6587;&#x4EF6;&#x5904;&#x7406;</a></li><li><a href="#&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">1.7. &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</a></li><ul><li><a href="#&#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF1A;m__">1.7.1. &#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF1A;m//</a></li><li><a href="#&#x6A21;&#x5F0F;&#x66FF;&#x6362;&#xFF1A;s___">1.7.2. &#x6A21;&#x5F0F;&#x66FF;&#x6362;&#xFF1A;s///</a></li><li><a href="#&#x6A21;&#x5F0F;&#x8F6C;&#x6362;&#xFF1A;tr___">1.7.3. &#x6A21;&#x5F0F;&#x8F6C;&#x6362;&#xFF1A;tr///</a></li></ul><li><a href="#&#x53C2;&#x8003;&#x6587;&#x732E;">1.8. &#x53C2;&#x8003;&#x6587;&#x732E;</a></li></ul></ul></div><a href="#PERL&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x5165;&#x95E8;" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Linux.html" class="navigation navigation-prev " aria-label="Previous page: Linux操作系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Statistics/Stats.html" class="navigation navigation-next " aria-label="Next page: 📊统计学(Statistics)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Perl编程语言","level":"1.3.2","depth":2,"next":{"title":"📊统计学(Statistics)","level":"1.4","depth":1,"path":"Statistics/Stats.md","ref":"Statistics/Stats.md","articles":[{"title":"R统计软件","level":"1.4.1","depth":2,"path":"Statistics/R.md","ref":"Statistics/R.md","articles":[]}]},"previous":{"title":"Linux操作系统","level":"1.3.1","depth":2,"path":"Computer/Linux.md","ref":"Computer/Linux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small","back-to-top-button","navigator","livereload"],"root":"./gitbook","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/adong77/bigbook.git"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"navigator":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"adong <youdng@hotmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BiGbook教程","language":"zh-hans","gitbook":"3.2.3","description":"生物信息学与基因组分析入门"},"file":{"path":"Computer/Perl.md","mtime":"2021-03-01T13:44:58.362Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-06T03:23:32.471Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
