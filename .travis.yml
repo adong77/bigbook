@@ -3,7 +3,9 @@ node_js:
   - "v10.19.0"
 
 # 缓存依赖
-# cache: npm
+cache:
+  directories:
+  - node_modules # 依赖缓存的目录
 
 notifications:
   email:

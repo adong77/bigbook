@@ -11,7 +11,7 @@
   "plugins": [
     "github",
     "expandable-chapters-small",
-    "navigator"
+    "back-to-top-button"
   ],
   "pluginsConfig": {
     "github": {
