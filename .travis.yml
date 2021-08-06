@@ -3,7 +3,7 @@ node_js:
   - "v10.19.0"
 
 # 缓存依赖
-cache: npm
+# cache: npm
 
 notifications:
   email:
