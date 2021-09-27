@@ -1,22 +1,10 @@
-# vscode
+# vscode #
+###################
 .vscode
-# gitbook
-gitbook/_book
+
+# gitbook #
+###################
 _book
 docs
 node_modules
 
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
