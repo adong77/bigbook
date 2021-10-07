@@ -19,4 +19,8 @@ Reference: Grolemund G, Wickham H. R for Data Science (R数据科学). Available
 
 
 ### References
-[1]李高磊,黄玮,孙浩,李余动, 机器学习在微生物组宿主表型预测中的应用，微生物学报, 2021，61(9):2581-2593
+[1] 李高磊,黄玮,孙浩,李余动, 机器学习在微生物组宿主表型预测中的应用，微生物学报, 2021，61(9):2581-2593
+
+[2] A visual introduction to machine learning:
+    * http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+    * http://www.r2d3.us/visual-intro-to-machine-learning-part-2/
