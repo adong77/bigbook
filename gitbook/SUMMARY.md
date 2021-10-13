@@ -4,12 +4,13 @@
 
 * [🧬生物学(Biology)](Biology/BiologyBasics.md)
 
-* [💻计算机科学(Computer Science)](Computer/CS.md)
+* [💻计算机(Computer)](Computer/ComputerBasics.md)
     * [Linux操作系统](Computer/Linux.md)
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/Stats.md)
     * [R统计软件](Statistics/R.md)
+    * [机器学习](Statistics/ML.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 分子生物学基础(Molecular Biology)](Tutorials/01MolecularBiology.md)
