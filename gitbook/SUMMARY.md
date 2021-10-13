@@ -3,7 +3,8 @@
 * [前言](README.md)
 
 * [🧬生物学(Biology)](Biology/BiologyBasics.md)
-
+    * [组学](Biology/Omics.md)
+    
 * [💻计算机(Computer)](Computer/ComputerBasics.md)
     * [Linux操作系统](Computer/Linux.md)
     * [Perl编程语言](Computer/Perl.md)
