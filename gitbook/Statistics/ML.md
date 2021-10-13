@@ -15,4 +15,8 @@
 * 分类（Classfication）：其数据集由特征变量和标签组成，当你学习这些数据之后，给你一个只知道特征向量不知道标签的数据，让你求他的标签是哪一个？分类和回归的主要区别就是输出结果是连续还是离散。
 
 
-* James, Witten, Hastie, and Tibshirani, An Introduction to Statistical Learning with Applications in R: http://faculty.marshall.usc.edu/gareth-james/ISL/
+### References
+[1] James, Witten, Hastie, and Tibshirani, An Introduction to Statistical Learning with Applications in R: http://faculty.marshall.usc.edu/gareth-james/ISL/
+[2] A visual introduction to machine learning:
+    * http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+    * http://www.r2d3.us/visual-intro-to-machine-learning-part-2/
