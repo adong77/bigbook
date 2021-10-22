@@ -1,5 +1,8 @@
 # 第13章 NGS数据分析基础
 
+Illumina Sequencing Fundamentals:
+https://support.illumina.com/content/dam/illumina-support/courses/sequencing-fundamentals-wbt-chs/story_html5.html
+
 
 ![NGS一般流程](https://raw.githubusercontent.com/adong77/ligene/master/imageBed/book/fig13-1.png)
 图 13 1 NGS一般流程
