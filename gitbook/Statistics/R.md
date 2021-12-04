@@ -404,3 +404,4 @@ Reference:
 2. Toivo GM Rebecca J Lai, Kate Haining, Greta Todorova, and Wilhelmiina. Introduction to R.  Available from: https://gabymahrholz.github.io/Intro_to_R/index.html
 3. Chang W. R Graphics Cookbook, 2nd edition. Available from: https://r-graphics.org
 4. The R Graph Gallery： https://www.r-graph-gallery.com/
+5.李东风，R语言教程: https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html
