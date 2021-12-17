@@ -2,41 +2,44 @@
 
 > 本章简介Linux操作系统的基本知识及常用Linux命令，并结合生物信息学分析实例进行讲解。
 
-操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。现在流行的操作系统有Windows，macOS与Linux等。
-Linux系统是一种自由和开放源码(Free and Open Source Software)的操作系统。Linux is an open-source Unix-like operating system，具有UNIX的全部功能与特性。UNIX集成许多实用工具，其设计哲学是“Do One Thing and Do It Well”。Linux内核最初由芬兰赫尔辛基大学的Linus Torvalds在1991年开发，后经成千上万的程序员不断修改完善。Linux操作系统在短短的几年内得到了迅猛发展，这与它的良好特性是分不开的。它是一个完全兼容POSIX标准(可移植操作系统接口)的多用户、 多任务、支持多线程和多CPU的操作系统。Linux系统在运行多任务时效率普遍要比Windows高的多，这种效率对处理大数据是非常重要的，因此许多生物信息学软件是基于Linux系统开发的。掌握Linux系统的操作是从事生物信息分析工作的必备条件之一。
-Linux系统有许多不同的发行版本，常用的版本有Ubuntu Linux与Red Hat Linux。由于各个发行版使用相同的Linux内核与GNU程序库，并遵守Linux Standard Base (LSB)行业标准，只有应用软件差异比较大，操作使用大体都是相同的，因此一般只要学会一个发行版的使用方法就可以了。Ubuntu Linux是一个基于Debian系统开发的Linux发行版，提供大量的高质量应用程序，并保留Debian强大的软件包管理系统，以便安装或删除程序。本书主要介绍Ubuntu Linux的使用方法，当前版本是16.04LTS (2016-04-28发布)。
+操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。现在流行的操作系统有Windows，macOS与Linux等。Linux is an Unix-like operating system，具有UNIX的全部功能与特性。UNIX集成许多实用工具，其设计哲学是“Do One Thing and Do It Well”。
+
+Linux系统是一种自由和开放源码(Free and Open Source Software)的操作系统。Linux内核最初由芬兰赫尔辛基大学的Linus Torvalds在1991年开发，后经成千上万的程序员不断修改完善。Linux操作系统在短短的几年内得到了迅猛发展，这与它的良好特性是分不开的。它是一个完全兼容POSIX标准(可移植操作系统接口)的多用户、多任务、支持多线程和多CPU的操作系统。Linux系统在运行多任务时效率普遍要比Windows高的多，这种效率对处理大数据是非常重要的，许多生物信息学软件是基于Linux系统开发，因此掌握Linux系统的操作是从事生物信息分析工作的必备条件之一。
+
+Linux系统有许多不同的发行版本，常用的版本有Ubuntu Linux与Red Hat Linux。由于各个发行版使用相同的Linux内核与GNU程序库，并遵守Linux Standard Base (LSB)行业标准，只有应用软件差异比较大，操作使用大体都是相同的，因此一般只要学会一个发行版的使用方法就可以了。Ubuntu Linux是一个基于Debian系统开发的Linux发行版，提供大量的高质量应用程序，并保留Debian强大的软件包管理系统(APT)，以便安装或删除程序。本书主要介绍Ubuntu Linux的使用方法，当前版本是16.04LTS (2016-04-28发布)。
 使用Linux系统的方式有：(1)使用Linux操作系统的电脑；(2)安装Linux的虚拟机；(3)远程连接Linux服务器；(4) 使用Windows10的Linux子系统(WSL)。本书介绍在Windows10的Linux子系统(WSL)中的使用，在学习后续内容前，请按照第2章内容先安装WSL系统。
-* 
-* 
+
 
 ### Linux命令行终端
-操作系统的基本结构是由Kernel（内核）和Shell（壳）构成。Shell 是用户与Linux操作系统沟通的桥梁（图1），它的作用是命令解释器(command processor)，负责接收用户输入的命令，翻译后发送给Linux内核处理，并能显示命令输出的信息。The **shell** acts as an interface between the user and the kernel. Shell一般可以分成两类：一是图形界面(Graphical User Interface)，简称 GUI，用户通过鼠标点击图标与计算机交互。二是命令行界面(Command Line Interface)，简称 CLI，用户通过输入命令与计算机交互。命令行Shell的种类较多，最常用的是Bash (Bourne-Again Shell)，它是 Ubuntu、RedHat及macOS等操作系统默认的命令行Shell。 
+操作系统的基本结构是由Kernel（内核）和Shell（壳）构成。Shell是用户与Linux操作系统沟通的桥梁（图1），它的作用是命令解释器(command processor)，负责接收用户输入的命令，翻译后发送给Linux内核处理，并能显示命令输出的信息。The **shell** acts as an interface between the user and the kernel. Shell一般可以分成两类：一是图形界面(Graphical User Interface)，简称 GUI，用户通过鼠标点击图标与计算机交互。二是命令行界面(Command Line Interface)，简称 CLI，用户通过输入命令与计算机交互。命令行Shell的种类较多，最常用的是Bash (Bourne-Again Shell)，它是 Ubuntu、RedHat及macOS等操作系统默认的命令行Shell。 
 ![Shell功能](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-1.png)
 图1 Shell功能
 
-Linux命令行终端就是一个文本窗口程序（图2）， 如GNOME桌面环境的Terminal或KDE桌面的Konsole，通过它可使用命令行Shell。Ubuntu系统默认桌面环境是GENOME，要使用命令行Shell，首先要打开一个终端(Terminal)。终端一般在菜单Application->Accessories->Terminal打开，或直接使用快捷键Ctrl+T打开。 
+Linux命令行终端就是一个文本窗口程序（图2）， 如GNOME桌面环境的Terminal或KDE桌面的Konsole，通过它可使用命令行。Ubuntu系统默认桌面环境是GENOME，要使用命令行，首先要打开一个终端(Terminal)。终端一般在菜单Application->Accessories->Terminal，或直接使用快捷键Ctrl+T打开。 新版Genome3环境可点击探索本地和在线资源的图标，搜索Terminal即可找到。
 ![Linux命令行窗口](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-2.png)
 图2 Linux命令行窗口
 
-终端显示一个提示符，Bash的提示符是一个美元符号($)，“$”符号后面是光标位置，用户可以在此输入命令。如果当前是管理员用户(root)，则命令提示符变成“#”号。Linux系统支持打开多个终端，如果有多个终端窗口，则当前终端窗口的光标是实心方块，可进行命令输入；其它窗口是空心方块，不能输入命令。
+终端显示一个提示符，Bash的提示符是一个美元符号($)，“$”符号后面是光标位置，用户可以在此输入命令，按下回车键后，Bash就会返回结果。如果当前是管理员用户(root)，则命令提示符变成“#”号。Linux系统支持打开多个终端，如果有多个终端窗口，则当前终端窗口的光标是实心方块，可进行命令输入；其它窗口是空心方块，不能输入命令。
 “$”符号前面显示“ubuntu@Ubuntu:~”，其意义为：ubuntu是当前用户名；Ubuntu是主机名，当你远程登录另一台服务器，主机名就会变化；“~”是用户主(home)目录的指示符，代表当前目录是‘/home/ubuntu’，Linux系统为每个用户自动分配一个自己使用的home目录。“@”与“：”是系统设定的分隔符号。
 
 #### 终端常用技巧
 * Tab键自动补全名称：输入命令、文件或目录名称的开头几个字母，然后按下Tab键，名称中的其它部分会自动补充完成。如输入his[Tab]，就会看输入history命令。如果shell找到多个以输入字母开头的名称，将会响铃提醒，可再输入几个字符再按Tab键。
-* 向上（↑）或向下键（↓）：可以显示最近终端中使用过的命令，如可以调出以前输入过的长命令，不用再重新输入，节省时间。
+* 向上（↑）或向下键（↓）：可以显示最近终端中使用过的命令，如可以调出以前输入过的长命令，不用再重新输入，节省时间。如果需要查看所有最近使用的命令，可使用命令history查看。
 * 如果输入有误，可以用Ctrl-U（同时按下Ctrl键与U键）取消整个输入行内容。
 * 编辑命令可快速移动光标：Ctrl-A可以把光标定位到行首，而 Ctrl-E移到行尾
 * 清理终端显示内容: Ctrl-L，功能相当于命令“clear”。
 * 终止进程：Ctrl-C（同时按下Ctrl键与C键终止命令）。
 
-18.2 Linux文件系统
-Windows系统的"我的电脑"可分为不同的分区，如C, D, E等不同驱动器盘符。各个分区下再保存不同的文件与目录，并都以分区的名字为根目录，如“C:\Windows”。Linux系统的目录结构与Windows有较大差异。Linux中所有文件与目录都位于根目录”/”下，根目录有点像Windows下的“我的电脑”，但没有再分不同的分区。Linux系统的根目录下也有许多不同文件或目录，用于不同的功能。Linux路径显示从根目录开始，如“/home”，代表根目录下的home目录。Linux系统目录的命名及作用遵循一定的标准，如”/dev”用于存放设备文件，“/lib”用于存放库文件，包含各种被系统和用户所使用的程序库，“/home”存放用户个人文件等。即使不同的LINUX发行版，其文件夹的作用也基本相同。
+### Linux文件系统
+Windows系统的"我的电脑"可分为不同的分区，如C, D, E等不同驱动器盘符。各个分区下再保存不同的文件与目录，并都以分区的名字为根目录，如“C:\Windows”。Linux系统的目录结构与Windows有较大差异。Linux中所有文件与目录都位于根(root)目录”/”下，根目录有点像Windows下的“我的电脑”，但没有再分不同的分区。Linux系统的根目录下也有许多不同文件或目录，用于不同的功能。Linux路径显示从根目录开始，如“/home”，代表根目录下的home目录。Linux系统目录的命名及作用遵循一定的标准，如”/dev”用于存放设备文件，“/lib”用于存放库文件，包含各种被系统和用户所使用的程序库，“/home”存放用户个人文件等。即使不同的Linux发行版，其文件夹的作用也基本相同。
 ![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-3.png)
 图3 Linux文件系统
 
-> ♫ Note/Tip
-* 绝对路径：从根目录开始的目录，绝对路径由根目录“/”写起，如目录：/usr/local/bin。 
-* 相对路径：从当前目录开始的目录，相对路径写法，例如由当前目录/home/mats要到/home/mats/tests目录，可以写成：cd tests （或cd ./tests）。
+> Note/Tip
+Linux操作系统使用树状结构来表示其目录和目录位置。在树状结构中，位于顶部的是根，根可以有多个分支，每个分支又可以拥有其他分支，以此类推，直至无穷。树将结构的每一个分支就是一个目录，该结构显示了目录之间是如何连接的。路径(path)就是表达该位置的一种方式。类UNIX操作系统中一个文件或目录的路径，有两种表示方式：绝对路径(absolute path)和相对路径(relative path)。
+* 绝对路径：从根目录开始的目录，绝对路径由根目录“/”写起，如目录：/usr/local/bin。 第一个斜杠表示的是根目录，之后的目录依次用斜杠分隔。
+* 相对路径：从当前目录开始的目录，如果路径不是以斜杠开头，Bash会明白使用的是相对路径。相对路径写法，例如图3中我们位于当前目录/home/mats要到/home/mats/tests目录，相对路径可以是 tests （或./tests）。
+
 代表目录的快捷字符： 
 * “/”: 根目录 
 * “.”: 当前目录 
@@ -44,12 +47,14 @@ Windows系统的"我的电脑"可分为不同的分区，如C, D, E等不同驱�
 * “~”: home目录
 
 Linux下常见的文件类型为：文本文件(-)、链接文件(l)和目录(d)。与Windows不同，Linux系统将所有的硬件设备作为文件处理，如U盘在Linux中的文件名为/dev/sda， 当前CD ROM/DVD ROM的文件名为/dev/cdrom。另外，不像Windows系统下的文件使用后缀名决定打开文件的程序，如文本文本加后缀名“.txt”，以便记事本打开。Linux下的文件不注重后缀名，我们看到Linux下的有些文件也有后缀名，主要是帮助用户识别文件的类型。
-Linux最优秀的地方之一，就在于它的多用户、多任务环境。为了让各个用户具有较保密的文件数据，文件的权限管理就变得很重要。 Linux一般将文件可存取访问的身份为三个类别：owner(用户), group(组), others(其它)；三种身份类别分别有read (r),write (w)和execute (x)等权限。
+
+Linux最优秀的地方之一，就在于它的多用户、多任务环境。为了让各个用户具有较保密的文件数据，文件的权限管理就变得很重要。 Linux一般将文件可存取访问的身份为三个类别：owner(用户), group(组), others(其它)；三种身份类别分别有read(r), write(w)和execute(x)等权限。
+
 打开终端，输入命令“ll”或“ls -l”，可显示用户目录下的所有文件与文件夹的详细信息（图4），每一行显示一个文件的相关信息。
 ![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-4.png)
 图4 目录列表信息
 
-上图第三行表示含义：d代表文件夹。rwx代表用户可读可写可执行，r-x代表用户组可读不可写可执行，r-x代表其他人可读不可写可执行。3代表3个人正在查看，前一个aseethar代表用户，后一个cri代表用户组，22代表文件夹大小，Jun 6 10:57代表创建时间，最后是文件或目录的名称。注意，文件名前的点号(".")代表隐藏文件。 
+上图第三行表示含义：d代表文件夹。rwx代表用户(u)可读可写可执行，r-x代表用户组(g)可读不可写可执行，r-x代表其他人(o)可读不可写可执行。3代表3个人正在查看，前一个aseethar代表用户，后一个cri代表用户组，22代表文件夹大小，Jun 6 10:57代表创建时间，最后是文件或目录的名称。
 
 ### Linux常用命令
 
@@ -71,11 +76,12 @@ Linux命令较多，无需记住所有的命令及其选项，可以通过命令
 ls命令能够显示当前目录下的内容。
 $ls    #列出当前所在目录下的所有可见文件
 $ls -l    #想要列出详细信息（文件名，大小，访问权，所有者）可以用:
-$ls -a    #想要列出所有文件，包括隐藏文件(开头为"."的文件)
+$ls -a    #想要列出所有文件，包括隐藏文件
 $ls -al /home    #列出home目录的所有文件
 $ls -lh    #文件大小按”K”/”M”/”G”等human readable格式来显示
 $ls -ltr     #按时间反序显示
 注：ll是该命令默认设置的别名：ll='ls -l –color=autor'，列表显示当前文件夹的内容，并用不同颜色显示不同类型的文件与文件夹。
+注意，文件名开头为点号(".")的文件代表隐藏文件，如.profile。隐藏文件指的是默认不会展示给用户的文件，很多程序会将数据保存在隐藏文件中。
 
 2. cd - 改变当前目录(Change Directory)
 只要在cd命令后输入要切换的目录，可以是绝对路径，也可以是相对路径。
@@ -132,14 +138,14 @@ $less file1       #显示文件file1
 $less -S file1      #每行不显示长于屏幕宽度的字符（默认显示于下一行）
 $more file1      #显示文件file1
 使用less或more打开文件后，可以用下列功能键进行操作：
-	“q”：退出；
-	“空格键(Space)”：向下翻页；
-	“回车键(Enter)”：下移一行；
-	"f"与"b"或PgUp与PgDn：向前或后翻页；
-	"j"与"k"：可以上下移动内容；
-	“u”: 向前或回退（back）；
-	"/pattern"：向后查找pattern，如/HIV查找“HIV”字符；
-	"?pattern"：向前查找pattern。
+*	“q”：退出；
+*	“空格键(Space)”：向下翻页；
+*	“回车键(Enter)”：下移一行；
+*	"f"与"b"或PgUp与PgDn：向前或后翻页；
+*	"j"与"k"：可以上下移动内容；
+*	“u”: 向前或回退（back）；
+*	"/pattern"：向后查找pattern，如/HIV查找“HIV”字符；
+*	"?pattern"：向前查找pattern。
 
 11. echo - 在终端上显示字符串
 可用于显示环境变量的内容，或将终端输入的字符保存到文件中。
@@ -314,22 +320,26 @@ $cat file1 file2 file3 >> files.txt #追加内容到files.txt
 * 标准输出(stdout)：代码为1，使用>或>>表示，默认显示在屏幕上；
 * 标准错误输出(stderr): 代码为2，使用2>或2>>表示，默认显示在屏幕上。
 其中，“<”表示从文件输入，其后接着待输入的文件名，遇到 “<<”后的文字则终止标准输入。“>”表示输出到文件，如当前目录有同名文件存在，则会覆盖其内容。“>>”表示将标准输出的内容累加输入到该文件。
+
 #### 管道操作
-Linux系统使用管道将多个命令组合起来，形成非常强大的工具组合，可完成复杂的分析工作。管道符“｜”将两个命令隔开，管道符左边命令的输出就会作为管道符右边命令的输入。连续使用管道意味着第一个命令的输出作为第二个命令的输入，第二个命令的输出又会作为第三个命令的输入，依此类推。 
+Linux系统使用管道(pipe)将多个命令组合起来，形成非常强大的工具组合，可完成复杂的分析工作。管道符“｜”将两个命令隔开，管道符左边命令的输出就会作为管道符右边命令的输入。连续使用管道意味着第一个命令的输出作为第二个命令的输入，第二个命令的输出又会作为第三个命令的输入，依此类推。 
 $ls | wc  #显示当前目录下的文件数
 $less seq.fa |grep ">" | wc -l  #显示FASTA文件中的序列数
 该管道命令的执行过程是用less查看seq.fa文件，在打开的seq.fa中用grep查找其中的“>”所在行，再用wc统计行数。由于FASTA格式文件一个>符号对应一条序列，所以可以得到序列数。
 
 ### Linux环境变量
-Linux环境变量是一个符号名，系统把它关联到一些信息，它代表了变量的值。常用的变量名有USER（你的登录名），HOST（计算机名称），HOME（你的家目录）以及PATH(系统搜索命令的目录)。当用户在终端输入一个命令或程序时，系统会自动到PATH变量中的目录列表中去查找命令，一般系统命令默认放在/sbin与/usr/bin目录。如果用户自己安装的程序，需要把安装程序的路径添加到PATH中，才可以在任何目录运行程序，不然要在程序前加上程序的完整路径才可以运行。
+Linux环境变量是一个符号名，系统把它关联到一些信息，它代表了变量的值。常用的变量名有USER（你的登录名），HOST（计算机名称），HOME（你的家目录）以及PATH(系统搜索命令的目录)。当用户在终端输入一个命令或程序时，系统会自动到PATH变量中的目录列表中去查找命令，一般系统命令默认放在/sbin与/usr/bin目录。如果用户自己安装的程序，需要把安装程序的路径添加到PATH中，才可以在任何目录运行程序，不然要在程序前加上程序的绝对路径才可以运行。
 Linux的命令export可以把安装程序目录输出到环境变量，如：
 $export PATH=$PATH:/opt/blast-2.2.21/bin    #将blast程序安装目录加入PATH变量
-在终端的命令行输出的环境变量只在当前shell可用，关闭终端窗口后就失效了。为了使输出 的环境变量在以后都能运行，则需要将export命令写入配置文件(~/.bashrc)。
+在终端的命令行输出的环境变量只在当前shell可用，关闭终端窗口后就失效了。为了使输出的环境变量在以后都能运行，则需要将export命令写入Bash配置文件(.bashrc)。
 $echo "export PATH=$PATH:/opt/blast-2.2.21/bin" >> ~/.bashrc
 $source ~/.bashrc
+注意：source命令使用环境变量立即生效，也可以先关闭并重新打开Bash窗口，使设置的变量生效。
+
 
 ### Linux软件安装
 与Windows系统相比，以前Linux系统下安装软件显得比较麻烦，需要下载软件源代码，要查看软件的安装说明，然后再安装。现在许多Linux发行版也都有软件管理工具，如Ubuntu使用Debian的APT包管理器，而Redhat使用RPM (Redhat Package Manager)。这使Linux安装软件也就跟安装windows软件一样简单了。
+
 #### 包管理器
 (1) APT命令行软件包管理器 
 常用命令apt-get来安装软件：
@@ -341,14 +351,14 @@ $ sudo apt-get update
 
 Ubuntu 16.04版本起采用更友好的apt命令行软件包管理器。apt提供软件包搜索，管理和信息查询等功能，与apt-get和apt-cache等功能相同。
 以下是apt常用命令的说明，更多信息可通过apt --help查看:
-	list - 根据名称列出软件包
-	search - 搜索软件包描述
-	show - 显示软件包细节
-	install - 安装软件包
-	remove - 移除软件包
-	autoremove - 卸载所有自动安装且不再使用的软件包
-	update - 更新可用软件包列表(只检查)
-	upgrade - 安装/升级软件来更新系统
+*	list - 根据名称列出软件包
+*	search - 搜索软件包描述
+*	show - 显示软件包细节
+*	install - 安装软件包
+*	remove - 移除软件包
+*	autoremove - 卸载所有自动安装且不再使用的软件包
+*	update - 更新可用软件包列表(只检查)
+*	upgrade - 安装/升级软件来更新系统
 要自动升级系统可以联合update与upgrade命令：
 $ sudo apt update && sudo apt upgrade -y
 
