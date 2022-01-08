@@ -262,8 +262,9 @@ mynames
 
 * (a) 条件执行（conditional statements）
 
-if (条件) 表达式
-if (条件) 表达式1 else 表达式2
+if (条件) 表达式  
+if (条件) 表达式1 else 表达式2  
+
 比如下面的代码，判断p值是否显著(小于0.05)：
 ```R
 p <- 0.1
@@ -277,8 +278,8 @@ print("p > 0.05!")
 
 * (b)循环结构(loop structure)
 
-for(变量 in 向量) 表达式
-while(条件) 表达式
+for(变量 in 向量) 表达式   
+while(条件) 表达式  
 
 注意: while语句只要条件是真就会执行表达式。这个判断在循环的最开始，所以表达式可能从来不被执行。
 ```R
@@ -525,16 +526,16 @@ options(BioC_mirror="http://mirrors.ustc.edu.cn/bioc/")
 ```
 注：你可以通过search()命令查看当前导入的包情况。
 
-表1 R中常见的使用包的函数
-|函数名称|含义|
-|:-|:-|
-|install.packages()|下载并安装包|
-|update.packages()|更新包|
-|liabrary()|加载（导入）包|
-|.libPaths()|显示库所在的目录|
+表1 R中常见的使用包的函数  
 
+| 函数名称 |  含义  |  
+|:------|:-------|  
+|install.packages()|下载并安装包|  
+|update.packages()|更新包|  
+|liabrary()|加载（导入）包|  
+|.libPaths()|显示库所在的目录|  
 
-
+Table: R中常见的使用包的函数 
 
 #### Reference
 
