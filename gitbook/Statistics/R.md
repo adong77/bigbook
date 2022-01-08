@@ -442,25 +442,24 @@ x <- seq(1:10)
 y <- round(runif(10, min=0, max=10), 1)
 plot(x, y)
 ```
-可以通过plot()的参数修改，得到更佳的图片展示效果(图 20 4)，一般常用的参数如下：
-
-(1)xlim, ylim参数可以定义X轴与Y轴的刻度范围
-(2)main参数给定图片的标题；xlab与ylab用来定义X轴与Y轴的名称。
-(3)pch参数用于定义绘制点的样式，pch用数字表示各种不同的图形标记，如数字1是空心圆(默认值),2是正三角，3是加号等。
-(4)cex参数定义图标的大小，默认值为1，可用一个矢量如c(1:3)。
+可以通过plot()的参数修改，得到更佳的图片展示效果(图4)，
 ```R
 > plot(x,y,ylim=c(0,12), main="plot parameters", xlab="length", ylab="height", pch=19, cex=c(1:3))
 ```
-
 ![plot结果](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/R-4.png)
 图4 plot结果
 
+一般常用的参数如下：  
+(1)xlim, ylim参数可以定义X轴与Y轴的刻度范围。  
+(2)main参数给定图片的标题；xlab与ylab用来定义X轴与Y轴的名称。  
+(3)pch参数用于定义绘制点的样式，pch用数字表示各种不同的图形标记，如数字1是空心圆(默认值),2是正三角，3是加号等。  
+(4)cex参数定义图标的大小，默认值为1，可用一个矢量如c(1:3)。  
 (5)col参数用于设定颜色，R语言中预定了657种颜色，可以使用color()要查看。
 (6)plot()函数还可以绘制出点的连线图，type参数用于定义线条的类型，常用的类型有，"p"显示点，"l"显示线条， "b"显示点和线， "o"显示点在线上；lwd参数设定线的宽度，lty参数设定线条的性状。
 ```R
 > plot(x,y,ylim=c(0,12), main="plot parameters", xlab="length", ylab="height",pch=20, cex=1.5, type="b", lwd=2, lty=2)
 ```
-另外，如果需要绘制不止一个数据的曲线，可以使用lines()函数来完成，用points()函数增加点，用text()可以增加显示文本，用arrows()画出一个箭头，用rect()画出一个方框等(图 20 5)。
+另外，如果需要绘制不止一个数据的曲线，可以使用lines()函数来完成，用points()函数增加点，用text()可以增加显示文本，用arrows()画出一个箭头，用rect()画出一个方框等(图5)。
 ```R
 > z <- round(rnorm(10, sd=2, mean=4), 1)
 > lines(x,z,pch=1, cex=1.5, type="l", lwd=2, lty=1, col="red")
@@ -535,7 +534,7 @@ options(BioC_mirror="http://mirrors.ustc.edu.cn/bioc/")
 |liabrary()|加载（导入）包|  
 |.libPaths()|显示库所在的目录|  
 
-Table: R中常见的使用包的函数 
+
 
 #### Reference
 
