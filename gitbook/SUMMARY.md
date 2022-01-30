@@ -7,6 +7,7 @@
     
 * [💻计算机科学(Computer Science)](Computer/ComputerBasics.md)
     * [Linux操作系统](Computer/Linux.md)
+    * [Python编程语言](Computer/Python.md)
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/Stats.md)
