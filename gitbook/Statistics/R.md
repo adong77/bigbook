@@ -497,23 +497,34 @@ R语言具有丰富的程序包，但许多R包并没有集成在基础安装包
 在Windows或MacOS中，你可以简单地使用R窗口的菜单（“程序包”）来安装R包。也可以使用以下命令来安装：
 ```R
 >install.packages("mypkg")  
+>install.packages("mypkg", repos='mirror.lzu.edu.cn/CRAN') #指定国内镜像
 ```
-如指定安装依赖包用命令：install.packages("mypkg", dependencies=TRUE)。
+如指定安装依赖包用命令：
+```R
+install.packages("mypkg", dependencies=TRUE)
+```
 在Linux系统中，如果想让安装的R包让所有用户用，必须先以超级用户权限运行R(如sudo R)，然后R包会安装到系统的库目录，不然只会安装到用户目录，而其他用户将无法读取。
 
 * 安装Bioconductor包
 Bioconductor(www.bioconductor.org)是专门为生物信息开发的R包。安装方法如下：
 ```R
->source("https://bioconductor.org/biocLite.R")
+>source("https://bioconductor.org/biocLite.R")  #https or http
 >biocLite("yeastExpData")
 ```
 
 ♫ Tip
 
-bioconductor默认的下载地址都在国外，所以下载速度十分慢。但可以用它在国内的镜像来下载相关包，提高下载速度。指定一个离你最近的国内镜像:
+bioconductor默认的下载地址都在国外，所以下载速度十分慢。但可以用它在国内的镜像来下载相关包，提高下载速度。
+可指定一个离你最近的国内镜像:
 ```R
-options(BioC_mirror="http://mirrors.ustc.edu.cn/bioc/")
+options(BioC_mirror="http://mirrors.ustc.edu.cn/bioc/")  #中科大镜像
+options(BioC_mirror="https://mirrors.tuna.tsinghua.edu.cn/bioconductor") #清华镜像
 ```
+同样，可指定基础R包的国内源：
+```R
+options("repos" = c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))  
+```
+
 
 在使用某个包前，需要使用library()命令载入程序包到工作环境中以进行相关的运算：
 ```R
