@@ -1,6 +1,6 @@
 {
-  "title": "BiGbook教程",
-  "description": "生物信息学与基因组分析入门",
+  "title": "BiGbook",
+  "description": "生物信息学与基因组学入门教程",
   "author": "adong <youdng@hotmail.com>",
   "language": "zh-hans",
   "gitbook": "3.2.3",
@@ -11,11 +11,22 @@
   "plugins": [
     "github",
     "expandable-chapters-small",
-    "back-to-top-button"
+    "back-to-top-button",
+    "page-toc-button"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/adong77/bigbook.git"
     }
+    "page-toc-button":{
+      "maxTocDepth": 2,
+      "minTocSize": 2
+    }
+  },
+  "links" : {
+    "sidebar" : {
+        "Home" : "https://www.ligene.cn"
+    }
   }
+
 }
