@@ -12,15 +12,22 @@
     "github",
     "expandable-chapters-small",
     "back-to-top-button",
-    "page-toc-button"
+    "page-toc-button",
+    "flexible-alerts",
+    "tbfed-pagefooter"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/adong77/bigbook.git"
-    }
+    },
     "page-toc-button":{
       "maxTocDepth": 2,
       "minTocSize": 2
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy LIGENE 2021",
+      "modify_label": "Latest Updated：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
   },
   "links" : {
