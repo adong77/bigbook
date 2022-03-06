@@ -14,7 +14,8 @@
     "back-to-top-button",
     "page-toc-button",
     "flexible-alerts",
-    "tbfed-pagefooter"
+    "tbfed-pagefooter",
+    "code"
   ],
   "pluginsConfig": {
     "github": {
@@ -28,6 +29,9 @@
       "copyright":"Copyright &copy LIGENE 2021",
       "modify_label": "Latest Updated：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "code":{
+      "copyButtons": true
     }
   }
 
