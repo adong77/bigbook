@@ -512,9 +512,8 @@ Bioconductor(www.bioconductor.org)是专门为生物信息开发的R包。安装
 >biocLite("yeastExpData")
 ```
 
-♫ Tip
-
-bioconductor默认的下载地址都在国外，所以下载速度十分慢。但可以用它在国内的镜像来下载相关包，提高下载速度。
+> [!TIP]
+> bioconductor默认的下载地址都在国外，所以下载速度十分慢。但可以用它在国内的镜像来下载相关包，提高下载速度。
 可指定一个离你最近的国内镜像:
 ```R
 options(BioC_mirror="http://mirrors.ustc.edu.cn/bioc/")  #中科大镜像

@@ -29,11 +29,6 @@
       "modify_label": "Latest Updated：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
-  },
-  "links" : {
-    "sidebar" : {
-        "Home" : "https://www.ligene.cn"
-    }
   }
 
 }
