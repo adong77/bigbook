@@ -14,8 +14,8 @@
     "back-to-top-button",
     "page-toc-button",
     "flexible-alerts",
-    "tbfed-pagefooter",
-    "code"
+    "code",
+    "donate"
   ],
   "pluginsConfig": {
     "github": {
@@ -25,13 +25,13 @@
       "maxTocDepth": 2,
       "minTocSize": 2
     },
-    "tbfed-pagefooter": {
-      "copyright":"Copyright &copy LIGENE 2021",
-      "modify_label": "Latest Updated：",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
     "code":{
       "copyButtons": true
+    },
+    "donate": {
+      "wechat": "http://www.ligene.cn/src/ligenext.jpg",
+      "button": "反馈",
+      "wechatText": "微信扫码"
     }
   }
 

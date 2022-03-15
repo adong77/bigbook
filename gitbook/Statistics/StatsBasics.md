@@ -9,8 +9,6 @@
 
 ### statistical analysis
 
-### experimental design
-
 ### data visualization
 * R (ggplots)
 

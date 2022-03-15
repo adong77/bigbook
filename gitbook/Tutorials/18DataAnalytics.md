@@ -5,7 +5,7 @@
 * R语言的tidyverse语法可解决R在数据科学应用的痛点，可通过大神Hadley Wickham的作品《R数据科学》来学习。
 Reference: Grolemund G, Wickham H. R for Data Science (R数据科学). Available from: https://r4ds.had.co.nz/
 
-![机器学习发展](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig18-1.png)
+![机器学习发展](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/fig18-1.png)
 图 18 1 机器学习发展
 
 混淆矩阵：真实类别，预测类别

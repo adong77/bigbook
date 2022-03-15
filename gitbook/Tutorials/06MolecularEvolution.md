@@ -20,13 +20,13 @@
 （2）	用BioEdit打开序列，并检查序列名，如有序列名称比较长，修改序列名，使不超过10个字符。
 （3）	 按住shift键拖动鼠标选择所有序列（左名称栏会变黑），再Ctrl+G，将DNA翻译成氨基酸序列。
 （4）	 再点菜单Accessory Applications-> ClustalW Multiple Alignment运行ClustalW, 勾上Calculate NJ Tree, “FAST algorithm for guide tree”，并勾掉“Bootstrap NJ tree”，其它默认即可。
-![ClustalW参数](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig6-11.png)
+![ClustalW参数](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/fig6-11.png)
 
 图 6-11 ClustalW参数
 
 （5）	 运行完后显示新的比对窗口，同样先用鼠标全选序列名称，再按Ctrl+G，这样就得到按密码子比对后的DNA序列。
 （6）	删除最后一个终止密码子。先把BioEdit工具Mode改成edit, 再鼠标拖动选择”TAG”，按delete键删除。
-![ClustalW参数](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/book/fig6-12.jpg)
+![ClustalW参数](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/fig6-12.jpg)
 
 图 6-12 BioEdit编辑窗口
 

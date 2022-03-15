@@ -12,11 +12,11 @@ Linux系统有许多不同的发行版本，常用的版本有Ubuntu Linux与Red
 
 ### Linux命令行终端
 操作系统的基本结构是由Kernel（内核）和Shell（壳）构成。Shell是用户与Linux操作系统沟通的桥梁（图1），它的作用是命令解释器(command processor)，负责接收用户输入的命令，翻译后发送给Linux内核处理，并能显示命令输出的信息。The **shell** acts as an interface between the user and the kernel. Shell一般可以分成两类：一是图形界面(Graphical User Interface)，简称 GUI，用户通过鼠标点击图标与计算机交互。二是命令行界面(Command Line Interface)，简称 CLI，用户通过输入命令与计算机交互。命令行Shell的种类较多，最常用的是Bash (Bourne-Again Shell)，它是 Ubuntu、RedHat及macOS等操作系统默认的命令行Shell。 
-![Shell功能](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-1.png)
+![Shell功能](https://raw.githubusercontent.com/adong77/bigbook/master/Images/Linux-1.png)
 图1 Shell功能
 
 Linux命令行终端就是一个文本窗口程序（图2）， 如GNOME桌面环境的Terminal或KDE桌面的Konsole，通过它可使用命令行。Ubuntu系统默认桌面环境是GENOME，要使用命令行，首先要打开一个终端(Terminal)。终端一般在菜单Application->Accessories->Terminal，或直接使用快捷键Ctrl+T打开。 新版Genome3环境可点击探索本地和在线资源的图标，搜索Terminal即可找到。
-![Linux命令行窗口](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-2.png)
+![Linux命令行窗口](https://raw.githubusercontent.com/adong77/bigbook/master/Images/Linux-2.png)
 图2 Linux命令行窗口
 
 终端显示一个提示符，Bash的提示符是一个美元符号($)，“$”符号后面是光标位置，用户可以在此输入命令，按下回车键后，Bash就会返回结果。如果当前是管理员用户(root)，则命令提示符变成“#”号。Linux系统支持打开多个终端，如果有多个终端窗口，则当前终端窗口的光标是实心方块，可进行命令输入；其它窗口是空心方块，不能输入命令。
@@ -32,7 +32,7 @@ Linux命令行终端就是一个文本窗口程序（图2）， 如GNOME桌面�
 
 ### Linux文件系统
 Windows系统的"我的电脑"可分为不同的分区，如C, D, E等不同驱动器盘符。各个分区下再保存不同的文件与目录，并都以分区的名字为根目录，如“C:\Windows”。Linux系统的目录结构与Windows有较大差异。Linux中所有文件与目录都位于根(root)目录”/”下，根目录有点像Windows下的“我的电脑”，但没有再分不同的分区。Linux系统的根目录下也有许多不同文件或目录，用于不同的功能。Linux路径显示从根目录开始，如“/home”，代表根目录下的home目录。Linux系统目录的命名及作用遵循一定的标准，如”/dev”用于存放设备文件，“/lib”用于存放库文件，包含各种被系统和用户所使用的程序库，“/home”存放用户个人文件等。即使不同的Linux发行版，其文件夹的作用也基本相同。
-![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-3.png)
+![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/Images/Linux-3.png)
 图3 Linux文件系统
 
 > Note/Tip
@@ -51,7 +51,7 @@ Linux下常见的文件类型为：文本文件(-)、链接文件(l)和目录(d)
 Linux最优秀的地方之一，就在于它的多用户、多任务环境。为了让各个用户具有较保密的文件数据，文件的权限管理就变得很重要。 Linux一般将文件可存取访问的身份为三个类别：owner(用户), group(组), others(其它)；三种身份类别分别有read(r), write(w)和execute(x)等权限。
 
 打开终端，输入命令“ll”或“ls -l”，可显示用户目录下的所有文件与文件夹的详细信息（图4），每一行显示一个文件的相关信息。
-![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/imageBed/Linux-4.png)
+![Linux文件系统](https://raw.githubusercontent.com/adong77/bigbook/master/Images/Linux-4.png)
 图4 目录列表信息
 
 上图第三行表示含义：d代表文件夹。rwx代表用户(u)可读可写可执行，r-x代表用户组(g)可读不可写可执行，r-x代表其他人(o)可读不可写可执行。3代表3个人正在查看，前一个aseethar代表用户，后一个cri代表用户组，22代表文件夹大小，Jun 6 10:57代表创建时间，最后是文件或目录的名称。
