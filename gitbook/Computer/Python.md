@@ -325,17 +325,33 @@ print("Global:", a) # => 456
 
 
 ### 面向对象编程
-
+所谓面向对象编程，是指通过对象之间的相互作用来实现对系统行为进行控制的一种编程思想。在面向对象编程中，有类与实例两种概念，类和实例统称为对象。具体来讲，类就相当于设计图一样的东西，而实例则是指对象的实体。使用同一个类可以生成多个实例。
+在Python中，对类进行定义要使用class关键字。使用类定义可以将多个方法集中到一处，类的方法与函数类似，使用def关键字来定义。
 ```
-# Python可以用下面的语法定义类
-class Bird():
-  # __init__相当于Python class的constructor，需要显示指定self作为参数，否则会报错
-  def __init__(self):
-    self.name = "Bird"
-  # 类的方法也需要指定self作为参数
-  def fly(self):
-    print("I'm flying!")
+class Calc():
+  # 类的方法需要指定self作为参数
+  def __init__(self, a):
+    self.a = a
+  def add(self, b):
+    print(self.a + b)
+  def multiple(self, b):
+    print(self.a * b)
 
-bird = Bird() # 构造一个Bird的实例
-bird.fly() # => 打印 I'm flying
+calc = Calc(3) # 构造一个Calc的实例
+calc.add(4) # => 打印4
 ```
+Python类成员方法具有使用self接收参数的特征。通过使用这一self关键字，可以对实例的变量进行访问。所谓实例变量是指在通过对类的实例化生成的对象中可以访问的变量。其中__init__是特殊方法，被称为构造函数（constructor）。在这个方法中可以对实例进行初始化操作。在上面的代码示例中，self.a=a语句的作用是将通过参数获取的值代入实例变量a中。使用此方法代入一次到实例变量中的数值，在同一个实例中的任意一个方法内部都可以进行访问。add与multiply方法则是将通过参数获取的值与实例变量a进行运算。
+此外，Python的类中还有继承的概念。通过对类进行继承操作，可以从现有的类中派生出新的类并对其进行定义。
+```
+class CalcPlus(Calc):
+  def substract(self, b):
+    print(self.a - b)
+
+  def divide(self,b):
+    print(self.a /b)
+
+calc_plus = CalcPlus(3)   #生成CalcPlus类的实例
+calc_plus.add(4)          #Calc类的方法
+calc_plus.substract(4)    #CalcPlus类的方法
+```
+由于这个CalcPlus类继承自Calc类，因此在Calc类中定义的构造函数、add方法、multiply方法在新的类中也同样可以直接使用。此外，在CalcPlus类的内部还增加了新的substract方法和divide方法的定义。在祖先Calc类中定义的方法和对其进行继承所创建的CalcPlus类中的方法，都可以通过同样的方式进行调用。通过这种继承方式，可以将多个类中公用的部分集中到祖先类的代码中实现。
