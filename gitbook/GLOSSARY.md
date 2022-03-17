@@ -33,6 +33,9 @@
 * InDel
 插入/缺失(Insertion/Deletion)突变。
 
+* IoT
+Internet of Things, 物联网是指能连接家电、传感器等的互联网。
+
 * k-mer
 在基因组组装或序列比对中，k-mer是指读段序列中长度为k的所有可能的子序列。
 
