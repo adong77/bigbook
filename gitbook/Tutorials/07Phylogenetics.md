@@ -9,7 +9,7 @@
 ### 1.1 替换模型
 两个序列间的替换数(K)是分子进化分析中常用的变量。如果序列比较相似，两个序列比对之间只有较少的替换，那么只要简单数一下替换个数就可以确定K值。然而，如果序列间的差异较大，某些位点可能会发生多次突变（图 7 6），除了我们可以观察到的变化之外，还可能发生了一些“隐藏”突变，因此直接用序列比对的替换个数就可能低估了两序列在最近的共同祖先之后发生的替换数。
 
-![多重突变](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/fig7-6.png)
+![多重突变](https://raw.githubusercontent.com/adong77/bigbook/master/images/book/fig7-6.png)
 
 图 7 6 两个序列间的多重突变
 
@@ -18,14 +18,14 @@
 * (1) Jukes-Cantor模型
 最早在1969年由Thomas Jukes和Charles Cantor提出一种估计每个位点核苷酸替换数K的方法。Jukes-Cantor模型(JC69)假设一组具有较少整体变异的序列比另一组具有大量变异的序列，在一个进化时间内，在任何特定位点经历多次替换的概率更少。如果α表示每单位时间的变化率，并且t表示一个小的单位时间，那么在给定的核苷酸处发生三种可能的取代之一（例如，对于A核苷酸，可能发生A→C，A→G，或A→T）的概率是3αΔt。这个模型假设所有变化都是同等可能的：A被T、G或C替换的可能性是一样的。在对这些变量进行一些操作之后，对可能发生在序列a和b之间的替换数估计（包括可观察的和隐藏的替换），我们可以将替换数K的计算公式表示为:
 
-![Jukes-Cantor model](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/JC-model.png)
+![Jukes-Cantor model](https://raw.githubusercontent.com/adong77/bigbook/master/images/book/JC-model.png)
 
 在该等式中，D是观察到的替换比例（总替换数/总核苷酸数）。然后我们可以直接检查序列比对，在这模型下计算K，并获得可以与其他一些对齐序列对的距离进行比较的进化距离估计。
 * (2)Kimura双参数模型
 在Jukes-Cantor模型中是以同样概率对待所有的核苷酸替换。但是，后来研究发现不同核苷酸类型的替换率相差较大，特别转换发生的频率至少是颠换的3倍。Motoo Kimura考虑到转换发生的频率高于颠换的情况，并于1980年提出Kimura双参数模型(K-2)。Kimura模型在估算K时同样考虑了“隐藏”替代，并引入另一个参数来解释这种差异，设定每年每个位点转换替代率(α)不同于颠换替代率(β)。
 假设观察到的转换比例为S（转换/总替换）和颠换比例为V（颠换/总替换）。两个比对序列之间发生的替换数K的计算公式如下：
 
-![Kimura model](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/Kimura-model.png)
+![Kimura model](https://raw.githubusercontent.com/adong77/bigbook/master/images/book/Kimura-model.png)
 
 在该等式中，S (tranSitions)是序列中转换核苷酸的比例（转换/总替换），V (transVersions)是颠换核苷酸的比例（颠换/总替换）。如果不区分转换与颠换(Dab = S + V)，这个方程就可简化成了Jukes-Cantor公式。
 
@@ -40,5 +40,5 @@ p = n / L
 与DNA序列一样，回复突变会导致严重低估替换数目。但是，因为有20个氨基酸，要准确计算两个蛋白质序列间发生的替换数，比估算DNA序列的替换数还要困难。某些氨基酸替换发生的频率会大于其它氨基酸，而且从一个氨基酸转变为另一个氨基酸的替换路径的长度也各不相同，如脯氨酸的CCC密码子转变成亮氨酸CUC密码子只要经历一个突变，而要转变成异亮氨酸AUC密码子，至少要经历两次变化。氨基酸替换对蛋白质功能的影响也不一样，会随氨基酸不同而变化，这令问题更加复杂。
 泊松校正(Poisson correction)模型是精确估计氨基酸替代数的一个简单模型，假设给定位点氨基酸替代数的发生频率遵循泊松分布，从而把p转换成蛋白质序列间的氨基酸替换数。每个位点的氨基酸替换数(d)可以用下面公式估算：
 
-![Poisson model](https://raw.githubusercontent.com/adong77/bigbook/master/Images/book/poisson-model.png)
+![Poisson model](https://raw.githubusercontent.com/adong77/bigbook/master/images/book/poisson-model.png)
 
