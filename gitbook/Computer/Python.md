@@ -369,3 +369,25 @@ calc_plus.add(4)          #Calc类的方法
 calc_plus.substract(4)    #CalcPlus类的方法
 ```
 由于这个CalcPlus类继承自Calc类，因此在Calc类中定义的构造函数、add方法、multiply方法在新的类中也同样可以直接使用。此外，在CalcPlus类的内部还增加了新的substract方法和divide方法的定义。在祖先Calc类中定义的方法和对其进行继承所创建的CalcPlus类中的方法，都可以通过同样的方式进行调用。通过这种继承方式，可以将多个类中公用的部分集中到祖先类的代码中实现。
+
+### 更多Python内容
+
+* lambda
+lambda产生一个没有名字的函数，通常为了满足一次使用，其使用语法为lambda argument_list: expression。参数列表是用逗号分隔开的一个列表，表达式是这些参数的组合操作。
+
+* map
+map执行一个循环操作，使用语法为map(func, seq)。第一个参数是要调用的函数或函数的名字，第二个参数是一个序列（如列表、字符串、字典）。map会以序列的每个元素为参数调用func，并新建一个输出列表。
+
+* filter
+filter用于过滤列表，使用语法为filter(func, list)。以第二个参数的每个元素调用func，返回值为True则保留，否则舍弃。
+
+* reduce
+reduce连续对列表的元素应用函数，使用语法为reduce(func, list)。如果我们有一个列表aList = [1,2,3, … ,n ], 调用reduce(func, aList)后进行的操作为: 首先前两个元素会传入函数func做运算，返回值替换这两个元素，成为数组第一个元素aList = [func(1,2),3, … , n];然后当前的前两个元素再传图func函数做运算，返回值返回值替换这两个元素，成为数组第一个元素aList = [func(func(1,2),3), … , n]，直到列表只有一个元素。
+```
+from functools import reduce
+print("列表求和")
+aList = [1, 2, 3, 4, 5]
+print(reduce(lambda a, b: a + b, aList))
+列表求和
+15
+```
