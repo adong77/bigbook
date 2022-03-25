@@ -7,7 +7,7 @@
 > [!NOTE]
 > 生物信息学(bioinformatics) = 生物学(biology) + 计算机科学(computer science) + 统计学(statistics)
 
-![Venn-diagram-bioinformatics](http://www.ligene.cn/images/bigbook/Venn-diagram-bioinformatics.png)
+![Venn-diagram-bioinformatics](https://gitee.com/thelilab/bigbook/raw/master/Images/Venn-diagram-bioinformatics.png)
 
 本书是教材[3]的配套电子书，提供纸质教材的扩展内容或更新。该教材是编者在近几年给生物、食品工程专业学生讲授生物信息学课程的基础上整理编撰而成，全书共有18章，可分为三部分：
 * 第1、2与18章分别对应生物学、计算机科学与统计学的基础知识；
@@ -18,7 +18,7 @@
 
 教材每章内容适用于一次教学课时(1.5h)，可根据不同的教学总课时(如15/16周)选讲部分章节内容，其它内容供学生自学。
 本教材的推荐教学安排如下图所示：
-![Teaching-Plan-bioinformatics](http://www.ligene.cn/images/bigbook/Teaching-plan-bioinformatics.png)
+![Teaching-Plan-bioinformatics](https://gitee.com/thelilab/bigbook/raw/master/Images/Teaching-plan-bioinformatics.png)
 
 If you have questions, or find something can be improved, please send me an email: ![](http://www.ligene.cn/images/gmail.png)
 

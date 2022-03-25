@@ -3,7 +3,7 @@
 * 机器学习 = 机器(计算机) + 学习
 * 人的学习过程：读书-练习-测验-成绩
 * 机器学习是一种通过利用数据，训练出模型，然后使用模型预测的方法。
-![Machine-Learning-Concepts](https://raw.githubusercontent.com/adong77/bigbook/master/images/ML-concepts.png)
+![Machine-Learning-Concepts](https://gitee.com/thelilab/bigbook/raw/master/Images/ML-concepts.png)
 
 One of the best ways to study machine learning methods is to take the online courses. The one by Andrew Ng is awesome: https://www.coursera.org/learn/machine-learning
 

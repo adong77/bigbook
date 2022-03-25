@@ -6,7 +6,7 @@
 ### 空位罚分
 
 ### 局部比对
-![全局比对与局部比对算法](https://raw.githubusercontent.com/adong77/bigbook/master/images/book/fig4-6.png)
+![全局比对与局部比对算法](https://gitee.com/thelilab/bigbook/raw/master/Images/book/fig4-6.png)
 
 图 4-6全局比对与局部比对算法
 
