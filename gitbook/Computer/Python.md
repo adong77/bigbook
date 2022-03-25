@@ -1,16 +1,6 @@
 ## Python教程
-本教程专注于帮助初学者，尤其是生物信息分析人员快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请额外参考Python经典教程A byte of python和它的中文版 来更好的理解Python. 本文档的概念和文字描述参考了A byte of python(中文版)，特此感谢。
+本教程专注于帮助生物信息学初学者快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请参考Python经典教程A byte of python中文版来更好的理解Python。 
 
-###　Python 常用包
-１．科学计算 Numpy, SciPy (也是安装python包的拦路虎直到有了conda)
-２．类比于R的数据框操作包 Pandas
-３．可视化工具 Seaborn (配合pandas), matplotlib (类比MATLAB), plotly (交互式绘图), ggplot (类比ggplot2)
-４．网站开发 web.py, Django, Flask
-５．任务调度和流程管理 Airflow (pipeline首选)
-６．机器学习 scikit-learn (经典), PyML, Tensorflow (谷歌释放), pylearn2, Orange (图形界面的机器学习包)
-７．网页抓取 Beautiful Soup，requests,
-８．可重复编程 Jupyter
-９．正则表达式 re
 
 ### 如何运行Python命令和脚本
 * 对于LInux或Unix用户，直接在终端输入 python 然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。此外，所有的命令还可以存储到一个文件一起执行，如下图所示。我们有一个包含python程序的文件test.py，我们只要在终端输入python test.py并回车就可以运行这个文件。同时我们也可在终端通过输入chmod 755 test.py赋予程序test.py可执行权限，并在终端输入./test.py运行Python脚本。
@@ -336,6 +326,17 @@ import Numpy as np
 # 用from可以不用写模块名，直接用"函数名"执行函数
 from 模块名 import 要使用的函数名
 ```
+
+###　Python 常用包
+１．科学计算 Numpy, SciPy (也是安装python包的拦路虎直到有了conda)
+２．类比于R的数据框操作包 Pandas
+３．可视化工具 Seaborn (配合pandas), matplotlib (类比MATLAB), plotly (交互式绘图), ggplot (类比ggplot2)
+４．网站开发 web.py, Django, Flask
+５．任务调度和流程管理 Airflow (pipeline首选)
+６．机器学习 scikit-learn (经典), PyML, Tensorflow (谷歌释放), pylearn2, Orange (图形界面的机器学习包)
+７．网页抓取 Beautiful Soup，requests,
+８．可重复编程 Jupyter
+９．正则表达式 re
 
 ### 面向对象编程
 所谓面向对象编程，是指通过对象之间的相互作用来实现对系统行为进行控制的一种编程思想。在面向对象编程中，有类与实例两种概念，类和实例统称为对象。具体来讲，类就相当于设计图一样的东西，而实例则是指对象的实体。使用同一个类可以生成多个实例。
