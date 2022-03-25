@@ -11,12 +11,12 @@ mfold是知名的二级结构预测软件，这个程序采用最小能量计算
 注意：一般用于预测的RNA序列长度为100-150bp左右，序列太长将无法清楚观察RNA结构。
 4）	由于我们想看这个区域转录的RNA折叠，需要将所Ts都替换成Us（U-A碱基配对与T-A的稳定性不同），可用记事本查找替换功能，将DNA序列复制到记事本，并将所有T全部替换为U。
 5）	现在我们到mfold网络服务站点（http://unafold.rna.albany.edu/?q=mfold）
-![mfold主页](https://gitee.com/thelilab/bigbook/raw/master/Images/book/fig9-7.png)
+![mfold主页](http://www.ligene.cn/images/book/fig9-7.png)
 图 9-7 mfold主页
 
 6）	找到RNA折叠表单(RNA folding form)，输入你前面处理的fasta序列。注意：mfold有许多参数可以改变，但大多数参数可以用默认值来进行基本的结构预测。这里我们设定RNA序列设为线性(linear)，如果RNA序列的长度比较长(>800bp)，最好用批量(batch)任务提交，而不是immediate job。
 7）	按Fold RNA提交任务，当任务完成时，你可以看到结果网页（或通过email通知）。结果中列出mfold发现的所有可能结构（图 9 8）（上限是参数中设置的数量），并提供不同格式的折叠图形的链接。点击每个结构下面的PDF或PNG等图形格式链接可以查看每个RNA结构。
 注意：由于预测方法的限制与热力学参数的简化，第一个结构不一定为实际的RNA结构。
-![mfold预测结果](https://gitee.com/thelilab/bigbook/raw/master/Images/book/fig9-8.png)
+![mfold预测结果](http://www.ligene.cn/images/book/fig9-8.png)
 图 9-8 mfold预测结果
 

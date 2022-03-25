@@ -25,7 +25,7 @@ Perl程序的基本执行单位是语句，一条语句以分号(;)结尾。有�
 在Linux终端通过以下命令来运行脚本：
 `$perl hello.pl`
 该程序的运行结果是在屏幕上显示:”Hello World!”。正确运行的结果如图1所示。
-![运行窗口](https://gitee.com/thelilab/bigbook/raw/master/Images/Perl-fig1.png)
+![运行窗口](http://www.ligene.cn/images/Perl-fig1.png)
 注意：Perl解释器有一个参数(-c)可以只检查语法错误，不运行脚本。
 另外，还有一个参数(-e)可以快速运行脚本：
 `$perl –e 'print "hello world!\n";' `

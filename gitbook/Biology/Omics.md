@@ -2,4 +2,4 @@
 
 * Multi-omics: genome, transcriptome, proteome, metabolome, and microbiome
 
-![Omics-different-layers](https://gitee.com/thelilab/bigbook/raw/master/Images/Omics_differentLayers.gif)
+![Omics-different-layers](http://www.ligene.cn/images/Omics_differentLayers.gif)

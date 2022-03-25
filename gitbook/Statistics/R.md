@@ -11,7 +11,7 @@ R是优秀的统计工具，同时它也是一种开放的编程语言，语法�
 
 CRAN有许多镜像站点，打开CRAN网页，点击左边的Mirrors链接，可以选择一个下载速度比较快的中国（China）镜像站点，如中国科技大学的镜像(https://mirrors.ustc.edu.cn/CRAN/)。鼠标单击“Download R for Windows”链接，下载适用Windows系统的版本，并选择下载基础(base)安装软件包。
 直接安装后可以在桌面或开始菜单找到“R”图标来运行。若你使用的是64位Windows系统，R在默认安装条件下，会生成两个R图标，一个为32位软件(如R i386 3.5.1)，另一个为64位软件(如R x64 3.5.1)，数字为R的版本号。一般运行R x64 3.5.1即可。
-![R运行界面](https://gitee.com/thelilab/bigbook/raw/master/Images/R-1.png)
+![R运行界面](http://www.ligene.cn/images/R-1.png)
 图1 R运行界面
 
 如图1所示，打开R后，就会显示控制台窗口(R Console)，在其命令提示符 (>)后可以输入命令或表达式(expressions)，回车后就输出命令运行结果：
@@ -170,7 +170,7 @@ A B C D
 
 #### 数据框(data frame)
 数据框也是二维数组(2D array)，与矩阵不同的地方是数据框中的数据可以是各种类型同时存在，如数值、字符串或者因子等。数据框是生物医学研究中最常用的数据记录格式，数据框中每行代表一个观测研究对象，每列代表研究对象一个特性的实验结果(图2)。
-![数据框](https://gitee.com/thelilab/bigbook/raw/master/Images/R-2.png)
+![数据框](http://www.ligene.cn/images/R-2.png)
 图2 数据框
 
 可以用函数data.frame()创建数据框：
@@ -410,7 +410,7 @@ R有许多内置函数，如mean(), length(), print(), plot()等。下面介绍�
 > dir() #显示目录下的内容
 ```
 工作路径也可以通过R菜单(文件/改变工作目录)手工进行选择目录(图3)：
-![改变目录](https://gitee.com/thelilab/bigbook/raw/master/Images/R-3.png)
+![改变目录](http://www.ligene.cn/images/R-3.png)
 图3 改变目录
 
 根据不同数据文件类型，可以选择不同的R函数来读取数据，下面介绍两种常用的文件(txt与csv) 读取方法:
@@ -446,7 +446,7 @@ plot(x, y)
 ```R
 > plot(x,y,ylim=c(0,12), main="plot parameters", xlab="length", ylab="height", pch=19, cex=c(1:3))
 ```
-![plot结果](https://gitee.com/thelilab/bigbook/raw/master/Images/R-4.png)
+![plot结果](http://www.ligene.cn/images/R-4.png)
 图4 plot结果
 
 一般常用的参数如下：  
@@ -468,7 +468,7 @@ plot(x, y)
 > rect(4,10,6,11, col="green")
 > arrows(6,8,7,8)
 ```
-![plot作图参数](https://gitee.com/thelilab/bigbook/raw/master/Images/R-5.png)
+![plot作图参数](http://www.ligene.cn/images/R-5.png)
 图5 plot作图参数
  
 R作图结果默认都是输出到同一个图形设备（Graphic device），后一个绘制的图会覆盖前一个图。如果你想同时绘制多种类型的图表，可以使用dev.new() 函数新建Device窗口，并在新窗口中绘制图表。
@@ -478,7 +478,7 @@ R作图结果默认都是输出到同一个图形设备（Graphic device），�
 >par(mfrow=c(1,2)) #图形组合，一行两列图
 ```
 
-![图形组合](https://gitee.com/thelilab/bigbook/raw/master/Images/R-6.png)
+![图形组合](http://www.ligene.cn/images/R-6.png)
 图6 图形组合
 
 如果想把R作图直接保存为文件，可以用dev.off()函数关掉当前活动的图形设备，如下面命令将图片保存到工作目录的PDF文件：
