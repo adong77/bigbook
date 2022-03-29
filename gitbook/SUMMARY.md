@@ -5,7 +5,7 @@
 * [🧬生物学(Biology)](Biology/BiologyBasics.md)
     * [组学(Omics)](Biology/Omics.md)
     
-* [💻计算机技术(Computing)](Computer/ComputerBasics.md)
+* [💻计算机科学(Computer Science)](Computer/ComputerBasics.md)
     * [Linux操作系统](Computer/Linux.md)
     * [Python编程语言](Computer/Python.md)
     * [Perl编程语言](Computer/Perl.md)
