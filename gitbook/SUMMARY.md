@@ -11,7 +11,7 @@
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/StatsBasics.md)
-    * [R统计软件](Statistics/R.md)
+    * [R语言与统计分析](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
 
 ### 📖BiG教程(Tutorials)
@@ -25,10 +25,10 @@
 * [第8章 蛋白质结构预测(Protein Structure)](Tutorials/08ProteinStructure.md)
 * [第9章 RNA分析(RNA analysis)](Tutorials/09RNA.md)
 * [第10章 PCR引物设计(Primer Design)](Tutorials/10PCR.md)
-* [第11章 DNA测序(DNA Sequencing)](Tutorials/11DNAsequencing.md)
+* [第11章 DNA测序(DNA Sequencing)](Tutorials/11Sequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 NGS基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
-* [第14章 全基因组重测序(Whole Genome Resequencing)](Tutorials/14Resequencing.md)
+* [第14章 全基因组测序(Whole Genome Sequencing)](Tutorials/14WGS.md)
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
