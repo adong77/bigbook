@@ -11,7 +11,7 @@
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/StatsBasics.md)
-    * [R语言与统计分析](Statistics/R.md)
+    * [R语言统计入门](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
 
 ### 📖BiG教程(Tutorials)
