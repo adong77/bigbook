@@ -1,4 +1,4 @@
-# 计算机技能基础
+# 计算机技能基础(Computer Skills)
 
 
 ## Tools

@@ -1,4 +1,4 @@
-# Genome Assembly
+# 基因组组装(Genome Assembly)
 
 
 * 本章视频：Sequencing the virus.mp4

@@ -1,4 +1,4 @@
-# Genomics
+# 基因组学(Genomics)
 
 
 ### JRE安装

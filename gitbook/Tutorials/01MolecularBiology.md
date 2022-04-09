@@ -1,4 +1,4 @@
-# 分子生物学基础
+# 分子生物学基础(Molecular Biology)
 
 
 * 掌握基因、CDS与ORF等概念。

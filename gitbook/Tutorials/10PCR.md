@@ -1,4 +1,4 @@
-# PCR Primer Design
+# PCR引物设计(Primer Design) 
 
 
 ## Primer-BLAST 设计qPCR引物

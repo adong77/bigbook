@@ -1,4 +1,4 @@
-# Metagenomics
+# 宏基因组学(Metagenomics)
 
 
 * [物种分类数据文件准备](https://docs.qq.com/doc/DVlZ6bW9pUVluZHFa)

@@ -1,4 +1,4 @@
-# Whole Genome Resequencing
+# 全基因组重测序(Whole Genome Sequencing)
 
 ### 结构变异鉴定
 结构变异(Structural Variations, SVs)包括基因组易位(translocation)、倒位(inversion)、大的插入缺失(indels)及重复序列的拷贝数变化(Copy Number Variations, CNVs)等。基因组结构变异对基因功能影响比较大，通常会导致多基因的丢失、基因表达倍增及基因融合等。以前结构变异检测方法主要是比较基因组杂交芯片（aCGH），包括Illumina, Affymetrix和Agilent等商业公司的产品。随着NGS技术的发展，特别是双末端测序大大提高了结构变异的检测能力。配对reads的方向与距离可用于定位大片段indels、inversion和转位等（图 14 6）。

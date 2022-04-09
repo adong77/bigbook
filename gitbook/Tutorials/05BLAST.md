@@ -1,4 +1,4 @@
-# BLAST
+# 序列数据库搜索(BLAST)
 
 [TOC]
 
