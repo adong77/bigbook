@@ -393,5 +393,5 @@ print(reduce(lambda a, b: a + b, aList))
 ```
 
 #### References
-1. Allen B. Downey, Think Python 2nd Edition: https://codingpy.com/books/thinkpython2/
+1. Allen B. Downey, Think Python 2nd Edition: https://cycleuser.gitbooks.io/think-python/
 2. Swaroop C. H., A Byte of Python: https://python.swaroopch.com/ (简明Python教程: https://bop.mol.uno/)
