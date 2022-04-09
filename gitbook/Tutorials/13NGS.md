@@ -1,4 +1,4 @@
-# 第13章 下一代测序基础(NGS)
+# 第13章 下一代测序基础(Next-Generation Sequencing)
 
 Illumina Sequencing Fundamentals:
 https://support.illumina.com/content/dam/illumina-support/courses/sequencing-fundamentals-wbt-chs/story_html5.html
