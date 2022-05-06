@@ -553,3 +553,4 @@ options("repos" = c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 3. Chang W. R Graphics Cookbook, 2nd edition. Available from: https://r-graphics.org
 4. The R Graph Gallery： https://www.r-graph-gallery.com/
 5. 李东风，R语言教程: https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html
+6. Giorgi FM, Ceraolo C, Mercatelli D. The R Language: An Engine for Bioinformatics and Data Science. Life. 2022; 12(5):648. https://doi.org/10.3390/life12050648
