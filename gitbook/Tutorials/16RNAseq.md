@@ -1,6 +1,31 @@
 # 转录组测序(RNA-seq)
 
+转录组(transcriptome)
+
+> [!NOTE]
+> "A transcriptome is a collection of all the transcripts present in a given cell." (NHGRI factsheet, NIH, US)
+
 * Basic RNA-seq processing: unix tools and IGV (http://bio.lundberg.gu.se/courses/vt13/rnaseq.html)
+
+### GFF格式
+gff全称为general feature format(通用特征格式)。GFF文件是一种用来描述基因组特征的纯文本文件，由9列数据组成，每一列代表序列的一个不同的特征。列是通过制表符分隔的。GFF文件有不同的版本，目前基本使用第三版（gff3）。
+GFF文件的第一行包含一个文本标题##gff-version3。紧接着下面以#号开头的各行还可以包含描述性的文本，如文件、来源、版本号、注释、参考文献等。
+在描述行之后，由9列数据组成，前8列在gff的各个版本中信息都是相同的，只是名称不同，第9列attributes的内容存在很大的版本特异性。
+> seqid source type start end score strand strand attributes
+
+以gff3为例，这9列信息分别是：
+* seqid：参考序列的id，如1号染色体
+* source：生成此注释的来源。如果未知，则用点（.）代替。一般指明产生此gff3文件的软件或方法。
+* type：序列类型，此处的名词是相对自由的，建议使用符合SO(sequenceontology)惯例的名称，如gene，repeat_region，exon，CDS等。
+* start：开始位点，按照坐标系统表示，从1开始计数（区别于bed文件从0开始计数）。
+* end：结束位点。
+* score：得分，对于一些可以量化的属性，可以设置一个数值以表示程度的不同。如果为空，用点（.）代替。
+* strand：“＋”表示正链，“－”表示负链，“.”表示不需要指定正负链。
+* phase：相位。对于编码蛋白质的CDS来说，本列指定下一个密码子开始的位置。可以是0、1或2，表示到达下一个密码子需要跳过的碱基个数。
+* attributes：序列属性。一个包含众多属性的列表，格式为“标签＝值”（tag=value），不同属性之间以分号相隔。每个标签是一个属性，并被赋予一个值，可以使用多个标签。
+
+另外，在基因结构注释gff文件中，基因包含mRNA，mRNA包含exon, CDS, UTR等信息，同时在注释文件中除基因行外，其他行在第9列会通过Parent指明该行从属的上一级ID，也就是一个基因的gene行、mRNA行、CDS行、exon行都会通过Parent层层关联在一起。具体的描述可以在www.sequenceontology.org/gff3.shtml上查看GFF规范。
+![GFF3 format](http://www.ligene.cn/images/GFF3.png)
 
 ### 基因注释文件
 GFF(General Feature Format)格式是一种简单、方便地对DNA、RNA及蛋白质序列的特征进行描述的一种数据格式，已经成为序列注释的通用格式。当前广泛使用的GFF格式为第3版，即GFF3。
@@ -19,3 +44,4 @@ gffread my.gff3 -T -o my.gtf
 #GTF文件转换成GFF文件
 gffread merged.gtf -o- > merged.gff3
 ```
+
