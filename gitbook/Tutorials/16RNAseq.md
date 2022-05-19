@@ -25,7 +25,7 @@ GFF文件的第一行包含一个文本标题##gff-version3。紧接着下面以
 * attributes：序列属性。一个包含众多属性的列表，格式为“标签＝值”（tag=value），不同属性之间以分号相隔。每个标签是一个属性，并被赋予一个值，可以使用多个标签。
 
 另外，在基因结构注释gff文件中，基因包含mRNA，mRNA包含exon, CDS, UTR等信息，同时在注释文件中除基因行外，其他行在第9列会通过Parent指明该行从属的上一级ID，也就是一个基因的gene行、mRNA行、CDS行、exon行都会通过Parent层层关联在一起。具体的描述可以在www.sequenceontology.org/gff3.shtml上查看GFF规范。
-![GFF3 format](http://www.ligene.cn/images/GFF3.png)
+![GFF3 format](http://www.ligene.cn/images/book/GFF3.png)
 
 ### 基因注释文件
 GFF(General Feature Format)格式是一种简单、方便地对DNA、RNA及蛋白质序列的特征进行描述的一种数据格式，已经成为序列注释的通用格式。当前广泛使用的GFF格式为第3版，即GFF3。
