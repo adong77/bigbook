@@ -3,8 +3,6 @@
 
  * [新冠病毒的进化树与起源分析](http://blog.ligene.cn/2020/03/19/ncov-tree/)
 
- 4. Dan Graur & Wen-Hsiung Li, Fundamentals of Molecular Evolution (2nd edn), 2000, Sinauer Associates Inc. 
-
 ### 邻连法
 在生物信息学中，邻连法（Neighbor-joining）是由 Naruya saiitou 和 Masatoshi Nei 于1987年提出的一种自下而上(聚集性)的聚类方法，用于创建系统发育树。该算法构建树通常用于基于DNA或蛋白质序列数据，需要知道每对类群(如物种或序列)之间的距离，以形成树。
 
@@ -55,3 +53,4 @@ p = n / L
 
 ![Poisson model](http://www.ligene.cn/images/book/poisson-model.png)
 
+ 4. Dan Graur & Wen-Hsiung Li, Fundamentals of Molecular Evolution (2nd edn), 2000, Sinauer Associates Inc. 

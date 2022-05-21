@@ -1,6 +1,6 @@
 {
   "title": "BiGbook",
-  "description": "生物信息学与基因组学入门教程",
+  "description": "生物信息学与基因组分析入门",
   "author": "adong",
   "language": "zh-hans",
   "gitbook": "3.2.3",
@@ -8,22 +8,25 @@
   "structure": {
     "readme": "README.md"
   },
+  "links" : { 
+    "sidebar" : { 
+      "Home" : "https://www.ligene.cn/bigbook/"
+      } 
+  },
   "plugins": [
     "github",
     "expandable-chapters-small",
     "back-to-top-button",
-    "page-toc-button",
     "flexible-alerts",
     "code",
-    "donate"
+    "donate",
+    "insert-logo",
+    "anchor-navigation-ex",
+    "baidu-tongji-with-multiple-channel"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/adong77/bigbook.git"
-    },
-    "page-toc-button":{
-      "maxTocDepth": 2,
-      "minTocSize": 2
     },
     "code":{
       "copyButtons": true
@@ -32,7 +35,14 @@
       "wechat": "http://www.ligene.cn/src/ligenext.jpg",
       "button": "反馈",
       "wechatText": "微信扫码关注公众号"
+    },
+    "insert-logo": {
+      "url": "./genext.jpg",
+      "style": "background: none; max-height: 50px; min-height: 20px"
+    },
+    "baidu-tongji-with-multiple-channel": {
+      "url": "https://hm.baidu.com/hm.js",
+      "token": "0ad9c65dc343a2a6d37cb95527713113"
     }
   }
-
 }
