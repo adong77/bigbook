@@ -10,7 +10,7 @@
   },
   "links" : { 
     "sidebar" : { 
-      "Home" : "https://www.ligene.cn/bigbook/"
+      "生信教学网站" : "http://www.ligene.cn/bigbook/"
       } 
   },
   "plugins": [
@@ -36,7 +36,8 @@
       "wechatText": "微信扫码关注公众号"
     },
     "anchor-navigation-ex":{
-      "showGoTop":false
+      "showLevel": false,
+      "showGoTop": false
     },
     "baidu-tongji-with-multiple-channel": {
       "token": "0ad9c65dc343a2a6d37cb95527713113"
