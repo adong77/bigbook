@@ -6,11 +6,12 @@
 
 > [!NOTE]
 > Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data.
+>
 > 生物信息学(bioinformatics) = 生物学(biology) + 计算机科学(computer science) + 统计学(statistics)
 
 ![Venn-diagram-bioinformatics](http://www.ligene.cn/images/Venn-diagram-bioinformatics.png)
 
-本书是教材[3]的配套电子书，提供纸质教材的扩展内容或更新。该教材是编者在近几年给生物、食品工程专业学生讲授生物信息学课程的基础上整理编撰而成，全书共有18章，可分为三部分：
+本书是教材[1]的配套电子书，提供纸质教材的扩展内容或更新。该教材是编者在近几年给生物、食品工程专业学生讲授生物信息学课程的基础上整理编撰而成，全书共有18章，可分为三部分：
 * 第1、2与18章分别对应生物学、计算机科学与统计学的基础知识；
 * 第3-12章为生物信息学的基本理论与方法，介绍DNA、RNA或蛋白质序列分析；
 * 第13-17章介绍下一代测序(NGS)数据分析方法及其应用，如Genome assembly, SNP detection, RNA-seq, Metagenomics。  
@@ -25,6 +26,6 @@
 * 百度网盘链接：https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA (提取码: txh5)。
 
 ### 参考书：
-1. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.
+1. 李余动编著，生物信息学与基因组分析入门，2021，浙江大学出版社.
 2. Jamil Momand & Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford University Press.
-3. 李余动编著，生物信息学与基因组分析入门，2021，浙江大学出版社.
+3. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.
