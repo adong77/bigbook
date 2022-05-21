@@ -20,7 +20,6 @@
     "flexible-alerts",
     "code",
     "donate",
-    "insert-logo",
     "anchor-navigation-ex",
     "baidu-tongji-with-multiple-channel"
   ],
@@ -36,12 +35,10 @@
       "button": "反馈",
       "wechatText": "微信扫码关注公众号"
     },
-    "insert-logo": {
-      "url": "./genext.jpg",
-      "style": "background: none; max-height: 50px; min-height: 20px"
+    "anchor-navigation-ex":{
+      "showGoTop":false
     },
     "baidu-tongji-with-multiple-channel": {
-      "url": "https://hm.baidu.com/hm.js",
       "token": "0ad9c65dc343a2a6d37cb95527713113"
     }
   }
