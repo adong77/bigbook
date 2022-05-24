@@ -20,7 +20,6 @@
     "flexible-alerts",
     "code",
     "donate",
-    "anchor-navigation-ex",
     "baidu-tongji-with-multiple-channel"
   ],
   "pluginsConfig": {
@@ -34,10 +33,6 @@
       "wechat": "http://www.ligene.cn/src/ligenext.jpg",
       "button": "反馈",
       "wechatText": "微信扫码关注公众号"
-    },
-    "anchor-navigation-ex":{
-      "showLevel": false,
-      "showGoTop": false
     },
     "baidu-tongji-with-multiple-channel": {
       "token": "0ad9c65dc343a2a6d37cb95527713113"

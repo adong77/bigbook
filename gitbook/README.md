@@ -26,6 +26,6 @@
 * 百度网盘链接：https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA (提取码: txh5)。
 
 ### 参考书：
-1. 李余动编著，生物信息学与基因组分析入门，2021，浙江大学出版社.
+1. 李余动编著，生物信息学与基因组分析入门，2021，浙江大学出版社.(<a href="https://item.jd.com/13018573.html" target="_blank">购买链接</a>)
 2. Jamil Momand & Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford University Press.
 3. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.
