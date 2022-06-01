@@ -7,6 +7,21 @@
 
 * Basic RNA-seq processing: unix tools and IGV (http://bio.lundberg.gu.se/courses/vt13/rnaseq.html)
 
+### RNA-seq建库流程
+1、RNA (light blue) is first extracted,提取所有的mRNA或total RNA
+2、DNA contamination is removed using DNase, 用DNase去除DNA（在RNA建库流程中，DNA被认为是污染物）
+可选过程：去除rRNA/选择mRNA
+3、The remaining RNA is broken up into short fragments, 将RNA打断成短片段（二代测序读长问题）
+4、RNA fragments are then reverse transcribed into cDNA (yellow), 将RNA片段逆转录为cDNA
+可选过程：链特异性选择
+5、Sequencing adaptors (blue) are ligated, 连接adapter 
+可选过程：PCR扩增
+6、fragment size selection is undertaken, 选择合适长度的cDNA
+7、The ends of cDNAs are sequenced using next generation sequencing technologies to produce many short reads, 进行测序
+可选过程：单端测序或双端测序
+![The data generation of a typical RNA-seq experiment](http://www.ligene.cn/images/book/RNA-seq-libary.png)
+
+
 ### GFF格式
 gff全称为general feature format(通用特征格式)。GFF文件是一种用来描述基因组特征的纯文本文件，由9列数据组成，每一列代表序列的一个不同的特征。列是通过制表符分隔的。GFF文件有不同的版本，目前基本使用第三版（gff3）。
 GFF文件的第一行包含一个文本标题##gff-version3。紧接着下面以#号开头的各行还可以包含描述性的文本，如文件、来源、版本号、注释、参考文献等。
