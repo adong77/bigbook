@@ -1,11 +1,12 @@
 # 转录组测序(RNA-seq)
 
-转录组(transcriptome)
-
 > [!NOTE]
+> 转录组(transcriptome)
 > "A transcriptome is a collection of all the transcripts present in a given cell." (NHGRI factsheet, NIH, US)
 
 * Basic RNA-seq processing: unix tools and IGV (http://bio.lundberg.gu.se/courses/vt13/rnaseq.html)
+
+## 实验流程
 
 ### RNA-seq建库流程
 1. RNA (light blue) is first extracted,提取所有的mRNA或total RNA
@@ -21,7 +22,9 @@
     * 可选过程：单端测序或双端测序
 
 ![The data generation of a typical RNA-seq experiment](http://www.ligene.cn/images/book/RNA-seq-library.png)
+参考文献：https://www.nature.com/articles/nrg3068
 
+## 数据分析 
 
 ### GFF格式
 gff全称为general feature format(通用特征格式)。GFF文件是一种用来描述基因组特征的纯文本文件，由9列数据组成，每一列代表序列的一个不同的特征。列是通过制表符分隔的。GFF文件有不同的版本，目前基本使用第三版（gff3）。
