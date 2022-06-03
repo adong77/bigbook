@@ -311,7 +311,6 @@ $wget -c ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2
 -c：接着下载没下载完的文件(continue)
 
 ### 数据流重定向与管道
-
 在Linux命令行界面中，如果命令所需要的输入不是来自键盘，而是来自指定的文件，这就是输入重定向。同理，命令的输出不是显示在屏幕上，而是写入到指定的文件中，就是输出重定向。生物信息分析经常需要用到重定向，将程序的运行结果或过程信息保存到文件上，便于后续查看分析。一般通过“>”实现输出重定向，而"<"是输入重定向。如：
 $ls > file.txt #显示文件列表到文件file.txt，如果file.txt已经存在，则会覆盖内容。
 $cat file1 file2 file3 >> files.txt #追加内容到files.txt

@@ -1,4 +1,4 @@
-## Python教程
+# Python教程
 本教程专注于帮助生物信息学初学者快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请参考Python经典教程A byte of python中文版来更好的理解Python。 
 
 
