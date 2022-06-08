@@ -22,7 +22,7 @@
     "donate",
     "page-toc-button",
     "baidu-tongji-with-multiple-channel",
-    "katex@git+https://github.com/Renovamen/gitbook-plugin-katex.git"
+    "katex"
   ],
   "pluginsConfig": {
     "github": {

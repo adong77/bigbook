@@ -19,7 +19,7 @@ $$E=mc^2$$
 
 
 ### References
-[1] James, Witten, Hastie, and Tibshirani, An Introduction to Statistical Learning with Applications in R: http://faculty.marshall.usc.edu/gareth-james/ISL/
-[2] A visual introduction to machine learning:
+1. James, Witten, Hastie, and Tibshirani, An Introduction to Statistical Learning with Applications in R: http://faculty.marshall.usc.edu/gareth-james/ISL/
+2. A visual introduction to machine learning:
     * http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
     * http://www.r2d3.us/visual-intro-to-machine-learning-part-2/
