@@ -22,7 +22,7 @@
     "donate",
     "page-toc-button",
     "baidu-tongji-with-multiple-channel",
-    "mathjax-pro"
+    "mathjax"
   ],
   "pluginsConfig": {
     "github": {
