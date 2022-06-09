@@ -8,6 +8,7 @@
 One of the best ways to study machine learning methods is to take the online courses. The one by Andrew Ng is awesome: https://www.coursera.org/learn/machine-learning
 
 * 数据挖掘(data mining)是指从大量的数据中，挖掘出未知的且有价值的信息和知识的过程。
+
 ![爱式](https://latex.codecogs.com/svg.image?E=mc^{2})
 
 * 强化学习
