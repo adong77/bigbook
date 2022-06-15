@@ -57,7 +57,7 @@ Internet of Things, 物联网是指能连接家电、传感器等的互联网。
 ## Q-SCORE
 Phred质量值 (Phred quality score)，用于表示测序结果中碱基错误发生概率的整数数值。如Q20表示测序碱基的出错概率为1/200。Q值通常用ASCII字符表示。
 
-## Read 
+## Reads 
 读段或短序列，DNA片段进行测序所得的序列。Read: A short DNA fragment which is read out by sequencer.
 
 ## scaffold
