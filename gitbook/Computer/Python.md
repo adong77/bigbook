@@ -1,34 +1,34 @@
 # Python教程
-本教程专注于帮助生物信息学初学者快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请参考Python经典教程A byte of python中文版来更好的理解Python。 
+本教程专注于帮助生物信息学初学者快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的理解Python语言。 
 
 
-### 如何运行Python命令和脚本
-* 对于LInux或Unix用户，直接在终端输入 python 然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。此外，所有的命令还可以存储到一个文件一起执行，如下图所示。我们有一个包含python程序的文件test.py，我们只要在终端输入python test.py并回车就可以运行这个文件。同时我们也可在终端通过输入chmod 755 test.py赋予程序test.py可执行权限，并在终端输入./test.py运行Python脚本。
-* 对于Windows用户，可以通过“Windows键+R”调出“Run”窗口并输入“cmd”打开Windows命令解释器，输入python即可打开交互式python解释器。同时也可以双击安装后的软件的快捷方式打开图形界面的Python解释器，可以处理交互式命令和导入Python文件并执行。
+## 如何运行Python命令和脚本
+* 对于Linux或Unix用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。此外，所有的命令还可以存储到一个脚本文件中一起执行。例如，我们有一个包含python命令的文件test.py，我们只要在终端输入python test.py并回车就可以运行这个文件。
+* 对于Windows用户，可以通过“Windows键+R”调出“Run”窗口，再输入“cmd”打开Windows命令解释器，再输入python，即可打开交互式python解释器。此外，也可以双击Python安装后的IDLE快捷方式打开图形界面的Python解释器，可以处理交互式命令和导入Python文件并执行。
+* 对于交互式Python解释器，在使用结束后，通过键盘输入"quit()"，或按组合键Ctrl-D (Linux/Unix)或Ctrl-Z (Windows)关闭。
 
-* 对于交互式Python解释器，在使用结束后，通过键盘组合键Ctrl-d (Linux/Unix)或Ctrl-z (Windows)关闭。
-
-* 对于初学者，本手册推荐直接在Jupyter Notebook下学习Python命令和脚本。我们这套教程也是用Jupyter Notebook写作而成，里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。
-
-* Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。
+> 对于初学者，本手册推荐直接在Jupyter Notebook下学习Python命令和脚本。我们这套教程也是用Jupyter Notebook写作而成，里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。
 Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
 
-### Python语法
-* 层级缩进。空白在Python中是很重要的，它称为缩进。在逻辑行首的空白（空格和制表符）用来决定逻辑行的缩进层次，从而用来决定语句的分组。这意味着同一层次的语句必须有相同的缩进。每一组这样的语句称为一个块。通常的缩进为4个空格, 在Ipython Notebook中为一个Tab键。
-
-从下面这两个例子可以看出错误的缩进类型和对应的提示。
-    * “unexpected indent” 表示在不该出现空白的地方多了空白，并且指出问题出在第三行(line 3)。
-    * “expected an indented block” 表示应该有缩进的地方未缩进，也指出了问题所在行。
-    * “unindent does not match any outer indentation level” 表示缩进出现了不一致，问题通常会在指定行及其前面的行。
-    
+## Python程序风格
+* 层级缩进。空白在Python中是很重要的，它称为缩进。在逻辑行首的空白（空格和制表符）用来决定逻辑行的缩进层次，从而用来决定语句的分组。这意味着同一层次的语句必须有相同的缩进。每一组这样的语句称为一个块。通常的缩进为4个空格, 在Jupyter Notebook中为一个Tab键。
+* 使用冒号分隔程序块。例如，在if语句中使用了冒号作为if嵌套程序块的开始。    
 ```
-print("Hello, Python!")
-Hello, Python!
+print("Hello, Python!") 
+#=> Hello, Python!
 myname = input("Your name: ")
-print("Hello", myname)
-Your name: ct
-Hello ct
+myname = myname.upper()
+if myname == "PYTHON":
+  print("Hello", myname)
+else:
+  print("Please input Python.")
+#=> Your name: Python
+#=> Hello PYTHON
 ```
+从下面这两个例子可以看出错误的缩进类型和对应的提示:
+* “unexpected indent” 表示在不该出现空白的地方多了空白，并且指出问题出在第三行(line 3)。
+* “expected an indented block” 表示应该有缩进的地方未缩进，也指出了问题所在行。
+* “unindent does not match any outer indentation level” 表示缩进出现了不一致，问题通常会在指定行及其前面的行。
 
 ### 注释
 ```
@@ -44,8 +44,8 @@ def hello():
 # 错误的缩进会导致程序报错，会出现"Unexpected indent"的错误信息。
 ```
 
-### 变量
- Python属于动态类型语言，因此不需要对变量进行类型声明。变量可直接定义使用。
+## 变量
+ Python属于动态类型语言，因此不需要对变量进行类型声明。变量可直接定义使用。注意，变量名是大小写敏感的，MyName与myname是不同的。
 ```
 a = 5   #整数型(int)
 b = 3.14    #浮点小数型(float)
@@ -82,8 +82,8 @@ Python语言中对运算符的规定与其他编程语言没有太大区别。
 
 # 求余数
 5 % 2 # => 1
-# 幂运算
-2 ** 3 # => 8
+# 幂（指数）运算
+2 ** 3 # => 8 （2的3次方）
 
 # 布尔运算
 True and False # => False
@@ -98,17 +98,31 @@ not True # => False
 in运算符是按"x in y"这样的格式使用的，表示如果y中包含x的话就返回true。y中通常是使用后面将会讲到的列表或元组对象。
 
 ### 字符串
+Python使用双引号或单引号来定义一个字符串。
 ```
 # 单引号和双引号是等价的
 s1 = "Hello "
 s2 = 'world'
-s = s1 + s2 # 字符串的加法就是连接字符串
+# 字符串的加法就是连接字符串
+s = s1 + s2 
 print(s) # => "Hello world"
 # 字符串可以被看成字符的数组，可以索引
 s[0] # => 'H'
+```
+在Python字符串定义中如果出现未配对的双引号或单引号会出错。例如，我想声明一个内容为'I' m on my way home'的字符串，Python解释器会认为在第一个字母I后面的单引号意味着这个变量赋值语句已结束。因此在此后出现的不完整字符串定义就会引起语法错误。这种情况可以通过转义序列来解决。当打算使用一些具有特殊含义的字符(如引号)，或者一些不可打印的字符(如Tab键)时，可以使用转义符来展示。  
+Python常用的转义符
+|特殊字符|描述|例子|结果|
+|:---|:---|:---|:---|
+|\"或\'|引号|print "You had me at \"Hello\""|You had me at "Hello"|
+|\t|Tab键|print "Item\tUnits\tPrice"|Item Units Price|
+|\n|换行|print "Anheusers?\nBusch?\n"| Anheusers? Busch?|
 
-s = 'a b c d'
+> [!TIP]
+只有在使用双引号定义的字符串中使用转义符才有效。 
+
+```
 # split函数可以把一个字符串拆成一个列表，可以指定分隔符
+s = 'a b c d'
 s.split() # => ['a', 'b', 'c', 'd']
 s = 'a|b|c|d'
 s.split('|') # => ['a', 'b', 'c', 'd']
@@ -252,7 +266,7 @@ Hi
 ```
 
 
-### 函数
+## 函数
 在Python中，可以通过使用函数来实现对多行代码进行集中处理的目的。函数的定义方法是在def的后面加上函数的名称，再在括号()中对函数的参数进行定义。return语句后面的数值将被作为函数的返回值。函数的参数是可以指定缺省值的，当对函数的参数指定了缺省值时，在调用函数时就可以省略对参数的定义。
 > [!NOTE]
 > def是英文单词define（定义）的缩写
@@ -327,7 +341,7 @@ import Numpy as np
 from 模块名 import 要使用的函数名
 ```
 
-###　Python 常用包
+##　Python 常用包
 １．科学计算 Numpy, SciPy (也是安装python包的拦路虎直到有了conda)
 ２．类比于R的数据框操作包 Pandas
 ３．可视化工具 Seaborn (配合pandas), matplotlib (类比MATLAB), plotly (交互式绘图), ggplot (类比ggplot2)
@@ -338,7 +352,7 @@ from 模块名 import 要使用的函数名
 ８．可重复编程 Jupyter
 ９．正则表达式 re
 
-### 面向对象编程
+## 面向对象编程
 所谓面向对象编程，是指通过对象之间的相互作用来实现对系统行为进行控制的一种编程思想。在面向对象编程中，有类与实例两种概念，类和实例统称为对象。具体来讲，类就相当于设计图一样的东西，而实例则是指对象的实体。使用同一个类可以生成多个实例。
 在Python中，对类进行定义要使用class关键字。使用类定义可以将多个方法集中到一处，类的方法与函数类似，使用def关键字来定义。
 ```
@@ -370,7 +384,7 @@ calc_plus.substract(4)    #CalcPlus类的方法
 ```
 由于这个CalcPlus类继承自Calc类，因此在Calc类中定义的构造函数、add方法、multiply方法在新的类中也同样可以直接使用。此外，在CalcPlus类的内部还增加了新的substract方法和divide方法的定义。在祖先Calc类中定义的方法和对其进行继承所创建的CalcPlus类中的方法，都可以通过同样的方式进行调用。通过这种继承方式，可以将多个类中公用的部分集中到祖先类的代码中实现。
 
-### 更多Python内容
+## 更多Python内容
 
 * lambda
 lambda产生一个没有名字的函数，通常为了满足一次使用，其使用语法为lambda argument_list: expression。参数列表是用逗号分隔开的一个列表，表达式是这些参数的组合操作。
