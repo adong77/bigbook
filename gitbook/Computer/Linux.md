@@ -361,11 +361,11 @@ scp命令与cp命令功能类似，但scp能在本机与远程服务器间进行
 如要将远程服务器(remote_host)上的用户目录（~）下的file1文件复制到当前目录(“.”):
 ```
 $scp user@remote_host:~/file1 .		
-$scp -r user@remote_host:/dir1 ~/dir1	#将服务器上的整个目录复制到 本地下
-$scp filename user@remote_host:~/	#将本地文件复制到服务器上的用户 目录
+$scp -r user@remote_host:/dir1 ~/dir1	#将服务器上的整个目录复制到本地目录
+$scp filename user@remote_host:~/	#将本地文件复制到服务器上的用户目录
 ```
 参数说明：
-    -r：表示复制目录
+    -r：表示复制目录(use option -r for entire directories)
 
 31. wget – 下载文件命令  
 wget是Linux系统中的一个下载文件的命令工具。wget支持HTTP，HTTPS和FTP协议，可以使用HTTP代理，可以自动下载、支持断点续传等。
