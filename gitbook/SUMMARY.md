@@ -23,7 +23,7 @@
 * [第6章 分子进化(Molecular Evolution)](Tutorials/06MolecularEvolution.md)
 * [第7章 系统发育树(Phylogenetic Tree)](Tutorials/07Phylogenetics.md)
 * [第8章 蛋白质结构预测(Protein Structure)](Tutorials/08ProteinStructure.md)
-* [第9章 RNA结构预测(RNA Structure)](Tutorials/09RNA.md)
+* [第9章 RNA分析(RNA analysis)](Tutorials/09RNA.md)
 * [第10章 PCR引物设计(Primer Design)](Tutorials/10PCR.md)
 * [第11章 DNA测序(DNA Sequencing)](Tutorials/11Sequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
@@ -32,7 +32,7 @@
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 概率论基础(BasicProbability)](Tutorials/18BasicProbability.md)
+* [第18章 概率论与统计分析基础(BasicProbability)](Tutorials/18BasicProbability.md)
 * [第19章 组学大数据分析(Data Analytics)](Tutorials/19DataAnalytics.md)
 ----
 * [附录](Appendix.md)
