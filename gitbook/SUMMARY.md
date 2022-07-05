@@ -32,7 +32,7 @@
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 概率论与统计分析基础(BasicProbability)](Tutorials/18BasicProbability.md)
+* [第18章 概率论基础(BasicProbability)](Tutorials/18BasicProbability.md)
 * [第19章 组学大数据分析(Data Analytics)](Tutorials/19DataAnalytics.md)
 ----
 * [附录](Appendix.md)
