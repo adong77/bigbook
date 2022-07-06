@@ -25,6 +25,11 @@
 参考文献：https://www.nature.com/articles/nrg3068
 
 ## 数据分析 
+经典的RNA-seq数据分析流程为先使用TopHat进行测序短序列映射后，再使用Cufflinks进行转录本的组装与丰度估计(图1)。
+![Overview of Cuffliniks](http://www.ligene.cn/images/book/Cufflinks-pipeline.png)
+Overview of Cuffliniks [3]
+* (a) The algorithm takes as input cDNA fragment sequences that have been aligned to the genome by software capable of producing spliced alignments, such as TopHat.
+* (b-e) With paired-end RNA-Seq, Cufflinks treats each pair of fragment reads as a single alignment. The algorithm assembles overlapping 'bundles' of fragment alignments (b,c) separately, which reduces running time and memory use, because each bundle typically contains the fragments from no more than a few genes. Cufflinks the estimates the abundances of the assembled transcripts (d,e).
 
 ### GFF格式
 gff全称为general feature format(通用特征格式)。GFF文件是一种用来描述基因组特征的纯文本文件，由9列数据组成，每一列代表序列的一个不同的特征。列是通过制表符分隔的。GFF文件有不同的版本，目前基本使用第三版（gff3）。
@@ -67,3 +72,4 @@ gffread merged.gtf -o- > merged.gff3
 ## References
 1. Madlung, A. Assessing an Effective Undergraduate Module Teaching Applied Bioinformatics to Biology Students. PLOS Computational Biology 2018, 14 (1), e1005872. https://doi.org/10.1371/journal.pcbi.1005872.
 2. Trapnell, C.; Roberts, A.; Goff, L.; Pertea, G.; Kim, D.; Kelley, D. R.; Pimentel, H.; Salzberg, S. L.; Rinn, J. L.; Pachter, L. Differential Gene and Transcript Expression Analysis of RNA-Seq Experiments with TopHat and Cufflinks. Nature Protocols 2012, 7 (3), 562–578. https://doi.org/10.1038/nprot.2012.016.
+3. Trapnell, C., Williams, B., Pertea, G. et al. Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation. Nat Biotechnol 28, 511–515 (2010). https://doi.org/10.1038/nbt.1621
