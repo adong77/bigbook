@@ -7,7 +7,6 @@
 * Basic RNA-seq processing: unix tools and IGV (http://bio.lundberg.gu.se/courses/vt13/rnaseq.html)
 
 ## 实验流程
-
 ### RNA-seq建库流程
 1. RNA (light blue) is first extracted,提取所有的mRNA或total RNA
 2. DNA contamination is removed using DNase, 用DNase去除DNA（在RNA建库流程中，DNA被认为是污染物）
@@ -31,6 +30,8 @@ Overview of Cuffliniks [3]
 * (a) The algorithm takes as input cDNA fragment sequences that have been aligned to the genome by software capable of producing spliced alignments, such as TopHat.
 * (b-e) With paired-end RNA-Seq, Cufflinks treats each pair of fragment reads as a single alignment. The algorithm assembles overlapping 'bundles' of fragment alignments (b,c) separately, which reduces running time and memory use, because each bundle typically contains the fragments from no more than a few genes. Cufflinks the estimates the abundances of the assembled transcripts (d,e).
 
+## 基因注释文件
+
 ### GFF格式
 gff全称为general feature format(通用特征格式)。GFF文件是一种用来描述基因组特征的纯文本文件，由9列数据组成，每一列代表序列的一个不同的特征。列是通过制表符分隔的。GFF文件有不同的版本，目前基本使用第三版（gff3）。
 GFF文件的第一行包含一个文本标题##gff-version3。紧接着下面以#号开头的各行还可以包含描述性的文本，如文件、来源、版本号、注释、参考文献等。
@@ -51,7 +52,7 @@ GFF文件的第一行包含一个文本标题##gff-version3。紧接着下面以
 另外，在基因结构注释gff文件中，基因包含mRNA，mRNA包含exon, CDS, UTR等信息，同时在注释文件中除基因行外，其他行在第9列会通过Parent指明该行从属的上一级ID，也就是一个基因的gene行、mRNA行、CDS行、exon行都会通过Parent层层关联在一起。具体的描述可以在www.sequenceontology.org/gff3.shtml上查看GFF规范。
 ![GFF3 format](http://www.ligene.cn/images/book/GFF3.png)
 
-### 基因注释文件
+### GTF和GFF格式文件
 GFF(General Feature Format)格式是一种简单、方便地对DNA、RNA及蛋白质序列的特征进行描述的一种数据格式，已经成为序列注释的通用格式。当前广泛使用的GFF格式为第3版，即GFF3。
 GTF(Gene Transfer Format)格式主要用于对基因进行注释的数据格式，当前广泛使用的GTF格式为第2版，即GTF2。
 GFF与GTF这两种格式的文件可以相互转换，它们的前8列是相同的，第9列虽然都是记录标签与值配对的情况，但是两者有所不同，在GTF文件中标签与值之间以空格分隔，并且每个特征之后都带有分号“；”(包括最后一个特征)。
