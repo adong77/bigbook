@@ -1,4 +1,4 @@
-# R语言入门
+# R语言编程入门
 
 > 本文简介了一些R语言的基础知识，希望读者能够理解并能利用R语言进行数据统计分析与绘图的方法。R is a free software environment for statistical computing and graphics.
 
@@ -83,15 +83,25 @@ R可用箭头(<-)或等号(=)来给变量赋值,一般建议用箭头符号(<-)�
 ```
  
 R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)，因子(factor)，矩阵(matrix)，数组(array)，数据框(data frame)，表格(table)和列表(list)。 若按R对象的内在特征分，对象的样式(mode)分类可分为：数值(numeric)、字符(character)、逻辑(logical)等，使用class()函数和mode()函数可以查询对象的属性。
+```R
+> x = pi*10^2 #pi是圆周率
+> class (x) #x的class
+[1] "numeric"
+> typeof (x) #x的type
+[1] "double"
+```
+
+### 标量(scalar)
+最简单的R数据类型是标量，主要有6种：逻辑型logical（TRUE,FALSE）、数值型numeric（1.22）、整型integer（12）、字符型character("good","爸爸")、原型raw(48 65 6c 6c 6f)、复数complex(4i+1)。最常用的是前四种。
 
 ### 向量（vector）
-标量(如上述x)只能有一个元素，而矢量可以有多个元素构成。但每个在矢量中的元素的类型必须相同，如数值或字符。创建矢量可以用函数c()，即combine函数：
+标量(如上述x)只能有一个元素，而向量可以有多个元素构成。但每个在向量中的元素的类型必须相同，如数值或字符。创建向量可以用函数c()，即combine函数：
 ```R
 > myvector <- c(8, 6, 9, 10, 5)
 > myvector
 [1]  8  6  9 10  5
 ```
-前面的[1]是矢量myvector的第一个元素的index。我们可以通过变量名加上中括号包括的索引值来读取变量的元素：
+前面的[1]是向量myvector的第一个元素的index。我们可以通过变量名加上中括号包括的索引值来读取变量的元素：
 ```R
 > myvector[4]
 [1] 10
@@ -106,7 +116,22 @@ R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)�
 ```R
 > 1:6		#生成在1到6范围的整数
 [1] 1 2 3 4 5 6
+> x = sample(1:200000,10000)  #从1,...,200000中随机不放回地抽取10000个值作为样本
+> z = sample(x, 10, rep=TRUE) #从有放回地随机抽取10个值作为样本
+> print(z)
+ [1] 150517  48627 141260 179097 159144  12734 179539  91287 197402  13812
+> sample(1:100,20,prob=1:100) #从1:100中不等概率随机抽样, 各数目抽到的概率与1:100成比例
 ```
+向量化计算是R语言特有的一种并行计算方式，即当你对一个向量进行操作时，程序会对向量中每个元素进行分别计算，计算结果以向量的形式返回。向量化计算基本可以取代循环计算，高效的完成计算任务。
+```R
+> x=rep(1,10); y=1:3
+> x*z   #向量乘法(如果长度不同，R给出警告和结果)
+ [1] 1 2 3 1 2 3 1 2 3 1
+ Warning message:
+ In x * z : longer object length is not a multiple of shorter object length
+```
+* 与向量有关的函数
+函数: min(x)最小值, max(x)最大值, which.min(x)显示最小值所在位置, which.max(x)显示最大值所在位置, sum(x)加, length(x)x的长度,mean(x)均值, median(x)中值, var(x)方差, sd(x)标准差, sqrt(x)平方根, abs(x)取绝对值, unique(x)去冗余, intersect(x)取交集, union(x,y)取并集, setdiff(x,y)差集, setequal(x,y)判断两向量是否相同(对顺序无要求), identical(x,y)判断两向量是否相同(对顺序有要求)。
 
 ### 矩阵(matrix)
 矩阵就是一个二维的数值数组。矩阵和数组可看成是带维数的向量。创建矩阵的一个方便的方法是使用matrix函数：
@@ -126,12 +151,16 @@ R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)�
 A    1    2    3    4
 B    5    6    7    8
 C    9   10   11   12
+> dim(X)  #行列数目
+[1] 3 4
 > t(X)  #注意是小写t，与大写T代表“TRUE"不同
      A B  C
 [1,] 1 5  9
 [2,] 2 6 10
 [3,] 3 7 11
 [4,] 4 8 12
+> apply (x, 1, mean) #对行(第一维)求均值
+> apply (x, 2, sum) #对列(第二维)求和
 ```
 
 ### 因子（Factor）
@@ -194,6 +223,7 @@ A B C D
  $ Name : Factor w/ 3 levels "alice","Jimmy",..: 3 2 1
  $ Age  : num  18 20 41
  $ Score: num  90 30 77
+> names(x)  #查看数据的变量名字
 ```
 下面介绍数据框中数据的提取方法：
 ```R
@@ -206,6 +236,7 @@ Levels: alice Jimmy tom
 > x[x$Name == "alice",]$Age #或x[3,2]，提取某个点的数据
 [1] 41
 > x[1:2,1:3]   #提取前两行，前三列
+> head(x) #头几行数据，与x[1:10,]相同
 ```
 
 ### 列表（list）
@@ -411,11 +442,11 @@ R有许多内置函数，如mean(), length(), print(), plot()等。下面介绍�
 ```R
 > getwd()	# Get Working Directory
 > setwd("c://bigbook//20R")  #Set Working Directory
-# 注意Windows路径用两条斜线
+# 注意Windows路径用两条斜线, 路径要用反斜杠"/"或者双斜杠"\\"。
 > dir() #显示目录下的内容
 ```
 工作路径也可以通过R菜单(文件/改变工作目录)手工进行选择目录(图3)：
-![改变目录](http://www.ligene.cn/images/R-3.png)
+![改变目录](http://www.ligene.cn/images/R-3.png)  
 图3 改变目录
 
 根据不同数据文件类型，可以选择不同的R函数来读取数据，下面介绍两种常用的文件(txt与csv) 读取方法:
@@ -497,7 +528,7 @@ R作图结果默认都是输出到同一个图形设备（Graphic device），�
 
 
 ## 程序包(package)
-R语言具有丰富的程序包，但许多R包并没有集成在基础安装包中，如果要使用它们需要额外安装。
+R语言具有丰富的程序包，但许多R包并没有集成在基础安装包中，如果要使用它们需要额外安装。R语言综合档案库CRAN（The Comprehensive R Archive Network）包含了大量开发者贡献的扩展包，截至2020年5月30日，总共有15707个包，涉及统计分析、数值计算、量化投资、金融分析、数据挖掘、机器学习、生物信息学、生物制药、数据可视化等各个领域。
 * 安装R包
 在Windows或MacOS中，你可以简单地使用R窗口的菜单（“程序包”）来安装R包。也可以使用以下命令来安装：
 ```R
