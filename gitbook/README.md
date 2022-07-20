@@ -1,6 +1,6 @@
 # Fundamentals of Bioinformatics and Genomics
 
-🐘李余动🐘🐘
+🐘李余动🐘🐘2022-07-20🐘🐘🐘
 
 生物信息学综合利用生物学、计算机科学和统计学等学科的方法，以实现对海量生物医学数据的分析与解读，从而揭示生命的奥秘。随着基因组测序技术的快速发展，以及大数据处理和人工智能技术的广泛应用，生物信息技术在遗传病预防、病原体检测(pathogen detection)、肿瘤诊断(cancer diagnostics)及药物开发等方面都有重要的应用。目前生物信息技术已经逐渐走进人们的生活，如基于基因组大数据的精准医疗或健康管理服务等。
 
@@ -23,12 +23,13 @@
 
 另外，生物信息学是一门实践性很强的课程，适合采用“理实一体化”的教学方式，课堂上既有老师的讲述内容，又有学生独立思考、上机操作的内容，能激发学生的学习积极性与创造性。因此，一般安排课堂讲授11-12个课时，再结合上机实践练习3-4个课时。
 
-### 教材配套资源:
-* 百度网盘链接：https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA (提取码: txh5)。
-
 > 本站是教材[1]的配套电子书，提供纸质教材的内容扩展或更新，其中使用了其它网站或书籍的材料，仅供学生内部使用，不作为纸质教材公开出版。鉴于本人水平有限，错漏之处难免，欢迎广大读者指出错误或提出改进意见！您可以通过发送电子邮件(admin@ligene.cn)或加入QQ群(631381323)与我联系。
 
-### 参考书：
+#### 教材配套资源:
+* 百度网盘链接：https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA (提取码: txh5)。
+* 教程PPT下载：http://www.ligene.cn/bigbook/textbook.htm 
+
+#### 参考书：
 1. 李余动编著，生物信息学与基因组分析入门，2021，浙江大学出版社.(<a href="https://item.jd.com/13018573.html" target="_blank">购买链接</a>)
 2. Jamil Momand & Alison McCurdy, Concepts in Bioinformatics and Genomics, 2016, Oxford University Press.
 3. Dan Krane & Michael Raymer(孙啸等译), Fundamental Concepts of Bioinformatics (生物信息学概论), 2004, 清华大学出版社.
