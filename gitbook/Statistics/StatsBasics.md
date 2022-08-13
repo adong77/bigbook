@@ -12,6 +12,8 @@ Lary Wasserman在《All of Statistics》的序言里有说过概率论和统计�
 
 
 
+### Basic Probability
+* 概率simple入门: https://zhuanlan.zhihu.com/p/26098301
 
 ### statistical analysis
 
