@@ -12,11 +12,10 @@
 ![Venn-diagram-bioinformatics](http://www.ligene.cn/images/Venn-diagram-bioinformatics.png)
 
 本书是编者在近几年给生物、食品等专业学生讲授生物信息学课程的基础上整理编撰而成。全书以理论与实践操作相结合的方式深入讲解生物信息学的基本理论和方法，在内容设计上既有详细的原理讲解部分，又有典型的实训案例分析，双管齐下，增加了学习趣味性，从而让学生学到更多的知识与技能。  
-全书共有19章，可分为四部分：
-* 第1与2章分别为生物学与计算机的基础知识与技能，并在附录A介绍Linux操作系统的基础知识；
+全书共有18章，可分为四部分：
+* 第1与2章分别为生物学与计算机的基础知识与技能，并在附录中介绍Linux操作系统、编程语言与概率论的基础知识；
 * 第3-12章为生物信息学的基本理论与方法，介绍DNA、RNA或蛋白质序列分析；
-* 第13-17章介绍下一代测序(NGS)数据分析方法及应用，如基因变异检测(SNP detection),基因组组装(Genome assembly), 转录组测序(RNA-seq), 宏基因组学(Metagenomics)等；
-* 第18与19章分别为统计学与数据分析的基础知识与技能，并在附录B介绍R语言编程的基础知识。
+* 第13-18章介绍下一代测序(NGS)数据分析方法及应用，如基因变异检测(SNP detection),基因组组装(Genome assembly), 转录组测序(RNA-seq), 宏基因组学(Metagenomics)及机器学习等；
 
 教材每章内容适用于一次教学课时(1.5h)，教师可根据不同教学总课时(如15/16周)选讲部分章节内容，其它内容供学生自学。本教材的推荐教学安排如下图所示：
 ![Teaching-Plan-bioinformatics](http://www.ligene.cn/images/Teaching-plan-bioinformatics.png)
