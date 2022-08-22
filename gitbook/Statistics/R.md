@@ -1,4 +1,4 @@
-# R语言入门
+# R语言统计入门
 
 > 本文简介了一些R语言的基础知识，希望读者能够理解并能利用R语言进行数据统计分析与绘图的方法。R is a free software environment for statistical computing and graphics.
 
@@ -54,15 +54,14 @@ R要查看函数的说明，可以通过help()或它的快捷方式(?)来查看�
 ```
 R作为一个开源软件有强大的社区支持，可容易获得社区帮助，国外活跃的社区有GitHub和Stack Overflow等，国内的R语言社区有统计之都(COS)及其旗下的COS论坛。
 
-
-## 变量
-变量是一个拥有名字的能够存储任何数据的东西。注意R是一种区分大小写的解释型语言，R语言的变量名要区分大小写！
-R语言可用箭头(<-)或等号(=)来给变量赋值,一般建议用箭头符号(<-)：
+## R语言的数据类型
+### 变量
+R语言中的所有事物都是对象(bojects)，如果向量、列表、函数和环境等。R语言的所有代码都是基于对象的操作，而变量则是调用对象的重要手段。变量是一个拥有名字的能够存储任何数据的东西。R创建的所有变量(标量、矢量、矩阵等)都是对象(objects)。变量的名字称为符号，变量的取值是对象。通过变量赋值就可以使用变量名来读取变量值。R语言可用箭头(<-)或等号(=)来给变量赋值,一般建议用箭头符号(<-)。
+注意R语言是一种区分大小写的解释型语言，R语言的变量名要区分大小写！
 ```R
 > x <- 2*3 #数值
 > y = "AUGGUGCC" #字符串，注意为英文双引号！
 ```
-
 如果只输入变量名，那么就会显示这个R对象的内容：
 ```R
 > x
@@ -82,8 +81,7 @@ R语言可用箭头(<-)或等号(=)来给变量赋值,一般建议用箭头符�
 ```R
 > rm(list=ls())
 ```
-R中有多种数据类型，包括向量、矩阵、数据框（与数据集类似）以及列表（各种对象的集合）等。 
-R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)，因子(factor)，矩阵(matrix)，数组(array)，数据框(data frame)，表格(table)和列表(list)。 R创建的所有变量(标量、矢量、矩阵等)都是对象(objects)。若按R对象的内在特征分，对象的样式(mode)分类可分为：数值(numeric)、字符(character)、逻辑(logical)等，使用class()函数和mode()函数可以查询对象的属性。
+R中有多种数据类型，包括向量、矩阵、数据框（与数据集类似）以及列表（各种对象的集合）等。R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)，因子(factor)，矩阵(matrix)，数组(array)，数据框(data frame)，表格(table)和列表(list)。若按R对象的内在特征分，对象的样式(mode)分类可分为：数值(numeric)、字符(character)、逻辑(logical)等，使用class()函数和mode()函数可以查询对象的属性。
 ```R
 > x = pi*10^2 #pi是圆周率
 > class (x) #x的class
@@ -91,7 +89,7 @@ R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)�
 > typeof (x) #x的type
 [1] "double"
 ```
-## 基本运算符
+### 基本运算符
 运算符是连接变量的桥梁，使变量与变量之间能够执行特定的操作而产生新的数据，这就是计算机的基本工作--计算。
 * 数学运算符：运算后给出数值结果，如+,-,*,/,^, %%, %/%, %*%
 * 比较运算符：运算后给出判别结果(TRUE, FALSE)，如>, <, <=, >=, ==, !=
@@ -102,10 +100,9 @@ R对象有各种不同的类型(class)，包括标量(scalar)，向量(vector)�
   [1] TRUE
 ```
 
-## R语言的数据类型
-
 ### 标量(scalar)
-最简单的R数据类型是标量，主要有6种：逻辑型logical（TRUE,FALSE）、数值型numeric（1.22）、整型integer（12）、字符型character("good","爸爸")、原型raw(48 65 6c 6c 6f)、复数complex(4i+1)。最常用的是前四种。
+最简单的R数据类型是标量，主要有6种：逻辑型logical（TRUE,FALSE）、数值型numeric（1.22）、整型integer（12）、字符型character("good","爸爸")、原型raw(48 65 6c 6c 6f)、复数型complex(4i+1)。最常用的是前四种。
+在R语言中，还有5种经常使用的特殊值：NULL、NA、NAN、Inf。NULL表示变量为空，NAN(Not a number)表示相应的计算是没有数学意义或不能正常执行的；NA(not available)表示缺失值。Inf和-Inf表示正无穷与负无穷。可以通过is.null(), is.na(), is.nan(), is.infinite()函数来判断一个对象是否为相应的特殊值。
 
 ### 向量（vector）
 标量(如上述x)只能有一个元素，而向量可以有多个元素构成。但每个在向量中的元素的类型必须相同，如数值或字符。创建向量可以用函数c()，即combine/concatenate函数，表示连接：
@@ -609,6 +606,7 @@ options("repos" = c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 |:------|:-------|  
 |install.packages()|下载并安装包|  
 |update.packages()|更新包|  
+|remove.packages()|卸载包|
 |liabrary()|加载（导入）包|  
 |.libPaths()|显示库所在的目录|  
 

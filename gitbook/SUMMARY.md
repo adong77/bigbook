@@ -3,7 +3,7 @@
 * [前言](README.md)
 
 * [🧬生物学(Biology)](Biology/BiologyBasics.md)
-    * [生命组学(Omics)](Biology/Omics.md)
+    * [组学(Omics)](Biology/Omics.md)
     
 * [💻计算机科学(Computer Science)](Computer/ComputerBasics.md)
     * [Linux操作系统](Computer/Linux.md)
@@ -11,7 +11,7 @@
     * [Perl编程语言](Computer/Perl.md)
 
 * [📊统计学(Statistics)](Statistics/StatsBasics.md)
-    * [R语言入门](Statistics/R.md)
+    * [R语言统计入门](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
 
 ### 📖BiG教程(Tutorials)
