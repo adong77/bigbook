@@ -21,6 +21,7 @@
     "code",
     "donate",
     "page-toc-button",
+    "mathjax",
     "baidu-tongji-with-multiple-channel"
   ],
   "pluginsConfig": {
