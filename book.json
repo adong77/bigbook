@@ -37,7 +37,7 @@
       "wechatText": "微信扫码关注公众号"
     },
     "page-toc-button": {
-      "maxTocDepth": 2,
+      "maxTocDepth": 1,
       "minTocSize": 2
     },
     "baidu-tongji-with-multiple-channel": {

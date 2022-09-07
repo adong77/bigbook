@@ -1,4 +1,4 @@
-# RNA结构预测(RNA Structure)
+# RNA结构与功能(RNA Structure)
 
 * NAfold软件http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi直接作图，绘制miRNA的二级结构。
 
