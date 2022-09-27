@@ -1,4 +1,4 @@
-# 基因组组装(Genome Assembly)
+# 基因组组装与注释(Genome Assembly)
 
 A WGS workflow consists of five steps: DNA isolation, library preparation, sequencing, assembly, and annotation.
 First, genomic DNA is purified using one of a variety of methods, including phenol-choloroform, bead beating, or enzymatic lysis55. Second,the sequencing library is prepared by attaching adapters and barcodes. This can be done via ligation, which involves shearing the DNA to create free ends for DNA ligase to attach adapters, or tagmentation, which randomly inserts adapter attachment points without shearing. 
