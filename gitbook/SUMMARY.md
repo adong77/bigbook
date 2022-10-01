@@ -29,10 +29,10 @@
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 下一代测序基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
 * [第14章 全基因组重测序(Whole Genome Resequencing)](Tutorials/14WGR.md)
-* [第15章 基因组组装与注释(Genome Assembly)](Tutorials/15Assembly.md)
+* [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 第18章 概率论与统计基础(Basic Probability)](Tutorials/18BasicProbability.md)
+* [第18章 概率论与统计基础(Basic Probability)](Tutorials/18BasicProbability.md)
 * [第19章 组学大数据分析(Data Analytics)](Tutorials/19DataAnalytics.md)
 ----
 * [附录](Appendix.md)
