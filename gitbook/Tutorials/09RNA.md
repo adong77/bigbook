@@ -1,4 +1,4 @@
-# RNA结构与功能(RNA Structure)
+# 非编码RNA分析(RNA Analysis)
 
 * NAfold软件http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi直接作图，绘制miRNA的二级结构。
 
