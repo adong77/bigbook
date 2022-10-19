@@ -6,13 +6,16 @@
 ## ASCII
 美国信息交换标准代码，ASCII码是计算机中字符的数字表示形式。
 
+## API
+应用程序接口(Application Programming Interface)，是应用程序提供给开发者、使用编程的方式来与程序进行交互的途径。
+
 ## cDNA
 互补DNA序列，mRNA逆转录后形成的双链DNA，与mRNA互补。
 
 ## CDS
 编码序列(Coding Sequence)，能翻译成蛋白质的DNA区域。
 
-## contig
+## Contig
 重叠群，由一群测序读段拼接组装而成的连续DNA序列。
 
 ## CNV
@@ -31,7 +34,7 @@
 插入/缺失(Insertion/Deletion)突变。
 
 ## IoT
-Internet of Things, 物联网是指能连接家电、传感器等的互联网。
+物联网(Internet of Things), 是指能连接家电、传感器等的互联网。
 
 ## k-mer
 在基因组组装或序列比对中，k-mer是指读段序列中长度为k的所有可能的子序列。
