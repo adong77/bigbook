@@ -1,4 +1,4 @@
-# 非编码RNA分析(ncRNA Analysis)
+# 非编码RNA分析(non-coding RNA)
 
 * NAfold软件http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi直接作图，绘制miRNA的二级结构。
 
