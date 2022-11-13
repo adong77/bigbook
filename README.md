@@ -2,7 +2,7 @@
 * 📝gitbook
 * 🌲Images
 * 🍑Notes
-* ⭐️Scripts
+* 🔶Resources
 
 
 
