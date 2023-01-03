@@ -1,17 +1,33 @@
-# Python教程
-本教程专注于帮助生物信息学初学者快速学会Python的常用功能和使用方式，因此只精选了部分Python的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的理解Python语言。 
+# Python语言编程教程
+
+本教程旨在帮助生物信息学初学者快速学习Python语言的编程基础知识，因此只精选了部分Python语言的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的理解Python语言。
+首先，让我们回顾一下Python的一些特性：
+* 它是一种解释性语言。与C或Java等语言不同，Python不需要编译，故可以交互式运行Python代码。 
+* 它是动态类型语言。值的类型在运行时确定。
+* 它有支持多种编程范式：过程式编程、面向对象式编程与函数式编程。
+这些特性使得Python成为了一种非常通用的编程语言，从简单的自动化脚本到复杂的数据科学项目。
 
 
-## 如何运行Python命令和脚本
-* 对于Linux或Unix用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。此外，所有的命令还可以存储到一个脚本文件中一起执行。例如，我们有一个包含python命令的文件test.py，我们只要在终端输入python test.py并回车就可以运行这个文件。
+## 运行Python命令和脚本
+* 对于Linux或Unix用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。
+![Python Shell](http://www.ligene.cn/images/blog/python-shell.png)
+
 * 对于Windows用户，可以通过“Windows键+R”调出“Run”窗口，再输入“cmd”打开Windows命令解释器，再输入python，即可打开交互式python解释器。此外，也可以双击Python安装后的IDLE快捷方式打开图形界面的Python解释器，可以处理交互式命令和导入Python文件并执行。
-* 对于交互式Python解释器，在使用结束后，通过键盘输入"quit()"，或按组合键Ctrl-D (Linux/Unix)或Ctrl-Z (Windows)关闭。
 
-> 对于初学者，本手册推荐直接在Jupyter Notebook下学习Python命令和脚本。我们这套教程也是用Jupyter Notebook写作而成，里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。
-Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
+* 对于交互式Python解释器，在使用结束后，通过键盘输入"quit()"，或按组合键Ctrl+D (Linux/Unix)或Ctrl+Z (Windows)关闭。
+
+* 当您有许多命令时，而且你想留存这些命令以便以后重用时，还可以将所有的命令存储到一个脚本文件中一起执行。Python脚本保存在扩展名为".py"的文件中。例如，我们有一个包含python命令的文件test.py，只要在终端输入python test.py并回车就可以运行这个文件。
+
+> 对于初学者，推荐直接在Jupyter Notebook下学习Python命令和脚本。Jupyter Notebook里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
 
 ## Python程序风格
 * 层级缩进。空白在Python中是很重要的，它称为缩进。在逻辑行首的空白（空格和制表符）用来决定逻辑行的缩进层次，从而用来决定语句的分组。这意味着同一层次的语句必须有相同的缩进。每一组这样的语句称为一个块。通常的缩进为4个空格, 在Jupyter Notebook中为一个Tab键。
+
+  从下面这两个例子可以看出错误的缩进类型和对应的提示:
+    * “unexpected indent” 表示在不该出现空白的地方多了空白，并且指出问题出在第三行(line 3)。
+    * “expected an indented block” 表示应该有缩进的地方未缩进，也指出了问题所在行。
+    * “unindent does not match any outer indentation level” 表示缩进出现了不一致，问题通常会在指定行及其前面的行。
+
 * 使用冒号分隔程序块。例如，在if语句中使用了冒号作为if嵌套程序块的开始。    
 ```
 print("Hello, Python!") 
@@ -25,23 +41,16 @@ else:
 #=> Your name: Python
 #=> Hello PYTHON
 ```
-从下面这两个例子可以看出错误的缩进类型和对应的提示:
-* “unexpected indent” 表示在不该出现空白的地方多了空白，并且指出问题出在第三行(line 3)。
-* “expected an indented block” 表示应该有缩进的地方未缩进，也指出了问题所在行。
-* “unindent does not match any outer indentation level” 表示缩进出现了不一致，问题通常会在指定行及其前面的行。
 
-### 注释
+* 注释。Python代码中#号后面的内容全部是注释。此外，一对三个"符号之内包围起来的字符串是多行注释，通常用来作为说明文档。
 ```
-# #号后面的内容全部都是注释
-"""
-一对三个"符号之内包围起来的是多行字符串
-可以用来当注释，通常用来作为文档
-"""
-# Python使用缩进来规范代码块，行首的空格被称为“缩进(indent)”，缩进一般为4个或8个空格组成。输入[Tab]键就可以一下输入这么多数目的空格。
-# 具有相同缩的代码相当于在c语言中的一对{}中，比如定义函数需要缩进
 def hello():
   print('Hello, world')
 # 错误的缩进会导致程序报错，会出现"Unexpected indent"的错误信息。
+"""
+Python使用缩进来规范代码块，行首的空格被称为“缩进(indent)”，缩进一般为4个空格组成。输入[Tab]键就可以一下输入这么多数目的空格。
+具有相同缩的代码相当于在c语言中的一对{}中，比如定义函数需要缩进
+"""
 ```
 
 ## 变量
@@ -55,7 +64,7 @@ print(a, b, c)  # => 5, 3.14, True
 还可以使用指数形式来表示浮点小数类型的值，如1.2e-5。
 使用type函数可以对变量的类型进行确认。
 ```
-print(type(a)) # => <class 'int'>
+print(type(a))  # => <class 'int'>
 ```
 此外，布尔型的值可以当作数值来使用。True被当作1，False被当作0。在下面示例中，两个bool型的变量相加，得到结果1。
 ```
@@ -85,7 +94,7 @@ Python语言中对运算符的规定与其他编程语言没有太大区别。
 # 幂（指数）运算
 2 ** 3 # => 8 （2的3次方）
 
-# 布尔运算
+# 布尔运算，使用and, or和not关键字执行布尔逻辑运算
 True and False # => False
 True or False # => True
 not True # => False
@@ -96,6 +105,11 @@ not True # => False
 1 < 2 < 3 # => True
 ```
 in运算符是按"x in y"这样的格式使用的，表示如果y中包含x的话就返回true。y中通常是使用后面将会讲到的列表或元组对象。
+```
+t = [1,2,3]
+2 in t  # => True
+5 not in t  # => True
+```
 
 ### 字符串
 Python使用双引号或单引号来定义一个字符串。
@@ -110,7 +124,9 @@ print(s) # => "Hello world"
 s[0] # => 'H'
 ```
 在Python字符串定义中如果出现未配对的双引号或单引号会出错。例如，我想声明一个内容为'I' m on my way home'的字符串，Python解释器会认为在第一个字母I后面的单引号意味着这个变量赋值语句已结束。因此在此后出现的不完整字符串定义就会引起语法错误。这种情况可以通过转义序列来解决。当打算使用一些具有特殊含义的字符(如引号)，或者一些不可打印的字符(如Tab键)时，可以使用转义符来展示。  
+
 Python常用的转义符
+
 |特殊字符|描述|例子|结果|
 |:---|:---|:---|:---|
 |\"或\'|引号|print "You had me at \"Hello\""|You had me at "Hello"|
@@ -203,11 +219,13 @@ list(d.keys()) # => ['a', 'b', 'c', 1]
 list(d.items()) # => [('a', 1), ('b', 2), ('c', [1, 2, 3, 4, 5]), (1, 'a')]
 ```
 
-### 条件控制
+## 程序控制流
+没有控制流语句，编程语言就不是编程语言。
+### 条件语句
 在Python语言中，条件判断是使用if语句实现的。如果if的条件没有得到满足，就按照从上到下的顺序对elif的条件进行判断。如果所有这些条件都不满足，就执行else内的程序代码。
 在大多数编程语言中，条件语句和函数块都是使用花括号{}表示，但在Python中则是通过插入缩进来表示。也就是说，如果遇到缩进的行，就意味着这一行代码前的代码块执行的结束。缩进符号通常使用四个半角的空格表示。
 ```
-# Python的条件控制很简单，if elif else三个关键词
+# Python的条件控制很简单，if、 elif、 else三个关键词
 a = 5
 if a == 5:
    print('a equals 5')
@@ -216,9 +234,12 @@ elif a == 3:
 else:
    print('no equal')
 ```
+第一个条件为if，后跟布尔条件，打开一个缩进模块。备用条件为elif（非else if），后备模块为else。当然，如果没有备用条件，也可以不用这些语句。值得注意的是，与其他高级语言不同，Python不提供switch语句。
 
-### 循环
-在Python中，要实现通过指定次数对程序进行循环执行，需要使用for语句。为了指定循环的范围，可以将列表或range函数与in运算符结合起来使用。
+### 循环语句
+在Python中，要实现通过指定次数对程序进行循环执行，需要使用for语句。通常编程语言如下定义for循环：
+for(i=0; i<=10; i++), 该语句定义和控制用于迭代的变量。
+与其它编程语言不同，Python语言希望你使用迭代器为循环提供信息。迭代器可以看作是一系列元素，可以逐个检索这些元素。为了指定循环的范围，可以将列表或range函数与in运算符结合起来使用。
 range函数的使用方法如下所示，被[]包围起来的参数部分是可以省略的。
 range([起始编号,]终止编号[,步长数])
 例如，range(3)表示的是从0到2之间的范围。
@@ -252,8 +273,10 @@ for i, v in enumerate(l):
 0 Jack
 1 Harry
 2 Mary
+```
 
-# while循环，实现在满足特定条件的区间内对代码进行循环执行的语句。
+* while循环，实现在满足特定条件的区间内对代码进行循环执行的语句。
+```
 a = 0
 while a < 3:
   # 无限循环
@@ -264,6 +287,8 @@ Hi
 Hi
 Hi
 ```
+* break和continue语句
+在某些情况下，您可能希望提前结束循环或路过迭代。为了解决这个问题，Python采用经典的break和continue语句来实现。
 
 
 ## 函数
@@ -285,9 +310,32 @@ def add(a, b=4):    #为第二个参数设置缺省值
     return c
 print(add(3))   #调用函数不用指定第二个参数
 
-# Python 3里面可以直接把函数的参数当作keyword arguments，所以可以用下面的语法，这样参数与位置无关
+# Python 3里面可以直接把函数的参数当作keyword arguments（关键字参数），所以可以用下面的语法，这样参数与位置无关
 subtract(y=5, x=3) # => -2
 ```
+
+* 使用*args和**kwargs接受动态参数
+有时，您可能需要一个支持动态参数的函数，之后运行时在函数逻辑中处理这些参数。
+```
+def f(*args, **kwargs):
+  print("args", args)
+  print("kwargs", kwargs)
+
+f(1,2,3, a=4, b=5) 
+#=> args (1,2,3)
+#=> kwargs {'a':4, 'b':5}
+```
+可输出可见，标准参数被放置在元组中，其顺序与它们被调用的顺序相同。另一方面，关键字参数被放在字典中，其中的键是参数的名称。之后使用这些数据来执行逻辑！有趣的是，固定编码参数和动态参数可以混合使用。
+```
+def f(a, *args):
+  print("a",a)
+  print("args", args)
+
+f(1,2,3) 
+#=> a 1
+#=> args (2,3)
+```
+
 此外，在Python中通过添加星号（*）到元组中，可以实现对多个参数的函数进行一次性的参数传递。
 ```
 def add (a, b, c):
@@ -329,6 +377,8 @@ print("Global:", a) # => 456
 
 ```
 
+## 编写及使用模块与包
+
 ### 模块
 简单地说，模块就是一个功能丰富的“函数集合”。有些模块是Python自带的，有些是其他作者编写，需要下载并安装后才可以使用。模块需要导入Python程序才能使用。
 ```
@@ -338,10 +388,39 @@ import 模块名
 import Numpy as np
 
 # 用from可以不用写模块名，直接用"函数名"执行函数
-from 模块名 import 要使用的函数名
+# from 模块名 import 要使用的函数名
+from datetime import date
+date.today()
+#=> datetime.date(2022,3,12)
 ```
+在这里，我们显式导入date类以直接使用它。
 
-##　Python 常用包
+### 编写模块
+在Python中，模块是包含声明的单个文件，但也可以包含首次导入模块时执行的指令。下面就一个简单的模块的定义。
+```
+def module_function():
+  return "Hello world"
+print("Module is loaded")
+```
+项目的根目录下，创建一个包含此代码的文件，并将其命名为module.py。然后，打开Python解释器运行以下命令：
+```
+import module
+#=> Module is loaded
+module.module_function()
+#=> 'Hello world'
+```
+到此，我们编写了一个Python模块。下面看一下如何构造一个包。包是一种在层次结构中组织模块的方法，然后可以使用其命名空间导入模块。
+在项目的根目录下，创建一个名为package的目录，在其内部，创建一个名为subpackage的目录，将module.py移动到其中。项目结构如图所示。
+![Python Package](http://www.ligene.cn/images/blog/python-pkg.png)
+然后您可以使用完整的命名空间导入模块
+```
+import package.subpackage.module
+#=> Module is loaded
+```
+这样我们就构造了一个包。但是为了定义一个合适的Python包，强烈建议在每个包和子包的根目录下创建一个空的__init__.py文件。这文件一般在第一次导入包或其子模块时执行。为包执行一些初始化逻辑是很有用的。
+
+
+###　Python常用包
 １．科学计算 Numpy, SciPy (也是安装python包的拦路虎直到有了conda)
 ２．类比于R的数据框操作包 Pandas
 ３．可视化工具 Seaborn (配合pandas), matplotlib (类比MATLAB), plotly (交互式绘图), ggplot (类比ggplot2)
