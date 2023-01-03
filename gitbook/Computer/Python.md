@@ -288,6 +288,7 @@ Hi
 Hi
 ```
 * break和continue语句
+
 在某些情况下，您可能希望提前结束循环或路过迭代。为了解决这个问题，Python采用经典的break和continue语句来实现。
 
 
@@ -295,6 +296,7 @@ Hi
 在Python中，可以通过使用函数来实现对多行代码进行集中处理的目的。函数的定义方法是在def的后面加上函数的名称，再在括号()中对函数的参数进行定义。return语句后面的数值将被作为函数的返回值。函数的参数是可以指定缺省值的，当对函数的参数指定了缺省值时，在调用函数时就可以省略对参数的定义。
 > [!NOTE]
 > def是英文单词define（定义）的缩写
+> 按照惯例，函数应使用下划线命名，如my_wonderful_function，即蛇形大小写(snake case)命名法;而类一般使用驼峰大小写法（camel case）拼写命名，如MyWonderfulClass。
 
 ```
 def Hello():
@@ -315,6 +317,7 @@ subtract(y=5, x=3) # => -2
 ```
 
 * 使用*args和**kwargs接受动态参数
+
 有时，您可能需要一个支持动态参数的函数，之后运行时在函数逻辑中处理这些参数。
 ```
 def f(*args, **kwargs):
@@ -325,7 +328,9 @@ f(1,2,3, a=4, b=5)
 #=> args (1,2,3)
 #=> kwargs {'a':4, 'b':5}
 ```
+
 可输出可见，标准参数被放置在元组中，其顺序与它们被调用的顺序相同。另一方面，关键字参数被放在字典中，其中的键是参数的名称。之后使用这些数据来执行逻辑！有趣的是，固定编码参数和动态参数可以混合使用。
+
 ```
 def f(a, *args):
   print("a",a)
@@ -337,6 +342,7 @@ f(1,2,3)
 ```
 
 此外，在Python中通过添加星号（*）到元组中，可以实现对多个参数的函数进行一次性的参数传递。
+
 ```
 def add (a, b, c):
     d = a + b + c
@@ -356,6 +362,7 @@ def showNum():
 
 showNum() # => 123 456
 ```
+
 在Python中,如果在函数内部对全局变量进行赋值操作，会导致全局变量被当作局部变量来处理。如果要在函数内部对全局变量进行更改，必须使用global或nonlocal关键字来明确指定变量不是局部的。
 ```
 a = 123
@@ -373,13 +380,13 @@ def setGlobal():
     print("Global:", a)  # => 456
 
 setGlobal()
-print("Global:", a) # => 456
-
+print("Global:", a)  # => 456
 ```
 
 ## 编写及使用模块与包
 
 ### 模块
+
 简单地说，模块就是一个功能丰富的“函数集合”。有些模块是Python自带的，有些是其他作者编写，需要下载并安装后才可以使用。模块需要导入Python程序才能使用。
 ```
 # 用import导入模块，并用“模块名称.函数名”这种模式执行函数
@@ -402,6 +409,7 @@ def module_function():
   return "Hello world"
 print("Module is loaded")
 ```
+
 项目的根目录下，创建一个包含此代码的文件，并将其命名为module.py。然后，打开Python解释器运行以下命令：
 ```
 import module
@@ -409,10 +417,12 @@ import module
 module.module_function()
 #=> 'Hello world'
 ```
+
 到此，我们编写了一个Python模块。下面看一下如何构造一个包。包是一种在层次结构中组织模块的方法，然后可以使用其命名空间导入模块。
 在项目的根目录下，创建一个名为package的目录，在其内部，创建一个名为subpackage的目录，将module.py移动到其中。项目结构如图所示。
 ![Python Package](http://www.ligene.cn/images/blog/python-pkg.png)
-然后您可以使用完整的命名空间导入模块
+然后您可以使用完整的命名空间导入模块。
+
 ```
 import package.subpackage.module
 #=> Module is loaded
