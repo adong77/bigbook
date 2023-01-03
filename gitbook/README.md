@@ -26,7 +26,7 @@
 
 #### 教材配套资源:
 * 百度网盘链接：https://pan.baidu.com/s/1eMiHyb7mW4Nrbsfpw9JtdA (提取码: txh5)。
-* 阿里云链接：https://www.aliyundrive.com/s/ZpsnsRCL2so
+* 阿里云盘链接：https://www.aliyundrive.com/s/ZpsnsRCL2so
 * 教材网站(课件PPT等)：http://www.ligene.cn/bigbook/textbook.htm 
 
 #### 参考书：

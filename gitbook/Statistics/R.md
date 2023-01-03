@@ -1,4 +1,4 @@
-# R语言入门
+# R语言与统计分析入门
 
 > 本文简介了一些R语言的基础知识，希望读者能够理解并能利用R语言进行数据统计分析与绘图的方法。R is a free software environment for statistical computing and graphics.
 
