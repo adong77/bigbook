@@ -1,3 +1,6 @@
+# How to Set Up V2Ray Proxy on Ubuntu 22.04/20.04 Server
+
+* link: https://www.linuxbabe.com/ubuntu/set-up-v2ray-proxy-server
 
 Step 1: Install V2Ray on Ubuntu 22.04/20.04 Server
 curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
