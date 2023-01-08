@@ -43,6 +43,7 @@
 |苏氨酸	    |Threonine	|Thr|	T|
 |色氨酸	    |Tryptophan	|Trp|	W|
 |酪氨酸	    |Tyrosine	|Tyr|	Y|
+|缬氨酸	    |Valine	    |Val|	V|
 |任意氨基酸	|	|   |	X|
 |翻译终止位点|  |   |	*|
 	
