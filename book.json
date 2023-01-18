@@ -22,7 +22,7 @@
     "donate",
     "katex",
     "baidu-tongji-with-multiple-channel",
-    "page-toc"
+    "page-toc-button"
   ],
   "pluginsConfig": {
     "github": {
@@ -39,10 +39,9 @@
     "baidu-tongji-with-multiple-channel": {
       "token": "0ad9c65dc343a2a6d37cb95527713113"
     },
-    "page-toc": {
-      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3",
-      "position": "after-first",
-      "showByDefault": true
+    "page-toc-button": {
+      "maxTocDepth": 2, 
+      "minTocSize": 2
     }
   }
 }
