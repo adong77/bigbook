@@ -1,4 +1,4 @@
-# Bioinformatics and Genomics (BiG)
+# Fundamentals of Bioinformatics and Genomics (BiG)
 
 * [前言](README.md)
 
