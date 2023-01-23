@@ -10,7 +10,7 @@
     * [Python编程语言](Computer/Python.md)
     * [Perl编程语言](Computer/Perl.md)
 
-* [📊统计学(Statistics)](Statistics/StatsBasics.md)
+* [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
 
