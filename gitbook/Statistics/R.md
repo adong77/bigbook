@@ -604,8 +604,7 @@ options("repos" = c(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 
 R版本3.6以上版本推荐使用以下命令安装：
 ```R
-> if(!requireNamespace("BiocManager", quietly=TRUE)) 
-  install.packages("BiocManager")
+> if(!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager")
 > BiocManager::install("mypkg")   #直接将需要安装的包名作为参数
 ```
 
