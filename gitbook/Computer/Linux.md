@@ -6,8 +6,13 @@
 
 Linux系统是一种自由和开放源码(Free and Open Source Software)的操作系统。Linux内核最初由芬兰赫尔辛基大学的Linus Torvalds在1991年开发，后经成千上万的程序员不断修改完善。Linux操作系统在短短的几年内得到了迅猛发展，这与它的良好特性是分不开的。它是一个完全兼容POSIX标准(可移植操作系统接口)的多用户、多任务、支持多线程和多CPU的操作系统。Linux系统在运行多任务时效率普遍要比Windows高的多，这种效率对处理大数据是非常重要的，许多生物信息学软件是基于Linux系统开发，因此掌握Linux系统的操作是从事生物信息分析工作的必备条件之一。
 
-Linux系统有许多不同的发行版本，常用的版本有Ubuntu Linux与Red Hat Linux。由于各个发行版使用相同的Linux内核与GNU程序库，并遵守Linux Standard Base (LSB)行业标准，只有应用软件差异比较大，操作使用大体都是相同的，因此一般只要学会一个发行版的使用方法就可以了。Ubuntu Linux是一个基于Debian系统开发的Linux发行版，提供大量的高质量应用程序，并保留Debian强大的软件包管理系统(APT)，以便安装或删除程序。本书主要介绍Ubuntu Linux的使用方法，当前版本是16.04LTS (2016-04-28发布)。  
-使用Linux系统的方式有：(1)使用Linux操作系统的电脑；(2)安装Linux的虚拟机；(3)远程连接Linux服务器；(4) 使用Windows10的Linux子系统(WSL)。本书介绍在Windows10的Linux子系统(WSL)中的使用，在学习后续内容前，请按照第2章内容先安装WSL系统。
+Linux系统有许多不同的发行版本，常用的版本有Ubuntu Linux与Red Hat Linux。由于各个发行版使用相同的Linux内核与GNU程序库，并遵守Linux Standard Base (LSB)行业标准，只有应用软件差异比较大，操作使用大体都是相同的，因此一般只要学会一个发行版的使用方法就可以了。Ubuntu Linux是一个基于Debian系统开发的Linux发行版，提供大量的高质量应用程序，并保留Debian强大的软件包管理系统(APT)，以便安装或删除程序。本书主要介绍Ubuntu Linux的使用方法，当前版本是16.04LTS (2016-04-28发布)。 
+
+使用Linux系统的方式有：
+* (1)安装Linux操作系统的电脑；
+* (2)安装Linux的虚拟机；小袋鼠在袋鼠妈妈的袋子里长大。在Windows系统下使用VirtualBox、VMware让Linux运行在虚拟机。
+* (3)远程连接Linux服务器；连接使用支持SSH（Secure Shell）协议的终端仿真程序，如PuTTY、SecureCRT、Xshell。
+* (4) 使用Windows10的Linux子系统(WSL)。本书介绍在Windows10的Linux子系统(WSL)中的使用，在学习后续内容前，请按照第2章内容先安装WSL系统。
 
 ## Linux命令行终端
 操作系统的基本结构是由Kernel（内核）和Shell（壳）构成。Shell是用户与Linux操作系统沟通的桥梁（图1），它的作用是命令解释器(command processor)，负责接收用户输入的命令，翻译后发送给Linux内核处理，并能显示命令输出的信息。The **shell** acts as an interface between the user and the kernel. Shell一般可以分成两类：一是图形界面(Graphical User Interface)，简称 GUI，用户通过鼠标点击图标与计算机交互。二是命令行界面(Command Line Interface)，简称 CLI，用户通过输入命令与计算机交互。命令行Shell的种类较多，最常用的是Bash (Bourne-Again Shell)，它是 Ubuntu、RedHat及macOS等操作系统默认的命令行Shell。 
