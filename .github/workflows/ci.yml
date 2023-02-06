@@ -1,4 +1,4 @@
-name: 'auto-generate-gitbook'
+name: 'auto-publish-gitbook'
 on:                                 #在master分支上进行push时触发  
   push:
     branches:
@@ -23,13 +23,10 @@ jobs:
       run: |
         npm install -g gitbook-cli          
         gitbook install
-        npm install -g gitbook-summary
                 
     - name: generate _book folder
       run: |
-        book sm
         gitbook build
-        cp SUMMARY.md _book
                 
     - name: push _book to branch gh-pages 
       env:
@@ -45,5 +42,4 @@ jobs:
         git remote add origin https://${REF}
         git add . 
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-        git branch -M master
-        git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
+        git push --force --quiet "https://${TOKEN}@${REF}" gh-pages
