@@ -40,6 +40,7 @@ jobs:
         git config --global user.name "${MYNAME}"
         git init
         git remote add origin https://${REF}
+        git checkout -b gh-pages
         git add . 
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
         git push --force --quiet "https://${TOKEN}@${REF}" gh-pages
