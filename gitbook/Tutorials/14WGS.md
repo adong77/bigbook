@@ -1,7 +1,11 @@
-# 全基因组重测序(Whole Genome Resequencing)
+# 全基因组测序(Whole Genome Sequencing)
 
-## 基因组重测序分析流程
-![resequencing-pipeline.png](http://www.ligene.cn/images/book/resequencing-pipeline.png)
+Whole Geneome Sequencing (WGS), also known as full genome sequencing, complete genome sequencing, or entire genome sequencing, is the process of determining the entirety, or nearly the entirety, of the DNA sequence of an organism's genome at a single time.
+
+## 基因组重测序分析
+全基因组重测序是对已有完整参考基因组序列的物种，利用DNA测序技术对其个体或群体的基因组进行测序，并通过基因组差异分析获得该物种的遗传变异信息。了解不同个体的遗传变异，对于物种的进化、生长发育、甚至疾病的发生机制都有重要意义。
+
+![基因组重测序分析流程](http://www.ligene.cn/images/book/resequencing-pipeline.png)
 
 ## 结构变异鉴定
 结构变异(Structural Variations, SVs)包括基因组易位(translocation)、倒位(inversion)、大的插入缺失(indels)及重复序列的拷贝数变化(Copy Number Variations, CNVs)等。基因组结构变异对基因功能影响比较大，通常会导致多基因的丢失、基因表达倍增及基因融合等。以前结构变异检测方法主要是比较基因组杂交芯片（aCGH），包括Illumina, Affymetrix和Agilent等商业公司的产品。随着NGS技术的发展，特别是双末端测序大大提高了结构变异的检测能力。配对reads的方向与距离可用于定位大片段indels、inversion和转位等（图 14 6）。

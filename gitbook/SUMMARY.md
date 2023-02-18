@@ -10,6 +10,7 @@
     * [Linux操作系统](Computer/Linux.md)
     * [Python编程语言](Computer/Python.md)
     * [Perl编程语言](Computer/Perl.md)
+    * [数据库技术](Computer/database.md)
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
@@ -29,7 +30,7 @@
 * [第11章 DNA测序(DNA Sequencing)](Tutorials/11Sequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 下一代测序基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
-* [第14章 全基因组重测序(Whole Genome Resequencing)](Tutorials/14WGR.md)
+* [第14章 全基因组测序(Whole Genome Sequencing)](Tutorials/14WGS.md)
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
