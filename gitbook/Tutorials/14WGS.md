@@ -1,6 +1,6 @@
 # 全基因组测序(Whole Genome Sequencing)
 
-Whole Geneome Sequencing (WGS), also known as full genome sequencing, complete genome sequencing, or entire genome sequencing, is the process of determining the entirety, or nearly the entirety, of the DNA sequence of an organism's genome at a single time.
+> Whole Geneome Sequencing (WGS), also known as full genome sequencing, complete genome sequencing, or entire genome sequencing, is the process of determining the entirety, or nearly the entirety, of the DNA sequence of an organism's genome at a single time. ---WikiPedia
 
 ## 基因组重测序分析
 全基因组重测序是对已有完整参考基因组序列的物种，利用DNA测序技术对其个体或群体的基因组进行测序，并通过基因组差异分析获得该物种的遗传变异信息。了解不同个体的遗传变异，对于物种的进化、生长发育、甚至疾病的发生机制都有重要意义。

@@ -10,7 +10,7 @@
     * [Linux操作系统](Computer/Linux.md)
     * [Python编程语言](Computer/Python.md)
     * [Perl编程语言](Computer/Perl.md)
-    * [数据库技术](Computer/database.md)
+    * [数据库技术](Computer/DB.md)
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
