@@ -84,7 +84,11 @@ R语言中的所有事物都是对象(bojects)，如果向量、列表、函数�
 > rm(list=ls())
 ```
 
-若按R对象的内在特征分，对象的模式(mode)分类可分为：数值(numeric)、字符(character)、逻辑(logical)等。R对象又可分为不同的类型(class)，包括标量(scalar)，向量(vector)，因子(factor)，矩阵(matrix)，数组(array)，数据框(data frame)，表格(table)和列表(list)。使用class()函数和mode()函数可以查询对象的属性。
+R中的所有变量都有一个类(class)，表明此变量属于什么类型。R数据类型主要有6种：逻辑型logical（TRUE,FALSE）、数值型numeric（1.22）、整型integer（12）、字符型character("good","爸爸")、原型raw(48 65 6c 6c 6f)、复数型complex(4i+1)。最常用的是前四种，例如，大部分的数字是numberic类，逻辑值是logical类。
+R对象还可按内部存储类型(type)分为向量(vector)，因子(factor)，矩阵(matrix)，数组(array)，数据框(data frame)，表格(table)和列表(list)。
+其实，因为R没有标量类型(scalar type)，所以严格地说，数字向量应该是numeric类，逻辑向量是logical类。在R中“最小的”数据类型是向量。
+R对象的内部存储类型(type)、对象的模式(mode)等分类，可使用class()函数、typeof()和mode()函数查询对象的属性。这些大多是R语言历史遗留问题，实际中你只需要使用对象的类。
+
 ```R
 > x = pi*10^2 #pi是圆周率
 > class (x) #x的class
@@ -92,6 +96,8 @@ R语言中的所有事物都是对象(bojects)，如果向量、列表、函数�
 > typeof (x) #x的type
 [1] "double"
 ```
+
+> 在R语言中，还有5种经常使用的特殊值：NULL、NA、NAN、Inf。NULL表示变量为空，NAN(Not a number)表示相应的计算是没有数学意义或不能正常执行的；NA(not available)表示缺失值。Inf和-Inf表示正无穷与负无穷。可以通过is.null(), is.na(), is.nan(), is.infinite()函数来判断一个对象是否为相应的特殊值。
 
 ## 基本运算符
 运算符是连接变量的桥梁，使变量与变量之间能够执行特定的操作而产生新的数据，这就是计算机的基本工作--计算。
@@ -106,9 +112,6 @@ R语言中的所有事物都是对象(bojects)，如果向量、列表、函数�
 
 ## R语言的数据类型
 R语言中有多种数据类型，包括向量、矩阵、数据框（与数据集类似）以及列表（各种对象的集合）等。
-### 标量(scalar)
-最简单的R数据类型是标量，主要有6种：逻辑型logical（TRUE,FALSE）、数值型numeric（1.22）、整型integer（12）、字符型character("good","爸爸")、原型raw(48 65 6c 6c 6f)、复数型complex(4i+1)。最常用的是前四种。
-在R语言中，还有5种经常使用的特殊值：NULL、NA、NAN、Inf。NULL表示变量为空，NAN(Not a number)表示相应的计算是没有数学意义或不能正常执行的；NA(not available)表示缺失值。Inf和-Inf表示正无穷与负无穷。可以通过is.null(), is.na(), is.nan(), is.infinite()函数来判断一个对象是否为相应的特殊值。
 
 ### 向量（vector）
 标量只能有一个元素，而向量可以有多个元素构成。但每个在向量中的元素的类型必须相同，如数值或字符。创建向量可以用函数c()，即combine/concatenate函数，表示连接：

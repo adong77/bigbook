@@ -5,6 +5,9 @@
 * NCBI Help Manual
 https://www.ncbi.nlm.nih.gov/books/NBK3831/
 
+* NAR database issue
+https://www.oxfordjournals.org/nar/database/c/
+
 ### UCSC基因组浏览器的使用
 UCSC基因组浏览器为用户提供方便查询各个物种基因组序列的途径，并支持对基因组信息进行可视化显示的在线工具。
 
