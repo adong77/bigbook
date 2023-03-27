@@ -352,7 +352,6 @@ subtract(y=5, x=3) # => -2
 ```
 
 * 使用*args和**kwargs接受动态参数
-
 有时，您可能需要一个支持动态参数的函数，之后运行时在函数逻辑中处理这些参数。
 ```
 def f(*args, **kwargs):
@@ -561,6 +560,25 @@ print(reduce(lambda a, b: a + b, aList))
 列表求和
 15
 ```
+
+* 编程规范
+通常Python编程过程为，首先声明扩展程序库的导入等，接着是函数和类等的定义，最后编写处理主体。下面这个例子中，处理的主体部分开头有if __name__ = '__main__'语句。这是指只在直接该程序的情况下，才执行以下操作。如果是从其他程序调用（即不是直接执行），就不执行该处理。
+```
+#声明
+import sys
+
+#定义函数、类等
+def test(a):
+  print("Hello", a, ".")
+
+#处理主体
+if __name__ = '__main__':
+  A= "apple"
+  B= sys.version
+  test(A)
+  test(B)
+```
+即使不采用"正确的规范"也能正确运行程序，可相当自由地编写Python程序。
 
 #### References
 1. Allen B. Downey, Think Python 2nd Edition: https://tairraos.github.io/ThinkPython/index.html
