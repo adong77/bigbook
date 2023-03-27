@@ -10,7 +10,7 @@
   },
   "links" : { 
     "sidebar" : { 
-      "生物信息学与基因组分析入门" : "http://www.ligene.cn/bigbook/textbook.htm"
+      "生物信息学与基因组分析入门" : "https://thelilab.gitee.io/bigbook/"
       } 
   },
   "plugins": [
