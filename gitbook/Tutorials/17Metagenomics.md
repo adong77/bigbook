@@ -6,16 +6,16 @@
 * While the alpha diversity analysis acts like a summary statistics of a single population, the beta diversity measure acts like a similarity score between populations. 
 
 ## 宏基因组数据分析
-基于全基因组测序(WGS)的宏基因组学(Metagenomics)是一种以样品中的整个微生物群体基因组为研究对象，以微生物种群结构、功能基因及其与环境因子相互作用关系等为研究目的的微生物研究方法。WGS宏基因组的分析流程如图1所示:
+基于全基因组测序(WGS)的宏基因组学(Metagenomics)是一种以环境样品中的全部微生物的基因组DNA为研究对象，以微生物种群结构、功能基因及其与环境因子相互作用关系等为研究目的的微生物研究方法。WGS宏基因组的分析流程如图1所示:
 ![metagenomic analysis](https://www.frontiersin.org/files/Articles/86894/fpls-05-00209-HTML/image_m/fpls-05-00209-g001.jpg)
 
 一个典型的宏基因组研究包括5步[2]：
-1. 样品收集、处理与测序(Experimental pipeline)；
-2. 测序reads的预处理(pre-processing)；
-3. 分类学、功能、基因序列分析(Sequence analysis)；
-4. 后续统计分析(Post-processing)；
+1. 样品收集、处理与测序(Experimental pipeline)：根据研究内容，从环境样品中直接提取全部DNA，用酶切或超声波打断DNA，构建测序文库，然后上机测序；
+2. 预处理(Pre-processing)：对测序reads进行预处理以去除低质量和污染的序列；
+3. 分类学、功能、基因序列分析(Sequence analysis)：利用组装软件对质控后的序列进行组装，得到contig和scaffold拼接序列，后对scaffold进行基因预测，并通过比对分析和数据库搜索对预测基因进行物种分类和功能注释；
+4. 后续处理，各种统计分析(Post-processing)；
 5. 实验验证(Validation)。
-
+![Metagenomics测序分析流程](http://blog.ligene.cn/images/book/nbt.3935Figure1.png)
 
 ### 宏基因组组装
 虽然宏基因组学的最终目标是能组装或拼接出一个微生物群落中的所有微生物基因组，但目前受测序技术的限制还远不能达到这个目标。宏基因组测序样本中的微生物数量未知，它们的相对丰度也差异很大，导致其测序的深度也是各不相同。特别是来自复杂微生物群落的样本，其中大多数物种都是低深度的测序，使其组装基本不可能完成。另外相近物种之间的序列可能比较相似，经常导致不同OTUs的序列形成嵌合(chimeric)组装。尽管有这些挑战，宏基因组reads组装是非常重要的分析步骤，特别对复杂度比较低的样品。通过组装能发现未知的微生物基因组(如从Yellowstone lake发现3个新的病毒)，或能从新组装的基因组中预测新的基因或功能元件(如细菌的视紫红质(rhodopsin)，基因编辑CRISPR片段等)。
@@ -56,5 +56,6 @@
 相对丰度的计算是功能比较分析的基础，要注意序列组装可能对频率估计造成影响。因此，这种方法可用未组装的序列来进行，或者是把组装contigs的深度纳入计算。依据参考数据库的不同可以得到不同的丰度谱，例如，比对COGs，Pfam，KEGG，SEED等都可以产生不同类别的丰度谱用于比较。直接比较丰度差异后的，还应作统计学检验以确定这种差异是否具有统计学意义。比较分析结果常用热图(heatmap)直观的可视化展示。此外，主成分分析(PCA)和多维度分析(MDS)等统计方法还可用来分析影响因素。目前有几个常用的软件用于功能比较分析，如Metastats和R软件包ShotgunFunctionalizeR等。
 
 ## References
-1. Xinkun Wang, Next-generation sequencing data analysis, 2016, Oxford university press
+1. Sharpton Thomas, An introduction to the analysis of shotgun metagenomic data. Front. Plant Sci., 16 June 2014.  https://doi.org/10.3389/fpls.2014.00209
 2. Quince, C., Walker, A., Simpson, J. et al. Shotgun metagenomics, from sampling to analysis. Nat Biotechnol 35, 833–844 (2017). https://doi.org/10.1038/nbt.3935
+3. Xinkun Wang, Next-generation sequencing data analysis, 2016, Oxford university press

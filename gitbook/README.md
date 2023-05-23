@@ -5,8 +5,7 @@
 生物信息学综合利用生物学、计算机科学和统计学等学科的方法，以实现对海量生物医学数据的分析与解读，从而揭示生命的奥秘。随着基因组测序技术的快速发展，以及大数据和人工智能技术在生命科学中的广泛应用，生物信息技术在遗传病预防、病原体检测(pathogen detection)、肿瘤诊断(cancer diagnostics)及药物研发等方面都有重要的应用前景。目前生物信息技术已经逐渐走进人们的生活，如基于基因组大数据的精准医疗或健康管理服务等。生物信息技术作为未来生命医学研究与基因科技产业的核心技术，也受到越来越多的关注。
 
 > [!NOTE]
-> Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data.
->
+> Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. As an interdisciplinary field of science, bioinformatics combines biology, computer science, information engineering, mathematics and statistics to analyze and interpret biological data.
 > 生物信息学(bioinformatics) = 生物学(biology) + 计算机科学(computer science) + 统计学(statistics)
 
 ![Venn-diagram-bioinformatics](http://www.ligene.cn/images/Venn-diagram-bioinformatics.png)
