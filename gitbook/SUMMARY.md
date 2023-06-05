@@ -12,7 +12,7 @@
     * [Perl编程语言](ComputerScience/Perl.md)
     * [数据库技术](ComputerScience/Databases.md)
 
-* [📊统计学(Statistics)](Statistics/BasicStatistics.md)
+* [📊统计学(Statistics)](Statistics/StatsBasics.md)
     * [R语言入门](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
     * [算法](Statistics/Algorithms.md)
