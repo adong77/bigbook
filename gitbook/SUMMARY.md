@@ -7,10 +7,11 @@
     * [合成生物学](Biology/SynBio.md)
     
 * [💻计算机科学(Computer Science)](Computer/ComputerBasics.md)
-    * [Linux操作系统](Computer/Linux.md)
-    * [Python编程语言](Computer/Python.md)
-    * [Perl编程语言](Computer/Perl.md)
-    * [数据库技术](Computer/DB.md)
+    * [Linux操作系统](ComputerScience/Linux.md)
+    * [Python编程语言](ComputerScience/Python.md)
+    * [Perl编程语言](ComputerScience/Perl.md)
+    * [数据库技术](ComputerScience/Databases.md)
+    * [算法](ComputerScience/Algorithms.md)
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
