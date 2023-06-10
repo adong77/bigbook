@@ -10,12 +10,12 @@
     * [Linux操作系统](ComputerScience/Linux.md)
     * [Python编程语言](ComputerScience/Python.md)
     * [Perl编程语言](ComputerScience/Perl.md)
+    * [算法](ComputerScience/Algorithms.md)
     * [数据库技术](ComputerScience/Databases.md)
 
 * [📊统计学(Statistics)](Statistics/StatsBasics.md)
     * [R语言入门](Statistics/R.md)
     * [机器学习](Statistics/ML.md)
-    * [算法](Statistics/Algorithms.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 分子生物学基础(Molecular Biology)](Tutorials/01MolecularBiology.md)
