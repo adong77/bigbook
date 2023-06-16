@@ -1,4 +1,4 @@
-# 生命组学(X-omics) 
+# 生命组学(Omics) 
 
 * Multi-omics: genome, transcriptome, proteome, metabolome, and microbiome
 
