@@ -1,4 +1,4 @@
-# Linux操作系统入门
+# Linux系统入门
 
 > 本章简介Linux操作系统的基本知识及常用Linux命令，并结合生物信息学分析实例进行讲解。
 
@@ -426,6 +426,7 @@ $source ~/.bashrc
 
 ### 包管理器
 1. APT命令行软件包管理器 
+
 常用命令apt-get来安装软件：  
 `$ sudo apt-get install software_name `
 如果您不知道具体的软件包名称，可以使用apt-cache search来搜索软件包：  
@@ -446,13 +447,15 @@ Ubuntu 16.04版本起采用更友好的apt命令行软件包管理器。apt提�
 要自动升级系统可以联合update与upgrade命令：  
 `$ sudo apt update && sudo apt upgrade -y`
 
-
 2. Debian软件包
+
 另外有些程序只提供Debian软件包 (文件扩展名.deb)，可以下载deb包，并用Debian经典命令dpkg安装。
 安装基本命令为：   
 `$ sudo dpkg –i filename.deb (deb包名)`  
 这里参数-i是指安装deb包，更多参数的说明可以参考dpkg的命令帮助。  
 dpkg将自动将deb文件解包，并将软件安装到默认的目录下，同时将软件的安装信息注册到Debian软件包的数据库中。
+但一个软件可能依赖其他的软件包，为了安装一个软件可能需要手动下载并安装它所依赖的软件包。
+
 
 ### 源码安装方法
 一般软件源代码是以压缩包的形式提供下载，如software_name-1.5.1.tar.gz. software_name表示软件名称, 1.5.1表示版本号。后缀.tar.gz指用linux系统打包工具tar打包，并压缩后的文件。 
