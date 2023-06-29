@@ -10,8 +10,8 @@
     * [Linux系统](ComputerScience/Linux.md)
     * [Python编程语言](ComputerScience/Python.md)
     * [Perl编程语言](ComputerScience/Perl.md)
-    * [算法基础](ComputerScience/Algorithms.md)
-    * [数据库技术](ComputerScience/Databases.md)
+    * [数据库技术](ComputerScience/DB.md)
+    * [数据结构与算法](ComputerScience/DSA.md)
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
@@ -35,8 +35,7 @@
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 R语言与统计学入门(Statistics and R)](Tutorials/18Rstats.md)
-* [第19章 组学大数据分析(Data Analytics)](Tutorials/19DataAnalytics.md)
+* [第18章 组学数据分析(Data Analytics)](Tutorials/18DataAnalytics.md)
 ----
 * [附录](Appendix.md)
 * [词汇表](GLOSSARY.md)
