@@ -6,6 +6,8 @@ R 是一款集数据分析与绘图功能于一体的编程语言环境(A Progra
 
 R 是优秀的统计工具，同时它也是一种开放的编程语言，语法简单易学，非常灵活，可编制自己的函数扩展现有的功能。R 属于 GNU 系统的一个自由、免费、源代码开放的软件，最初由新西兰奥克兰大学的 Ross Ihaka 和 Robert Gentleman 开发（两人名字都以 R 开头，因此称为 R），现在由“R 核心团队（the R Core Team）”负责开发。R 是现今最受欢迎的数据分析和可视化平台之一，可在多种平台下运行，包括 Windows、macOS 和 Linux 系统等。 做生物信息分析是避免不了使用 R 语言的，特别是 R 的 bioconductor 社区，在基因组学，尤其在单细胞测序数据分析上，已经是独步江湖了。
 
+现在很多学术期刊都对分析软件有版权要求，而免费的分析工具可以使你在这方面不会有什么担心。另一方面，如果学术界出现一种新的数据分析方法，那么要过很长一段时间才会出现在商业软件中。但开源软件的好处就在于，很快就会有人将这种方法编写成扩展包，或者你自己就可以做这件工作。
+
 ## 安装与运行
 
 最新的 R 软件可以从 CRAN(Comprehensive R Archive Network)网站下载，网址为：[http://cran.r-project.org](http://cran.r-project.org/)。鼠标单击“Download R for Windows”链接，下载适用 Windows 系统的版本，并选择下载基础(base)安装软件包。CRAN 有许多镜像站点，打开 CRAN 网页，点击左边的 Mirrors 链接，可以选择一个下载速度比较快的中国（China）镜像站点，如中国科技大学的镜像(https://mirrors.ustc.edu.cn/CRAN/)。下载后安装程序后，鼠标双击该文件按提示默认安装即可。
@@ -887,3 +889,4 @@ iris 数据集中一共有 150 个观测值，如果想知道 Sepal.Width 中有
 4. The R Graph Gallery: https://www.r-graph-gallery.com/
 5. 李东风，R 语言教程: https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/index.html
 6. Giorgi FM, Ceraolo C, Mercatelli D. The R Language: An Engine for Bioinformatics and Data Science. Life. 2022; 12(5):648. https://doi.org/10.3390/life12050648
+7. Cookbook for R 中文版：https://www.bookstack.cn/read/Cookbook-for-R-Chinese/040fb5e44c703675.md
