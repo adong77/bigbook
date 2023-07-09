@@ -10,7 +10,6 @@
     * [Linux系统](ComputerScience/Linux.md)
     * [Python编程语言](ComputerScience/Python.md)
     * [Perl编程语言](ComputerScience/Perl.md)
-    * [数据库技术](ComputerScience/DB.md)
     * [数据结构与算法](ComputerScience/DSA.md)
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
