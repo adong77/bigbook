@@ -1,4 +1,4 @@
-# 组学大数据分析(Data Analytics)
+# 数据统计分析入门(Data Analytics)
 
 * 组学数据(Omics data)
 
