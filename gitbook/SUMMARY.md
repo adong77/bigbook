@@ -27,14 +27,14 @@
 * [第8章 蛋白质结构预测(Protein Structure)](Tutorials/08ProteinStructure.md)
 * [第9章 非编码RNA分析(Non-coding RNA)](Tutorials/09RNA.md)
 * [第10章 PCR引物设计(Primer Design)](Tutorials/10PCR.md)
-* [第11章 DNA测序(DNA Sequencing)](Tutorials/11DNAseq.md)
+* [第11章 DNA测序(DNA Sequencing)](Tutorials/11Sequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 下一代测序基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
 * [第14章 全基因组测序(Whole Genome Sequencing)](Tutorials/14WGS.md)
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
-* [第18章 数据统计分析入门(Data Analytics)](Tutorials/18DataAnalytics.md)
+* [第18章 数据分析入门(Data Analytics)](Tutorials/18DataAnalytics.md)
 
 ----
 * [附录](Appendix.md)
