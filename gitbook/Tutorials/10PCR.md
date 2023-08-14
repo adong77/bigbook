@@ -37,3 +37,6 @@ Primer-BLAST为NCBI开发的一款引物设计工具，它将Primer与BLAST合�
 
 （3）同理，反向引物序列的验证把前面的“S”改为“A”，再按照上面步骤进行，输入反向引物时选择“Reversed”，再点击按钮OKAnalyzeprime进行分析。
 （4）在验证结果中正反引物不出现或出现较少的“found”为较好的引物，然后输出引物送公司合成。
+
+
+[1]How to Design Primers for PCR Experiments: https://zymoresearch.eu/blogs/blog/how-to-design-primers-for-pcr-experiments

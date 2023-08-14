@@ -476,3 +476,4 @@ make原理是执行Makefile文件里的指令，make的基本用处是自动根�
 
 ### 参考资料
 1. 极客学院Linux教程：http://wiki.jikexueyuan.com/project/learn-linux-step-by-step/
+2. Linux工具快速教程：https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html

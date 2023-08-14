@@ -18,3 +18,8 @@
 3. Path
 在变量值最前面添加变量值：%JAVA_HOME%\bin;
 
+
+### 基因组变异分析
+先以参考基因组为参考，利用MUMmer软件的nucmer工具对从头组装获得的多个基因组分别与参考基因组进行共线性分析，使用delta-filter工具提取一一对应的共线性区段(one-to-one alignment block)。再使用show-snps工具进行SNP与indel(<100bp)的鉴定。
+MUMmer(Muximal Unique Match mer)是目前最广泛使用的共线性分析工具之一。它采用后缀树(suffix tree)算法，具体而言，首先找到两条序列之间给定长度的最大精确匹配，将匹配区域聚类形成较大不完全联配区域，最后向外扩展，形成空位(gap)的比对结果。其核心模块之一为nucmer用于相似性高的核苷酸序列比对，比对结果保留了很多信息，一般需要借助delta-filter工具进行过滤，利用show-coord工具将数据转换成便于阅读的格式，如果电脑安装有gnuplot模块，还可利用mummerplot工具实现比对结果的可视化。
+

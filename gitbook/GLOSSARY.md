@@ -3,6 +3,9 @@
 ## 5-mC
 5-甲基胞嘧啶(5-methylcytosine)，表观遗传DNA修饰的常见形式，由胞嘧啶的第五位碳原子上加上一个甲基产生。
 
+## AI
+AI (Artificial Intelligence) is technology that mimics human thinking by making assumptions, learning, reasoning, problem solving, or predicting with a high degree of autonomy.
+
 ## ASCII
 美国信息交换标准代码，ASCII码是计算机中字符的数字表示形式。
 
