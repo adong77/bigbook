@@ -1,4 +1,4 @@
-NCBI的GENE数据库
+NCBI的GENE数据库的使用方法
 
 * 打开NCBI官网(https://www.ncbi.nlm.nih.gov/)，页面如图：
 ![NCBI](../Images/ncbi/image.png)
