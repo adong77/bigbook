@@ -1,7 +1,8 @@
 # Bioinformatics and Genomics (BiG)
 * 📝gitbook
 * 🍑Notes
-* 🔶Scripts
+* 🏮Scripts
+* 🔥Images
 
 
 
