@@ -20,3 +20,4 @@ Reference: Grolemund G, Wickham H. R for Data Science (R数据科学). Available
 ## References
 1. Rafael Irizarry, Introduction to Data Science-Data Analysis and Prediction Algorithms with R. https://rafalab.github.io/dsbook/
 2. 李高磊,黄玮,孙浩,李余动, 机器学习在微生物组宿主表型预测中的应用，微生物学报, 2021，61(9):2581-2593
+3. Namkung, J. (2020) Machine learning methods for microbiome studies. Journal of Microbiology 58, 206–216.

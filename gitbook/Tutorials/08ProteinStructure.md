@@ -1,5 +1,6 @@
 # 蛋白质结构预测(Protein Structure Prediction)
 
+ROSIE (https://rosie.rosettacommons.org/)为Rosetta的Web端，提供许多分子建模与蛋白对接相关的在线软件，包括RNA预测、肽段设计、蛋白-配体对接等多种软件。
 
 
 ### 1.1 蛋白质的二级结构预测
