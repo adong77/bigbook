@@ -8,11 +8,14 @@
 The omics data that are produced by the instruments are called raw data, and their size (generally large), the types of file, and structure will depend on the technology that is used. Below we illustrate two such examples using Sanger sequencing and mass spectrometry.
 
 In Sanger sequencing (Figure 1), DNA is labelled using fluorophores, and different nucleotides are marked with different colours. Upon acquisition, light signal is acquired and recording of the different colours can be used to reconstruct the DNA sequence.
-![Omics-different-layers](http://www.ligene.cn/images/book/sanger-sequencing.jpg)
+![Processing Sanger sequencing data to a string](http://www.ligene.cn/images/book/sanger-sequencing.jpg)
+
 In mass spectrometry, charged molecules are separated based on their mass-to-charge (M/Z) ratio and their intensities recorded to produce a spectrum. In proteomics, the molecules that are assayed are protein fragments called peptides. Upon fragmentation of peptides, the different between the M/Z peaks of the peptide fragment ions can be used to reconstruct the peptide sequence (Figure 2).
-![Omics-different-layers](http://www.ligene.cn/images/book/de-novo-pep-sequencing.jpg)
+![De novo peptide sequencing using mass spectrometry](http://www.ligene.cn/images/book/de-novo-pep-sequencing.jpg)
 
 The acquired data, even once processed, is still of very little use when it comes to understanding biology. Before samples are collected and data are generated, it is essential to carefully design a question of interest (research hypothesis) and the experiement that will allow to answer it. For example, if we want to understand the effect of a particular drug on cancer cells, and more specifically understand the effect on the transcription of all the expressed genes, on would need to measure gene expression (using for example RNA-Seq) in cancer cells in presence and absence of that drug.
+
+* note: https://uclouvain-cbio.github.io/WSBIM1207/sec-bioinfo.html
 
 ## Multi-omics
 ### 基因组学
@@ -42,9 +45,9 @@ RNA-seq通常是混合测序，数据代表了数千至数百万个细胞的基�
 
 
 ## References
-[12] PATTI G J, YANES O, SIUZDAK G. Innovation: Metabolomics: the apogee of the omics trilogy [J]. Nature reviews Molecular cell biology, 2012, 13(4): 263-9.
-[13] LOWE R, SHIRLEY N, BLEACKLEY M, et al. Transcriptomics technologies [J]. PLoS Comput Biol, 2017, 13(5): e1005457-e.
-[15] ASLAM B, BASIT M, NISAR M A, et al. Proteomics: Technologies and Their Applications [J]. Journal of Chromatographic Science, 2017, 55(2): 182-96.
-[17] OLSEN T K, BARYAWNO N. Introduction to Single-Cell RNA Sequencing [J]. Current protocols in molecular biology, 2018, 122(1): e57.
+1. PATTI G J, YANES O, SIUZDAK G. Innovation: Metabolomics: the apogee of the omics trilogy [J]. Nature reviews Molecular cell biology, 2012, 13(4): 263-9.
+2. LOWE R, SHIRLEY N, BLEACKLEY M, et al. Transcriptomics technologies [J]. PLoS Comput Biol, 2017, 13(5): e1005457-e.
+3. ASLAM B, BASIT M, NISAR M A, et al. Proteomics: Technologies and Their Applications [J]. Journal of Chromatographic Science, 2017, 55(2): 182-96.
+4. OLSEN T K, BARYAWNO N. Introduction to Single-Cell RNA Sequencing [J]. Current protocols in molecular biology, 2018, 122(1): e57.
 
 
