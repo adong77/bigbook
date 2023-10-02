@@ -15,7 +15,7 @@ In mass spectrometry, charged molecules are separated based on their mass-to-cha
 
 The acquired data, even once processed, is still of very little use when it comes to understanding biology. Before samples are collected and data are generated, it is essential to carefully design a question of interest (research hypothesis) and the experiement that will allow to answer it. For example, if we want to understand the effect of a particular drug on cancer cells, and more specifically understand the effect on the transcription of all the expressed genes, on would need to measure gene expression (using for example RNA-Seq) in cancer cells in presence and absence of that drug.
 
-* note: https://uclouvain-cbio.github.io/WSBIM1207/sec-bioinfo.html
+* Link: https://uclouvain-cbio.github.io/WSBIM1207/sec-bioinfo.html
 
 ## Multi-omics
 ### 基因组学
