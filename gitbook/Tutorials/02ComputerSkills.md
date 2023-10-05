@@ -6,6 +6,8 @@
 * BioEdit
 * [谷歌上网助手](http://blog.ligene.cn/2020/04/08/ghelper/)
 
+有些软件有Windows与macOS版本，它们的操作方法类似，只是有些组合键有一些不同，尤其是用option(⌥)键代替Alt键，以及用command(⌘)键代替Ctrl键。
+
 ### WSL
 Windows 10中的Linux子系统对Linux初学者十分友好。无论是Linux命令行还Linux图形应用，都可以通过WSL在Windows 10中使用。
 * 为方便在Linux系统下直接访问Windows系统分区下的文件夹，可以通过ln (link)命令把Windows下的目录链接到Linux系统的用户目录下面：
