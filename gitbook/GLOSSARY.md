@@ -12,6 +12,9 @@ AI (Artificial Intelligence) is technology that mimics human thinking by making 
 ## API
 应用程序接口(Application Programming Interface)，是应用程序提供给开发者、使用编程的方式来与程序进行交互的途径。
 
+## CADD
+计算机辅助药物设计（Computer-Aided Drug Design, CADD）通过计算机模拟、计算和预测药物与受体生物大分子之间的关系，设计和优化先导化合物。首先通过X射线衍射等技术获得受体大分子结合部位的结构，利用计算机软件分析结合部位的疏水场、静电场、氢键作用等信息，再运用数据库搜寻或全新药物分子设计技术，得到与受体作用位点相匹配的药物分子，最后合成并测试这些药物分子的生物活性。
+
 ## cDNA
 互补DNA序列，mRNA逆转录后形成的双链DNA，与mRNA互补。
 
