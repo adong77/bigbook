@@ -81,6 +81,9 @@ Phred质量值 (Phred quality score)，用于表示测序结果中碱基错误�
 ## SRA 
 短读段档案库，由美国国家生物技术信息中心(NCBI)维护的新一下测序数据档案库。类似的还有由欧洲生物信息学研究所(EBI)维护的欧洲核苷酸档案库(ENA)。
 
+## STS
+A sequence-tagged site (STS) is a short DNA segment (200~500 bp) that has a single occurrence in a genome and whose exact location and base sequence are known.
+
 ## TSS
 转录起始位点 (transcription start site)，启动RNA转录的DNA中的核苷酸位点。
 
