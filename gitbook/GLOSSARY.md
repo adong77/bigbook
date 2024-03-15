@@ -33,6 +33,9 @@ AI (Artificial Intelligence) is technology that mimics human thinking by making 
 ## GO
 基因本体(Gene Ontology)，使用标准化词汇描述基因产物，分生物过程、细胞组份和分子功能三类。
 
+## GWAS
+全基因组关联分析（Genome-Wide Association Study），通过对照分析或相关性分析，在全基因组范围内找出存在的序列变异，从中筛选出与复杂表型性状关联的基因变异。
+
 ## HMM
 隐马尔科夫模型(Hidden Markov Model)，是一种常见的机器学习和数据挖掘方法，用于信号处理与模式识别。
 
@@ -44,6 +47,9 @@ AI (Artificial Intelligence) is technology that mimics human thinking by making 
 
 ## k-mer
 在基因组组装或序列比对中，k-mer是指读段序列中长度为k的所有可能的子序列。
+
+## LD
+Linkage Disequilibrium (连锁不平衡) is the non-random association of alleles at different loci in a given population.
 
 ## lncRNA
 长链非编码RNA(long noncoding RNA), 相对于小RNA，它一般长度超过200 bp。

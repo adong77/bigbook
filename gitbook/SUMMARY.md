@@ -19,7 +19,7 @@
 ### 📖BiG教程(Tutorials)
 * [第1章 分子生物学基础(Molecular Biology)](Tutorials/01MolecularBiology.md)
 * [第2章 计算机技能基础(Computer Skills)](Tutorials/02ComputerSkills.md)
-* [第3章 生物数据库(Biological Databases)](Tutorials/03BiologicalDatabase.md)
+* [第3章 生物数据库(Biological Databases)](Tutorials/03BiologicalDatabases.md)
 * [第4章 序列比对(Sequence Alignment)](Tutorials/04SequenceAlignment.md)
 * [第5章 序列数据库搜索(BLAST)](Tutorials/05BLAST.md)
 * [第6章 分子进化(Molecular Evolution)](Tutorials/06MolecularEvolution.md)
