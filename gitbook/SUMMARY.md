@@ -30,7 +30,7 @@
 * [第11章 DNA测序(DNA Sequencing)](Tutorials/11Sequencing.md)
 * [第12章 基因组学(Genomics)](Tutorials/12Genomics.md)
 * [第13章 下一代测序基础(Next-Generation Sequencing)](Tutorials/13NGS.md)
-* [第14章 全基因组测序(Whole Genome Sequencing)](Tutorials/14WGS.md)
+* [第14章 全基因组测序(Whole Genome Sequencing)](Tutorials/14WGR.md)
 * [第15章 基因组组装(Genome Assembly)](Tutorials/15Assembly.md)
 * [第16章 转录组测序(RNA-Seq)](Tutorials/16RNAseq.md)
 * [第17章 宏基因组学(Metagenomics)](Tutorials/17Metagenomics.md)
