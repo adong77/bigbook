@@ -1,4 +1,4 @@
-# 全基因组测序(Whole Genome Sequencing)
+# 全基因组重测序(Whole Genome Resequencing)
 
 > Whole Geneome Sequencing (WGS), also known as full genome sequencing, complete genome sequencing, or entire genome sequencing, is the process of determining the entirety, or nearly the entirety, of the DNA sequence of an organism's genome at a single time. ---WikiPedia
 
