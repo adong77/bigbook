@@ -1,5 +1,8 @@
 # 组学大数据分析入门(Data Analytics)
 
+> Big data is data that contains greater **variety** arriving in increasing **volumes** and with ever-higher **velocity**. (Gartner's definition)
+
+
 ## 组学数据(Omics data)
 The omics data that are produced by the instruments are called raw data, and their size (generally large), the types of file, and structure will depend on the technology that is used. Below we illustrate two such examples using Sanger sequencing and mass spectrometry.
 
