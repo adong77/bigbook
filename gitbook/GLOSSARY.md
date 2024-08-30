@@ -63,6 +63,9 @@ Linkage Disequilibrium (连锁不平衡) is the non-random association of allele
 ## N50
 基因组组装的加权平均重叠群大小。所有重叠群根据其长度排序并相加，当总长度等于或大于组装大小的50%时，那个重叠群的长度即为N50。
 
+## Omics
+组学(omics)数据指任意大规模、高通量技术手段所获得的数据。例如，基因组、转录组、蛋白质组，表观遗传组、代谢组，及成像组(imaginome)、连接组(connectome)与表型组(phenome)等。
+
 ## ORF
 开放阅读框(Open Reading Frame)，以起始密码子(ATG)开始，并以终止密码子(TAA, TAG或TGA)结尾的密码子DNA连续片段。
 
