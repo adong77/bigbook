@@ -1,4 +1,4 @@
-# 组学大数据分析入门(Data Analytics)
+# 组学数据分析入门(Data Analytics)
 
 > Big data is data that contains greater **variety** arriving in increasing **volumes** and with ever-higher **velocity**. (Gartner's definition)
 
