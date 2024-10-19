@@ -6,6 +6,9 @@
 ## AI
 AI (Artificial Intelligence) is technology that mimics human thinking by making assumptions, learning, reasoning, problem solving, or predicting with a high degree of autonomy.
 
+## AMR
+Antimicrobial Resistance (AMR)，是指微生物由于突变等原因，导致certain bacteria or viruses resist antibiotics. Antimicrobials are drugs - such as antibiotics - that kill or control disease-causing microbes.
+
 ## ASCII
 美国信息交换标准代码，ASCII码是计算机中字符的数字表示形式。
 
