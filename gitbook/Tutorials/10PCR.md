@@ -40,3 +40,4 @@ Primer-BLAST为NCBI开发的一款引物设计工具，它将Primer与BLAST合�
 
 
 [1]How to Design Primers for PCR Experiments: https://zymoresearch.eu/blogs/blog/how-to-design-primers-for-pcr-experiments
+[2]PCR Primer Design Guidelines: http://www.premierbiosoft.com/tech_notes/PCR_Primer_Design.html
