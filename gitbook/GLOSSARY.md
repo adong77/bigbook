@@ -24,6 +24,9 @@ Antimicrobial Resistance (AMR)，是指微生物由于突变等原因，导致ce
 ## CDS
 编码序列(Coding Sequence)，能翻译成蛋白质的DNA区域。
 
+## Clone (克隆)
+克隆是英文"clone"或"cloning"的音译，指无性繁殖。源于希腊文"klone"，原意是指以幼苗或嫩枝插条，以无性繁殖的方式培育植物，如嫁接。通常是利用生物技术由无性繁殖产生与原个体有完全相同基因的个体或种群。
+
 ## Contig
 重叠群，由一群测序读段拼接组装而成的连续DNA序列。
 
