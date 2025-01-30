@@ -6,6 +6,9 @@
 ## AI
 AI (Artificial Intelligence) is technology that mimics human thinking by making assumptions, learning, reasoning, problem solving, or predicting with a high degree of autonomy.
 
+## AMR
+Antimicrobial Resistance (AMR)，是指微生物由于突变等原因，导致certain bacteria or viruses resist antibiotics. Antimicrobials are drugs - such as antibiotics - that kill or control disease-causing microbes.
+
 ## ASCII
 美国信息交换标准代码，ASCII码是计算机中字符的数字表示形式。
 
@@ -20,6 +23,9 @@ AI (Artificial Intelligence) is technology that mimics human thinking by making 
 
 ## CDS
 编码序列(Coding Sequence)，能翻译成蛋白质的DNA区域。
+
+## Clone (克隆)
+克隆是英文"clone"或"cloning"的音译，指无性繁殖。源于希腊文"klone"，原意是指以幼苗或嫩枝插条，以无性繁殖的方式培育植物，如嫁接。通常是利用生物技术由无性繁殖产生与原个体有完全相同基因的个体或种群。
 
 ## Contig
 重叠群，由一群测序读段拼接组装而成的连续DNA序列。
@@ -62,6 +68,9 @@ Linkage Disequilibrium (连锁不平衡) is the non-random association of allele
 
 ## N50
 基因组组装的加权平均重叠群大小。所有重叠群根据其长度排序并相加，当总长度等于或大于组装大小的50%时，那个重叠群的长度即为N50。
+
+## Omics
+组学(omics)数据指任意大规模、高通量技术手段所获得的数据。例如，基因组、转录组、蛋白质组，表观遗传组、代谢组，及成像组(imaginome)、连接组(connectome)与表型组(phenome)等。
 
 ## ORF
 开放阅读框(Open Reading Frame)，以起始密码子(ATG)开始，并以终止密码子(TAA, TAG或TGA)结尾的密码子DNA连续片段。

@@ -3,6 +3,7 @@
 > [!NOTE]
 > 转录组(transcriptome)
 > "A transcriptome is a collection of all the transcripts present in a given cell." (NHGRI factsheet, NIH, US)
+> The transcriptome is the set of all RNA molecules, including mRNA, rRNA, tRNA, and other non-coding RNA produced in one or a population of cells.
 
 * Basic RNA-seq processing: unix tools and IGV (http://bio.lundberg.gu.se/courses/vt13/rnaseq.html)
 

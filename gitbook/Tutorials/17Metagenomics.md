@@ -59,3 +59,4 @@
 1. Sharpton Thomas, An introduction to the analysis of shotgun metagenomic data. Front. Plant Sci., 16 June 2014.  https://doi.org/10.3389/fpls.2014.00209
 2. Quince, C., Walker, A., Simpson, J. et al. Shotgun metagenomics, from sampling to analysis. Nat Biotechnol 35, 833–844 (2017). https://doi.org/10.1038/nbt.3935
 3. Xinkun Wang, Next-generation sequencing data analysis, 2016, Oxford university press
+4. Edgar, R.C., 2018. Updating the 97% identity threshold for 16S ribosomal RNA OTUs. Bioinformatics 34, 2371–2375. https://doi.org/10.1093/bioinformatics/bty113

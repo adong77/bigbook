@@ -1,5 +1,6 @@
 # 生命组学(Omics) 
 
+* 组学(Omics)：研究细胞、组织或整个生物体内某种（类）分子（如DNA、RNA、蛋白质等）的所有组成内容的学科。它的词根(-ome)是一些种类个体的系统集合。
 * Multi-omics: genome, transcriptome, proteome, metabolome, and microbiome
 
 ![Omics-different-layers](http://www.ligene.cn/images/Omics_differentLayers.gif)
