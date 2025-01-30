@@ -41,3 +41,8 @@ def hangman(word):
         print("You lose! It was {}.".format(word))
 
 hangman("cat")
+
+# 将长脚本分解为可执行的块
+# 按Shift+Enter快捷键运行块
+#%%
+print('Hello, world!')
