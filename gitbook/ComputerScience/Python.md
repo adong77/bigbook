@@ -31,15 +31,15 @@
 * 使用冒号分隔程序块。例如，在if语句中使用了冒号作为if嵌套程序块的开始。    
 ```
 print("Hello, Python!") 
-#=> Hello, Python!
+=> Hello, Python!
 myname = input("Your name: ")
 myname = myname.upper()
 if myname == "PYTHON":
   print("Hello", myname)
 else:
   print("Please input Python.")
-#=> Your name: Python
-#=> Hello PYTHON
+=> Your name: Python
+=> Hello PYTHON
 ```
 
 * 注释。Python代码中#号后面的内容全部是注释。此外，一对三个"符号(""")之内包围起来的字符串是多行注释，通常用来作为说明文档。
@@ -165,7 +165,7 @@ s.split('|') # => ['a', 'b', 'c', 'd']
 ```
 x = 100
 print(f"Double of {x} is {x * 2}")
-#=> Double of 100 is 200
+=> Double of 100 is 200
 ```
 这个脚本将值100分配给变量x，并输出一个值为x及它的两倍的字符串。
 
@@ -265,13 +265,13 @@ list(d.items()) # => [('a', 1), ('b', 2), ('c', [1, 2, 3, 4, 5]), (1, 'a')]
 它使用大括号来定义：
 s = {1,2,3,4,5}
 contains = 1 in s #判断是否包含
-print(contains)   #=> True
+print(contains)   => True
 可以将元素添加到集合中，但该结构只确保元素出现一次：
-s.add(1)  #=> {1,2,3,4,5}
-s.add(6)  #=> {1,2,3,4,5,6}
+s.add(1)  => {1,2,3,4,5}
+s.add(6)  => {1,2,3,4,5,6}
 另外，还提供了简便的方法来执行两个集合上的并集或交集等操作：
-s.union({4,5,6})  #=> {1,2,3,4,5,6}
-s.intersection({4,5})  #=> {4,5}
+s.union({4,5,6})  => {1,2,3,4,5,6}
+s.intersection({4,5})  => {4,5}
 ```
 Python数据结构的全面信息可以查看Python官方文档： https://docs.python.org/3/library/stdtypes.html
 
@@ -380,8 +380,8 @@ def f(*args, **kwargs):
   print("kwargs", kwargs)
 
 f(1,2,3, a=4, b=5) 
-#=> args (1,2,3)
-#=> kwargs {'a':4, 'b':5}
+=> args (1,2,3)
+=> kwargs {'a':4, 'b':5}
 ```
 
 可输出可见，标准参数被放置在元组中，其顺序与它们被调用的顺序相同。另一方面，关键字参数被放在字典中，其中的键是参数的名称。之后使用这些数据来执行逻辑！有趣的是，固定编码参数和动态参数可以混合使用。
@@ -392,8 +392,8 @@ def f(a, *args):
   print("args", args)
 
 f(1,2,3) 
-#=> a 1
-#=> args (2,3)
+=> a 1
+=> args (2,3)
 ```
 
 此外，在Python中通过添加星号（*）到元组中，可以实现对多个参数的函数进行一次性的参数传递。
@@ -440,8 +440,8 @@ print("Global:", a)  # => 456
 Python解释器内置了一些函数。其中str()将对象转换为易于阅读的字符串；函数len()用于获取对象的长度；函数id()返回对象的标识；函数print()将给定的对象打印到标准输出设备（屏幕）或文本流文件。格式化输出可以使用%或str.format()方法。
 ```
 sub = "python string!"
-print("It is a %s" % sub) #=> It is a python string!
-print("It is a {}".format(sub)) #=> It is a python string!
+print("It is a %s" % sub) => It is a python string!
+print("It is a {}".format(sub)) => It is a python string!
 ```
 
 ## 编写及使用模块与包
@@ -460,7 +460,7 @@ x = np.linspace(1,10,100)
 # from 模块名 import 要使用的函数名
 from datetime import date
 date.today()
-#=> datetime.date(2022,3,12)
+=> datetime.date(2022,3,12)
 ```
 在这里，我们显式导入date类以直接使用它。
 
@@ -475,9 +475,9 @@ print("Module is loaded")
 项目的根目录下，创建一个包含此代码的文件，并将其命名为module.py。然后，打开Python解释器运行以下命令：
 ```
 import module
-#=> Module is loaded
+=> Module is loaded
 module.module_function()
-#=> 'Hello world'
+=> 'Hello world'
 ```
 
 到此，我们编写了一个Python模块。下面看一下如何构造一个包。包是一种在层次结构中组织模块的方法，然后可以使用其命名空间导入模块。
@@ -487,7 +487,7 @@ module.module_function()
 
 ```
 import package.subpackage.module
-#=> Module is loaded
+=> Module is loaded
 ```
 这样我们就构造了一个包。但是为了定义一个合适的Python包，强烈建议在每个包和子包的根目录下创建一个空的"__init__.py"文件。此文件一般在第一次导入包或其子模块时执行，为包执行一些初始化逻辑是很有用的。
 
