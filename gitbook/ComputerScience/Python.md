@@ -1,6 +1,6 @@
 # Python语言编程教程
 
-本教程旨在帮助生物信息学初学者快速学习Python语言的编程基础知识，因此只精选了部分Python语言的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的理解Python语言。
+本教程旨在帮助生物信息学初学者快速学习Python语言的编程基础知识，因此只精选了部分Python语言的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的学习Python语言。
 首先，让我们回顾一下Python的一些特性：
 * 它是一种解释性语言。与C或Java等语言不同，Python不需要编译，故可以交互式运行Python代码。 
 * 它是动态类型语言。变量类型不需要预先声明，变量的类型在运行时确定。
@@ -18,7 +18,9 @@
 
 * 当您有许多命令时，而且你想留存这些命令以便以后重用时，还可以将所有的命令存储到一个脚本文件中一起执行。Python脚本保存在扩展名为".py"的文件中。例如，我们有一个包含python命令的文件test.py，只要在终端输入python test.py并回车就可以运行这个文件。
 
-> 对于初学者，推荐直接在Jupyter Notebook下学习Python命令和脚本。Jupyter Notebook里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
+> [!TIP]
+> 对于初学者，推荐直接在Jupyter Notebook下学习Python命令和脚本。Jupyter Notebook里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。
+> Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
 
 ## Python程序风格
 * 层级缩进。空白在Python中是很重要的，它称为缩进。在逻辑行首的空白（空格和制表符）用来决定逻辑行的缩进层次，从而用来决定语句的分组。这意味着同一层次的语句必须有相同的缩进。每一组这样的语句称为一个块。通常的缩进为4个空格, 在Jupyter Notebook中为一个Tab键。
@@ -503,8 +505,9 @@ module.module_function()
 ```
 
 到此，我们编写了一个Python模块。下面看一下如何构造一个包。包是一种在层次结构中组织模块的方法，然后可以使用其命名空间导入模块。
-在项目的根目录下，创建一个名为package的目录，在其内部，创建一个名为subpackage的目录，将module.py移动到其中。项目结构如图所示。
+在项目的根目录下，创建一个名为package的目录，在其内部，创建一个名为subpackage的目录，将module.py移动到其中。项目结构如图所示：
 ![Python Package](http://www.ligene.cn/images/blog/python-pkg.png)
+
 然后您可以使用完整的命名空间导入模块。
 
 ```
@@ -612,6 +615,7 @@ print(reduce(lambda a, b: a + b, aList))
 
 ### 编程规范
 通常Python编程过程为，首先声明扩展程序库的导入等，接着是函数和类等的定义，最后编写处理主体。下面这个例子中，处理的主体部分开头有if __name__ = '__main__'语句。这是指只在直接运行该程序的情况下（无论是从命令行或双击执行），才执行以下操作。如果是从其他程序调用（不是直接执行），就不执行该处理。当一个模块被导入到另一个模块中时，__name__属性中的值是模块本身的名称（即隐匿声明它的Python文件的名称）。
+
 ```
 #声明
 import sys
