@@ -489,6 +489,8 @@ date.today()
 在这里，我们显式导入date类以直接使用它。
 
 ### 编写模块
+Python模块(module)包含了Python对象定义和Python语句。在模块里可以定义函数、类和变量。把相关代码分配到一个模块里，可以使代码更好用，更易懂，也提高了代码的可维护性与重用性。不同模块中的函数名和变量名可以相同。模块的使用，避免了庞大代码量中函数名和变量名冲突的问题。
+
 在Python中，模块是包含声明的单个文件，但也可以包含首次导入模块时执行的指令。下面就一个简单的模块的定义。
 ```
 def module_function():
@@ -515,6 +517,9 @@ import package.subpackage.module
 => Module is loaded
 ```
 这样我们就构造了一个包。但是为了定义一个合适的Python包，强烈建议在每个包和子包的根目录下创建一个空的"__init__.py"文件。此文件一般在第一次导入包或其子模块时执行，为包执行一些初始化逻辑是很有用的。
+
+> 模块文件的扩展名有.py, .pyo, .pyc, .pyd等。py是源代码, pyc是源文件编译后的文件， pyo是源文件优化编译后的文件，pyd是其他语言写的Python模块。严格来说，Python并非完全是解释性语言。 在运行时，系统会先把Python源代码编译成pyc/pyo文件，然后再由Python虚拟机执行。当然也可以手动将Python源代码编译成pyc/pyo，例如在命令行输入下面命令将生成pyo：
+python -O -m py_compile 'module.py'
 
 ### 创建Python虚拟环境
 Python具有大量的第三方库，如Python常用包有：

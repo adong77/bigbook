@@ -71,6 +71,7 @@ gffread my.gff3 -T -o my.gtf
 gffread merged.gtf -o- > merged.gff3
 ```
 
+
 ## References
 1. Madlung, A. Assessing an Effective Undergraduate Module Teaching Applied Bioinformatics to Biology Students. PLOS Computational Biology 2018, 14 (1), e1005872. https://doi.org/10.1371/journal.pcbi.1005872.
 2. Trapnell, C.; Roberts, A.; Goff, L.; Pertea, G.; Kim, D.; Kelley, D. R.; Pimentel, H.; Salzberg, S. L.; Rinn, J. L.; Pachter, L. Differential Gene and Transcript Expression Analysis of RNA-Seq Experiments with TopHat and Cufflinks. Nature Protocols 2012, 7 (3), 562–578. https://doi.org/10.1038/nprot.2012.016.
