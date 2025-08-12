@@ -5,22 +5,22 @@
 * 它是一种解释性语言。与C或Java等语言不同，Python不需要编译，故可以交互式运行Python代码。 
 * 它是动态类型语言。变量类型不需要预先声明，变量的类型在运行时确定。
 * 它有支持多种编程范式：过程式编程、面向对象式编程与函数式编程。
-这些特性使得Python成为了一种非常通用的编程语言，从简单的自动化脚本到复杂的数据科学项目。
+这些特性使得Python成为一种非常通用的编程语言，从简单的自动化脚本到复杂的数据科学项目。
 
 
 ## 运行Python命令和脚本
-* 对于Linux或Unix用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器了敲入任何合法的python语句即可执行。
+* 对于Linux或macOS用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器敲入任何合法的python语句即可执行。
 ![Python Shell](http://www.ligene.cn/images/blog/python-shell.png)
 
-* 对于Windows用户，可以通过“Windows键+R”调出“Run”窗口，再输入“cmd”打开Windows命令解释器，再输入python，即可打开交互式python解释器。此外，也可以双击Python安装后的IDLE快捷方式打开图形界面的Python解释器，可以处理交互式命令和导入Python文件并执行。
+* 对于Windows用户，可以通过“Windows键+R”调出“Run”窗口，再输入“cmd”打开Windows命令解释符，再输入python，即可打开交互式python解释器。此外，也可以双击Python安装后的IDLE快捷方式打开图形界面的Python解释器，可以处理交互式命令和导入Python文件并执行。
 
-* 对于交互式Python解释器，在使用结束后，通过键盘输入"quit()"，或按组合键Ctrl+D (Linux/Unix)或Ctrl+Z (Windows)关闭。
+* 对于交互式Python解释器，在使用结束后，通过键盘输入"quit()"，或按组合键Ctrl+D (Linux/macOS)或Ctrl+Z (Windows)关闭。
 
 * 当您有许多命令时，而且你想留存这些命令以便以后重用时，还可以将所有的命令存储到一个脚本文件中一起执行。Python脚本保存在扩展名为".py"的文件中。例如，我们有一个包含python命令的文件test.py，只要在终端输入python test.py并回车就可以运行这个文件。
 
 > [!TIP]
 > 对于初学者，推荐直接在Jupyter Notebook下学习Python命令和脚本。Jupyter Notebook里面的代码可以随时修改和运行，并能同时记录你的脚本和输出，符合现在流行的“可重复性计算”的概念。
-> Linux/Unix用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
+> Linux/macOS用户直接在终端(Terminal)进入你的目标文件夹cd /working_dir[回车]，然后在终端输入Jupyter notebook[回车]即可启动Jupyter notebook。Jupyter notebook启动后会打开默认的浏览器（需要在图形用户界面下工作），这时可以新建或打开相应路径下的ipynb文件。
 
 ## Python程序风格
 * 层级缩进。空白在Python中是很重要的，它称为缩进。在逻辑行首的空白（空格和制表符）用来决定逻辑行的缩进层次，从而用来决定语句的分组。这意味着同一层次的语句必须有相同的缩进。每一组这样的语句称为一个块。通常的缩进为4个空格, 在Jupyter Notebook中为一个Tab键。
@@ -63,7 +63,7 @@ Python使用缩进来规范代码块，行首的空格被称为“缩进(indent)
 10
 ```
 
-## 变量
+## 变量与数据类型
 在Python中，变量是用来存储数据的。我们可以把它想象成一个存储箱，可在其中放入任何数据，并在需要的时候取出来。Python是动态类型语言，因此变量可直接定义使用，不需要预先声明变量的类型。Python使用等号(=)创建变量。
 注意，变量只能包含字母、数字和下划线，但只能以字母与下划线开头，不能以数字开头，如1variable无效。而且变量名是大小写敏感的，如Name与name是不同变量。
 
@@ -284,7 +284,7 @@ s.intersection({4,5})  => {4,5}
 ```
 Python数据结构的全面信息可以查看Python官方文档： https://docs.python.org/3/library/stdtypes.html
 
-## 程序控制流
+## 控制流语句
 控制流用来根据运行时的情况调整语句的执行顺序。没有控制流语句，编程语言就不是编程语言。 在Python中，控制语句主要有三类：条件语句，循环语句和跳转语句。
 ### 条件语句
 在Python语言中，条件判断是使用if语句实现的。如果if的条件没有得到满足，就按照从上到下的顺序对elif的条件进行判断。如果所有这些条件都不满足，就执行else内的程序代码。
@@ -465,7 +465,41 @@ print("It is a %s" % sub) => It is a python string!
 print("It is a {}".format(sub)) => It is a python string!
 ```
 
-## 编写及使用模块与包
+## 类与对象
+
+所谓面向对象编程，是指通过对象之间的相互作用来实现对系统行为进行控制的一种编程思想。在面向对象编程中，有类(Class)与实例(Instance)两种概念，类和实例统称为对象(Object)。具体来讲，类定义了对象的结构与行为，它是如何创建对象的蓝图或模板；而实例则是指对象的实体，使用同一个类可以生成多个实例。所谓实例变量是指在通过对类的实例化生成的对象中可以访问的变量。  
+在Python中，对类进行定义要使用class关键字。使用类定义可以将多个方法集中到一处，类的方法与函数类似，使用def关键字来定义。Python类成员方法具有使用self接收参数的特征。通过使用这一self关键字，可以对实例的变量进行访问。
+```
+class Calc():
+  # 类的方法需要指定self作为参数
+  def __init__(self, a):
+    self.a = a
+  def add(self, b):
+    print(self.a + b)
+  def multiple(self, b):
+    print(self.a * b)
+
+calc = Calc(3) # 构造一个Calc的实例
+calc.add(4) # => 打印4
+```
+其中__init__是特殊方法，被称为构造函数（constructor）。在这个方法中可以对实例进行初始化操作。在上面的代码示例中，self.a=a语句的作用是将通过参数获取的值代入实例变量a中。使用此方法一次代入到实例变量中的数值，在同一个实例中的任意一个方法内部都可以进行访问。add与multiply方法则是将通过参数获取的值与实例变量a进行运算。
+此外，Python的类中还有继承的概念。通过对类进行继承操作，可以从现有的类中派生出新的类并对其进行定义。
+```
+class CalcPlus(Calc):
+  def substract(self, b):
+    print(self.a - b)
+
+  def divide(self,b):
+    print(self.a / b)
+
+calc_plus = CalcPlus(3)   #生成CalcPlus类的实例
+calc_plus.add(4)          #Calc类的方法
+calc_plus.substract(4)    #CalcPlus类的方法
+```
+由于这个CalcPlus类继承自Calc类，因此在Calc类中定义的构造函数、add方法、multiply方法在新的类中也同样可以直接使用。此外，在CalcPlus类的内部还增加了新的substract方法和divide方法的定义。在祖先Calc类中定义的方法和对其进行继承所创建的CalcPlus类中的方法，都可以通过同样的方式进行调用。通过这种继承方式，可以将多个类中公用的部分集中到祖先类的代码中实现。
+
+
+## 模块与包
 
 ### 模块
 
@@ -561,39 +595,6 @@ $ python
 ```
 按照惯例，NumPy始终使用别名np导入。如果它通过了，没有出现任何错误，那么恭喜您，Numpy已经安装并且可以使用了。
 
-
-## 面向对象编程
-
-所谓面向对象编程，是指通过对象之间的相互作用来实现对系统行为进行控制的一种编程思想。在面向对象编程中，有类与实例两种概念，类和实例统称为对象。具体来讲，类就相当于设计图一样的东西，而实例则是指对象的实体。使用同一个类可以生成多个实例。
-在Python中，对类进行定义要使用class关键字。使用类定义可以将多个方法集中到一处，类的方法与函数类似，使用def关键字来定义。
-```
-class Calc():
-  # 类的方法需要指定self作为参数
-  def __init__(self, a):
-    self.a = a
-  def add(self, b):
-    print(self.a + b)
-  def multiple(self, b):
-    print(self.a * b)
-
-calc = Calc(3) # 构造一个Calc的实例
-calc.add(4) # => 打印4
-```
-Python类成员方法具有使用self接收参数的特征。通过使用这一self关键字，可以对实例的变量进行访问。所谓实例变量是指在通过对类的实例化生成的对象中可以访问的变量。其中__init__是特殊方法，被称为构造函数（constructor）。在这个方法中可以对实例进行初始化操作。在上面的代码示例中，self.a=a语句的作用是将通过参数获取的值代入实例变量a中。使用此方法代入一次到实例变量中的数值，在同一个实例中的任意一个方法内部都可以进行访问。add与multiply方法则是将通过参数获取的值与实例变量a进行运算。
-此外，Python的类中还有继承的概念。通过对类进行继承操作，可以从现有的类中派生出新的类并对其进行定义。
-```
-class CalcPlus(Calc):
-  def substract(self, b):
-    print(self.a - b)
-
-  def divide(self,b):
-    print(self.a /b)
-
-calc_plus = CalcPlus(3)   #生成CalcPlus类的实例
-calc_plus.add(4)          #Calc类的方法
-calc_plus.substract(4)    #CalcPlus类的方法
-```
-由于这个CalcPlus类继承自Calc类，因此在Calc类中定义的构造函数、add方法、multiply方法在新的类中也同样可以直接使用。此外，在CalcPlus类的内部还增加了新的substract方法和divide方法的定义。在祖先Calc类中定义的方法和对其进行继承所创建的CalcPlus类中的方法，都可以通过同样的方式进行调用。通过这种继承方式，可以将多个类中公用的部分集中到祖先类的代码中实现。
 
 ## 更多Python内容
 
