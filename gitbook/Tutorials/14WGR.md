@@ -7,6 +7,22 @@
 
 ![基因组重测序分析流程](http://www.ligene.cn/images/book/resequencing-pipeline.png)
 
+表14 1 SAM格式中flag字段的说明
+|Flag	|Description|
+|------ |------|
+|0x0002	|the read is mapped in a proper pair (depends on the protocol, normally inferred during alignment)|
+|0x0001	|the read is paired in sequencing, no matter whether it is mapped in a pair|
+|0x0004 |the query sequence itself is unmapped|
+|0x0008	|the mate is unmapped|
+|0x0010	|strand of the query (0 for forward; 1 for reverse strand)|
+|0x0020	|strand of the mate|
+|0x0040	|the read is the first read in a pair|
+|0x0080	|the read is the second read in a pair|
+|0x0100	|the alignment is not primary (a read having split hits may have multiple primary alignment records)|
+|0x0200	|the read fails platform/vendor quality checks|
+|0x0400	|the read is either a PCR duplicate or an optical duplicate|
+
+
 ## 结构变异鉴定
 结构变异(Structural Variations, SVs)包括基因组易位(translocation)、倒位(inversion)、大的插入缺失(indels)及重复序列的拷贝数变化(Copy Number Variations, CNVs)等。基因组结构变异对基因功能影响比较大，通常会导致多基因的丢失、基因表达倍增及基因融合等。以前结构变异检测方法主要是比较基因组杂交芯片（aCGH），包括Illumina, Affymetrix和Agilent等商业公司的产品。随着NGS技术的发展，特别是双末端测序大大提高了结构变异的检测能力。配对reads的方向与距离可用于定位大片段indels、inversion和转位等（图 14 6）。
 虽然基于成对reads的方法可以定位许多SV事件，但还是不能精确定位基因组的断点(breakpoints)。而split-read方法可以精确定位breakpoints，它通过把一些reads分割成能映射(map)到不同基因组区域的子序列，如Pindel的算法首先搜索read pairs，第一个read能比对到参考基因组，而第二个read不能比对到基因组上，因此在第二个read上可能有一个断点。利用第一个匹配的read作为锚定点(anchor)来扫描其周围区域来分段比对(split mapping)第二个read。
