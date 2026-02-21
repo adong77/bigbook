@@ -17,7 +17,7 @@
 * 第13-17章介绍下一代测序(NGS)数据分析方法及应用，如遗传变异检测(Variant detection),基因组组装(Genome assembly), 转录组测序(RNA-seq)与宏基因组学(Metagenomics)等；
 
 教材每章内容适用于一次教学课时(1.5h)，教师可根据不同教学课时(如32/48)选讲部分章节内容，其它章节内容供学生自学。本教材的推荐教学安排如下图所示：
-![Teaching-Plan-bioinformatics](./zx/Teaching-plan-bioinformatics.png)
+![Teaching-Plan-bioinformatics](./zx/BioinfoTeachingPlan.png)
 
 另外，生物信息学是一门实践性很强的课程，适合采用“理实一体化”的教学方式，课堂上既有老师的讲述内容，又有学生独立思考、上机操作的内容，能激发学生的学习积极性与创造性。假如每学期为16个课时，可安排课堂讲授11-12个课时，再结合上机实践练习4-5个课时。
 
