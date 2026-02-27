@@ -1,0 +1,755 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第5章 序列数据库搜索(BLAST) · BiGbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="adong">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06MolecularEvolution.html" />
+    
+    
+    <link rel="prev" href="04SequenceAlignment.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://bigbook.pages.dev/" target="_blank" class="custom-link">生物信息学与基因组分析入门</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Biology/BiologyBasics.html">
+            
+                <a href="../Biology/BiologyBasics.html">
+            
+                    
+                    🧬生物学(Biology)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Biology/Omics.html">
+            
+                <a href="../Biology/Omics.html">
+            
+                    
+                    组学(Omics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Biology/SynBio.html">
+            
+                <a href="../Biology/SynBio.html">
+            
+                    
+                    合成生物学
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ComputerScience/ComputerBasics.html">
+            
+                <a href="../ComputerScience/ComputerBasics.html">
+            
+                    
+                    💻计算机科学(Computer Science)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ComputerScience/Linux.html">
+            
+                <a href="../ComputerScience/Linux.html">
+            
+                    
+                    Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ComputerScience/Python.html">
+            
+                <a href="../ComputerScience/Python.html">
+            
+                    
+                    Python编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ComputerScience/Perl.html">
+            
+                <a href="../ComputerScience/Perl.html">
+            
+                    
+                    Perl编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ComputerScience/DSA.html">
+            
+                <a href="../ComputerScience/DSA.html">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Statistics/BasicStatistics.html">
+            
+                <a href="../Statistics/BasicStatistics.html">
+            
+                    
+                    📊统计学(Statistics)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Statistics/R.html">
+            
+                <a href="../Statistics/R.html">
+            
+                    
+                    R语言入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Statistics/ML.html">
+            
+                <a href="../Statistics/ML.html">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">📖BiG教程(Tutorials)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01MolecularBiology.html">
+            
+                <a href="01MolecularBiology.html">
+            
+                    
+                    第1章 分子生物学基础(Molecular Biology)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02ComputerSkills.html">
+            
+                <a href="02ComputerSkills.html">
+            
+                    
+                    第2章 计算机技能基础(Computer Skills)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03BiologicalDatabases.html">
+            
+                <a href="03BiologicalDatabases.html">
+            
+                    
+                    第3章 生物数据库(Biological Databases)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04SequenceAlignment.html">
+            
+                <a href="04SequenceAlignment.html">
+            
+                    
+                    第4章 序列比对(Sequence Alignment)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="05BLAST.html">
+            
+                <a href="05BLAST.html">
+            
+                    
+                    第5章 序列数据库搜索(BLAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06MolecularEvolution.html">
+            
+                <a href="06MolecularEvolution.html">
+            
+                    
+                    第6章 分子进化(Molecular Evolution)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07Phylogenetics.html">
+            
+                <a href="07Phylogenetics.html">
+            
+                    
+                    第7章 系统发育树(Phylogenetic Tree)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08ProteinStructure.html">
+            
+                <a href="08ProteinStructure.html">
+            
+                    
+                    第8章 蛋白质结构预测(Protein Structure)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09RNA.html">
+            
+                <a href="09RNA.html">
+            
+                    
+                    第9章 非编码RNA分析(Non-coding RNA)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10PCR.html">
+            
+                <a href="10PCR.html">
+            
+                    
+                    第10章 PCR引物设计(Primer Design)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="11Sequencing.html">
+            
+                <a href="11Sequencing.html">
+            
+                    
+                    第11章 DNA测序(DNA Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="12Genomics.html">
+            
+                <a href="12Genomics.html">
+            
+                    
+                    第12章 基因组学(Genomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="13NGS.html">
+            
+                <a href="13NGS.html">
+            
+                    
+                    第13章 下一代测序基础(Next-Generation Sequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="14WGR.html">
+            
+                <a href="14WGR.html">
+            
+                    
+                    第14章 全基因组重测序(Whole Genome Resequencing)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="15Assembly.html">
+            
+                <a href="15Assembly.html">
+            
+                    
+                    第15章 基因组组装(Genome Assembly)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="16RNAseq.html">
+            
+                <a href="16RNAseq.html">
+            
+                    
+                    第16章 转录组测序(RNA-Seq)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="17Metagenomics.html">
+            
+                <a href="17Metagenomics.html">
+            
+                    
+                    第17章 宏基因组学(Metagenomics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="18DataAnalytics.html">
+            
+                <a href="18DataAnalytics.html">
+            
+                    
+                    第18章 数据分析入门(Data Analytics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Appendix.html">
+            
+                <a href="../Appendix.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第5章 序列数据库搜索(BLAST)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#x641C;&#x7D22;blast">&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#x641C;&#x7D22;(BLAST)</h1>
+<p>[TOC]</p>
+<ul>
+<li><a href="http://blog.ligene.cn/2017/07/05/BLAST-Tutorial/" target="_blank">Linux&#x4E0B;BLAST+&#x7684;&#x672C;&#x5730;&#x5316;&#x5B89;&#x88C5;&#x4E0E;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</a></li>
+</ul>
+<p>In order to increase the speed of alignment, the BLAST algorithm was designed to approximate the results of an alignment algorithm created by Smith and Waterman (1981), but to do so without comparing each residue against every other residue (Altschul et al., 1990). BLAST is therefore heuristic in nature, meaning it has &quot;smart shortcuts&quot; that allow it to run more quickly (Madden, 2005). However, in this trade-off for increased speed, the accuracy of the algorithm is slightly decreased.<br><img src="http://www.ligene.cn/images/book/blast_f2.jpg" alt="Figure 2: Generating word seeds."></p>
+<h3 id="the-blast-heuristic">The BLAST Heuristic</h3>
+<p>BLAST increases the speed of alignment by decreasing the search space or number of comparisons it makes. Specifically, <strong>instead of comparing every residue against each other, BLAST uses short &quot;word&quot; (w) segments to create alignment &quot;seeds.&quot;</strong> BLAST is designed to create a word list from the query sequence with words of a specific length, as defined by the user (Figure 2). Requiring only three residues to match in order to seed an alignment means that fewer sequence regions need to be compared. Larger word sizes usually mean that there are even fewer regions to evaluate (e.g., Figure 3A compared to Figure 3B). Once an alignment is seeded, BLAST extends the alignment according to a threshold (T) that is set by the user. When performing a BLAST query, the computer extends words with a neighborhood score greater than T (Figure 3C). A cutoff score (S) is used to select alignments over the cutoff, which means the sequences share significant homologies. If a hit is detected, then the algorithm checks whether w is contained within a longer aligned segment pair that has a cutoff score greater than or equal to S (Altschul et al., 1990). When an alignment score starts to decrease past a lower threshold score (X), the alignment is terminated (Figure 3C). These and many other variables can be adjusted to either increase the speed of the algorithm or emphasize its sensitivity.
+<img src="http://www.ligene.cn/images/book/blast_f2.jpg" alt="Figure 3: Generating word seeds."></p>
+<p>Scitable:
+<a href="https://www.nature.com/scitable/topicpage/basic-local-alignment-search-tool-blast-29096/#" target="_blank">Basic Local Alignment Search Tool (BLAST)</a></p>
+<ul>
+<li>NCBI Primer-BLAST</li>
+</ul>
+<h3 id="&#x4E60;&#x9898;">&#x4E60;&#x9898;</h3>
+<ol>
+<li>&#x901A;&#x8FC7;BLAST&#x641C;&#x7D22;&#x65B0;&#x51A0;&#x75C5;&#x6BD2;&#x68D8;&#x7A81;&#x86CB;&#x767D;(Spike)&#x5E8F;&#x5217; (NCBI&#x7D22;&#x5F15;&#x53F7;&#xFF1A;YP_009724390.1) &#x7684;&#x540C;&#x6E90;&#x57FA;&#x56E0;&#xFF0C;&#x5E76;&#x63A8;&#x65AD;&#x65B0;&#x51A0;&#x75C5;&#x6BD2;&#x7684;&#x53EF;&#x80FD;&#x6765;&#x6E90;&#x52A8;&#x7269;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;(&#x63D0;&#x793A;&#xFF1A;BLASTP&#x6570;&#x636E;&#x96C6;&#x9009;&#x9879;Organism&#x4E2D;&#x8F93;&#x5165;&#x201C;SARS-CoV-2&#x201D;&#x5E76;&#x52FE;&#x9009;&#x201C;exclude&#x201D;&#x6392;&#x9664;&#x65B0;&#x51A0;&#x75C5;&#x6BD2;&#x81EA;&#x8EAB;&#x5E8F;&#x5217;&#x3002;)</li>
+</ol>
+<h3 id="references">References</h3>
+<ol>
+<li>Lobo, I. (2008) Basic Local Alignment Search Tool (BLAST). Nature Education 1(1):215</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04SequenceAlignment.html" class="navigation navigation-prev " aria-label="Previous page: 第4章 序列比对(Sequence Alignment)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06MolecularEvolution.html" class="navigation navigation-next " aria-label="Next page: 第6章 分子进化(Molecular Evolution)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第5章 序列数据库搜索(BLAST)","level":"2.5","depth":1,"next":{"title":"第6章 分子进化(Molecular Evolution)","level":"2.6","depth":1,"path":"Tutorials/06MolecularEvolution.md","ref":"Tutorials/06MolecularEvolution.md","articles":[]},"previous":{"title":"第4章 序列比对(Sequence Alignment)","level":"2.4","depth":1,"path":"Tutorials/04SequenceAlignment.md","ref":"Tutorials/04SequenceAlignment.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small","back-to-top-button","flexible-alerts","code","donate","katex","baidu-tongji-with-multiple-channel","page-toc-button"],"root":"./gitbook","styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/adong77/bigbook.git"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://hm.baidu.com/hm.js","token":"0ad9c65dc343a2a6d37cb95527713113"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"反馈","title":"","wechat":"http://www.ligene.cn/src/img/ligenext.jpg","wechatText":"微信扫码关注公众号"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","author":"adong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BiGbook","language":"zh-hans","links":{"sidebar":{"生物信息学与基因组分析入门":"https://bigbook.pages.dev/"}},"gitbook":"3.2.3","description":"生物信息学与基因组分析入门"},"file":{"path":"Tutorials/05BLAST.md","mtime":"2026-02-27T14:49:34.951Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-02-27T14:50:13.852Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
