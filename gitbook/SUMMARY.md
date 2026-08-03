@@ -14,7 +14,7 @@
 
 * [📊统计学(Statistics)](Statistics/BasicStatistics.md)
     * [R语言入门](Statistics/R.md)
-    * [机器学习](Statistics/ML.md)
+    * [统计机器学习](Statistics/ML.md)
 
 ### 📖BiG教程(Tutorials)
 * [第1章 分子生物学基础(Molecular Biology)](Tutorials/01MolecularBiology.md)

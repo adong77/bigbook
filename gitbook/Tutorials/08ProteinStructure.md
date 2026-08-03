@@ -19,3 +19,18 @@ ROSIE (https://rosie.rosettacommons.org/)为Rosetta的Web端，提供许多分�
 
 图 8 4 二级结构预测结果
 图 8 4中H代表螺旋(Alpha helix), E代表折叠(Extended strand), C代表无规则卷曲(Random coil)等。这是预测软件GOR (https://npsa-prabi.ibcp.fr/cgi-bin/secpred_gor4.pl) 的结果。
+
+## 分子对接
+* 受体-配体分子对接的一般步骤：
+    1. 受体和配体分子处理
+    2. 寻找潜在的结合口袋
+    3. 旋转平移配体，生成一系列配体结合姿势(pose);对于柔性对接，配体本身的构象变化也要考虑
+    4. 对每个结合姿势的结合能进行估计
+    5. 对结合姿势聚类与排名
+
+![虚拟筛选的基本原理](../zx/ligand-docking.png)
+
+
+## References
+1. Jacob RB, Andersen T, McDougal OM (2012) Accessible High-Throughput Virtual Screening Molecular Docking Software for Students and Educators. PLoS Comput Biol 8(5): e1002499. https://doi.org/10.1371/journal.pcbi.1002499
+

@@ -24,6 +24,17 @@
 ![The data generation of a typical RNA-seq experiment](http://www.ligene.cn/images/book/RNA-seq-library.png)
 参考文献：https://www.nature.com/articles/nrg3068
 
+### Experimental Design — Get This Right First
+* Biological replicates — Minimum 3 per condition, ideally 5+. More replicates = more statistical power
+* Sequencing depth — 20-30 million reads per sample for most DE analyses. More for rare transcripts or splicing
+* Read length — 75-150 bp paired-end is standard. Longer reads help with isoform detection
+* Batch effects — Process all samples together. If batching is unavoidable, balance conditions across batches
+* Controls — Include appropriate biological controls. Consider spike-ins (ERCC) for normalization validation
+> [!NOTE]
+> The Most Common RNA-Seq Mistake
+> Running 1-2 replicates per condition. With only 2 replicates, you have almost no statistical power to detect DE genes. The money spent on deeper sequencing of 2 samples is better spent on shallower sequencing of 4+ samples.
+
+
 ## 数据分析 
 经典的RNA-seq数据分析流程为先使用TopHat进行测序短序列映射后，再使用Cufflinks进行转录本的组装与丰度估计(图1)。
 ![Overview of Cuffliniks](http://www.ligene.cn/images/book/Cufflinks-pipeline.png)
