@@ -475,5 +475,5 @@ make原理是执行Makefile文件里的指令，make的基本用处是自动根�
 源代码安装方法对很多平台都适用，但此方法需要平台已经安装有程序相关的编译器和依赖的库。如果软件安装比较复杂，你可以阅读软件提供的INSTALL或README文件，了解软件的具体安装说明。
 
 ### 参考资料
-1. 极客学院Linux教程：http://wiki.jikexueyuan.com/project/learn-linux-step-by-step/
+1. William Shotts, The Linux Command Line, http://linuxcommand.org/tlcl.php
 2. Linux工具快速教程：https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html

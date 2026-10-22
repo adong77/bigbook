@@ -39,3 +39,9 @@ echo "export DISPLAY=:0.0" >> ~/.bashrc
 source ~/.bashrc
 ```
 原理很简单，VcXsrv是一个X-Window的Windows显示服务器，由于已经设置了环境变量，就可以模拟出一个Ubuntu的图形运行环境。
+
+
+### 参考资料
+1. William Shotts, The Linux Command Line, http://linuxcommand.org/tlcl.php
+2. Linux工具快速教程：https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html
+3. Microsoft’s WSL installation guide: https://learn.microsoft.com/en-us/windows/wsl/install
