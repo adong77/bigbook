@@ -1,6 +1,6 @@
 # Python语言编程教程
 
-本教程旨在帮助生物信息学初学者快速学习Python语言的编程基础知识，因此只精选了部分Python语言的功能，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的学习Python语言。
+本教程旨在帮助生物信息学初学者快速学习Python语言的编程基础知识，因此只精选了部分Python语言内容，请参考此文后面列出的Python经典教程（A byte of python与Think Python中文版）来更好的学习Python语言。
 首先，让我们回顾一下Python的一些特性：
 * 它是一种解释性语言。与C或Java等语言不同，Python不需要编译成二进制代码，可以直接从源代码运行程序，故可以交互式运行Python代码。 
 * 它是动态类型语言。变量类型不需要预先声明，变量的类型在运行时确定。
@@ -8,7 +8,8 @@
 这些特性使得Python成为一种非常通用的编程语言，从简单的自动化脚本到复杂的数据科学项目。
 
 
-## 运行Python命令和脚本
+## 安装与运行Python程序
+在开始编写第一个Python程序之前，需要下载并安装Python解释器。在浏览器中找开Python官网(https://www.python.org/downloads/),下载Python3当前最新的版本（如3.12.1）。一旦安装了解释器，就可以开始运行Python程序了。
 * 对于Linux或macOS用户，直接在终端输入python，然后回车即可打开交互式python解释器，如下图所示。在这个解释器敲入任何合法的python语句即可执行。
 ![Python Shell](http://www.ligene.cn/images/blog/python-shell.png)
 
